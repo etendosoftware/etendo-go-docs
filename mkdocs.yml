@@ -22,6 +22,9 @@ theme:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
+    - navigation.instant
+    - navigation.instant.preview
+    - navigation.path
     - navigation.sections
     - navigation.top
     - search.highlight
@@ -59,26 +62,34 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
+  - Inicio: index.md
   - Primeros pasos:
+      - primeros-pasos/index.md
       - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
       - Cómo acceder: primeros-pasos/como-acceder.md
       - Configuración inicial: primeros-pasos/configuracion-inicial.md
   - Dashboard: dashboard/index.md
   - Contactos:
+      - contactos/index.md
       - Clientes: contactos/clientes.md
       - Proveedores: contactos/proveedores.md
   - Ventas:
+      - ventas/index.md
       - Pedidos de venta: ventas/pedidos-de-venta.md
       - Facturas de venta: ventas/facturas-de-venta.md
   - Compras:
+      - compras/index.md
       - Pedidos de compra: compras/pedidos-de-compra.md
       - Facturas de compra: compras/facturas-de-compra.md
   - Finanzas:
+      - finanzas/index.md
       - Tesorería: finanzas/tesoreria.md
       - Conciliación bancaria: finanzas/conciliacion-bancaria.md
   - Inventario:
+      - inventario/index.md
       - Productos: inventario/productos.md
       - Almacenes: inventario/almacenes.md
   - Configuración:
+      - configuracion/index.md
       - Datos de empresa: configuracion/datos-de-empresa.md
       - Usuarios y permisos: configuracion/usuarios-y-permisos.md

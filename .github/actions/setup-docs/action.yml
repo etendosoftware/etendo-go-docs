@@ -1,0 +1,20 @@
+name: Setup Docs
+description: Setup configuration for MkDocs
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.13
+
+    - name: Setup Cache
+      uses: actions/cache@v4
+      with:
+        key: ${{ github.ref }}
+        path: .cache
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+      shell: bash
