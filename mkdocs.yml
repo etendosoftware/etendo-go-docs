@@ -3,25 +3,34 @@ docs_dir: docs
 theme:
   name: material
   language: es
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     - scheme: default
+      primary: white
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Cambiar a modo oscuro
     - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
-    - navigation.indexes
     - search.highlight
     - search.suggest
     - content.tabs.link
     - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
@@ -50,4 +59,26 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Inicio: index.md
+  - Primeros pasos:
+      - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
+      - Cómo acceder: primeros-pasos/como-acceder.md
+      - Configuración inicial: primeros-pasos/configuracion-inicial.md
+  - Dashboard: dashboard/index.md
+  - Contactos:
+      - Clientes: contactos/clientes.md
+      - Proveedores: contactos/proveedores.md
+  - Ventas:
+      - Pedidos de venta: ventas/pedidos-de-venta.md
+      - Facturas de venta: ventas/facturas-de-venta.md
+  - Compras:
+      - Pedidos de compra: compras/pedidos-de-compra.md
+      - Facturas de compra: compras/facturas-de-compra.md
+  - Finanzas:
+      - Tesorería: finanzas/tesoreria.md
+      - Conciliación bancaria: finanzas/conciliacion-bancaria.md
+  - Inventario:
+      - Productos: inventario/productos.md
+      - Almacenes: inventario/almacenes.md
+  - Configuración:
+      - Datos de empresa: configuracion/datos-de-empresa.md
+      - Usuarios y permisos: configuracion/usuarios-y-permisos.md

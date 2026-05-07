@@ -1,0 +1,258 @@
+/* ── Etendo Go — estilos ── */
+
+/* ── Variables modo claro ── */
+:root,
+[data-md-color-scheme="default"] {
+  --etendo-yellow: #FFD000;
+  --etendo-yellow-subtle: rgba(255, 208, 0, 0.12);
+  --etendo-text: #111827;
+  --etendo-text-muted: #6B7280;
+  --etendo-border: #E5E7EB;
+  --etendo-bg: #FFFFFF;
+  --etendo-bg-surface: #F9FAFB;
+  --etendo-bg-search: #F3F4F6;
+  --etendo-link: #2563EB;
+  --etendo-link-hover: #1D4ED8;
+
+  --md-accent-fg-color: var(--etendo-yellow);
+  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
+  --md-accent-bg-color: var(--etendo-text);
+}
+
+/* ── Variables modo oscuro ── */
+[data-md-color-scheme="slate"] {
+  --etendo-yellow: #FFD000;
+  --etendo-yellow-subtle: rgba(255, 208, 0, 0.10);
+  --etendo-text: #F1F5F9;
+  --etendo-text-muted: #94A3B8;
+  --etendo-border: #2D3748;
+  --etendo-bg: #0F1117;
+  --etendo-bg-surface: #1A1F2E;
+  --etendo-bg-search: #1E2433;
+  --etendo-link: #60A5FA;
+  --etendo-link-hover: #93C5FD;
+
+  --md-primary-fg-color: #1A1F2E;
+  --md-primary-bg-color: #F1F5F9;
+  --md-accent-fg-color: var(--etendo-yellow);
+  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
+  --md-accent-bg-color: #0F1117;
+
+  --md-default-bg-color: var(--etendo-bg);
+  --md-default-fg-color: var(--etendo-text);
+  --md-default-fg-color--light: var(--etendo-text-muted);
+  --md-default-fg-color--lighter: var(--etendo-text-muted);
+  --md-default-fg-color--lightest: var(--etendo-text-muted);
+
+  --md-code-bg-color: #1E2433;
+  --md-code-fg-color: #E2E8F0;
+
+  --md-footer-bg-color: #0D1117;
+  --md-footer-fg-color: var(--etendo-text-muted);
+}
+
+/* ── Fondo principal ── */
+.md-main,
+.md-sidebar,
+.md-sidebar__scrollwrap,
+.md-content,
+.md-content__inner {
+  background-color: var(--etendo-bg);
+}
+
+/* ── Scrollbar sidebar — neutralizar color accent ── */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--etendo-border) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: var(--etendo-border);
+  border-radius: 2px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ── Header ── */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--etendo-border);
+  background-color: var(--etendo-bg) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: var(--etendo-bg) !important;
+}
+
+/* ── Tabs ── */
+.md-tabs {
+  background-color: var(--etendo-bg);
+  border-bottom: 1px solid var(--etendo-border);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--etendo-bg);
+}
+
+.md-tabs__link {
+  color: var(--etendo-text-muted) !important;
+  opacity: 1;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--etendo-text) !important;
+}
+
+.md-tabs__indicator {
+  background-color: var(--etendo-yellow);
+}
+
+/* ── Sidebar — título principal ── */
+.md-nav__title {
+  color: var(--etendo-text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+/* ── Sidebar — secciones (solo etiquetas, no navegables) ── */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: var(--etendo-text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  cursor: default;
+  pointer-events: none;
+  background: none !important;
+  border: none !important;
+  padding-left: 0 !important;
+  margin-top: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+
+/* ── Sidebar — links de página ── */
+.md-nav__link {
+  color: var(--etendo-text-muted);
+  transition: color 0.12s, background 0.12s;
+}
+
+.md-nav__link:hover {
+  color: var(--etendo-text);
+  background-color: var(--etendo-bg-surface);
+}
+
+/* ── Item activo: fondo amarillo sin redondeo, sin cambiar dimensiones ── */
+.md-nav--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active,
+.md-nav--primary .md-nav__item:not(.md-nav__item--section).md-nav__item--active > .md-nav__link {
+  color: #111827 !important;
+  font-weight: 600;
+  background-color: var(--etendo-yellow) !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item:not(.md-nav__item--section).md-nav__item--active > .md-nav__link {
+  color: #111827 !important;
+  background-color: var(--etendo-yellow) !important;
+}
+
+/* ── TOC derecho ── */
+.md-nav--secondary .md-nav__link--active {
+  color: var(--etendo-text) !important;
+  border-left: 2px solid var(--etendo-yellow);
+  padding-left: calc(0.6rem - 2px);
+  background-color: transparent !important;
+  font-weight: 500;
+}
+
+/* ── Logo ── */
+.md-header__button.md-logo img {
+  height: 1.8rem;
+  width: auto;
+}
+
+/* ── Tipografía ── */
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--etendo-text);
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--etendo-text);
+}
+
+.md-typeset a {
+  color: var(--etendo-link);
+}
+
+.md-typeset a:hover {
+  color: var(--etendo-link-hover);
+}
+
+/* ── Código ── */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: var(--etendo-bg-search);
+  color: var(--md-code-fg-color);
+}
+
+/* ── Búsqueda ── */
+.md-search__form {
+  border-radius: 6px;
+  background-color: var(--etendo-bg-search);
+  border: 1px solid var(--etendo-border);
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: var(--etendo-bg-search);
+  border-color: var(--etendo-border);
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+  color: var(--etendo-text);
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: var(--etendo-text-muted);
+}
+
+/* ── Admonitions en modo oscuro ── */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  background-color: var(--etendo-bg-surface);
+  border-color: var(--etendo-border);
+}
+
+/* ── Tablas en modo oscuro ── */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: var(--etendo-bg-surface);
+  color: var(--etendo-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: var(--etendo-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background-color: var(--etendo-bg-surface);
+}
+
+/* ── Footer ── */
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: var(--md-footer-bg-color);
+}
