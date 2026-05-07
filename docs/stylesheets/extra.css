@@ -100,6 +100,10 @@ body {
   background-color: var(--etendo-bg-page);
 }
 
+.md-sidebar--secondary .md-sidebar__inner {
+  padding-top: 0.6rem;
+}
+
 /* ════════════════════════════════════════
    HEADER
 ════════════════════════════════════════ */
@@ -129,7 +133,7 @@ body {
   background-color: var(--etendo-sidebar-bg);
 }
 
-/* Título principal "ETENDO GO" */
+/* Título principal "ETENDO GO" — sin degradado blanco */
 .md-sidebar--primary .md-nav__title {
   color: var(--etendo-sidebar-muted);
   font-size: 0.65rem;
@@ -138,7 +142,7 @@ body {
   letter-spacing: 0.1em;
   background-color: var(--etendo-sidebar-bg);
   border-bottom: none;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 /* Secciones (labels no navegables) */
@@ -234,21 +238,39 @@ body {
    TOC DERECHO
 ════════════════════════════════════════ */
 
+/* Título "Tabla de contenidos" — igual que secciones del sidebar */
+.md-sidebar--secondary .md-nav__title {
+  color: var(--etendo-sidebar-muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: var(--etendo-bg-page);
+  border-bottom: none;
+  box-shadow: none !important;
+  padding-left: 1rem;
+  padding-top: 1.4rem;
+}
+
 .md-sidebar--secondary .md-nav__link {
   color: var(--etendo-text-muted);
   font-size: 0.75rem;
+  border-radius: 0;
+  transition: color 0.12s;
+  padding-left: 1rem;
 }
 
 .md-sidebar--secondary .md-nav__link:hover {
   color: var(--etendo-text);
+  background: none;
 }
 
 .md-nav--secondary .md-nav__link--active {
   color: var(--etendo-text) !important;
   border-left: 2px solid var(--etendo-yellow);
-  padding-left: calc(0.6rem - 2px);
+  padding-left: calc(1rem - 2px);
   background-color: transparent !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ════════════════════════════════════════
@@ -334,6 +356,51 @@ body {
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
   background-color: var(--etendo-bg-surface);
+}
+
+/* ════════════════════════════════════════
+   BOTONES
+════════════════════════════════════════ */
+
+.md-typeset .md-button {
+  border-color: var(--etendo-border);
+  color: var(--etendo-text);
+  border-radius: 4px;
+}
+
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  border-color: var(--etendo-text-muted);
+  color: var(--etendo-text);
+  background-color: var(--etendo-bg-surface);
+}
+
+.md-typeset .md-button--primary,
+[data-md-color-primary="white"] .md-button--primary,
+[data-md-color-primary="custom"] .md-button--primary {
+  background-color: var(--etendo-yellow);
+  border-color: var(--etendo-yellow);
+  color: #111827;
+  border-radius: 4px;
+}
+
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus,
+[data-md-color-primary="white"] .md-button--primary:hover,
+[data-md-color-primary="custom"] .md-button--primary:hover {
+  background-color: #E6BB00;
+  border-color: #E6BB00;
+  color: #111827;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  border-color: var(--etendo-border);
+  color: var(--etendo-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover {
+  background-color: var(--etendo-bg-surface);
+  color: var(--etendo-text);
 }
 
 /* ════════════════════════════════════════
