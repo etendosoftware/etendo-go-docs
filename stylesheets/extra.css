@@ -1,0 +1,345 @@
+/* ── Etendo Go — estilos ── */
+
+/* ════════════════════════════════════════
+   VARIABLES
+════════════════════════════════════════ */
+
+:root,
+[data-md-color-scheme="default"] {
+  /* Colores de marca */
+  --etendo-yellow: #FFD000;
+  --etendo-yellow-subtle: rgba(255, 208, 0, 0.12);
+
+  /* Contenido */
+  --etendo-text: #111827;
+  --etendo-text-muted: #6B7280;
+  --etendo-border: #E5E7EB;
+  --etendo-bg-content: #FFFFFF;
+  --etendo-bg-page: #F3F4F6;
+  --etendo-bg-surface: #F9FAFB;
+  --etendo-bg-search: rgba(255,255,255,0.12);
+  --etendo-link: #2563EB;
+  --etendo-link-hover: #1D4ED8;
+
+  /* Sidebar gris claro como el producto */
+  --etendo-sidebar-bg: #F3F4F6;
+  --etendo-sidebar-text: #374151;
+  --etendo-sidebar-muted: #9CA3AF;
+  --etendo-sidebar-hover: rgba(0,0,0,0.05);
+  --etendo-sidebar-border: rgba(0,0,0,0.06);
+  --etendo-sidebar-scrollbar: #D1D5DB;
+
+  --md-accent-fg-color: var(--etendo-yellow);
+  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
+  --md-accent-bg-color: var(--etendo-text);
+}
+
+[data-md-color-scheme="slate"] {
+  --etendo-yellow: #FFD000;
+  --etendo-yellow-subtle: rgba(255, 208, 0, 0.10);
+
+  --etendo-text: #F1F5F9;
+  --etendo-text-muted: #94A3B8;
+  --etendo-border: #2D3748;
+  --etendo-bg-content: #161B22;
+  --etendo-bg-page: #0D1117;
+  --etendo-bg-surface: #1A1F2E;
+  --etendo-bg-search: rgba(255,255,255,0.08);
+  --etendo-link: #60A5FA;
+  --etendo-link-hover: #93C5FD;
+
+  /* Sidebar modo oscuro */
+  --etendo-sidebar-bg: #1A1F2E;
+  --etendo-sidebar-text: #CBD5E1;
+  --etendo-sidebar-muted: #64748B;
+  --etendo-sidebar-hover: rgba(255,255,255,0.05);
+  --etendo-sidebar-border: rgba(255,255,255,0.06);
+  --etendo-sidebar-scrollbar: rgba(255,255,255,0.12);
+
+  --md-primary-fg-color: #1A1F2E;
+  --md-primary-bg-color: #F1F5F9;
+  --md-accent-fg-color: var(--etendo-yellow);
+  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
+  --md-accent-bg-color: #0D1117;
+
+  --md-default-bg-color: var(--etendo-bg-content);
+  --md-default-fg-color: var(--etendo-text);
+  --md-default-fg-color--light: var(--etendo-text-muted);
+  --md-default-fg-color--lighter: var(--etendo-text-muted);
+  --md-default-fg-color--lightest: var(--etendo-text-muted);
+  --md-code-bg-color: #1E2433;
+  --md-code-fg-color: #E2E8F0;
+  --md-footer-bg-color: #0D1117;
+  --md-footer-fg-color: var(--etendo-text-muted);
+}
+
+/* ════════════════════════════════════════
+   LAYOUT — fondo gris exterior, contenido blanco
+════════════════════════════════════════ */
+
+body {
+  background-color: var(--etendo-bg-page);
+}
+
+.md-main {
+  background-color: var(--etendo-bg-page);
+}
+
+.md-content {
+  background-color: var(--etendo-bg-content);
+}
+
+.md-content__inner {
+  background-color: var(--etendo-bg-content);
+  padding: 1.5rem 2rem 2rem;
+}
+
+/* Sidebar secundario (TOC) fondo gris como el exterior */
+.md-sidebar--secondary,
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  background-color: var(--etendo-bg-page);
+}
+
+/* ════════════════════════════════════════
+   HEADER
+════════════════════════════════════════ */
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--etendo-border);
+  background-color: var(--etendo-bg-content) !important;
+  color: var(--etendo-text);
+}
+
+.md-header__title {
+  color: var(--etendo-text);
+}
+
+/* Botones del header */
+[data-md-color-scheme="default"] .md-header__button {
+  color: var(--etendo-text-muted);
+}
+
+/* ════════════════════════════════════════
+   SIDEBAR IZQUIERDO — oscuro como el producto
+════════════════════════════════════════ */
+
+.md-sidebar--primary,
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  background-color: var(--etendo-sidebar-bg);
+}
+
+/* Título principal "ETENDO GO" */
+.md-sidebar--primary .md-nav__title {
+  color: var(--etendo-sidebar-muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: var(--etendo-sidebar-bg);
+  border-bottom: none;
+  box-shadow: none;
+}
+
+/* Secciones (labels no navegables) */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+  color: var(--etendo-sidebar-muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: default;
+  pointer-events: none;
+  background: none !important;
+  border: none !important;
+  padding-left: 0.75rem !important;
+  margin-top: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+/* Links de página */
+.md-sidebar--primary .md-nav__link {
+  color: var(--etendo-sidebar-text);
+  border-radius: 0;
+  transition: background 0.12s, color 0.12s;
+  padding: 0.38rem 0.75rem;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+  color: #FFFFFF;
+  background-color: var(--etendo-sidebar-hover);
+}
+
+/* Item activo: fondo amarillo, texto oscuro, sin radio */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active,
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section).md-nav__item--active > .md-nav__link {
+  color: #111827 !important;
+  font-weight: 600;
+  background-color: var(--etendo-yellow) !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+/* Sin líneas conectoras — el producto no las muestra */
+.md-sidebar--primary .md-nav--primary .md-nav__item--section .md-nav {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Scrollbar del sidebar */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--etendo-sidebar-scrollbar) transparent;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: var(--etendo-sidebar-scrollbar);
+  border-radius: 2px;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ════════════════════════════════════════
+   BÚSQUEDA
+════════════════════════════════════════ */
+
+.md-search__form {
+  border-radius: 6px;
+  background-color: var(--etendo-bg-search);
+  border: 1px solid var(--etendo-sidebar-border);
+  color: var(--etendo-sidebar-text);
+}
+
+.md-search__input {
+  color: var(--etendo-sidebar-text);
+}
+
+.md-search__input::placeholder {
+  color: var(--etendo-sidebar-muted);
+}
+
+/* Resultados de búsqueda */
+.md-search-result {
+  background-color: var(--etendo-bg-content);
+}
+
+/* ════════════════════════════════════════
+   TOC DERECHO
+════════════════════════════════════════ */
+
+.md-sidebar--secondary .md-nav__link {
+  color: var(--etendo-text-muted);
+  font-size: 0.75rem;
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+  color: var(--etendo-text);
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: var(--etendo-text) !important;
+  border-left: 2px solid var(--etendo-yellow);
+  padding-left: calc(0.6rem - 2px);
+  background-color: transparent !important;
+  font-weight: 500;
+}
+
+/* ════════════════════════════════════════
+   BREADCRUMB (navigation.path)
+════════════════════════════════════════ */
+
+.md-path {
+  color: var(--etendo-text-muted);
+  font-size: 0.72rem;
+}
+
+.md-path__item::after {
+  color: var(--etendo-border);
+}
+
+/* ════════════════════════════════════════
+   TIPOGRAFÍA
+════════════════════════════════════════ */
+
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--etendo-text);
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--etendo-text);
+}
+
+.md-typeset a {
+  color: var(--etendo-link);
+}
+
+.md-typeset a:hover {
+  color: var(--etendo-link-hover);
+}
+
+/* ════════════════════════════════════════
+   LOGO
+════════════════════════════════════════ */
+
+.md-header__button.md-logo img {
+  height: 1.8rem;
+  width: auto;
+}
+
+/* ════════════════════════════════════════
+   CÓDIGO
+════════════════════════════════════════ */
+
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: #1E2433;
+  color: #E2E8F0;
+}
+
+/* ════════════════════════════════════════
+   ADMONITIONS (modo oscuro)
+════════════════════════════════════════ */
+
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  background-color: var(--etendo-bg-surface);
+  border-color: var(--etendo-border);
+}
+
+/* ════════════════════════════════════════
+   TABLAS (modo oscuro)
+════════════════════════════════════════ */
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: var(--etendo-bg-surface);
+  color: var(--etendo-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: var(--etendo-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background-color: var(--etendo-bg-surface);
+}
+
+/* ════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════ */
+
+.md-footer {
+  background-color: var(--etendo-sidebar-bg);
+}
