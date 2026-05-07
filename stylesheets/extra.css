@@ -342,4 +342,9 @@ body {
 
 .md-footer {
   background-color: var(--etendo-sidebar-bg);
+  color: var(--etendo-sidebar-text);
+}
+
+[data-md-color-scheme="default"] .md-footer {
+  color: var(--etendo-text-muted);
 }
