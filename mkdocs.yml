@@ -2,6 +2,7 @@ site_name: Etendo Go
 docs_dir: docs
 theme:
   name: material
+  custom_dir: overrides
   language: es
   logo: assets/logo.png
   favicon: assets/favicon.png
@@ -23,7 +24,6 @@ theme:
         name: Cambiar a modo claro
   features:
     - navigation.instant
-    - navigation.instant.preview
     - navigation.path
     - navigation.sections
     - navigation.top
@@ -37,6 +37,7 @@ extra_css:
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - javascripts/home.js
 
 plugins:
   - search:
