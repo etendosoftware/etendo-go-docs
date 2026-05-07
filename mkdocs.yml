@@ -43,6 +43,7 @@ plugins:
   - search:
       lang: es
   - glightbox
+  - tags
 
 markdown_extensions:
   - abbr
