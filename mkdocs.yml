@@ -1,11 +1,16 @@
 site_name: Etendo Go
 docs_dir: docs
+site_url: https://etendosoftware.github.io/etendo-go-docs/
+repo_url: https://github.com/etendosoftware/etendo-go-docs
+repo_name: etendosoftware/etendo-go-docs
 theme:
   name: material
   custom_dir: overrides
   language: es
   logo: assets/logo.png
   favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
   font:
     text: Inter
     code: JetBrains Mono
@@ -44,6 +49,37 @@ plugins:
       lang: es
   - glightbox
   - tags
+  - git-committers:
+      repository: etendosoftware/etendo-go-docs
+      branch: main
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - social
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/etendosoftware
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/etendo-software/
+      name: LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/etendo.software/
+      name: Instagram
+  consent:
+    title: Valoramos tu privacidad
+    description: >-
+      Utilizamos cookies y otras tecnologías de seguimiento para mejorar tu experiencia de navegación,
+      mostrarte contenido personalizado, analizar el tráfico del sitio y entender de dónde provienen
+      nuestros visitantes. Al hacer clic en "Aceptar", aceptás el uso de cookies.
+      <a href="https://etendo.software/en/cookie-policy-2/" target="_blank">Política de cookies</a>
+    actions:
+      - accept
+      - manage
+
+copyright: Copyright &copy; 2021 - 2026 Futit Services S.L.
 
 markdown_extensions:
   - abbr
