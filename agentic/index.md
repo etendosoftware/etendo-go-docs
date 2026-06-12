@@ -16,6 +16,11 @@ These guides provide structured, unambiguous information about Etendo Go integra
 | Section | Description |
 |---------|-------------|
 | [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server to expose ERP data and operations to AI agents |
+| [Ventas](./ventas/index.md) | Automate sales order creation, confirmation, and invoice listing via AI agents |
+| [Compras](./compras/index.md) | Manage purchase orders with agents: vendor selection, order creation, and confirmation |
+| [Inventario](./inventario/index.md) | Query the product catalogue and check stock levels across warehouses |
+| [Finanzas](./finanzas/index.md) | Access invoices and bank reconciliation statements for treasury workflows |
+| [Contactos](./contactos/index.md) | Search, retrieve, and create customer and vendor records |
 
 ## How to read these guides
 
