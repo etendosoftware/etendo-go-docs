@@ -15,6 +15,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 
 | Section | Description |
 |---------|-------------|
+| [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, invoke tools, read schemas, interpret responses, and react to every error code end-to-end |
 | [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server to expose ERP data and operations to AI agents |
 
 ## How to read these guides
