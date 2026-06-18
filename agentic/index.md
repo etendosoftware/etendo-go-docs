@@ -17,6 +17,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 |---------|-------------|
 | [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, discover specs, read schemas, resolve selectors, chain tool calls, and react to failures end-to-end |
 | [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server: prerequisites, the `spec + entity` model, the generic `etendo_neo_*` tools, the `etendo_generate_*` report tools, and the single `etendo://status` resource |
+| [Contacts](./contacts/index.md) | Operate on the `contacts` spec: the 17 entities exposed by the Business Partner window, the four semantic views over `C_BPartner` (`businessPartner`, `customer`, `vendorCreditor`, `employee`), how to resolve FKs through `etendo_neo_selectors`, and verified examples for creating customers, vendors, individual persons, locations and contacts |
 
 ## How to read these guides
 
