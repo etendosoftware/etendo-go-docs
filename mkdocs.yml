@@ -63,10 +63,11 @@ plugins:
             - Dashboard: dashboard/index.md
             - Comercial:
                 - Contactos: comercial/contactos/contactos.md
-            - Ventas:
-                - ventas/index.md
-                - Pedidos de venta: ventas/pedidos-de-venta.md
-                - Facturas de venta: ventas/facturas-de-venta.md
+                - Ventas:
+                    - comercial/ventas/index.md
+                    - Presupuesto de venta: comercial/ventas/presupuesto.md
+                    - Pedidos de venta: comercial/ventas/pedidos-de-venta.md
+                    - Facturas de venta: comercial/ventas/facturas-de-venta.md
             - Compras:
                 - compras/index.md
                 - Pedidos de compra: compras/pedidos-de-compra.md
