@@ -17,6 +17,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 |---------|-------------|
 | [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, discover specs, read schemas, resolve selectors, chain tool calls, and react to failures end-to-end |
 | [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server: prerequisites, the `spec + entity` model, the generic `etendo_neo_*` tools, the `etendo_generate_*` report tools, and the single `etendo://status` resource |
+| [Purchases (Compras)](./compras/index.md) | Operate the purchase-to-pay cycle (`purchase-order`, `goods-receipt`, `purchase-invoice`, `return-to-vendor`, `return-material-receipt`) end-to-end via MCP, including button actions and `etendo_neo_batch` flows |
 
 ## How to read these guides
 
