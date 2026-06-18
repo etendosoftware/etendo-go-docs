@@ -15,14 +15,15 @@ These guides provide structured, unambiguous information about Etendo Go integra
 
 | Section | Description |
 |---------|-------------|
-| [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server to expose ERP data and operations to AI agents |
+| [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, discover specs, read schemas, resolve selectors, chain tool calls, and react to failures end-to-end |
+| [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server: prerequisites, the `spec + entity` model, the generic `etendo_neo_*` tools, the `etendo_generate_*` report tools, and the single `etendo://status` resource |
 
 ## How to read these guides
 
 1. Open the topic index listed above for the integration or feature you need.
 2. Read the **Prerequisites** section first and satisfy every requirement before proceeding.
 3. Follow **Configuration** steps in order — each step depends on the previous one.
-4. Use the **Available capabilities** table as a reference while building agent logic.
+4. Use the **Available tools** and **Specs available** tables as a reference while building agent logic; never hard-code spec or entity names — call `etendo_neo_discover` at runtime to obtain the authoritative list for the current user.
 5. Run the **End-to-end usage example** to verify your setup works before writing custom workflows.
 
 ## Conventions used across all guides
