@@ -10,7 +10,7 @@ tags:
 **Etendo Go** es la versión SaaS de Etendo ERP, diseñada para empresas que necesitan una solución de gestión empresarial ágil, accesible desde cualquier lugar y sin infraestructura propia.
 
 <figure markdown>
-  ![Dashboard de Etendo Go](../assets/dashboard_home_Etendo.png)
+  ![Dashboard de Etendo Go](../../assets/dashboard_home_Etendo.png)
   <figcaption>Vista principal del dashboard de Etendo Go — resumen de tareas pendientes, movimientos financieros y accesos rápidos.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 - [x] Una cuenta activa en Etendo Go
 - [x] Acceso a internet desde un navegador moderno
-- [ ] Datos de empresa configurados *(ver [Configuración inicial](primeros-pasos/configuracion-inicial.md))*
+- [ ] Datos de empresa configurados *(ver [Configuración inicial](configuracion-inicial.md))*
 - [ ] Usuarios y roles asignados
 
 ---
@@ -166,7 +166,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Ponete en marcha en minutos con la guía de configuración inicial.
 
-    [:octicons-arrow-right-24: Primeros pasos](primeros-pasos/configuracion-inicial.md)
+    [:octicons-arrow-right-24: Primeros pasos](configuracion-inicial.md)
 
 -   :material-currency-usd:{ .lg .middle } **Gestión financiera**
 
@@ -174,7 +174,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Conciliá cuentas bancarias y generá informes con un clic.
 
-    [:octicons-arrow-right-24: Finanzas](finanzas/index.md)
+    [:octicons-arrow-right-24: Finanzas](../finanzas/index.md)
 
 -   :material-truck-delivery:{ .lg .middle } **Ventas y compras**
 
@@ -182,7 +182,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Controlá pedidos, facturas y albaranes desde un solo lugar.
 
-    [:octicons-arrow-right-24: Ventas](ventas/index.md)
+    [:octicons-arrow-right-24: Ventas](../ventas/index.md)
 
 -   :material-warehouse:{ .lg .middle } **Inventario**
 
@@ -190,7 +190,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Gestioná almacenes, movimientos de stock y valoración.
 
-    [:octicons-arrow-right-24: Inventario](inventario/index.md)
+    [:octicons-arrow-right-24: Inventario](../inventario/index.md)
 
 </div>
 
@@ -198,8 +198,8 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
 ## Botones
 
-[Comenzar ahora](primeros-pasos/configuracion-inicial.md){ .md-button .md-button--primary }
-[Ver primeros pasos](primeros-pasos/que-es-etendo-go.md){ .md-button }
+[Comenzar ahora](configuracion-inicial.md){ .md-button .md-button--primary }
+[Ver primeros pasos](que-es-etendo-go.md){ .md-button }
 
 ---
 
@@ -224,7 +224,7 @@ Etendo Go incluye ==resaltado de texto== para marcar información clave. Tambié
 
 ## Tooltips
 
-Etendo Go cumple con el [RGPD](## "Reglamento General de Protección de Datos") y usa cifrado [TLS](## "Transport Layer Security") en todas las comunicaciones. Las abreviaciones también se pueden definir globalmente: al escribir SaaS o ERP en cualquier parte del documento, el tooltip aparece automáticamente.
+Etendo Go cumple con el RGPD y usa cifrado TLS en todas las comunicaciones. Las abreviaciones también se pueden definir globalmente: al escribir SaaS o ERP en cualquier parte del documento, el tooltip aparece automáticamente.
 
 *[RGPD]: Reglamento General de Protección de Datos
 *[TLS]: Transport Layer Security

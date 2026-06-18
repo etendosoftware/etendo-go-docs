@@ -6,7 +6,6 @@ repo_name: etendosoftware/etendo-go-docs
 theme:
   name: material
   custom_dir: overrides
-  language: es
   logo: assets/logo.png
   favicon: assets/favicon.png
   icon:
@@ -47,6 +46,48 @@ extra_javascript:
 plugins:
   - search:
       lang: es
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: es
+          default: true
+          name: Español
+          build: true
+          nav:
+            - Inicio: index.md
+            - Primeros pasos:
+                - primeros-pasos/index.md
+                - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
+                - Cómo acceder: primeros-pasos/como-acceder.md
+                - Configuración inicial: primeros-pasos/configuracion-inicial.md
+            - Dashboard: dashboard/index.md
+            - Comercial:
+                - Contactos: comercial/contactos/contactos.md
+            - Ventas:
+                - ventas/index.md
+                - Pedidos de venta: ventas/pedidos-de-venta.md
+                - Facturas de venta: ventas/facturas-de-venta.md
+            - Compras:
+                - compras/index.md
+                - Pedidos de compra: compras/pedidos-de-compra.md
+                - Facturas de compra: compras/facturas-de-compra.md
+            - Finanzas:
+                - finanzas/index.md
+                - Tesorería: finanzas/tesoreria.md
+                - Conciliación bancaria: finanzas/conciliacion-bancaria.md
+            - Inventario:
+                - inventario/index.md
+                - Productos: inventario/productos.md
+                - Almacenes: inventario/almacenes.md
+            - Configuración:
+                - configuracion/index.md
+                - Datos de empresa: configuracion/datos-de-empresa.md
+                - Usuarios y permisos: configuracion/usuarios-y-permisos.md
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: index.md
   - glightbox
   - tags
   - git-committers:
@@ -54,6 +95,7 @@ plugins:
       branch: main
   - git-revision-date-localized:
       enable_creation_date: true
+      enable_git_follow: false
       type: date
   - social
 
@@ -113,35 +155,3 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-nav:
-  - Inicio: index.md
-  - Primeros pasos:
-      - primeros-pasos/index.md
-      - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
-      - Cómo acceder: primeros-pasos/como-acceder.md
-      - Configuración inicial: primeros-pasos/configuracion-inicial.md
-  - Dashboard: dashboard/index.md
-  - Contactos:
-      - contactos/index.md
-      - Clientes: contactos/clientes.md
-      - Proveedores: contactos/proveedores.md
-  - Ventas:
-      - ventas/index.md
-      - Pedidos de venta: ventas/pedidos-de-venta.md
-      - Facturas de venta: ventas/facturas-de-venta.md
-  - Compras:
-      - compras/index.md
-      - Pedidos de compra: compras/pedidos-de-compra.md
-      - Facturas de compra: compras/facturas-de-compra.md
-  - Finanzas:
-      - finanzas/index.md
-      - Tesorería: finanzas/tesoreria.md
-      - Conciliación bancaria: finanzas/conciliacion-bancaria.md
-  - Inventario:
-      - inventario/index.md
-      - Productos: inventario/productos.md
-      - Almacenes: inventario/almacenes.md
-  - Configuración:
-      - configuracion/index.md
-      - Datos de empresa: configuracion/datos-de-empresa.md
-      - Usuarios y permisos: configuracion/usuarios-y-permisos.md
