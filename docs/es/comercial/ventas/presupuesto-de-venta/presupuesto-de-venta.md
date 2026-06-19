@@ -9,7 +9,7 @@ tags:
 
 # Presupuesto de venta
 
-El **presupuesto de venta** es un documento opcional del ciclo comercial. Representa una oferta enviada al cliente con el detalle de productos, precios, descuentos y condiciones de pago. Una vez confirmado, da lugar a un [pedido de venta](../pedidos-de-venta/pedidos-de-venta.md) o a una [factura de venta](../facturas-de-venta.md) directa sin necesidad de reintroducir datos. El pedido de venta es la opción habitual cuando se comercializan productos con stock o que requieren entrega física; la factura directa se usa para servicios o ventas sin entrega.
+El **presupuesto de venta** es un documento opcional del ciclo comercial. Representa una oferta enviada al cliente con el detalle de productos, precios, descuentos y condiciones de pago. Una vez confirmado, da lugar a un [pedido de venta](../pedidos-de-venta/pedidos-de-venta.md) o a una [factura de venta](../facturas-de-venta/facturas-de-venta.md) directa sin necesidad de reintroducir datos. El pedido de venta es la opción habitual cuando se comercializan productos con stock o que requieren entrega física; la factura directa se usa para servicios o ventas sin entrega.
 
 ```mermaid
 flowchart LR
@@ -159,7 +159,7 @@ Al hacer clic en **Confirmar** desde el estado *Bajo evaluación*, el sistema mu
 ## Artículos Relacionados
 
 - [Pedido de venta](../pedidos-de-venta/pedidos-de-venta.md)
-- [Factura de venta](../facturas-de-venta.md)
+- [Factura de venta](../facturas-de-venta/facturas-de-venta.md)
 - [Contactos](../../contactos/contactos.md)
 
 ---
