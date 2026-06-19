@@ -1,1 +1,1 @@
-# Facturas de venta
+# Factura de venta

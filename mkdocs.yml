@@ -28,6 +28,7 @@ theme:
         name: Cambiar a modo claro
   features:
     - navigation.instant
+    - navigation.indexes
     - navigation.path
     - navigation.sections
     - navigation.top
@@ -65,9 +66,9 @@ plugins:
                 - Contactos: comercial/contactos/contactos.md
                 - Ventas:
                     - comercial/ventas/index.md
-                    - Presupuesto de venta: comercial/ventas/presupuesto.md
-                    - Pedidos de venta: comercial/ventas/pedidos-de-venta.md
-                    - Facturas de venta: comercial/ventas/facturas-de-venta.md
+                    - Presupuesto de venta: comercial/ventas/presupuesto/presupuesto.md
+                    - Pedido de venta: comercial/ventas/pedidos-de-venta.md
+                    - Factura de venta: comercial/ventas/facturas-de-venta.md
             - Compras:
                 - compras/index.md
                 - Pedidos de compra: compras/pedidos-de-compra.md
