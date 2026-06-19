@@ -67,7 +67,7 @@ plugins:
                 - Ventas:
                     - comercial/ventas/index.md
                     - Presupuesto de venta: comercial/ventas/presupuesto/presupuesto.md
-                    - Pedido de venta: comercial/ventas/pedidos-de-venta.md
+                    - Pedido de venta: comercial/ventas/pedidos-de-venta/pedidos-de-venta.md
                     - Factura de venta: comercial/ventas/facturas-de-venta.md
             - Compras:
                 - compras/index.md

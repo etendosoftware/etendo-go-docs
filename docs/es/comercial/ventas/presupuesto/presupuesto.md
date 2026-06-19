@@ -1,15 +1,15 @@
 ---
 tags:
-  - Sales Quotation
-  - Sales
-  - Commercial
-  - Document Management
+  - Presupuesto de Venta
+  - Ventas
+  - Comercial
+  - Gestión Documental
   - Etendo Go
 ---
 
 # Presupuesto de venta
 
-El **presupuesto de venta** es un documento opcional del ciclo comercial. Representa una oferta enviada al cliente con el detalle de productos, precios, descuentos y condiciones de pago. Una vez confirmado, da lugar a un Pedido de venta o a una Factura directa sin necesidad de reintroducir datos. El Pedido de venta es la opción habitual cuando se comercializan productos con stock o que requieren entrega física; la Factura directa se usa para servicios o ventas sin entrega.
+El **presupuesto de venta** es un documento opcional del ciclo comercial. Representa una oferta enviada al cliente con el detalle de productos, precios, descuentos y condiciones de pago. Una vez confirmado, da lugar a un [pedido de venta](../pedidos-de-venta/pedidos-de-venta.md) o a una [factura de venta](../facturas-de-venta.md) directa sin necesidad de reintroducir datos. El pedido de venta es la opción habitual cuando se comercializan productos con stock o que requieren entrega física; la factura directa se usa para servicios o ventas sin entrega.
 
 ```mermaid
 flowchart LR
@@ -158,9 +158,9 @@ Al hacer clic en **Confirmar** desde el estado *Bajo evaluación*, el sistema mu
 
 ## Artículos Relacionados
 
-[:material-file-document-outline: Pedido de venta](../pedidos-de-venta.md){ .md-button .md-button--primary }
-[:material-file-document-outline: Factura de venta](../facturas-de-venta.md){ .md-button .md-button--primary }
-[:material-file-document-outline: Contactos](../../contactos/contactos.md){ .md-button .md-button--primary }
+- [Pedido de venta](../pedidos-de-venta/pedidos-de-venta.md)
+- [Factura de venta](../facturas-de-venta.md)
+- [Contactos](../../contactos/contactos.md)
 
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
