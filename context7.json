@@ -5,5 +5,7 @@
   "folders": ["agentic"],
   "excludeFolders": ["docs", "overrides", ".github"],
   "excludeFiles": [],
-  "rules": []
+  "rules": [],
+  "url": "https://context7.com/etendosoftware/etendo-go-docs",
+  "public_key": "pk_6a0dFkRW2nebVDnBlzH72"
 }
