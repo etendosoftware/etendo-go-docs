@@ -95,8 +95,8 @@ El panel derecho muestra, en tiempo real, los ingresos y gastos del mes asociado
 
 ## Artículos Relacionados
 
-- [:material-file-document-outline: Ventas](../../ventas/index.md)
-- [:material-file-document-outline: Pedidos de venta](../../ventas/pedidos-de-venta.md)
+- [:material-file-document-outline: Ventas](../ventas/index.md)
+- [:material-file-document-outline: Pedidos de venta](../ventas/pedidos-de-venta/pedidos-de-venta.md)
 - [:material-file-document-outline: Compras](../../compras/index.md)
 - [:material-file-document-outline: Pedidos de compra](../../compras/pedidos-de-compra.md)
 
