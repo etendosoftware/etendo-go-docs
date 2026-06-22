@@ -2,310 +2,324 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/comercial/contactos/contactos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/contactos/contactos/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/contactos/contactos/"/>
     </url>
     <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/facturas-de-venta/facturas-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/facturas-de-venta/facturas-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/facturas-de-venta/facturas-de-venta/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/pedidos-de-venta/pedidos-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/pedidos-de-venta/pedidos-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/pedidos-de-venta/pedidos-de-venta/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/"/>
+    </url>
+    <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/compras/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/compras/facturas-de-compra/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/facturas-de-compra/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/facturas-de-compra/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/compras/pedidos-de-compra/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/pedidos-de-compra/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/pedidos-de-compra/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/configuracion/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/configuracion/datos-de-empresa/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/datos-de-empresa/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/datos-de-empresa/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/configuracion/usuarios-y-permisos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/usuarios-y-permisos/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/usuarios-y-permisos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/dashboard/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/dashboard/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/dashboard/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/finanzas/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/finanzas/conciliacion-bancaria/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/conciliacion-bancaria/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/conciliacion-bancaria/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/finanzas/tesoreria/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/tesoreria/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/tesoreria/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/inventario/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/inventario/almacenes/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/almacenes/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/almacenes/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/inventario/productos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/productos/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/productos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/como-acceder/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/como-acceder/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/como-acceder/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/configuracion-inicial/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/configuracion-inicial/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/configuracion-inicial/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/que-es-etendo-go/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/que-es-etendo-go/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/que-es-etendo-go/"/>
     </url>
     <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/ventas/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/"/>
-    </url>
-    <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/ventas/facturas-de-venta/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/facturas-de-venta/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/facturas-de-venta/"/>
-    </url>
-    <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/ventas/pedidos-de-venta/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/pedidos-de-venta/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/pedidos-de-venta/"/>
-    </url>
-    <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/comercial/contactos/contactos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/contactos/contactos/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/contactos/contactos/"/>
     </url>
     <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/facturas-de-venta/facturas-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/facturas-de-venta/facturas-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/facturas-de-venta/facturas-de-venta/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/pedidos-de-venta/pedidos-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/pedidos-de-venta/pedidos-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/pedidos-de-venta/pedidos-de-venta/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/</loc>
+        <lastmod>2026-06-22</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/"/>
+    </url>
+    <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/compras/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/compras/facturas-de-compra/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/facturas-de-compra/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/facturas-de-compra/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/compras/pedidos-de-compra/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/compras/pedidos-de-compra/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/compras/pedidos-de-compra/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/configuracion/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/configuracion/datos-de-empresa/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/datos-de-empresa/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/datos-de-empresa/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/configuracion/usuarios-y-permisos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/configuracion/usuarios-y-permisos/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/configuracion/usuarios-y-permisos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/dashboard/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/dashboard/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/dashboard/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/finanzas/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/finanzas/conciliacion-bancaria/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/conciliacion-bancaria/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/conciliacion-bancaria/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/finanzas/tesoreria/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/finanzas/tesoreria/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/finanzas/tesoreria/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/inventario/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/inventario/almacenes/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/almacenes/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/almacenes/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/inventario/productos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/inventario/productos/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/inventario/productos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/como-acceder/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/como-acceder/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/como-acceder/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/configuracion-inicial/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/configuracion-inicial/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/configuracion-inicial/"/>
     </url>
     <url>
         <loc>https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/que-es-etendo-go/</loc>
-        <lastmod>2026-06-19</lastmod>
+        <lastmod>2026-06-22</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/primeros-pasos/que-es-etendo-go/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/primeros-pasos/que-es-etendo-go/"/>
-    </url>
-    <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/en/ventas/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/"/>
-    </url>
-    <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/en/ventas/facturas-de-venta/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/facturas-de-venta/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/facturas-de-venta/"/>
-    </url>
-    <url>
-        <loc>https://etendosoftware.github.io/etendo-go-docs/en/ventas/pedidos-de-venta/</loc>
-        <lastmod>2026-06-19</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://etendosoftware.github.io/etendo-go-docs/en/ventas/pedidos-de-venta/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/ventas/pedidos-de-venta/"/>
     </url>
 </urlset>
