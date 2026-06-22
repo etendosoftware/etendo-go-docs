@@ -9,7 +9,7 @@ tags:
 
 # Pedido de venta
 
-El **pedido de venta** es el documento que formaliza el compromiso de entrega con el cliente. Puede crearse directamente o generarse a partir de un [presupuesto de venta](../presupuesto/presupuesto.md) aceptado. Una vez confirmado, el pedido queda bloqueado y da lugar opcionalmente a un albarán (documento de entrega) y a una [factura de venta](../facturas-de-venta/facturas-de-venta.md).
+El **pedido de venta** es el documento que formaliza el compromiso de entrega con el cliente. Puede crearse directamente o generarse a partir de un [presupuesto de venta](../presupuesto-de-venta/presupuesto-de-venta.md) aceptado. Una vez confirmado, el pedido queda bloqueado y da lugar opcionalmente a un albarán (documento de entrega) y a una [factura de venta](../facturas-de-venta/facturas-de-venta.md).
 
 ```mermaid
 flowchart LR
@@ -165,7 +165,7 @@ Puedes marcar uno, ambos o ninguno. Si no marcas ninguno, el pedido queda Comple
 
 ## Artículos Relacionados
 
-- [Presupuesto de venta](../presupuesto/presupuesto.md)
+- [Presupuesto de venta](../presupuesto-de-venta/presupuesto-de-venta.md)
 - [Factura de venta](../facturas-de-venta/facturas-de-venta.md)
 - [Contactos](../../contactos/contactos.md)
 

@@ -9,7 +9,7 @@ tags:
 
 # Factura de venta
 
-La **factura de venta** es el documento fiscal que formaliza el cobro al cliente. Puede crearse directamente, generarse desde un [presupuesto de venta](../presupuesto/presupuesto.md) aceptado o desde un [pedido de venta](../pedidos-de-venta/pedidos-de-venta.md) confirmado. Una vez confirmada, queda bloqueada y registra el importe pendiente de cobro.
+La **factura de venta** es el documento fiscal que formaliza el cobro al cliente. Puede crearse directamente, generarse desde un [presupuesto de venta](../presupuesto-de-venta/presupuesto-de-venta.md) aceptado o desde un [pedido de venta](../pedidos-de-venta/pedidos-de-venta.md) confirmado. Una vez confirmada, queda bloqueada y registra el importe pendiente de cobro.
 
 ```mermaid
 flowchart LR
@@ -152,7 +152,7 @@ El botón **Añadir pago** —disponible tanto en la vista detalle como en la ba
 
 ## Artículos Relacionados
 
-- [Presupuesto de venta](../presupuesto/presupuesto.md)
+- [Presupuesto de venta](../presupuesto-de-venta/presupuesto-de-venta.md)
 - [Pedido de venta](../pedidos-de-venta/pedidos-de-venta.md)
 - [Contactos](../../contactos/contactos.md)
 
