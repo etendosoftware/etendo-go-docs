@@ -1,0 +1,11 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Etendo Go Agentic Documentation",
+  "description": "Agentic documentation for Etendo Go, covering AI agent capabilities and integrations",
+  "folders": ["agentic"],
+  "excludeFolders": ["docs", "overrides", ".github"],
+  "excludeFiles": [],
+  "rules": [],
+  "url": "https://context7.com/etendosoftware/etendo-go-docs",
+  "public_key": "pk_6a0dFkRW2nebVDnBlzH72"
+}

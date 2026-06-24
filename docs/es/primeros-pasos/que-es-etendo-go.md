@@ -182,7 +182,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Controlá pedidos, facturas y albaranes desde un solo lugar.
 
-    [:octicons-arrow-right-24: Ventas](../ventas/index.md)
+    [:octicons-arrow-right-24: Ventas](../comercial/ventas/index.md)
 
 -   :material-warehouse:{ .lg .middle } **Inventario**
 
