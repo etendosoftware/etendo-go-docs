@@ -57,34 +57,28 @@ plugins:
           nav:
             - Inicio: index.md
             - Primeros pasos:
-                - primeros-pasos/index.md
                 - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
-                - Cómo acceder: primeros-pasos/como-acceder.md
-                - Configuración inicial: primeros-pasos/configuracion-inicial.md
             - Dashboard: dashboard/index.md
             - Comercial:
                 - Contactos: comercial/contactos/contactos.md
                 - Ventas:
                     - comercial/ventas/index.md
                     - Presupuesto de venta: comercial/ventas/presupuesto-de-venta/presupuesto-de-venta.md
-                    - Pedido de venta: comercial/ventas/pedidos-de-venta/pedidos-de-venta.md
-                    - Factura de venta: comercial/ventas/facturas-de-venta/facturas-de-venta.md
-            - Compras:
-                - compras/index.md
-                - Pedidos de compra: compras/pedidos-de-compra.md
-                - Facturas de compra: compras/facturas-de-compra.md
+                    - Pedido de venta: comercial/ventas/pedido-de-venta/pedido-de-venta.md
+                    - Factura de venta: comercial/ventas/factura-de-venta/factura-de-venta.md
+            - Operaciones:
+                - Compras:
+                    - operaciones/compras/index.md
+                    - Pedido de compra: operaciones/compras/pedido-de-compra/pedido-de-compra.md
+                    - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
             - Finanzas:
                 - finanzas/index.md
-                - Tesorería: finanzas/tesoreria.md
-                - Conciliación bancaria: finanzas/conciliacion-bancaria.md
             - Inventario:
                 - inventario/index.md
                 - Productos: inventario/productos.md
                 - Almacenes: inventario/almacenes.md
             - Configuración:
                 - configuracion/index.md
-                - Datos de empresa: configuracion/datos-de-empresa.md
-                - Usuarios y permisos: configuracion/usuarios-y-permisos.md
         - locale: en
           name: English
           build: true
