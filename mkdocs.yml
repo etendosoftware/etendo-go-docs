@@ -74,7 +74,7 @@ plugins:
             - Finanzas:
                 - finanzas/index.md
                 - Activos: finanzas/activos/activos.md
-                - Apuntar un Activo: finanzas/apuntar-un-activo.md
+                - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
                 - Amortización: finanzas/amortizacion/amortizacion.md
             - Inventario:
                 - inventario/index.md

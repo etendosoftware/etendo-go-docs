@@ -28,7 +28,7 @@ El flujo completo desde el alta hasta la depreciación total sigue estos pasos:
 2. **Configurar la depreciación** — activa el switch **Depreciar**, elige el Tipo de cálculo y completa los campos correspondientes.
 3. **Generar el plan** — pulsa **Crear amortización**. El sistema genera las líneas del plan en la pestaña **Plan de amortización**, una por período, con su porcentaje e importe.
 4. **Ejecutar la depreciación del período** — ve a [Amortización](../amortizacion/amortizacion.md), o navega desde el mismo periodo y confírmalo. Confirmar ejecuta los asientos contables de forma definitiva; esta acción no se puede deshacer.
-5. **Seguimiento** — las líneas del plan que ya fueron ejecutadas pasan a estado **Confirmado** y se pueden navegar directamente desde el plan del activo hasta el registro de Amortización correspondiente. En la vista de lista podras ver el progreso de la amotizacion y los bienes 100% amortizados.
+5. **Seguimiento** — las líneas del plan que ya fueron ejecutadas pasan a estado **Confirmado** y se pueden navegar directamente desde el plan del activo hasta el registro de Amortización correspondiente. En la vista de lista podrás ver el progreso de la amortización y los bienes 100% amortizados.
 
 ---
 
@@ -126,7 +126,10 @@ Campos opcionales para asociar el activo a dimensiones de análisis contable. Se
 
 ## Barra de Acciones
 
-![alt text](acciones.png)
+<figure markdown="span">
+  ![Barra de acciones del formulario de Activo](acciones.png)
+  <figcaption>Barra de acciones del formulario de Activo.</figcaption>
+</figure>
 
 - **Cancelar** — descarta los cambios no guardados y cierra el formulario.
 - **Guardar** — guarda los cambios. Solo se activa cuando hay cambios pendientes.
@@ -184,7 +187,7 @@ La pestaña **Adjuntos** permite subir documentación de soporte del activo (fac
 ## Artículos Relacionados
 
 - [Amortización](../amortizacion/amortizacion.md)
-- [Apuntar un Activo](../apuntar-un-activo.md)
+- [Apuntar un Activo](apuntar-un-activo.md)
 
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.

@@ -9,7 +9,7 @@ tags:
 
 # Apuntar un Activo
 
-**Apuntar** un activo es el proceso de registrarlo en el módulo [Activos](activos/activos.md) para que el sistema pueda calcular y gestionar su depreciación. Se hace cada vez que la empresa adquiere un bien fijo (vehículo, equipo, maquinaria) o cuando se migran activos existentes desde otro sistema. El detalle de cada campo del formulario está en [Activos](activos/activos.md).
+**Apuntar** un activo es el proceso de registrarlo en el módulo [Activos](activos.md) para que el sistema pueda calcular y gestionar su depreciación. Se hace cada vez que la empresa adquiere un bien fijo (vehículo, equipo, maquinaria) o cuando se migran activos existentes desde otro sistema. El detalle de cada campo del formulario está en [Activos](activos.md).
 
 1. Ve a **Finanzas** > **Activos**.
 2. Pulsa **+ Nuevo activo**.
@@ -35,14 +35,14 @@ tags:
     Ve a la pestaña **Adjuntos** y sube el PDF de la factura. Así el activo queda vinculado a su comprobante de forma centralizada.
 
 !!! warning "Paso obligatorio"
-    Sin pulsar **Crear amortización**, el activo queda registrado pero sin plan de depreciación. Consulta [Amortización](./amortizacion/amortizacion.md) para ver cómo procesar los períodos.
+    Sin pulsar **Crear amortización**, el activo queda registrado pero sin plan de depreciación. Consulta [Amortización](../amortizacion/amortizacion.md) para ver cómo procesar los períodos.
 
 ---
 
 ## Artículos Relacionados
 
-- [Activos](activos/activos.md)
-- [Amortización](amortizacion/amortizacion.md)
+- [Activos](activos.md)
+- [Amortización](../amortizacion/amortizacion.md)
 
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
