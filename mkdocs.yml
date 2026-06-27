@@ -73,6 +73,9 @@ plugins:
                     - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
             - Finanzas:
                 - finanzas/index.md
+                - Activos: finanzas/activos/activos.md
+                - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
+                - Amortización: finanzas/amortizacion/amortizacion.md
             - Inventario:
                 - inventario/index.md
                 - Productos: inventario/productos.md
