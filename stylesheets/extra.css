@@ -49,7 +49,7 @@
   --etendo-link-hover: #93C5FD;
 
   /* Sidebar modo oscuro */
-  --etendo-sidebar-bg: #1A1F2E;
+  --etendo-sidebar-bg: #0D1117;
   --etendo-sidebar-text: #CBD5E1;
   --etendo-sidebar-muted: #64748B;
   --etendo-sidebar-hover: rgba(255,255,255,0.05);
@@ -85,14 +85,20 @@ body {
   background-color: var(--etendo-bg-page);
 }
 
+/* Ampliar el grid principal para aprovechar más pantalla */
+.md-grid {
+  max-width: 90rem;
+}
+
 .md-content {
   background-color: var(--etendo-bg-content);
 }
 
 .md-content__inner {
   background-color: var(--etendo-bg-content);
-  padding: 1.5rem 2rem 2rem;
+  padding: 1.5rem 2.5rem 2rem;
   padding-bottom: 80vh;
+  max-width: none;
 }
 
 /* Sidebar secundario (TOC) fondo gris como el exterior */
@@ -146,38 +152,82 @@ body {
   box-shadow: none !important;
 }
 
-/* Secciones (labels no navegables) */
+/* Secciones — títulos grandes, alineados a la izquierda */
 .md-sidebar--primary .md-nav__item--section > .md-nav__link {
-  color: var(--etendo-sidebar-muted);
-  font-size: 0.65rem;
+  color: var(--etendo-sidebar-text);
+  font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: none;
+  letter-spacing: 0;
+  border: none !important;
+  padding-left: 0.6rem !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+/* Secciones sin index.md (label) — no navegables, sin hover */
+.md-sidebar--primary .md-nav__item--section > label.md-nav__link {
   cursor: default;
   pointer-events: none;
   background: none !important;
-  border: none !important;
-  padding-left: 0.75rem !important;
-  margin-top: 1rem;
-  margin-bottom: 0.15rem;
 }
 
-/* Links de página */
+/* Secciones con index.md — navegables, con hover */
+.md-sidebar--primary .md-nav__item--section > a.md-nav__link,
+.md-sidebar--primary .md-nav__item--section > .md-nav__container {
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+}
+.md-sidebar--primary .md-nav__item--section > a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__item--section > .md-nav__container:hover {
+  background-color: var(--etendo-sidebar-hover) !important;
+}
+
+/* El <a> dentro de cualquier container hereda el padding del div — anularlo para alinear con links directos */
+.md-sidebar--primary .md-nav__container > a.md-nav__link {
+  padding-left: 0 !important;
+}
+
+/* Links de página — más pequeños que los títulos de sección */
 .md-sidebar--primary .md-nav__link {
   color: var(--etendo-sidebar-text);
+  font-size: 0.78rem;
   border-radius: 0;
   transition: background 0.12s, color 0.12s;
-  padding: 0.38rem 0.75rem;
+  padding: 0.3rem 0.6rem;
 }
 
-.md-sidebar--primary .md-nav__link:hover {
+/* Jerarquía: sub-ítems de subsecciones anidadas con sangría */
+.md-sidebar--primary .md-nav__item--section .md-nav .md-nav__link {
+  padding-left: 1.1rem;
+  font-size: 0.75rem;
+}
+
+/* Tercer nivel: aún más sangría */
+.md-sidebar--primary .md-nav__item--section .md-nav .md-nav .md-nav__link {
+  padding-left: 1.6rem;
+  font-size: 0.73rem;
+}
+
+/* Hover — link directo (sin container) */
+.md-sidebar--primary .md-nav__item > .md-nav__link:hover {
   color: var(--etendo-sidebar-text);
   background-color: var(--etendo-sidebar-hover);
 }
 
-/* Item activo: fondo amarillo, texto oscuro, sin radio */
-.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active,
-.md-sidebar--primary .md-nav__item:not(.md-nav__item--section).md-nav__item--active > .md-nav__link {
+/* Hover — links dentro de container: se aplica al container, no a cada hijo */
+.md-sidebar--primary .md-nav__container:hover {
+  background-color: var(--etendo-sidebar-hover);
+}
+.md-sidebar--primary .md-nav__container > .md-nav__link:hover {
+  background-color: transparent;
+}
+
+/* Item activo: fondo amarillo — solo la página exacta (md-nav__link--active), no ancestros */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active {
   color: #111827 !important;
   font-weight: 600;
   background-color: var(--etendo-yellow) !important;
@@ -185,17 +235,23 @@ body {
   border: none !important;
 }
 
-/* Sin líneas conectoras — el producto no las muestra */
-.md-sidebar--primary .md-nav--primary .md-nav__item--section .md-nav {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 0;
+/* Item activo dentro de container — solo página exacta */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__container:has(> a.md-nav__link--active) {
+  background-color: var(--etendo-yellow) !important;
+  border-radius: 0 !important;
 }
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__container:has(> a.md-nav__link--active) > .md-nav__link {
+  color: #111827 !important;
+  font-weight: 600;
+  background-color: transparent !important;
+}
+
 
 /* Scrollbar del sidebar */
 .md-sidebar--primary .md-sidebar__scrollwrap {
   scrollbar-width: thin;
   scrollbar-color: var(--etendo-sidebar-scrollbar) transparent;
+  scroll-behavior: auto !important;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
@@ -368,7 +424,7 @@ body {
   overflow: hidden;
   background-color: var(--etendo-bg-surface);
   border-bottom: 1px solid var(--etendo-border);
-  padding: 7rem 2rem 6rem;
+  padding: 2.5rem 2rem 2rem;
   text-align: center;
 }
 
@@ -391,29 +447,74 @@ body {
 }
 
 .etendo-home__logo {
-  height: 3rem !important;
+  height: 2rem !important;
   width: auto !important;
-  max-width: 200px !important;
-  margin-bottom: 2rem;
+  max-width: 160px !important;
+  margin-bottom: 0.875rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .etendo-home__title {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--etendo-text);
-  margin: 0 0 1rem;
+  margin: 0 0 0.4rem;
   line-height: 1.2;
 }
 
 .etendo-home__subtitle {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: var(--etendo-text-muted);
-  max-width: 520px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+}
+
+/* Buscador del hero */
+.etendo-home__search {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.etendo-home__search-input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  border: 1.5px solid var(--etendo-border);
+  border-radius: 6px;
+  background-color: var(--etendo-bg-content);
+  color: var(--etendo-text);
+  font-size: 0.875rem;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+}
+
+.etendo-home__search-input:hover,
+.etendo-home__search-input:focus {
+  border-color: var(--etendo-yellow);
+  box-shadow: 0 0 0 3px var(--etendo-yellow-subtle);
+}
+
+.etendo-home__search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: var(--etendo-text-muted);
+  pointer-events: none;
+}
+
+.etendo-home__search-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .etendo-home__actions {
@@ -426,7 +527,7 @@ body {
 .etendo-home__sections {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 3.5rem 2rem 4rem;
+  padding: 1.5rem 2rem 3rem;
 }
 
 .etendo-home__grid {
@@ -435,15 +536,16 @@ body {
   gap: 1.25rem;
 }
 
+/* Card base */
 .etendo-home__card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   background-color: var(--etendo-bg-content);
   border: 1px solid var(--etendo-border);
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none !important;
-  color: var(--etendo-text-muted);
+  color: var(--etendo-text);
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -453,12 +555,27 @@ body {
   text-decoration: none !important;
 }
 
+/* Header de la card: icono + título (enlace a la página índice de la sección) */
+.etendo-home__card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+}
+
+.etendo-home__card-top:hover h3 {
+  color: var(--etendo-link-hover);
+}
+
 .etendo-home__card-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
   color: var(--etendo-yellow);
-  margin-bottom: 0.875rem;
   flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
 .etendo-home__card-icon svg {
@@ -467,21 +584,80 @@ body {
   fill: currentColor;
 }
 
-.etendo-home__card h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--etendo-text);
-  margin: 0 0 0.4rem;
+.etendo-home__card-meta {
+  flex: 1;
 }
 
-.etendo-home__card p {
-  font-size: 0.825rem;
+.etendo-home__card h3,
+.etendo-home__card-meta h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--etendo-text);
+  margin: 0 0 0.2rem;
+}
+
+.etendo-home__card p,
+.etendo-home__card-meta p {
+  font-size: 0.8rem;
   color: var(--etendo-text-muted);
   margin: 0;
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+/* Lista de páginas dentro de la card */
+.etendo-home__card-links {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-top: 1px solid var(--etendo-border);
+  padding-top: 0.6rem !important;
+  margin-top: 0.25rem !important;
+}
+
+.etendo-home__card-links li {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.etendo-home__card-links li::before {
+  display: none !important;
+}
+
+.etendo-home__card-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0;
+  color: var(--etendo-link);
+  font-size: 0.83rem;
+  text-decoration: none;
+  transition: color 0.12s;
+}
+
+.etendo-home__card-links li a::before {
+  content: "›";
+  color: var(--etendo-text-muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.etendo-home__card-links li a:hover {
+  color: var(--etendo-link-hover);
+}
+
+/* Etiqueta de sub-grupo (ej: "Ventas") */
+.etendo-home__card-links--group-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--etendo-text-muted);
+  padding: 0.5rem 0 0.2rem !important;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 900px) {
   .etendo-home__grid { grid-template-columns: repeat(2, 1fr); }
   .etendo-home__title { font-size: 1.75rem; }
 }
