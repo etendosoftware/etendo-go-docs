@@ -1,4 +1,16 @@
 (function () {
+  // Evitar que el sidebar se desplace automáticamente al ítem activo tras cada navegación
+  if (typeof document$ !== 'undefined') {
+    document$.subscribe(function () {
+      var sidebar = document.querySelector('.md-sidebar--primary .md-sidebar__scrollwrap');
+      if (!sidebar) return;
+      var saved = sidebar.scrollTop;
+      requestAnimationFrame(function () {
+        sidebar.scrollTop = saved;
+      });
+    });
+  }
+
   function initHeroBg() {
     var bg = document.querySelector('.etendo-home__hero-bg');
     var hero = document.querySelector('.etendo-home__hero');
