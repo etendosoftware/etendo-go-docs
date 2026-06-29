@@ -20,95 +20,171 @@
 {% block content %}
 <div class="etendo-home">
 
+  <!-- HERO -->
   <section class="etendo-home__hero">
     <img src="{{ 'assets/logo.png' | url }}" alt="" aria-hidden="true" class="etendo-home__hero-bg">
     <div class="etendo-home__hero-inner">
-      <img src="{{ 'assets/logo.png' | url }}" alt="Etendo Go" class="etendo-home__logo">
+      <img src="{{ 'assets/logo.png' | url }}" alt="Etendo Go Academy" class="etendo-home__logo">
       <h1 class="etendo-home__title">¿En qué podemos ayudarte?</h1>
-      <p class="etendo-home__subtitle">
-        Encontrá guías, tutoriales y referencias para sacar el máximo partido a Etendo Go.
-      </p>
-      <div class="etendo-home__actions">
-        <a href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}" class="md-button md-button--primary">
-          Empezar ahora
-        </a>
-        <a href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}" class="md-button">
-          Referencia completa
-        </a>
+      <p class="etendo-home__subtitle">Guías y referencias para sacar el máximo partido a Etendo Go.</p>
+      <div class="etendo-home__search">
+        <span class="etendo-home__search-icon">
+          {% include ".icons/material/magnify.svg" %}
+        </span>
+        <input
+          class="etendo-home__search-input"
+          type="text"
+          placeholder="Buscar en la documentación..."
+          id="etendo-hero-search"
+          autocomplete="off"
+        >
       </div>
     </div>
   </section>
 
+  <script>
+    (function () {
+      function initHeroSearch() {
+        var input = document.getElementById('etendo-hero-search');
+        if (!input) return;
+        function openSearch(query) {
+          var toggle = document.getElementById('__search');
+          if (toggle) {
+            toggle.checked = true;
+            toggle.dispatchEvent(new Event('change'));
+          }
+          setTimeout(function () {
+            var mdInput = document.querySelector('.md-search__input');
+            if (mdInput) {
+              mdInput.focus();
+              if (query) {
+                var nativeInputSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+                nativeInputSetter.call(mdInput, query);
+                mdInput.dispatchEvent(new Event('input', { bubbles: true }));
+              }
+            }
+            input.value = '';
+          }, 50);
+        }
+        input.addEventListener('focus', function () { openSearch(''); });
+        input.addEventListener('keydown', function (e) {
+          if (e.key !== 'Tab') openSearch(input.value);
+        });
+      }
+      document.addEventListener('DOMContentLoaded', initHeroSearch);
+      document.addEventListener('DOMSwitch', initHeroSearch);
+    })();
+  </script>
+
+  <!-- SECCIONES -->
   <section class="etendo-home__sections">
     <div class="etendo-home__grid">
 
-      <a href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/rocket-launch-outline.svg" %}
-        </div>
-        <h3>Primeros pasos</h3>
-        <p>Accedé a tu instancia, configurá tu empresa y creá tus primeros documentos.</p>
-      </a>
+      <!-- Primeros pasos -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/rocket-launch-outline.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Primeros pasos</h3>
+            <p>Introducción y guía de inicio a Etendo Go</p>
+          </div>
+        </a>
+        <ul class="etendo-home__card-links">
+          <li><a href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}">¿Qué es Etendo Go?</a></li>
+          <li><a href="{{ 'primeros-pasos/crear-cuenta/crear-cuenta/' | url }}">Crear una cuenta</a></li>
+        </ul>
+      </div>
 
-      <a href="{{ 'dashboard/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/chart-line.svg" %}
-        </div>
-        <h3>Dashboard</h3>
-        <p>Visualizá el estado de tu negocio en tiempo real con métricas clave.</p>
-      </a>
+      <!-- Comercial -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'comercial/ventas/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/storefront-outline.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Comercial</h3>
+            <p>Contactos, ventas y documentos comerciales</p>
+          </div>
+        </a>
+        <ul class="etendo-home__card-links">
+          <li><a href="{{ 'comercial/contactos/contactos/' | url }}">Contactos</a></li>
+          <li class="etendo-home__card-links--group-label">Ventas</li>
+          <li><a href="{{ 'comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/' | url }}">Presupuesto de venta</a></li>
+          <li><a href="{{ 'comercial/ventas/pedido-de-venta/pedido-de-venta/' | url }}">Pedido de venta</a></li>
+          <li><a href="{{ 'comercial/ventas/factura-de-venta/factura-de-venta/' | url }}">Factura de venta</a></li>
+        </ul>
+      </div>
 
-      <a href="{{ 'comercial/contactos/contactos/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/account-group-outline.svg" %}
-        </div>
-        <h3>Contactos</h3>
-        <p>Gestioná clientes y proveedores desde un solo lugar.</p>
-      </a>
+      <!-- Operaciones -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'operaciones/compras/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/swap-horizontal.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Operaciones</h3>
+            <p>Compras y gestión de proveedores</p>
+          </div>
+        </a>
+        <ul class="etendo-home__card-links">
+          <li class="etendo-home__card-links--group-label">Compras</li>
+          <li><a href="{{ 'operaciones/compras/pedido-de-compra/pedido-de-compra/' | url }}">Pedido de compra</a></li>
+          <li><a href="{{ 'operaciones/compras/factura-de-compra/factura-de-compra/' | url }}">Factura de compra</a></li>
+        </ul>
+      </div>
 
-      <a href="{{ 'comercial/ventas/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/receipt-text-outline.svg" %}
-        </div>
-        <h3>Ventas</h3>
-        <p>Pedidos, facturas y albaranes de venta.</p>
-      </a>
+      <!-- Finanzas -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'finanzas/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/bank-outline.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Finanzas</h3>
+            <p>Activos fijos y amortización</p>
+          </div>
+        </a>
+        <ul class="etendo-home__card-links">
+          <li><a href="{{ 'finanzas/activos/activos/' | url }}">Activos</a></li>
+          <li><a href="{{ 'finanzas/activos/apuntar-un-activo/' | url }}">Apuntar un activo</a></li>
+          <li><a href="{{ 'finanzas/amortizacion/amortizacion/' | url }}">Amortización</a></li>
+        </ul>
+      </div>
 
-      <a href="{{ 'operaciones/compras/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/cart-outline.svg" %}
-        </div>
-        <h3>Compras</h3>
-        <p>Pedidos y facturas de proveedores.</p>
-      </a>
+      <!-- Inventario -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'inventario/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/warehouse.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Inventario</h3>
+            <p>Productos, almacenes y stock</p>
+          </div>
+        </a>
+        <ul class="etendo-home__card-links">
+          <li><a href="{{ 'inventario/productos/' | url }}">Productos</a></li>
+          <li><a href="{{ 'inventario/almacenes/' | url }}">Almacenes</a></li>
+        </ul>
+      </div>
 
-      <a href="{{ 'finanzas/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/bank-outline.svg" %}
-        </div>
-        <h3>Finanzas</h3>
-        <p>Gestión financiera y cuentas bancarias.</p>
-      </a>
-
-      <a href="{{ 'inventario/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/warehouse.svg" %}
-        </div>
-        <h3>Inventario</h3>
-        <p>Almacenes, productos y movimientos de stock.</p>
-      </a>
-
-      <a href="{{ 'configuracion/' | url }}" class="etendo-home__card">
-        <div class="etendo-home__card-icon">
-          {% include ".icons/material/cog-outline.svg" %}
-        </div>
-        <h3>Configuración</h3>
-        <p>Parámetros y ajustes del sistema.</p>
-      </a>
+      <!-- Configuración -->
+      <div class="etendo-home__card">
+        <a class="etendo-home__card-top" href="{{ 'configuracion/' | url }}">
+          <div class="etendo-home__card-icon">
+            {% include ".icons/material/cog-outline.svg" %}
+          </div>
+          <div class="etendo-home__card-meta">
+            <h3>Configuración</h3>
+            <p>Parámetros y ajustes del sistema</p>
+          </div>
+        </a>
+      </div>
 
     </div>
   </section>
 
 </div>
 {% endblock %}
-
