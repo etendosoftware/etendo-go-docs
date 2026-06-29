@@ -37,6 +37,7 @@
           placeholder="Buscar en la documentación..."
           id="etendo-hero-search"
           autocomplete="off"
+          aria-label="Buscar en la documentación"
         >
       </div>
     </div>
@@ -67,9 +68,6 @@
           }, 50);
         }
         input.addEventListener('focus', function () { openSearch(''); });
-        input.addEventListener('keydown', function (e) {
-          if (e.key !== 'Tab') openSearch(input.value);
-        });
       }
       document.addEventListener('DOMContentLoaded', initHeroSearch);
       document.addEventListener('DOMSwitch', initHeroSearch);
