@@ -3,250 +3,59 @@ title: ¿Qué es Etendo Go?
 tags:
   - ERP
   - SaaS
+  - Primeros pasos
+  - Inicio
+  - Copilot
 ---
 
 # ¿Qué es Etendo Go?
 
-**Etendo Go** es la versión SaaS de Etendo ERP, diseñada para empresas que necesitan una solución de gestión empresarial ágil, accesible desde cualquier lugar y sin infraestructura propia.
+Etendo Go es la versión en la nube de Etendo, pensada para empresas, autónomos y asesorías que necesitan gestionar su negocio sin complicaciones técnicas: accedes desde el navegador, sin instalar nada ni mantener infraestructura propia, y siempre trabajas con la última versión gracias a las actualizaciones automáticas.
 
 <figure markdown>
   ![Dashboard de Etendo Go](../../assets/dashboard_home_Etendo.png)
-  <figcaption>Vista principal del dashboard de Etendo Go — resumen de tareas pendientes, movimientos financieros y accesos rápidos.</figcaption>
+  <figcaption>Dashboard de Etendo Go — resumen de tareas pendientes, ventas recientes y evolución financiera.</figcaption>
 </figure>
 
----
+Con Etendo Go gestionas Contactos, Ventas, Compras, Inventario y Finanzas desde un mismo lugar, y cuentas con **Copilot**, un asistente de IA que te ayuda a consultar información y a ejecutar acciones sin salir del sistema.
 
-## ¿Qué incluye?
+## Un ERP para personas y para agentes de IA
 
-=== "Ventas"
+Todo lo que haces en Etendo Go puede ejecutarse también mediante un agente de inteligencia artificial a través del API, con las mismas capacidades que tiene la interfaz visual. Este modelo dual te permite elegir, para cada tarea, el camino que más te convenga:
 
-    Gestiona tus pedidos, facturas y albaranes de venta desde un único lugar. Consulta el estado de cada operación en tiempo real.
+- **Desde la interfaz**: navega por los módulos, completa formularios y confirma documentos como en cualquier ERP.
+- **Desde un agente**: automatiza flujos de negocio completos (crear un cliente, registrar una venta) invocando el API, sin intervención manual.
+- **Con Copilot**: pídele en lenguaje natural, desde la pantalla de inicio, que consulte datos o ejecute una acción por ti, como dar de alta un cliente o registrar una venta.
 
-=== "Compras"
+## Todo tu negocio, en un solo lugar
 
-    Controla tus pedidos y facturas de compra, gestiona proveedores y mantén el stock actualizado automáticamente.
+Etendo Go organiza la operación de tu empresa en módulos conectados entre sí, para que la información que cargas una vez esté disponible en todos los procesos relacionados:
 
-=== "Finanzas"
+- **Comercial**: un único maestro de **Contactos** para clientes y proveedores, con tarifas y condiciones de pago que se heredan en cada documento; **Ventas** para presupuestos, pedidos y facturas de venta; **Compras** para pedidos y facturas de compra.
+- **Inventario**: productos, categorías de producto, almacenes, movimientos de mercancías, consumo interno, inventario físico e informes de stock.
+- **Finanzas**: **Contabilidad** con asientos y cuentas contables; **Activos y Amortización** para tus bienes fijos y el cálculo automático de su depreciación; **Cuentas Financieras y Conciliación Bancaria**; **Cobros y Pagos**; y gestión de **Monedas y Tarifas**.
+- **Cumplimiento**: la **Localización Española** cubre el envío a los Sistemas de Facturación (SIF) y la generación de los modelos fiscales `303` y `349`, entre otros.
+- **Roles y Usuarios**: define qué puede hacer cada persona en el sistema mediante 5 roles predefinidos (**Administrador, Finanzas, Ventas, Compras** e **Inventario**); por ejemplo, solo Administrator y Finanzas pueden ejecutar las acciones contables de Activos y Amortización.
 
-    Concilia tus cuentas bancarias, gestiona la tesorería y genera informes financieros con un clic.
+## Tu punto de partida: el Inicio
 
-=== "Inventario"
+Al iniciar sesión llegas al **Inicio** que te da una fotografía rápida del negocio con widgets como Tareas pendientes, Accesos rápidos, Clientes destacados, Resumen financiero, Ventas recientes, Cobros y pagos, Evolución financiera y Productos más vendidos. Un filtro de período te permite enfocarte en el rango de fechas que te interesa en cada momento.
 
-    Gestiona almacenes, movimientos de stock y valoración de inventario de forma sencilla.
+!!! tip "Empieza con Copilot"
+    Desde el inicio, escríbele a Copilot lo que necesitas —por ejemplo, "crea un cliente nuevo"— y deja que el asistente lo resuelva por ti.
 
----
+## Recursos y próximos pasos
 
-## Requisitos previos
+- [Crear una cuenta](crear-cuenta/crear-cuenta.md) — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
+- Una vez creado tu espacio de trabajo, llegas a la pantalla de **Primeros Pasos**, con un checklist que te guía en la configuración inicial.
+- Con la cuenta lista, el siguiente paso natural es cargar tus primeros contactos y emitir tu primer documento de venta o compra.
 
-Antes de comenzar, asegúrate de tener lo siguiente:
+## Artículos relacionados
 
-- [x] Una cuenta activa en Etendo Go
-- [x] Acceso a internet desde un navegador moderno
-- [ ] Datos de empresa configurados *(ver [Configuración](../configuracion/index.md))*
-- [ ] Usuarios y roles asignados
-
----
-
-## Primeros pasos
-
-1.  **Accede a tu instancia**
-
-    Ingresa a la URL que recibiste al activar tu cuenta y autentícate con tus credenciales.
-
-2.  **Configura tu empresa**
-
-    Completa los datos fiscales, moneda y ejercicio contable en :material-cog: **Configuración → Datos de empresa**.
-
-3.  **Crea tus primeros contactos**
-
-    Agrega clientes y proveedores desde **Contactos** antes de generar documentos.
-
-4.  **Emite tu primer pedido**
-
-    Ve a **Ventas → Pedidos de venta** y crea un nuevo pedido. El sistema generará el albarán y la factura automáticamente.
+- [Contactos](../comercial/contactos/contactos.md)
+- [Pedido de venta](../comercial/ventas/pedido-de-venta/pedido-de-venta.md)
+- [Activos](../finanzas/activos/activos.md)
 
 ---
-
-## Admonitions
-
-!!! note "Nota"
-    Etendo Go se actualiza automáticamente. No necesitas instalar ni descargar nada para tener siempre la última versión.
-
-!!! tip "Consejo"
-    Usa la búsqueda (`/` o clic en la lupa) para encontrar cualquier sección de la documentación sin necesidad de navegar manualmente.
-
-!!! warning "Atención"
-    Los datos eliminados no se pueden recuperar. Siempre verifica antes de confirmar una eliminación.
-
-!!! danger "Importante"
-    No compartas tus credenciales de acceso. Cada usuario debe tener su propia cuenta con los permisos correspondientes.
-
-!!! info "Información"
-    Esta documentación está actualizada para la versión **2.0** de Etendo Go.
-
-!!! success "Listo"
-    Si ves esta pantalla, tu instancia está activa y funcionando correctamente.
-
-??? example "Ejemplo colapsable — Cómo crear una factura"
-    1. Ve a **Ventas → Facturas de venta**
-    2. Haz clic en **Nueva factura**
-    3. Selecciona el cliente y agrega las líneas de producto
-    4. Confirma y descarga el PDF
-
----
-
-## Código de ejemplo
-
-Puedes conectarte a la API de Etendo Go usando cualquier cliente HTTP:
-
-```bash
-curl -X POST https://go.etendo.cloud/api/auth/token \
-  -H "Content-Type: application/json" \
-  -d '{"username": "admin", "password": "••••••••"}'
-```
-
-```python title="etendo_client.py" linenums="1"
-import requests
-
-BASE_URL = "https://go.etendo.cloud/api"
-
-def get_token(username: str, password: str) -> str:
-    response = requests.post(
-        f"{BASE_URL}/auth/token",
-        json={"username": username, "password": password}
-    )
-    response.raise_for_status()
-    return response.json()["token"]  # (1)!
-```
-
-1.  El token tiene una validez de **8 horas**. Renuévalo con el endpoint `/auth/refresh`.
-
-```json title="Respuesta"
-{
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "expires_in": 28800
-}
-```
-
----
-
-## Tabla de módulos
-
-| Módulo        | Descripción                              | Estado       |
-|:--------------|:-----------------------------------------|:------------:|
-| Ventas        | Pedidos, facturas y albaranes            | ✅ Activo    |
-| Compras       | Pedidos y facturas de proveedor          | ✅ Activo    |
-| Finanzas      | Tesorería y conciliación bancaria        | ✅ Activo    |
-| Inventario    | Almacenes y movimientos de stock         | ✅ Activo    |
-| Producción    | Órdenes de fabricación y BOM             | 🔜 Próximo   |
-| RRHH          | Gestión de empleados y nóminas           | 🔜 Próximo   |
-
----
-
-## Texto con formato
-
-Etendo Go soporta texto en **negrita**, *cursiva*, ~~tachado~~ y `código inline`.
-
-También puedes usar teclas de teclado como ++ctrl+s++ para guardar, o ++cmd+k++ para buscar.
-
-Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
-
-> **Etendo Go** es la evolución natural de Etendo ERP hacia la nube.
-> Diseñado para que cualquier empresa pueda operar con agilidad desde el primer día.
-
----
-
-## Grids y tarjetas
-
-<div class="grid cards" markdown>
-
--   :material-clock-fast:{ .lg .middle } **Configuración rápida**
-
-    ---
-
-    Ponete en marcha en minutos con la guía de configuración inicial.
-
-    [:octicons-arrow-right-24: Primeros pasos](../configuracion/index.md)
-
--   :material-currency-usd:{ .lg .middle } **Gestión financiera**
-
-    ---
-
-    Conciliá cuentas bancarias y generá informes con un clic.
-
-    [:octicons-arrow-right-24: Finanzas](../finanzas/index.md)
-
--   :material-truck-delivery:{ .lg .middle } **Ventas y compras**
-
-    ---
-
-    Controlá pedidos, facturas y albaranes desde un solo lugar.
-
-    [:octicons-arrow-right-24: Ventas](../comercial/ventas/index.md)
-
--   :material-warehouse:{ .lg .middle } **Inventario**
-
-    ---
-
-    Gestioná almacenes, movimientos de stock y valoración.
-
-    [:octicons-arrow-right-24: Inventario](../inventario/index.md)
-
-</div>
-
----
-
-## Botones
-
-[Comenzar ahora](../configuracion/index.md){ .md-button .md-button--primary }
-[Ver primeros pasos](que-es-etendo-go.md){ .md-button }
-
----
-
-## Lista de definiciones
-
-`SaaS`
-:   Software as a Service — modelo donde el software se aloja en la nube y se accede por suscripción.
-
-`ERP`
-:   Enterprise Resource Planning — sistema integrado para gestionar los procesos clave del negocio.
-
-`API`
-:   Application Programming Interface — interfaz que permite la comunicación entre sistemas de forma programática.
-
----
-
-## Texto resaltado
-
-Etendo Go incluye ==resaltado de texto== para marcar información clave. También podés combinar ==resaltado== con **negrita** o *cursiva* para mayor énfasis.
-
----
-
-## Tooltips
-
-Etendo Go cumple con el RGPD y usa cifrado TLS en todas las comunicaciones. Las abreviaciones también se pueden definir globalmente: al escribir SaaS o ERP en cualquier parte del documento, el tooltip aparece automáticamente.
-
-*[RGPD]: Reglamento General de Protección de Datos
-*[TLS]: Transport Layer Security
-*[SaaS]: Software as a Service
-*[ERP]: Enterprise Resource Planning
-
----
-
-## Diagramas
-
-```mermaid
-flowchart LR
-  A[Pedido de venta] --> B[Albarán]
-  B --> C[Factura de venta]
-  C --> D[Cobro registrado]
-```
-
----
-
-## Footnotes
-
-Etendo Go utiliza tecnología de código abierto[^1] y cumple con los requisitos del RGPD[^2].
-
-[^1]: El código fuente base está disponible en [GitHub](https://github.com/etendosoftware).
-[^2]: Reglamento General de Protección de Datos — Unión Europea.
+This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
+</content>
