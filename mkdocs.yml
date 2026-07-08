@@ -58,7 +58,7 @@ plugins:
             - Inicio: index.md
             - Primeros pasos:
                 - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
-                - Crear una cuenta: primeros-pasos/crear-cuenta/crear-cuenta.md
+                - Crear una cuenta: primeros-pasos/crear-cuenta.md
             - Comercial:
                 - Contactos: comercial/contactos/contactos.md
                 - Ventas:

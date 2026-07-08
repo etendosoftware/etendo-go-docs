@@ -1,12 +1,12 @@
 ---
-title: Crear una cuenta
+title: Cómo crear tu cuenta
 tags:
   - Primeros Pasos
   - Registro
   - Empresa
 ---
 
-# Crear una cuenta
+# Cómo crear tu cuenta
 
 Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad de tarjeta de crédito. El proceso se divide en tres pasos: registro de usuario, perfil y datos de empresa.
 
@@ -16,7 +16,7 @@ Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad
 
 Accede a la página de registro de Etendo Go. Verás el formulario **Crea tu cuenta gratis**.
 
-![Formulario de registro de Etendo Go](registro.png)
+![Formulario de registro de Etendo Go](crear-cuenta-1.png)
 
 Completa los siguientes campos obligatorios:
 
@@ -40,7 +40,7 @@ Una vez completados los campos, haz clic en **Crear cuenta**.
 
 Tras crear la cuenta, Etendo Go te redirige al paso de perfil.
 
-![Formulario de perfil de usuario](perfil.png)
+![Formulario de perfil de usuario](crear-cuenta-2.png)
 
 Revisa o edita el **Nombre completo** (se pre-rellena con el nombre del paso anterior).
 
@@ -60,7 +60,7 @@ Haz clic en **Continuar** para avanzar al siguiente paso.
 
 Este paso recoge los datos fiscales que Etendo Go usará en tus facturas y documentos comerciales.
 
-![Formulario de datos de empresa](empresa.png)
+![Formulario de datos de empresa](crear-cuenta-3.png)
 
 - **Nombre de la empresa** — razón social completa (ej: *SMF Consulting S.L.*). Campo obligatorio.
 - **Identificación fiscal (NIF)** — NIF de empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo obligatorio.
@@ -78,15 +78,15 @@ Cuando hayas completado los campos, haz clic en **Empezar**.
 
 Etendo Go crea el espacio de trabajo de tu empresa. Este proceso tarda unos segundos.
 
-![Pantalla de carga — preparando el espacio de trabajo](cargando.png)
+![Pantalla de carga — preparando el espacio de trabajo](crear-cuenta-4.png)
 
 ---
 
-## Dashboard — Vista inicial
+## Inicio
 
-Al finalizar, accedes al **Dashboard** de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
+Al finalizar, accedes al **Inicio** de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
 
-![Dashboard inicial de Etendo Go](dashboard.png)
+![Inicio de Etendo Go](crear-cuenta-5.png)
 
 Desde aquí puedes:
 
@@ -95,9 +95,4 @@ Desde aquí puedes:
 - Consultar el **Resumen financiero** y la **Evolución financiera** a medida que registras operaciones.
 
 ---
-
-## Artículos Relacionados
-
-- [¿Qué es Etendo Go?](../que-es-etendo-go.md)
-- [Contactos](../../comercial/contactos/contactos.md)
-- [Configuración](../../configuracion/index.md)
+This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
