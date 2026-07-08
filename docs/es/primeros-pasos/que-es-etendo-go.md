@@ -13,8 +13,8 @@ tags:
 Etendo Go es la versión en la nube de Etendo, pensada para empresas, autónomos y asesorías que necesitan gestionar su negocio sin complicaciones técnicas: accedes desde el navegador, sin instalar nada ni mantener infraestructura propia, y siempre trabajas con la última versión gracias a las actualizaciones automáticas.
 
 <figure markdown>
-  ![Dashboard de Etendo Go](../../assets/dashboard_home_Etendo.png)
-  <figcaption>Dashboard de Etendo Go — resumen de tareas pendientes, ventas recientes y evolución financiera.</figcaption>
+  ![Inicio de Etendo Go](../primeros-pasos/que-es-etendo-go-1.png)
+  <figcaption>Inicio de Etendo Go — resumen de tareas pendientes, ventas recientes y evolución financiera.</figcaption>
 </figure>
 
 Con Etendo Go gestionas Contactos, Ventas, Compras, Inventario y Finanzas desde un mismo lugar, y cuentas con **Copilot**, un asistente de IA que te ayuda a consultar información y a ejecutar acciones sin salir del sistema.
@@ -46,15 +46,12 @@ Al iniciar sesión llegas al **Inicio** que te da una fotografía rápida del ne
 
 ## Recursos y próximos pasos
 
-- [Crear una cuenta](crear-cuenta/crear-cuenta.md) — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
-- Una vez creado tu espacio de trabajo, llegas a la pantalla de **Primeros Pasos**, con un checklist que te guía en la configuración inicial.
-- Con la cuenta lista, el siguiente paso natural es cargar tus primeros contactos y emitir tu primer documento de venta o compra.
+- Crear una cuenta — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
+- Una vez creado tu espacio de trabajo, con la cuenta lista, el siguiente paso natural es cargar tus primeros contactos y emitir tu primer documento de venta o compra.
 
-## Artículos relacionados
+Factura, registra gastos y obtén reportes en segundos, con una interfaz simple y guiada.
 
-- [Contactos](../comercial/contactos/contactos.md)
-- [Pedido de venta](../comercial/ventas/pedido-de-venta/pedido-de-venta.md)
-- [Activos](../finanzas/activos/activos.md)
+**Sin tarjeta de crédito · Prueba gratuita · Acceso inmediato**
 
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.

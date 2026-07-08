@@ -10,7 +10,7 @@ tags:
 **Etendo Go** es la versión SaaS de Etendo ERP, diseñada para empresas que necesitan una solución de gestión empresarial ágil, accesible desde cualquier lugar y sin infraestructura propia.
 
 <figure markdown>
-  ![Dashboard de Etendo Go](../../assets/dashboard_home_Etendo.png)
+  ![Dashboard de Etendo Go](../../es/primeros-pasos/que-es-etendo-go-1.png)
   <figcaption>Vista principal del dashboard de Etendo Go — resumen de tareas pendientes, movimientos financieros y accesos rápidos.</figcaption>
 </figure>
 
