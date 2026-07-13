@@ -4,11 +4,12 @@ tags:
   - Primeros Pasos
   - Registro
   - Empresa
+  - Etendo Go
 ---
 
 # Cómo crear tu cuenta
 
-Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad de tarjeta de crédito. El proceso se divide en tres pasos: registro de usuario, perfil y datos de empresa.
+Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad de tarjeta de crédito. Vas a completar tres pasos: registro de usuario, perfil y datos de empresa. Una vez finalizados, Etendo Go prepara tu espacio de trabajo automáticamente y te lleva directo al Inicio, sin que tengas que hacer nada más.
 
 ---
 
@@ -16,7 +17,7 @@ Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad
 
 Accede a la página de registro de Etendo Go. Verás el formulario **Crea tu cuenta gratis**.
 
-![Formulario de registro de Etendo Go](crear-cuenta-1.png)
+![Formulario de registro de Etendo Go](como-crear-tu-cuenta-1.png)
 
 Completa los siguientes campos obligatorios:
 
@@ -40,7 +41,7 @@ Una vez completados los campos, haz clic en **Crear cuenta**.
 
 Tras crear la cuenta, Etendo Go te redirige al paso de perfil.
 
-![Formulario de perfil de usuario](crear-cuenta-2.png)
+![Formulario de perfil de usuario](como-crear-tu-cuenta-2.png)
 
 Revisa o edita el **Nombre completo** (se pre-rellena con el nombre del paso anterior).
 
@@ -60,7 +61,7 @@ Haz clic en **Continuar** para avanzar al siguiente paso.
 
 Este paso recoge los datos fiscales que Etendo Go usará en tus facturas y documentos comerciales.
 
-![Formulario de datos de empresa](crear-cuenta-3.png)
+![Formulario de datos de empresa](como-crear-tu-cuenta-3.png)
 
 - **Nombre de la empresa** — razón social completa (ej: *SMF Consulting S.L.*). Campo obligatorio.
 - **Identificación fiscal (NIF)** — NIF de empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo obligatorio.
@@ -78,7 +79,7 @@ Cuando hayas completado los campos, haz clic en **Empezar**.
 
 Etendo Go crea el espacio de trabajo de tu empresa. Este proceso tarda unos segundos.
 
-![Pantalla de carga — preparando el espacio de trabajo](crear-cuenta-4.png)
+![Pantalla de carga — preparando el espacio de trabajo](como-crear-tu-cuenta-4.png)
 
 ---
 
@@ -86,13 +87,15 @@ Etendo Go crea el espacio de trabajo de tu empresa. Este proceso tarda unos segu
 
 Al finalizar, accedes al **Inicio** de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
 
-![Inicio de Etendo Go](crear-cuenta-5.png)
+![Inicio de Etendo Go](como-crear-tu-cuenta-5.png)
 
 Desde aquí puedes:
 
 - Ver las **Tareas pendientes** de gestión.
 - Acceder rápidamente a **Pedidos de venta**, **Facturas de venta** y **Contactos**.
 - Consultar el **Resumen financiero** y la **Evolución financiera** a medida que registras operaciones.
+
+Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que registres irá dando forma a tu Inicio.
 
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
