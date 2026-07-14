@@ -17,7 +17,7 @@ Etendo Go permite crear una cuenta gratuita en menos de un minuto, sin necesidad
 
 Accede a la página de registro de Etendo Go. Verás el formulario **Crea tu cuenta gratis**.
 
-![Formulario de registro de Etendo Go](como-crear-tu-cuenta-1.png)
+![Formulario de registro de Etendo Go](assets/registro.png)
 
 Completa los siguientes campos obligatorios:
 
@@ -41,7 +41,7 @@ Una vez completados los campos, haz clic en **Crear cuenta**.
 
 Tras crear la cuenta, Etendo Go te redirige al paso de perfil.
 
-![Formulario de perfil de usuario](como-crear-tu-cuenta-2.png)
+![Formulario de perfil de usuario](assets/perfil.png)
 
 Revisa o edita el **Nombre completo** (se pre-rellena con el nombre del paso anterior).
 
@@ -61,7 +61,7 @@ Haz clic en **Continuar** para avanzar al siguiente paso.
 
 Este paso recoge los datos fiscales que Etendo Go usará en tus facturas y documentos comerciales.
 
-![Formulario de datos de empresa](como-crear-tu-cuenta-3.png)
+![Formulario de datos de empresa](assets/empresa.png)
 
 - **Nombre de la empresa** — razón social completa (ej: *SMF Consulting S.L.*). Campo obligatorio.
 - **Identificación fiscal (NIF)** — NIF de empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo obligatorio.
@@ -79,7 +79,7 @@ Cuando hayas completado los campos, haz clic en **Empezar**.
 
 Etendo Go crea el espacio de trabajo de tu empresa. Este proceso tarda unos segundos.
 
-![Pantalla de carga — preparando el espacio de trabajo](como-crear-tu-cuenta-4.png)
+![Pantalla de carga — preparando el espacio de trabajo](assets/cargando.png)
 
 ---
 
@@ -87,7 +87,7 @@ Etendo Go crea el espacio de trabajo de tu empresa. Este proceso tarda unos segu
 
 Al finalizar, accedes al **Inicio** de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
 
-![Inicio de Etendo Go](como-crear-tu-cuenta-5.png)
+![Dashboard inicial de Etendo Go](assets/dashboard.png)
 
 Desde aquí puedes:
 
@@ -97,5 +97,13 @@ Desde aquí puedes:
 
 Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que registres irá dando forma a tu Inicio.
 
+## Artículos Relacionados
+
+- [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
+- [Contactos](../../comercial/contactos/contactos.md)
+- [Configuración](../../configuracion/index.md)
+
 ---
 This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
+
+
