@@ -141,10 +141,38 @@ body { background-color: var(--etendo-bg-page); }
 
 .md-content__inner {
   background-color: var(--etendo-bg-content);
-  padding: 1.5rem 2.5rem 2rem;
-  padding-bottom: 80vh;
-  max-width: none;
+  padding: 1.5rem 3rem 4rem;
+  max-width: 64rem;   /* columna generosa; el texto se acota aparte */
 }
+
+/* Medida de lectura cómoda para el texto corrido (~72 car.) */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > dl,
+.md-typeset > blockquote,
+.md-typeset > h1,
+.md-typeset > h2,
+.md-typeset > h3,
+.md-typeset > h4,
+.md-typeset .footnote {
+  max-width: 46rem;
+}
+
+/* Los medios anchos (capturas, tablas, código, admonitions, tabs) usan todo el ancho */
+.md-typeset > p:has(> img),
+.md-typeset > p > a.glightbox,
+.md-typeset figure,
+.md-typeset table:not([class]),
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset pre,
+.md-typeset .highlight,
+.md-typeset .tabbed-set,
+.md-typeset .mermaid {
+  max-width: 100%;
+}
+.md-typeset img { border-radius: var(--etendo-radius-md); }
 
 .md-sidebar--secondary,
 .md-sidebar--secondary .md-sidebar__scrollwrap {
@@ -192,15 +220,23 @@ body { background-color: var(--etendo-bg-page); }
   background-color: var(--etendo-sidebar-bg);
 }
 
-.md-sidebar--primary .md-nav__title {
+.md-sidebar--primary .md-nav__title,
+.md-nav--primary .md-nav__title,
+.md-nav--primary > .md-nav__title {
   color: var(--etendo-sidebar-muted);
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background-color: var(--etendo-sidebar-bg);
-  border-bottom: none;
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
+  position: static !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  padding: 0.4rem 0.6rem 0.6rem !important;
 }
 
 /* Títulos de sección */
@@ -222,6 +258,13 @@ body { background-color: var(--etendo-bg-page); }
   cursor: default;
   pointer-events: none;
   background: none !important;
+}
+
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: static !important;
+  margin-top: 0 !important;
 }
 
 .md-sidebar--primary .md-nav__item--section > a.md-nav__link,

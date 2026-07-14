@@ -250,3 +250,7 @@ Etendo Go utiliza tecnología de código abierto[^1] y cumple con los requisitos
 
 [^1]: El código fuente base está disponible en [GitHub](https://github.com/etendosoftware).
 [^2]: Reglamento General de Protección de Datos — Unión Europea.
+
+
+---
+Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

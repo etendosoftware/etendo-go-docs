@@ -27,6 +27,7 @@ theme:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
+    - navigation.tabs
     - navigation.instant
     - navigation.indexes
     - navigation.path
@@ -58,7 +59,7 @@ plugins:
             - Inicio: index.md
             - Primeros pasos:
                 - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go/que-es-etendo-go.md
-                - Crear una cuenta: primeros-pasos/crear-cuenta/crear-cuenta.md
+                - Cómo crear tu cuenta: primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md
             - Comercial:
                 - Contactos: comercial/contactos/contactos.md
                 - Ventas:

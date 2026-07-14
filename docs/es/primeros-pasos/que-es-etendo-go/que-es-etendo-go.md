@@ -58,7 +58,7 @@ Un filtro de período te permite enfocarte en el rango de fechas que te interesa
 
 ## Artículos Relacionados
 
-- [Crear una cuenta](../crear-cuenta/crear-cuenta.md) — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
+- [Cómo crear tu cuenta](../como-crear-tu-cuenta/como-crear-tu-cuenta.md) — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
 - [Contactos](../../comercial/contactos/contactos.md) — carga tus primeros contactos antes de emitir tu primer documento de venta o compra.
 
 Con la cuenta lista, puedes empezar a facturar, registrar gastos y consultar reportes en cuestión de minutos. Prueba Etendo Go, sin necesidad de tarjeta de crédito ni configuración adicional.
@@ -66,4 +66,4 @@ Con la cuenta lista, puedes empezar a facturar, registrar gastos y consultar rep
 
 
 ---
-This work is licensed under :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [ CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} by [Futit Services S.L](https://etendo.software){target="_blank"}.
+Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
