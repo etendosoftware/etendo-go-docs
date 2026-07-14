@@ -161,7 +161,7 @@ body { background-color: var(--etendo-bg-page); }
 
 /* Los medios anchos (capturas, tablas, código, admonitions, tabs) usan todo el ancho */
 .md-typeset > p:has(> img),
-.md-typeset > p > a.glightbox,
+.md-typeset > p:has(> a.glightbox),
 .md-typeset figure,
 .md-typeset table:not([class]),
 .md-typeset .admonition,
