@@ -42,7 +42,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 - [x] Una cuenta activa en Etendo Go
 - [x] Acceso a internet desde un navegador moderno
-- [ ] Datos de empresa configurados *(ver [Configuración](../configuracion/index.md))*
+- [ ] Datos de empresa configurados *(ver [Configuración](../../docs/assets/configuracion/index.md))*
 - [ ] Usuarios y roles asignados
 
 ---
@@ -166,7 +166,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Ponete en marcha en minutos con la guía de configuración inicial.
 
-    [:octicons-arrow-right-24: Primeros pasos](../configuracion/index.md)
+    [:octicons-arrow-right-24: Primeros pasos](../../docs/assets/configuracion/index.md)
 
 -   :material-currency-usd:{ .lg .middle } **Gestión financiera**
 
@@ -174,7 +174,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Conciliá cuentas bancarias y generá informes con un clic.
 
-    [:octicons-arrow-right-24: Finanzas](../finanzas/index.md)
+    [:octicons-arrow-right-24: Finanzas](../../docs/assets/finanzas/index.md)
 
 -   :material-truck-delivery:{ .lg .middle } **Ventas y compras**
 
@@ -182,7 +182,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Controlá pedidos, facturas y albaranes desde un solo lugar.
 
-    [:octicons-arrow-right-24: Ventas](../comercial/ventas/index.md)
+    [:octicons-arrow-right-24: Ventas](../../docs/assets/comercial/ventas/index.md)
 
 -   :material-warehouse:{ .lg .middle } **Inventario**
 
@@ -190,7 +190,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
     Gestioná almacenes, movimientos de stock y valoración.
 
-    [:octicons-arrow-right-24: Inventario](../inventario/index.md)
+    [:octicons-arrow-right-24: Inventario](../../docs/assets/inventario/index.md)
 
 </div>
 
@@ -198,7 +198,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
 ## Botones
 
-[Comenzar ahora](../configuracion/index.md){ .md-button .md-button--primary }
+[Comenzar ahora](../../docs/assets/configuracion/index.md){ .md-button .md-button--primary }
 [Ver primeros pasos](que-es-etendo-go.md){ .md-button }
 
 ---
