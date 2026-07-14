@@ -57,7 +57,7 @@ plugins:
           nav:
             - Inicio: index.md
             - Primeros pasos:
-                - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
+                - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go/que-es-etendo-go.md
                 - Crear una cuenta: primeros-pasos/crear-cuenta/crear-cuenta.md
             - Comercial:
                 - Contactos: comercial/contactos/contactos.md
@@ -80,11 +80,7 @@ plugins:
                 - Almacenes: inventario/almacenes.md
             - Configuración:
                 - configuracion/index.md
-        - locale: en
-          name: English
-          build: true
-          nav:
-            - Home: index.md
+        
   - glightbox
   - tags
   - git-committers:
