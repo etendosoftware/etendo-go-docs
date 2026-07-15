@@ -1,115 +1,185 @@
-/* ── Etendo Go — estilos ── */
+/* ══════════════════════════════════════════════════════════════════════════
+   Etendo Go — MkDocs Material theme
+   Alineado con el Etendo Design System (source of truth: SaaS Etendo.fig).
+
+   Sistema de color:
+   · Púrpura #7047EB  → PRIMARIO: enlaces, foco, acentos de acción
+   · Amarillo #FFE356 → ESTADO: nav activo, logo, fila/pestaña seleccionada
+   · Ramp de grises Etendo (50→900), semánticos en pares bg/border/fg
+   Reemplaza al esquema anterior (amarillo de acento + enlaces azules).
+   ══════════════════════════════════════════════════════════════════════════ */
 
 /* ════════════════════════════════════════
-   VARIABLES
+   VARIABLES — MODO CLARO
 ════════════════════════════════════════ */
 
 :root,
 [data-md-color-scheme="default"] {
-  /* Colores de marca */
-  --etendo-yellow: #FFD000;
-  --etendo-yellow-subtle: rgba(255, 208, 0, 0.12);
+  /* Marca */
+  --etendo-purple:        #7047EB;   /* primary (purple-500) */
+  --etendo-purple-hover:  #5423E7;   /* purple-600 */
+  --etendo-purple-soft:   #F4F1FD;   /* purple-50 — hover/selección */
+  --etendo-yellow:        #FFE356;   /* logo / nav activo / fila seleccionada */
+  --etendo-yellow-hi:     #F8D414;   /* highlight del tile del logo */
+  --etendo-yellow-subtle: rgba(248, 212, 20, 0.14);
 
-  /* Contenido */
-  --etendo-text: #111827;
-  --etendo-text-muted: #6B7280;
-  --etendo-border: #E5E7EB;
-  --etendo-bg-content: #FFFFFF;
-  --etendo-bg-page: #F3F4F6;
-  --etendo-bg-surface: #F9FAFB;
-  --etendo-bg-search: rgba(255,255,255,0.12);
-  --etendo-link: #2563EB;
-  --etendo-link-hover: #1D4ED8;
+  /* Contenido — ramp de grises Etendo */
+  --etendo-text:        #121217;   /* gray-900 (ink) */
+  --etendo-text-2:      #3F3F50;   /* gray-700 */
+  --etendo-text-muted:  #6C6C89;   /* gray-500 */
+  --etendo-text-faint:  #A9A9BC;   /* gray-300 */
+  --etendo-border:      #E8E8ED;   /* gray-100 */
+  --etendo-border-2:    #D1D1DB;   /* gray-200 */
+  --etendo-bg-content:  #FFFFFF;
+  --etendo-bg-page:     #F5F7F9;   /* chrome / app background */
+  --etendo-bg-surface:  #F7F7F8;   /* gray-50 */
+  --etendo-bg-search:   #F5F7F9;
+  --etendo-link:        var(--etendo-purple);
+  --etendo-link-hover:  var(--etendo-purple-hover);
 
-  /* Sidebar gris claro como el producto */
-  --etendo-sidebar-bg: #F3F4F6;
-  --etendo-sidebar-text: #374151;
-  --etendo-sidebar-muted: #9CA3AF;
-  --etendo-sidebar-hover: rgba(0,0,0,0.05);
-  --etendo-sidebar-border: rgba(0,0,0,0.06);
-  --etendo-sidebar-scrollbar: #D1D5DB;
+  /* Sidebar — chrome gris frío como el producto */
+  --etendo-sidebar-bg:        #F5F7F9;
+  --etendo-sidebar-text:      #3F3F50;
+  --etendo-sidebar-muted:     #A9A9BC;
+  --etendo-sidebar-hover:     #FFFFFF;   /* item "salta" del chrome (DS) */
+  --etendo-sidebar-border:    rgba(18,18,23,0.06);
+  --etendo-sidebar-scrollbar: #D1D1DB;
 
-  --md-accent-fg-color: var(--etendo-yellow);
-  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
-  --md-accent-bg-color: var(--etendo-text);
-}
+  /* Semánticos (bg50 / border200 / fg700) */
+  --etendo-info-bg:    #F0FAFF; --etendo-info-border:    #ADE4FF; --etendo-info-fg:    #0075AD;
+  --etendo-warn-bg:    #FFF9EB; --etendo-warn-border:    #FFE7AD; --etendo-warn-fg:    #8A6100;
+  --etendo-success-bg: #EEFBF4; --etendo-success-border: #B2EECC; --etendo-success-fg: #17663A;
+  --etendo-danger-bg:  #FEF0F4; --etendo-danger-border:  #FBB1C4; --etendo-danger-fg:  #D50B3E;
 
-[data-md-color-scheme="slate"] {
-  --etendo-yellow: #FFD000;
-  --etendo-yellow-subtle: rgba(255, 208, 0, 0.10);
+  /* Radios (DS) */
+  --etendo-radius-sm: 6px;
+  --etendo-radius-md: 8px;
+  --etendo-radius-lg: 12px;
 
-  --etendo-text: #F1F5F9;
-  --etendo-text-muted: #94A3B8;
-  --etendo-border: #2D3748;
-  --etendo-bg-content: #161B22;
-  --etendo-bg-page: #0D1117;
-  --etendo-bg-surface: #1A1F2E;
-  --etendo-bg-search: rgba(255,255,255,0.08);
-  --etendo-link: #60A5FA;
-  --etendo-link-hover: #93C5FD;
+  /* Sombras (DS) */
+  --etendo-shadow-sm: 0 1px 2px rgba(18,18,23,.04), 0 0 0 1px rgba(18,18,23,.03);
+  --etendo-shadow-md: 0 4px 12px rgba(18,18,23,.05), 0 1px 2px rgba(18,18,23,.04);
+  --etendo-shadow-focus: 0 0 0 3px rgba(112,71,235,.25);
 
-  /* Sidebar modo oscuro */
-  --etendo-sidebar-bg: #0D1117;
-  --etendo-sidebar-text: #CBD5E1;
-  --etendo-sidebar-muted: #64748B;
-  --etendo-sidebar-hover: rgba(255,255,255,0.05);
-  --etendo-sidebar-border: rgba(255,255,255,0.06);
-  --etendo-sidebar-scrollbar: rgba(255,255,255,0.12);
-
-  --md-primary-fg-color: #1A1F2E;
-  --md-primary-bg-color: #F1F5F9;
-  --md-accent-fg-color: var(--etendo-yellow);
-  --md-accent-fg-color--transparent: var(--etendo-yellow-subtle);
-  --md-accent-bg-color: #0D1117;
-
-  --md-default-bg-color: var(--etendo-bg-content);
-  --md-default-fg-color: var(--etendo-text);
-  --md-default-fg-color--light: var(--etendo-text-muted);
-  --md-default-fg-color--lighter: var(--etendo-text-muted);
-  --md-default-fg-color--lightest: var(--etendo-text-muted);
-  --md-code-bg-color: #1E2433;
-  --md-code-fg-color: #E2E8F0;
-  --md-footer-bg-color: #0D1117;
-  --md-footer-fg-color: var(--etendo-text-muted);
+  /* Overrides Material */
+  --md-primary-fg-color:              var(--etendo-purple);
+  --md-primary-fg-color--light:       var(--etendo-purple);
+  --md-primary-fg-color--dark:        var(--etendo-purple-hover);
+  --md-accent-fg-color:               var(--etendo-purple);
+  --md-accent-fg-color--transparent:  var(--etendo-purple-soft);
+  --md-typeset-a-color:               var(--etendo-purple);
 }
 
 /* ════════════════════════════════════════
-   LAYOUT — fondo gris exterior, contenido blanco
+   VARIABLES — MODO OSCURO
 ════════════════════════════════════════ */
 
-body {
-  background-color: var(--etendo-bg-page);
+[data-md-color-scheme="slate"] {
+  --etendo-purple:        #A991F3;   /* purple-300 — más luminoso para contraste */
+  --etendo-purple-hover:  #C6B6F7;   /* purple-200 */
+  --etendo-purple-soft:   rgba(112,71,235,0.16);
+  --etendo-yellow:        #FFE356;
+  --etendo-yellow-hi:     #F8D414;
+  --etendo-yellow-subtle: rgba(255, 227, 86, 0.12);
+
+  --etendo-text:        #F7F7F8;
+  --etendo-text-2:      #D1D1DB;
+  --etendo-text-muted:  #A9A9BC;
+  --etendo-text-faint:  #6C6C89;
+  --etendo-border:      #282833;   /* gray-800 */
+  --etendo-border-2:    #3F3F50;
+  --etendo-bg-content:  #17171E;
+  --etendo-bg-page:     #0E0E13;
+  --etendo-bg-surface:  #1E1E28;
+  --etendo-bg-search:   rgba(255,255,255,0.06);
+  --etendo-link:        var(--etendo-purple);
+  --etendo-link-hover:  var(--etendo-purple-hover);
+
+  --etendo-sidebar-bg:        #121217;
+  --etendo-sidebar-text:      #D1D1DB;
+  --etendo-sidebar-muted:     #6C6C89;
+  --etendo-sidebar-hover:     rgba(255,255,255,0.05);
+  --etendo-sidebar-border:    rgba(255,255,255,0.06);
+  --etendo-sidebar-scrollbar: rgba(255,255,255,0.14);
+
+  --etendo-info-bg:    rgba(0,172,255,0.08);  --etendo-info-border:    rgba(0,172,255,0.28);  --etendo-info-fg:    #70D1FF;
+  --etendo-warn-bg:    rgba(255,227,86,0.08); --etendo-warn-border:    rgba(255,227,86,0.28); --etendo-warn-fg:    #FFDA85;
+  --etendo-success-bg: rgba(45,202,114,0.08); --etendo-success-border: rgba(45,202,114,0.28); --etendo-success-fg: #84E4AE;
+  --etendo-danger-bg:  rgba(245,61,107,0.08); --etendo-danger-border:  rgba(245,61,107,0.28); --etendo-danger-fg:  #F98BA6;
+
+  --etendo-shadow-sm: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(255,255,255,.04);
+  --etendo-shadow-md: 0 4px 12px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.4);
+  --etendo-shadow-focus: 0 0 0 3px rgba(169,145,243,.30);
+
+  --md-primary-fg-color:              #17171E;
+  --md-primary-bg-color:              #F7F7F8;
+  --md-accent-fg-color:               var(--etendo-purple);
+  --md-accent-fg-color--transparent:  var(--etendo-purple-soft);
+  --md-typeset-a-color:               var(--etendo-purple);
+
+  --md-default-bg-color:            var(--etendo-bg-content);
+  --md-default-fg-color:            var(--etendo-text);
+  --md-default-fg-color--light:     var(--etendo-text-muted);
+  --md-default-fg-color--lighter:   var(--etendo-text-muted);
+  --md-default-fg-color--lightest:  var(--etendo-text-faint);
+  --md-code-bg-color:               #1E1E28;
+  --md-code-fg-color:               #E8E8ED;
+  --md-footer-bg-color:             #0E0E13;
+  --md-footer-fg-color:             var(--etendo-text-muted);
 }
 
-.md-main {
-  background-color: var(--etendo-bg-page);
-}
+/* ════════════════════════════════════════
+   LAYOUT — chrome gris frío, contenido blanco
+════════════════════════════════════════ */
 
-/* Ampliar el grid principal para aprovechar más pantalla */
-.md-grid {
-  max-width: 90rem;
-}
+body { background-color: var(--etendo-bg-page); }
+.md-main { background-color: var(--etendo-bg-page); }
 
-.md-content {
-  background-color: var(--etendo-bg-content);
-}
+.md-grid { max-width: 90rem; }
+
+.md-content { background-color: var(--etendo-bg-content); }
 
 .md-content__inner {
   background-color: var(--etendo-bg-content);
-  padding: 1.5rem 2.5rem 2rem;
-  padding-bottom: 80vh;
-  max-width: none;
+  padding: 1.5rem 3rem 4rem;
+  max-width: 64rem;   /* columna generosa; el texto se acota aparte */
 }
 
-/* Sidebar secundario (TOC) fondo gris como el exterior */
+/* Medida de lectura cómoda para el texto corrido (~72 car.) */
+.md-typeset > p,
+.md-typeset > ul,
+.md-typeset > ol,
+.md-typeset > dl,
+.md-typeset > blockquote,
+.md-typeset > h1,
+.md-typeset > h2,
+.md-typeset > h3,
+.md-typeset > h4,
+.md-typeset .footnote {
+  max-width: 46rem;
+}
+
+/* Los medios anchos (capturas, tablas, código, admonitions, tabs) usan todo el ancho */
+.md-typeset > p:has(> img),
+.md-typeset > p:has(> a.glightbox),
+.md-typeset figure,
+.md-typeset table:not([class]),
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset pre,
+.md-typeset .highlight,
+.md-typeset .tabbed-set,
+.md-typeset .mermaid {
+  max-width: 100%;
+}
+.md-typeset img { border-radius: var(--etendo-radius-md); }
+
 .md-sidebar--secondary,
 .md-sidebar--secondary .md-sidebar__scrollwrap {
   background-color: var(--etendo-bg-page);
 }
 
-.md-sidebar--secondary .md-sidebar__inner {
-  padding-top: 0.6rem;
-}
+.md-sidebar--secondary .md-sidebar__inner { padding-top: 0.6rem; }
 
 /* ════════════════════════════════════════
    HEADER
@@ -122,17 +192,27 @@ body {
   color: var(--etendo-text);
 }
 
-.md-header__title {
-  color: var(--etendo-text);
-}
+.md-header__title { color: var(--etendo-text); }
 
-/* Botones del header */
-[data-md-color-scheme="default"] .md-header__button {
-  color: var(--etendo-text-muted);
+[data-md-color-scheme="default"] .md-header__button { color: var(--etendo-text-muted); }
+
+/* Pestañas de navegación superior */
+.md-tabs {
+  background-color: var(--etendo-bg-content);
+  color: var(--etendo-text-2);
+  border-bottom: 1px solid var(--etendo-border);
+}
+.md-tabs__link { color: var(--etendo-text-2); opacity: 1; }
+.md-tabs__link:hover { color: var(--etendo-text); }
+.md-tabs__link--active,
+.md-tabs__item--active .md-tabs__link {
+  color: var(--etendo-text);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--etendo-yellow-hi);
 }
 
 /* ════════════════════════════════════════
-   SIDEBAR IZQUIERDO — oscuro como el producto
+   SIDEBAR IZQUIERDO — chrome gris del producto
 ════════════════════════════════════════ */
 
 .md-sidebar--primary,
@@ -140,21 +220,28 @@ body {
   background-color: var(--etendo-sidebar-bg);
 }
 
-/* Título principal "ETENDO GO" — sin degradado blanco */
-.md-sidebar--primary .md-nav__title {
+.md-sidebar--primary .md-nav__title,
+.md-nav--primary .md-nav__title,
+.md-nav--primary > .md-nav__title {
   color: var(--etendo-sidebar-muted);
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background-color: var(--etendo-sidebar-bg);
-  border-bottom: none;
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
+  position: static !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  padding: 0.4rem 0.6rem 0.6rem !important;
 }
 
-/* Secciones — títulos grandes, alineados a la izquierda */
+/* Títulos de sección */
 .md-sidebar--primary .md-nav__item--section > .md-nav__link {
-  color: var(--etendo-sidebar-text);
+  color: var(--etendo-text);
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: none;
@@ -167,14 +254,19 @@ body {
   margin-bottom: 0;
 }
 
-/* Secciones sin index.md (label) — no navegables, sin hover */
 .md-sidebar--primary .md-nav__item--section > label.md-nav__link {
   cursor: default;
   pointer-events: none;
   background: none !important;
 }
 
-/* Secciones con index.md — navegables, con hover */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: static !important;
+  margin-top: 0 !important;
+}
+
 .md-sidebar--primary .md-nav__item--section > a.md-nav__link,
 .md-sidebar--primary .md-nav__item--section > .md-nav__container {
   cursor: pointer;
@@ -186,116 +278,109 @@ body {
   background-color: var(--etendo-sidebar-hover) !important;
 }
 
-/* El <a> dentro de cualquier container hereda el padding del div — anularlo para alinear con links directos */
 .md-sidebar--primary .md-nav__container > a.md-nav__link {
   padding-left: 0 !important;
 }
 
-/* Links de página — más pequeños que los títulos de sección */
+/* Links de página */
 .md-sidebar--primary .md-nav__link {
   color: var(--etendo-sidebar-text);
   font-size: 0.78rem;
-  border-radius: 0;
-  transition: background 0.12s, color 0.12s;
+  border-radius: var(--etendo-radius-sm);
+  transition: background 0.14s ease-out, color 0.14s ease-out;
   padding: 0.3rem 0.6rem;
 }
 
-/* Jerarquía: sub-ítems de subsecciones anidadas con sangría */
 .md-sidebar--primary .md-nav__item--section .md-nav .md-nav__link {
   padding-left: 1.1rem;
   font-size: 0.75rem;
 }
 
-/* Tercer nivel: aún más sangría */
 .md-sidebar--primary .md-nav__item--section .md-nav .md-nav .md-nav__link {
   padding-left: 1.6rem;
   font-size: 0.73rem;
 }
 
-/* Hover — link directo (sin container) */
+/* Hover — el item "salta" del chrome a blanco (DS) */
 .md-sidebar--primary .md-nav__item > .md-nav__link:hover {
-  color: var(--etendo-sidebar-text);
+  color: var(--etendo-text);
   background-color: var(--etendo-sidebar-hover);
+  box-shadow: var(--etendo-shadow-sm);
 }
-
-/* Hover — links dentro de container: se aplica al container, no a cada hijo */
 .md-sidebar--primary .md-nav__container:hover {
   background-color: var(--etendo-sidebar-hover);
+  border-radius: var(--etendo-radius-sm);
+  box-shadow: var(--etendo-shadow-sm);
 }
 .md-sidebar--primary .md-nav__container > .md-nav__link:hover {
   background-color: transparent;
+  box-shadow: none;
 }
 
-/* Item activo: fondo amarillo — solo la página exacta (md-nav__link--active), no ancestros */
+/* Item activo: pill amarillo — solo la página exacta */
 .md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link--active {
-  color: #111827 !important;
+  color: #121217 !important;
   font-weight: 600;
   background-color: var(--etendo-yellow) !important;
-  border-radius: 0 !important;
+  border-radius: var(--etendo-radius-sm) !important;
   border: none !important;
 }
-
-/* Item activo dentro de container — solo página exacta */
 .md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__container:has(> a.md-nav__link--active) {
   background-color: var(--etendo-yellow) !important;
-  border-radius: 0 !important;
+  border-radius: var(--etendo-radius-sm) !important;
 }
 .md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__container:has(> a.md-nav__link--active) > .md-nav__link {
-  color: #111827 !important;
+  color: #121217 !important;
   font-weight: 600;
   background-color: transparent !important;
 }
 
-
-/* Scrollbar del sidebar */
+/* Scrollbar */
 .md-sidebar--primary .md-sidebar__scrollwrap {
   scrollbar-width: thin;
   scrollbar-color: var(--etendo-sidebar-scrollbar) transparent;
   scroll-behavior: auto !important;
 }
-
-.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
-  width: 4px;
-}
-
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar { width: 4px; }
 .md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
   background-color: var(--etendo-sidebar-scrollbar);
   border-radius: 2px;
 }
-
-.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-track {
-  background: transparent;
-}
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-track { background: transparent; }
 
 /* ════════════════════════════════════════
    BÚSQUEDA
 ════════════════════════════════════════ */
 
 .md-search__form {
-  border-radius: 6px;
+  border-radius: var(--etendo-radius-md);
   background-color: var(--etendo-bg-search);
-  border: 1px solid var(--etendo-sidebar-border);
-  color: var(--etendo-sidebar-text);
+  border: 1px solid var(--etendo-border);
+  color: var(--etendo-text);
+}
+.md-search__form:hover { background-color: var(--etendo-bg-search); }
+
+.md-search__input { color: var(--etendo-text); }
+.md-search__input::placeholder { color: var(--etendo-text-muted); }
+.md-search__icon { color: var(--etendo-text-muted); }
+
+.md-search__input:focus-within,
+.md-search__form:focus-within {
+  box-shadow: var(--etendo-shadow-focus);
 }
 
-.md-search__input {
-  color: var(--etendo-sidebar-text);
+.md-search-result { background-color: var(--etendo-bg-content); }
+.md-search-result__link:hover,
+.md-search-result__link[data-md-state="active"] {
+  background-color: var(--etendo-purple-soft);
 }
-
-.md-search__input::placeholder {
-  color: var(--etendo-sidebar-muted);
-}
-
-/* Resultados de búsqueda */
-.md-search-result {
-  background-color: var(--etendo-bg-content);
-}
+.md-search-result__article--document .md-search-result__title { color: var(--etendo-text); }
+.md-search-result mark { color: var(--etendo-purple); }
 
 /* ════════════════════════════════════════
    TOC DERECHO
 ════════════════════════════════════════ */
 
-/* Título "Tabla de contenidos" — igual que secciones del sidebar */
 .md-sidebar--secondary .md-nav__title {
   color: var(--etendo-sidebar-muted);
   font-size: 0.65rem;
@@ -313,10 +398,9 @@ body {
   color: var(--etendo-text-muted);
   font-size: 0.75rem;
   border-radius: 0;
-  transition: color 0.12s;
+  transition: color 0.14s ease-out;
   padding-left: 1rem;
 }
-
 .md-sidebar--secondary .md-nav__link:hover {
   color: var(--etendo-text);
   background: none;
@@ -324,7 +408,7 @@ body {
 
 .md-nav--secondary .md-nav__link--active {
   color: var(--etendo-text) !important;
-  border-left: 2px solid var(--etendo-yellow);
+  border-left: 2px solid var(--etendo-yellow-hi);
   padding-left: calc(1rem - 2px);
   background-color: transparent !important;
   font-weight: 600;
@@ -334,14 +418,9 @@ body {
    BREADCRUMB (navigation.path)
 ════════════════════════════════════════ */
 
-.md-path {
-  color: var(--etendo-text-muted);
-  font-size: 0.72rem;
-}
-
-.md-path__item::after {
-  color: var(--etendo-border);
-}
+.md-path { color: var(--etendo-text-muted); font-size: 0.72rem; }
+.md-path__item::after { color: var(--etendo-border-2); }
+.md-path__link:hover { color: var(--etendo-purple); }
 
 /* ════════════════════════════════════════
    TIPOGRAFÍA
@@ -350,9 +429,17 @@ body {
 .md-typeset h1 {
   font-weight: 700;
   color: var(--etendo-text);
+  letter-spacing: -0.01em;
 }
 
-.md-typeset h2,
+.md-typeset h2 {
+  font-weight: 600;
+  color: var(--etendo-text);
+  letter-spacing: -0.005em;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--etendo-border);
+}
+
 .md-typeset h3 {
   font-weight: 600;
   color: var(--etendo-text);
@@ -360,11 +447,9 @@ body {
 
 .md-typeset a {
   color: var(--etendo-link);
+  transition: color 0.14s ease-out;
 }
-
-.md-typeset a:hover {
-  color: var(--etendo-link-hover);
-}
+.md-typeset a:hover { color: var(--etendo-link-hover); }
 
 /* ════════════════════════════════════════
    LOGO
@@ -379,40 +464,215 @@ body {
    CÓDIGO
 ════════════════════════════════════════ */
 
-.md-typeset pre > code {
-  border-radius: 6px;
+.md-typeset code {
+  border-radius: var(--etendo-radius-sm);
 }
-
-[data-md-color-scheme="slate"] .md-typeset code {
-  background-color: #1E2433;
-  color: #E2E8F0;
-}
-
-/* ════════════════════════════════════════
-   ADMONITIONS (modo oscuro)
-════════════════════════════════════════ */
-
-[data-md-color-scheme="slate"] .md-typeset .admonition,
-[data-md-color-scheme="slate"] .md-typeset details {
+.md-typeset :not(pre) > code {
+  color: var(--etendo-purple-hover);
   background-color: var(--etendo-bg-surface);
-  border-color: var(--etendo-border);
+}
+.md-typeset pre > code { border-radius: var(--etendo-radius-md); }
+
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+  background-color: #1E1E28;
+  color: #C6B6F7;
+}
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: #1E1E28;
+  color: #E8E8ED;
+}
+
+/* Botón copiar */
+.md-clipboard:hover { color: var(--etendo-purple); }
+
+/* ════════════════════════════════════════
+   ADMONITIONS — pares semánticos Etendo
+════════════════════════════════════════ */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--etendo-radius-md);
+  border-width: 1px;
+  box-shadow: none;
+  font-size: 0.72rem;
+}
+
+/* note / abstract → info azul */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info,
+.md-typeset .admonition.abstract,
+.md-typeset details.note,
+.md-typeset details.info,
+.md-typeset details.abstract {
+  border-color: var(--etendo-info-border);
+  background-color: var(--etendo-info-bg);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .info > .admonition-title,
+.md-typeset .abstract > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .info > summary,
+.md-typeset .abstract > summary {
+  background-color: var(--etendo-info-border);
+  color: var(--etendo-info-fg);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .abstract > .admonition-title::before { background-color: var(--etendo-info-fg); }
+
+/* tip / hint / success → verde */
+.md-typeset .admonition.tip,
+.md-typeset .admonition.hint,
+.md-typeset .admonition.success,
+.md-typeset details.tip,
+.md-typeset details.hint,
+.md-typeset details.success {
+  border-color: var(--etendo-success-border);
+  background-color: var(--etendo-success-bg);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .hint > .admonition-title,
+.md-typeset .success > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .hint > summary,
+.md-typeset .success > summary {
+  background-color: var(--etendo-success-border);
+  color: var(--etendo-success-fg);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .hint > .admonition-title::before,
+.md-typeset .success > .admonition-title::before { background-color: var(--etendo-success-fg); }
+
+/* warning / caution → amarillo */
+.md-typeset .admonition.warning,
+.md-typeset .admonition.caution,
+.md-typeset .admonition.attention,
+.md-typeset details.warning,
+.md-typeset details.caution,
+.md-typeset details.attention {
+  border-color: var(--etendo-warn-border);
+  background-color: var(--etendo-warn-bg);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .caution > .admonition-title,
+.md-typeset .attention > .admonition-title,
+.md-typeset .warning > summary,
+.md-typeset .caution > summary,
+.md-typeset .attention > summary {
+  background-color: var(--etendo-warn-border);
+  color: var(--etendo-warn-fg);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .caution > .admonition-title::before,
+.md-typeset .attention > .admonition-title::before { background-color: var(--etendo-warn-fg); }
+
+/* danger / bug / failure → rojo */
+.md-typeset .admonition.danger,
+.md-typeset .admonition.bug,
+.md-typeset .admonition.failure,
+.md-typeset details.danger,
+.md-typeset details.bug,
+.md-typeset details.failure {
+  border-color: var(--etendo-danger-border);
+  background-color: var(--etendo-danger-bg);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .bug > .admonition-title,
+.md-typeset .failure > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .bug > summary,
+.md-typeset .failure > summary {
+  background-color: var(--etendo-danger-border);
+  color: var(--etendo-danger-fg);
+}
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .failure > .admonition-title::before { background-color: var(--etendo-danger-fg); }
+
+/* ════════════════════════════════════════
+   TABLAS
+════════════════════════════════════════ */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--etendo-border);
+  border-radius: var(--etendo-radius-lg);
+  overflow: hidden;
+  box-shadow: none;
+}
+.md-typeset table:not([class]) th {
+  background-color: var(--etendo-bg-page);
+  color: var(--etendo-text);
+  font-weight: 600;
+  border-bottom: 1px solid var(--etendo-border);
+}
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--etendo-border);
+  color: var(--etendo-text-2);
+}
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--etendo-bg-page);
 }
 
 /* ════════════════════════════════════════
-   TABLAS (modo oscuro)
+   BOTONES
 ════════════════════════════════════════ */
 
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+.md-typeset .md-button {
+  border-color: var(--etendo-border-2);
+  color: var(--etendo-text);
+  border-radius: var(--etendo-radius-md);
+  transition: background 0.14s ease-out, border-color 0.14s ease-out;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  border-color: var(--etendo-border-2);
+  color: var(--etendo-text);
+  background-color: var(--etendo-bg-page);
+}
+
+/* Primario = ink negro (DS: el botón primario NO es amarillo) */
+.md-typeset .md-button--primary {
+  background-color: var(--etendo-text);
+  border-color: var(--etendo-text);
+  color: #FFFFFF;
+  border-radius: var(--etendo-radius-md);
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: #2A2A30;
+  border-color: #2A2A30;
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  border-color: var(--etendo-border-2);
+  color: var(--etendo-text);
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover {
   background-color: var(--etendo-bg-surface);
   color: var(--etendo-text);
 }
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
-  border-color: var(--etendo-border);
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: #F7F7F8;
+  border-color: #F7F7F8;
+  color: #121217;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  background-color: #E8E8ED;
+  border-color: #E8E8ED;
+  color: #121217;
 }
 
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
-  background-color: var(--etendo-bg-surface);
+/* ════════════════════════════════════════
+   FOCO — anillo púrpura del DS
+════════════════════════════════════════ */
+
+.md-typeset a:focus-visible,
+.md-nav__link:focus-visible,
+.md-button:focus-visible {
+  outline: none;
+  box-shadow: var(--etendo-shadow-focus);
+  border-radius: var(--etendo-radius-sm);
 }
 
 /* ════════════════════════════════════════
@@ -422,9 +682,9 @@ body {
 .etendo-home__hero {
   position: relative;
   overflow: hidden;
-  background-color: var(--etendo-bg-surface);
+  background-color: var(--etendo-bg-page);
   border-bottom: 1px solid var(--etendo-border);
-  padding: 2.5rem 2rem 2rem;
+  padding: 3rem 2rem 2.5rem;
   text-align: center;
 }
 
@@ -434,100 +694,83 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  max-width: 700px;
+  max-width: 640px;
   height: auto;
-  opacity: 0.1;
+  opacity: 0.06;
   pointer-events: none;
   user-select: none;
 }
 
-.etendo-home__hero-inner {
-  position: relative;
-  z-index: 1;
-}
+.etendo-home__hero-inner { position: relative; z-index: 1; }
 
 .etendo-home__logo {
-  height: 2rem !important;
+  height: 2.5rem !important;
   width: auto !important;
-  max-width: 160px !important;
-  margin-bottom: 0.875rem;
+  max-width: 180px !important;
+  margin: 0 auto 1.25rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .etendo-home__title {
-  font-size: 1.6rem;
+  font-size: 1.875rem;
   font-weight: 700;
   color: var(--etendo-text);
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.5rem;
   line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .etendo-home__subtitle {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--etendo-text-muted);
   max-width: 480px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.5rem;
   line-height: 1.5;
 }
 
-/* Buscador del hero */
 .etendo-home__search {
-  max-width: 480px;
+  max-width: 520px;
   margin: 0 auto;
   position: relative;
 }
 
 .etendo-home__search-input {
   width: 100%;
-  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
   border: 1.5px solid var(--etendo-border);
-  border-radius: 6px;
+  border-radius: var(--etendo-radius-md);
   background-color: var(--etendo-bg-content);
   color: var(--etendo-text);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-family: inherit;
   outline: none;
   cursor: pointer;
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition: border-color 0.14s ease-out, box-shadow 0.14s ease-out;
   box-sizing: border-box;
+  box-shadow: var(--etendo-shadow-sm);
 }
-
 .etendo-home__search-input:hover,
 .etendo-home__search-input:focus {
-  border-color: var(--etendo-yellow);
-  box-shadow: 0 0 0 3px var(--etendo-yellow-subtle);
+  border-color: var(--etendo-purple);
+  box-shadow: var(--etendo-shadow-focus);
 }
 
 .etendo-home__search-icon {
   position: absolute;
-  left: 0.75rem;
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
+  width: 1.05rem;
+  height: 1.05rem;
   color: var(--etendo-text-muted);
   pointer-events: none;
 }
-
-.etendo-home__search-icon svg {
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
-}
-
-.etendo-home__actions {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.etendo-home__search-icon svg { width: 100%; height: 100%; fill: currentColor; }
 
 .etendo-home__sections {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem 2rem 3rem;
+  padding: 2.5rem 2rem 4rem;
 }
 
 .etendo-home__grid {
@@ -536,26 +779,24 @@ body {
   gap: 1.25rem;
 }
 
-/* Card base */
+/* Card — edged, no shadow en reposo (DS) */
 .etendo-home__card {
   display: flex;
   flex-direction: column;
   padding: 1.25rem 1.5rem 1.5rem;
   background-color: var(--etendo-bg-content);
   border: 1px solid var(--etendo-border);
-  border-radius: 10px;
+  border-radius: var(--etendo-radius-lg);
   text-decoration: none !important;
   color: var(--etendo-text);
-  transition: border-color 0.15s, box-shadow 0.15s;
+  transition: border-color 0.14s ease-out, box-shadow 0.14s ease-out;
 }
-
 .etendo-home__card:hover {
-  border-color: var(--etendo-yellow);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border-color: var(--etendo-border-2);
+  box-shadow: var(--etendo-shadow-md);
   text-decoration: none !important;
 }
 
-/* Header de la card: icono + título (enlace a la página índice de la sección) */
 .etendo-home__card-top {
   display: flex;
   align-items: flex-start;
@@ -565,28 +806,24 @@ body {
   color: inherit;
   cursor: pointer;
 }
+.etendo-home__card-top:hover h3 { color: var(--etendo-purple); }
 
-.etendo-home__card-top:hover h3 {
-  color: var(--etendo-link-hover);
-}
-
+/* Icono: tile suave amarillo con glifo (rol de logo/estado) */
 .etendo-home__card-icon {
-  width: 1.75rem;
-  height: 1.75rem;
-  color: var(--etendo-yellow);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--etendo-radius-md);
+  background-color: var(--etendo-warn-bg);
+  color: var(--etendo-warn-fg);
   flex-shrink: 0;
-  margin-top: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
 }
+.etendo-home__card-icon svg { width: 100%; height: 100%; fill: currentColor; }
 
-.etendo-home__card-icon svg {
-  width: 100%;
-  height: 100%;
-  fill: currentColor;
-}
-
-.etendo-home__card-meta {
-  flex: 1;
-}
+.etendo-home__card-meta { flex: 1; }
 
 .etendo-home__card h3,
 .etendo-home__card-meta h3 {
@@ -595,7 +832,6 @@ body {
   color: var(--etendo-text);
   margin: 0 0 0.2rem;
 }
-
 .etendo-home__card p,
 .etendo-home__card-meta p {
   font-size: 0.8rem;
@@ -604,7 +840,6 @@ body {
   line-height: 1.5;
 }
 
-/* Lista de páginas dentro de la card */
 .etendo-home__card-links {
   list-style: none !important;
   padding: 0 !important;
@@ -613,16 +848,12 @@ body {
   padding-top: 0.6rem !important;
   margin-top: 0.25rem !important;
 }
-
 .etendo-home__card-links li {
   padding: 0 !important;
   margin: 0 !important;
   list-style: none !important;
 }
-
-.etendo-home__card-links li::before {
-  display: none !important;
-}
+.etendo-home__card-links li::before { display: none !important; }
 
 .etendo-home__card-links li a {
   display: flex;
@@ -632,21 +863,16 @@ body {
   color: var(--etendo-link);
   font-size: 0.83rem;
   text-decoration: none;
-  transition: color 0.12s;
+  transition: color 0.12s ease-out;
 }
-
 .etendo-home__card-links li a::before {
   content: "›";
-  color: var(--etendo-text-muted);
+  color: var(--etendo-text-faint);
   font-size: 1rem;
   line-height: 1;
 }
+.etendo-home__card-links li a:hover { color: var(--etendo-link-hover); }
 
-.etendo-home__card-links li a:hover {
-  color: var(--etendo-link-hover);
-}
-
-/* Etiqueta de sub-grupo (ej: "Ventas") */
 .etendo-home__card-links--group-label {
   font-size: 0.7rem;
   font-weight: 700;
@@ -659,67 +885,16 @@ body {
 
 @media (max-width: 900px) {
   .etendo-home__grid { grid-template-columns: repeat(2, 1fr); }
-  .etendo-home__title { font-size: 1.75rem; }
+  .etendo-home__title { font-size: 1.6rem; }
 }
-
 @media (max-width: 480px) {
   .etendo-home__grid { grid-template-columns: 1fr; }
-}
-
-/* ════════════════════════════════════════
-   BOTONES
-════════════════════════════════════════ */
-
-.md-typeset .md-button {
-  border-color: var(--etendo-border);
-  color: var(--etendo-text);
-  border-radius: 4px;
-}
-
-.md-typeset .md-button:hover,
-.md-typeset .md-button:focus {
-  border-color: var(--etendo-text-muted);
-  color: var(--etendo-text);
-  background-color: var(--etendo-bg-surface);
-}
-
-.md-typeset .md-button--primary,
-[data-md-color-primary="white"] .md-button--primary,
-[data-md-color-primary="custom"] .md-button--primary {
-  background-color: var(--etendo-yellow);
-  border-color: var(--etendo-yellow);
-  color: #111827;
-  border-radius: 4px;
-}
-
-.md-typeset .md-button--primary:hover,
-.md-typeset .md-button--primary:focus,
-[data-md-color-primary="white"] .md-button--primary:hover,
-[data-md-color-primary="custom"] .md-button--primary:hover {
-  background-color: #E6BB00;
-  border-color: #E6BB00;
-  color: #111827;
-}
-
-[data-md-color-scheme="slate"] .md-typeset .md-button {
-  border-color: var(--etendo-border);
-  color: var(--etendo-text);
-}
-
-[data-md-color-scheme="slate"] .md-typeset .md-button:hover {
-  background-color: var(--etendo-bg-surface);
-  color: var(--etendo-text);
 }
 
 /* ════════════════════════════════════════
    FOOTER
 ════════════════════════════════════════ */
 
-.md-footer {
-  background-color: var(--etendo-sidebar-bg);
-  color: var(--etendo-sidebar-text);
-}
-
-[data-md-color-scheme="default"] .md-footer {
-  color: var(--etendo-text-muted);
-}
+.md-footer { background-color: var(--etendo-sidebar-bg); color: var(--etendo-sidebar-text); }
+[data-md-color-scheme="default"] .md-footer { color: var(--etendo-text-muted); }
+.md-footer-meta { background-color: transparent; }
