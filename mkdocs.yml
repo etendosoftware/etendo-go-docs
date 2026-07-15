@@ -62,7 +62,10 @@ plugins:
                 - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go/que-es-etendo-go.md
                 - Cómo crear tu cuenta: primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md
             - Comercial:
-                - Contactos: comercial/contactos/contactos.md
+                - Contactos:
+                    - ¿Qué es la sección Contactos?: comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md
+                    - Crear un contacto: comercial/contactos/crear-un-contacto/crear-un-contacto.md
+                    - Gestionar tus contactos: comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md
                 - Ventas:
                     - comercial/ventas/index.md
                     - Presupuesto de venta: comercial/ventas/presupuesto-de-venta/presupuesto-de-venta.md
