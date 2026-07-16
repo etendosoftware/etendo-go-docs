@@ -1,10 +1,10 @@
 ---
 title: Cómo crear tu cuenta
 tags:
-  - Primeros pasos
-  - Registro
-  - Empresa
-  - Etendo Go
+    - Primeros pasos
+    - Registro
+    - Empresa
+    - Etendo Go
 ---
 
 # Cómo crear tu cuenta
@@ -87,13 +87,7 @@ Desde aquí puedes consultar, entre otros, los siguientes widgets:
 - **Productos más vendidos**
 
 Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que registres irá dando forma a tu Inicio.
-
-## Artículos Relacionados
-
-- [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
-- [Contactos](../../comercial/contactos/contactos.md)
-- [Configuración](../../configuracion/index.md)
-
+3
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
 
