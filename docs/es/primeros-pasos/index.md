@@ -1,9 +1,9 @@
 ---
 title: Primeros pasos
 hide:
-  - navigation
-  - toc
-  - path
+    - navigation
+    - toc
+    - path
 ---
 
 # Primeros pasos

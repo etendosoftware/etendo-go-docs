@@ -87,7 +87,13 @@ Desde aquí puedes consultar, entre otros, los siguientes widgets:
 - **Productos más vendidos**
 
 Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que registres irá dando forma a tu Inicio.
-3
+
+## Artículos Relacionados
+
+- [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
+- [Contactos](../../comercial/contactos/contactos.md)
+- [Configuración](../../configuracion/index.md)
+
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
 

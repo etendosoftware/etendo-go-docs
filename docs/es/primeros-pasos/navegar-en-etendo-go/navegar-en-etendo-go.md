@@ -1,10 +1,10 @@
 ---
 title: Navegar en Etendo Go
 tags:
-  - Primeros pasos
-  - Navegación
-  - Interfaz
-  - Etendo Go
+    - Primeros pasos
+    - Navegación
+    - Interfaz
+    - Etendo Go
 ---
 
 # Navegar en Etendo Go

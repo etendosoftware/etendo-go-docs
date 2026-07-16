@@ -1,10 +1,10 @@
 ---
 tags:
-  - Activos
-  - Amortización
-  - Finanzas
-  - Etendo Go
-  - Cómo hacer
+    - Activos
+    - Amortización
+    - Finanzas
+    - Etendo Go
+    - Cómo hacer
 ---
 
 # Apuntar un Activo

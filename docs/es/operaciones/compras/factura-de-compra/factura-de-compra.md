@@ -1,10 +1,10 @@
 ---
 tags:
-  - Factura de Compra
-  - Compras
-  - Operaciones
-  - Gestión Documental
-  - Etendo Go
+    - Factura de Compra
+    - Compras
+    - Operaciones
+    - Gestión Documental
+    - Etendo Go
 ---
 
 # Factura de compra
