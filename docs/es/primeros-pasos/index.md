@@ -1,9 +1,9 @@
 ---
 title: Primeros pasos
 hide:
-  - navigation
-  - toc
-  - path
+    - navigation
+    - toc
+    - path
 ---
 
 # Primeros pasos
@@ -27,5 +27,13 @@ Todo lo que necesitas para dar tus primeros pasos en Etendo Go: qué es la plata
     Regístrate y completa tu perfil y los datos de tu empresa en tres pasos para empezar a trabajar.
 
     [:octicons-arrow-right-24: Leer más](como-crear-tu-cuenta/como-crear-tu-cuenta.md)
+
+-   :material-compass-outline:{ .lg .middle } **Navegar en Etendo Go**
+
+    ---
+
+    Reconoce los menús, botones y componentes recurrentes que vas a encontrar en cualquier pantalla de Etendo Go.
+
+    [:octicons-arrow-right-24: Leer más](navegar-en-etendo-go/navegar-en-etendo-go.md)
 
 </div>

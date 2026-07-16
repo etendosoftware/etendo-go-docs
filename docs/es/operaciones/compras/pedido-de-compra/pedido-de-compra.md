@@ -1,10 +1,10 @@
 ---
 tags:
-  - Pedido de Compra
-  - Compras
-  - Operaciones
-  - Gestión Documental
-  - Etendo Go
+    - Pedido de Compra
+    - Compras
+    - Operaciones
+    - Gestión Documental
+    - Etendo Go
 ---
 
 # Pedido de compra

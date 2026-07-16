@@ -1,10 +1,10 @@
 ---
 tags:
-  - Factura de Venta
-  - Ventas
-  - Comercial
-  - Gestión Documental
-  - Etendo Go
+    - Factura de Venta
+    - Ventas
+    - Comercial
+    - Gestión Documental
+    - Etendo Go
 ---
 
 # Factura de venta

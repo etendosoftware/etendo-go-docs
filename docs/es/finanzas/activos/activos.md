@@ -1,10 +1,10 @@
 ---
 tags:
-  - Activos
-  - Amortización
-  - Finanzas
-  - Gestión Contable
-  - Etendo Go
+    - Activos
+    - Amortización
+    - Finanzas
+    - Gestión Contable
+    - Etendo Go
 ---
 
 # Activos
