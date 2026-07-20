@@ -1,5 +1,5 @@
 ---
-title: Contactos
+title: ¿Qué es la sección Contactos?
 tags:
   - Contactos
   - Comercial
@@ -8,7 +8,7 @@ tags:
   - Etendo Go
 ---
 
-# Contactos
+# ¿Qué es la sección Contactos?
 
 La ventana de **Contactos** es el maestro de terceros de Etendo Go: centraliza en un único registro la información de clientes, proveedores, o ambos a la vez. Todos los documentos transaccionales del sistema (facturas, pedidos, albaranes) requieren un contacto vinculado, por lo que suele ser de los primeros datos que cargas al empezar a usar Etendo Go.
 

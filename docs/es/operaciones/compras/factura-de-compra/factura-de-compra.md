@@ -197,7 +197,7 @@ El botón **Añadir pago** — disponible tanto en la vista detalle como en la b
 ## Artículos Relacionados
 
 - [Pedido de compra](../pedido-de-compra/pedido-de-compra.md)
-- [Contactos](../../../comercial/contactos/contactos.md)
+- [Contactos](../../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

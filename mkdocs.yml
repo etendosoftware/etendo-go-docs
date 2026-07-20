@@ -65,7 +65,7 @@ plugins:
             - Comercial:
                 - Contactos:
                     - ¿Qué es la sección Contactos?: comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md
-                    - Crear un contacto: comercial/contactos/crear-un-contacto/crear-un-contacto.md
+                    - Cómo crear un contacto: comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md
                     - Gestionar tus contactos: comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md
                 - Ventas:
                     - comercial/ventas/index.md

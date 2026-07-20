@@ -1,5 +1,5 @@
 ---
-title: Crear un contacto
+title: Cómo crear un contacto
 tags:
   - Contactos
   - Comercial
@@ -8,7 +8,7 @@ tags:
   - Etendo Go
 ---
 
-# Crear un contacto
+# Cómo crear un contacto
 
 Para poder emitir un documento de venta o de compra, primero necesitas tener el contacto correspondiente cargado en el sistema. Vas a completar sus datos generales, guardarlo, y recién después vas a poder asignarle el rol de cliente y/o proveedor.
 
@@ -19,8 +19,8 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
     ![Vista lista de Contactos — botón Nuevo contacto](assets/crear-un-contacto-1.png)
 
 2. Elige el tipo de contacto con las opciones **Persona / Empresa**, en la parte superior del formulario:
-    - **Empresa** — pide **Razón Social** en vez de Nombre y Apellidos.
     - **Persona** — pide **Nombre** y **Apellidos** en vez de Razón Social.
+    - **Empresa** — pide **Razón Social** en vez de Nombre y Apellidos.
 
     ![Formulario Nuevo contacto — opciones Persona/Empresa](assets/crear-un-contacto-2.png)
 3. Completa los campos del tab **General**:
@@ -38,6 +38,8 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
     - **Persona** — personas de contacto vinculadas (nombre, correo, teléfono, posición).
     - **Cuenta Bancaria** — IBAN y Código Swift.
     - **Dirección** — calle, código postal, ciudad, país y región, marcando si aplica como dirección de envíos, de facturación, o ambas.
+    - **Contabilidad (cliente)** y **Contabilidad (proveedor)** — cuentas contables asociadas al contacto según su rol.
+    - **Adjuntos** — archivos vinculados al contacto.
 
 ## Crédito límite (opcional)
 
@@ -58,11 +60,22 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 
 1. Con el contacto ya guardado, vuelve a abrirlo y entra al tab **Financiero**: ahora sí vas a poder activar el checkbox correspondiente según cómo vayas a operar con este contacto:
     - **Cliente** — habilita **Tarifa**, **Cuenta**, **Método de pago**, **Condiciones de pago** y el toggle **Bloquear** (para impedir nuevos documentos de venta a este contacto). El contacto podrá aparecer en documentos de venta.
-    - **Proveedor** — habilita los mismos campos, orientados a compras. El contacto podrá aparecer en documentos de compra.
+    - **Proveedor** — habilita los mismos campos, orientados a compras, incluido su propio toggle **Bloquear**. El contacto podrá aparecer en documentos de compra.
 
     ![Tab Financiero después de guardar — checkbox Cliente habilitado](assets/crear-un-contacto-6.png)
 
 2. Si el contacto te compra y te vende al mismo tiempo, activa ambos roles a la vez.
+
+## Crear un contacto desde un documento de venta o compra
+
+También puedes crear un contacto sin salir de un pedido, una factura o un albarán. Si buscas un contacto que todavía no existe desde el selector de contacto de ese documento, Etendo Go te ofrece un popup de creación rápida en vez de llevarte a la vista lista de Contactos.
+
+1. En el selector de contacto del documento, escribe el nombre del contacto que quieres crear y elige la opción para crearlo desde ahí.
+2. Completa el popup con los campos mínimos que pide: **Razón Social** (o Nombre y Apellidos, según el tipo) y el tipo de contacto — ambos son obligatorios para guardar desde este popup.
+3. Guarda el popup: el contacto queda creado y vinculado automáticamente al documento donde lo creaste.
+
+!!! info "Completar el resto de los datos"
+    El popup solo carga los datos mínimos. Para completar el resto de los campos (dirección, cuenta bancaria, rol Cliente/Proveedor, etc.), abre el contacto después desde la vista lista de Contactos y sigue los pasos de las secciones anteriores.
 
 ## Artículos Relacionados
 
