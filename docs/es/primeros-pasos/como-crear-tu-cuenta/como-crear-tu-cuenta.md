@@ -1,10 +1,10 @@
 ---
 title: Cómo crear tu cuenta
 tags:
-  - Primeros pasos
-  - Registro
-  - Empresa
-  - Etendo Go
+    - Primeros pasos
+    - Registro
+    - Empresa
+    - Etendo Go
 ---
 
 # Cómo crear tu cuenta

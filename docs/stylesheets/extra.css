@@ -802,11 +802,8 @@ body { background-color: var(--etendo-bg-page); }
   align-items: flex-start;
   gap: 0.875rem;
   margin-bottom: 0.75rem;
-  text-decoration: none !important;
-  color: inherit;
-  cursor: pointer;
 }
-.etendo-home__card-top:hover h3 { color: var(--etendo-purple); }
+.etendo-home__card:hover h3 { color: var(--etendo-purple); }
 
 /* Icono: tile suave amarillo con glifo (rol de logo/estado) */
 .etendo-home__card-icon {
@@ -840,47 +837,18 @@ body { background-color: var(--etendo-bg-page); }
   line-height: 1.5;
 }
 
-.etendo-home__card-links {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+.etendo-home__card-count {
+  margin-top: auto;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--etendo-border);
-  padding-top: 0.6rem !important;
-  margin-top: 0.25rem !important;
-}
-.etendo-home__card-links li {
-  padding: 0 !important;
-  margin: 0 !important;
-  list-style: none !important;
-}
-.etendo-home__card-links li::before { display: none !important; }
-
-.etendo-home__card-links li a {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.28rem 0;
-  color: var(--etendo-link);
-  font-size: 0.83rem;
-  text-decoration: none;
-  transition: color 0.12s ease-out;
-}
-.etendo-home__card-links li a::before {
-  content: "›";
-  color: var(--etendo-text-faint);
-  font-size: 1rem;
-  line-height: 1;
-}
-.etendo-home__card-links li a:hover { color: var(--etendo-link-hover); }
-
-.etendo-home__card-links--group-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  font-weight: 600;
   color: var(--etendo-text-muted);
-  padding: 0.5rem 0 0.2rem !important;
-  margin-top: 0.25rem;
+}
+
+.etendo-home__card-count--soon {
+  font-style: italic;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {

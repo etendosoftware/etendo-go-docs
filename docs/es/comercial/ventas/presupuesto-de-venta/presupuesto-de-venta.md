@@ -1,10 +1,10 @@
 ---
 tags:
-  - Presupuesto de Venta
-  - Ventas
-  - Comercial
-  - Gestión Documental
-  - Etendo Go
+    - Presupuesto de Venta
+    - Ventas
+    - Comercial
+    - Gestión Documental
+    - Etendo Go
 ---
 
 # Presupuesto de venta

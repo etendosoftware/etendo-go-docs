@@ -1,11 +1,11 @@
 ---
 title: ¿Qué es Etendo Go?
 tags:
-  - ERP
-  - SaaS
-  - Primeros pasos
-  - Inicio
-  - Copilot
+    - ERP
+    - SaaS
+    - Primeros pasos
+    - Inicio
+    - Copilot
 ---
 
 # ¿Qué es Etendo Go?

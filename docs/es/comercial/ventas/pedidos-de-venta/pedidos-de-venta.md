@@ -1,10 +1,10 @@
 ---
 tags:
-  - Pedido de Venta
-  - Ventas
-  - Comercial
-  - Gestión Documental
-  - Etendo Go
+    - Pedido de Venta
+    - Ventas
+    - Comercial
+    - Gestión Documental
+    - Etendo Go
 ---
 
 # Pedido de venta
