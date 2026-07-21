@@ -10,23 +10,23 @@ tags:
 
 # ¿Qué es la sección Contactos?
 
-La ventana de **Contactos** es el maestro de terceros de Etendo Go: centraliza en un único registro la información de clientes, proveedores, o ambos a la vez. Todos los documentos transaccionales del sistema (facturas, pedidos, albaranes) requieren un contacto vinculado, por lo que suele ser de los primeros datos que cargas al empezar a usar Etendo Go.
+Para poder empezar a trabajar con Etendo Go, una de las primeras cosas que deberás hacer es registrar tus **contactos**, ya que son indispensables para crear documentos tanto de ventas como de compras. Un mismo contacto puede representar a un cliente, un proveedor, o ambos a la vez, sin necesidad de duplicar sus datos.
 
 ## Un solo registro, dos roles
 
-Cada contacto puede tener activo el rol **Cliente**, **Proveedor**, o ambos al mismo tiempo, sin necesidad de crear dos registros distintos para la misma contraparte. Esto evita duplicar datos cuando, por ejemplo, una empresa te compra insumos y a la vez te vende servicios.
+Cada contacto puede tener activo uno o ambos roles al mismo tiempo, sin necesidad de crear dos registros distintos para la misma contraparte:
 
-## Lo que se hereda automáticamente
-
-La dirección, la tarifa, el método de pago y las condiciones de pago configurados en el contacto se heredan automáticamente en cada documento que se cree para él. No es necesario completarlos de nuevo cada vez: los cargas una vez, en el contacto, y quedan disponibles para toda la operación futura con esa contraparte.
-
-## Cómo se accede
-
-Contactos se abre desde el menú principal, y al entrar el sistema muestra directamente la vista lista de todos tus contactos, lista para que selecciones el que necesites.
+- **Cliente**: actívalo cuando el contacto te compra productos o servicios.
+- **Proveedor**: actívalo cuando el contacto te vende productos o servicios.
+- **Cliente y Proveedor a la vez**: útil cuando, por ejemplo, una empresa te compra insumos y a la vez te vende servicios, sin duplicar datos entre dos registros.
 
 ## Dónde la vas a usar
 
-Contactos es el punto de partida antes de emitir cualquier documento comercial: todo documento transaccional (factura, pedido, albarán) requiere un contacto vinculado. Por eso es habitual cargar tus primeros contactos justo después de crear tu cuenta, antes de registrar tu primera venta o compra.
+- **Antes de tu primera venta o compra**: es habitual cargar tus primeros contactos justo después de crear tu cuenta, para tenerlos listos cuando registres tu primer documento.
+- **Al emitir un pedido, una factura o un albarán**: seleccionas el contacto ya cargado en vez de escribir sus datos de nuevo en cada documento.
+- **Al conciliar cobros y pagos**: el sistema asocia cada movimiento financiero al contacto correspondiente, usando los datos que ya tiene configurados.
+
+Con tus contactos cargados, ya puedes avanzar a crear tu primer pedido de venta o registrar tu primera compra.
 
 ## Artículos Relacionados
 
