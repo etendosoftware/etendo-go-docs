@@ -10,7 +10,7 @@ tags:
 
 # Gestionar tus contactos
 
-Una vez que tienes contactos cargados en el sistema, vas a necesitar consultarlos, actualizar sus datos o revisar su situación financiera. Este artículo repasa la ventana de [Contactos](https://go.etendo.cloud/contacts){target="_blank"} — la vista lista y formulario — y te explica cómo interpretar cada uno de sus campos y solapas. Si todavía no has creado ningún contacto, empieza por [Cómo crear un contacto](../como-crear-un-contacto/como-crear-un-contacto.md).
+Una vez que tienes contactos cargados en el sistema, vas a necesitar consultarlos, actualizar sus datos o revisar su situación financiera. Este artículo repasa la ventana de [Contactos](https://go.etendo.cloud/contacts){target="_blank"} — la vista lista y el formulario — y te explica cómo interpretar cada uno de sus campos y solapas. Si todavía no has creado ningún contacto, empieza por [Cómo crear un contacto](../como-crear-un-contacto/como-crear-un-contacto.md).
 
 ## Vista Lista
 

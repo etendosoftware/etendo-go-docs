@@ -20,7 +20,7 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 
 2. Elige el tipo de contacto con las opciones **Persona / Empresa**, en la parte superior del formulario:
     - **Persona** — pide **Nombre** y **Apellidos** en vez de Razón Social.
-    - **Empresa** — pide **Razón Social** en vez de Nombre y Apellidos (Por Defecto).
+    - **Empresa** — pide **Razón Social** en vez de Nombre y Apellidos (por defecto).
 
     ![Formulario Nuevo contacto — opciones Persona/Empresa](assets/como-crear-un-contacto-2.png)
 
