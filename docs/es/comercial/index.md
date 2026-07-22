@@ -44,28 +44,60 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
 <div class="grid cards" markdown>
 
--   :material-file-document-edit-outline:{ .lg .middle } **Presupuesto de venta**
+-   :material-cart-outline:{ .lg .middle } **¿Qué es la sección Ventas?**
+
+    ---
+
+    Descubre el ciclo de venta completo de Etendo Go: de presupuesto a pedido, albarán, factura y devolución.
+
+    [:octicons-arrow-right-24: Leer más](ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
+
+-   :material-file-document-edit-outline:{ .lg .middle } **Crear y gestionar presupuestos**
 
     ---
 
     Conoce el documento opcional con el que ofreces productos y condiciones a un cliente, y cómo confirmarlo para generar un pedido o una factura.
 
-    [:octicons-arrow-right-24: Leer más](ventas/presupuesto-de-venta/presupuesto-de-venta.md)
+    [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)
 
--   :material-clipboard-list-outline:{ .lg .middle } **Pedido de venta**
+-   :material-clipboard-list-outline:{ .lg .middle } **Crear y gestionar pedidos**
 
     ---
 
     Descubre cómo formalizar el compromiso de entrega con tu cliente y generar desde él el albarán y la factura correspondientes.
 
-    [:octicons-arrow-right-24: Leer más](ventas/pedido-de-venta/pedido-de-venta.md)
+    [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)
 
--   :material-receipt-text-outline:{ .lg .middle } **Factura de venta**
+-   :material-truck-outline:{ .lg .middle } **Crear y gestionar albaranes**
+
+    ---
+
+    Aprende a documentar la entrega física de mercadería y a generar la factura correspondiente.
+
+    [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md)
+
+-   :material-receipt-text-outline:{ .lg .middle } **Crear una factura de venta**
 
     ---
 
     Aprende a emitir el documento fiscal que formaliza el cobro al cliente, registrar pagos parciales y hacer seguimiento del importe pendiente.
 
-    [:octicons-arrow-right-24: Leer más](ventas/factura-de-venta/factura-de-venta.md)
+    [:octicons-arrow-right-24: Leer más](ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md)
+
+-   :material-cash-refund:{ .lg .middle } **Crear y gestionar devoluciones**
+
+    ---
+
+    Aprende cómo Etendo Go separa el ingreso físico de mercadería devuelta del ajuste financiero al cliente.
+
+    [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
+
+-   :material-help-circle-outline:{ .lg .middle } **Documentos de venta: preguntas frecuentes**
+
+    ---
+
+    Respuestas a las dudas más comunes sobre presupuestos, pedidos, albaranes, facturas y devoluciones.
+
+    [:octicons-arrow-right-24: Leer más](ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md)
 
 </div>
