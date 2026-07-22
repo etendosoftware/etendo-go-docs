@@ -43,6 +43,7 @@ tags:
 
 - [Activos](activos.md)
 - [Amortización](../amortizacion/amortizacion.md)
+- [Crear un plan de amortización](crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

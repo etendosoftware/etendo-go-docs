@@ -9,25 +9,26 @@ tags:
 
 # Activos
 
-Un **activo** es un bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se deprecia a lo largo de su vida útil. Cada activo tiene un plan de amortización que distribuye su valor en períodos contables. Cuando llega el momento de ejecutar la depreciación, se crea un registro de [Amortización](../amortizacion/amortizacion.md) que agrupa uno o más activos y genera los asientos contables correspondientes (los registros en la contabilidad que reflejan el gasto de depreciación de ese período).
+Un **activo** es un bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se deprecia a lo largo de su vida útil. Cada activo tiene un plan de amortización que distribuye su valor en períodos contables. Cuando llega el momento de ejecutar la depreciación, se crea un registro de [Amortización](../amortizacion/amortizacion.md) que agrupa uno o más activos; al confirmarlo y contabilizarlo genera los asientos contables correspondientes (los registros en la contabilidad que reflejan el gasto de depreciación de ese período).
 
 ```mermaid
 flowchart LR
   A[Activo] -->|Crear amortización| B[Plan generado]
-  B -->|Ejecutar período| C[Amortización]
-  C -->|Confirmar| D[Asientos contables]
+  B -->|Ejecutar período| C[Amortización - Borrador]
+  C -->|Confirmar| D[Amortización - Procesado]
+  D -->|Contabilizar| E[Asientos contables]
 ```
 
-El flujo es: primero se crea y configura el activo, luego se genera el plan de amortización y, por último, se confirma la ejecución de cada período para producir los asientos contables.
+El flujo es: primero se crea y configura el activo, luego se genera el plan de amortización y, por último, se confirma y contabiliza la ejecución de cada período para producir los asientos contables.
 
 ## Ciclo de Vida de un Activo
 
 El flujo completo desde el alta hasta la depreciación total sigue estos pasos:
 
 1. **Crear el activo** — completa Identificador, Nombre y Grupo activo y guarda.
-2. **Configurar la depreciación** — activa el switch **Depreciar**, elige el Tipo de cálculo y completa los campos correspondientes.
+2. **Configurar la depreciación** — activa el interruptor **Depreciar**, elige el Tipo de cálculo y completa los campos correspondientes.
 3. **Generar el plan** — pulsa **Crear amortización**. El sistema genera las líneas del plan en la pestaña **Plan de amortización**, una por período, con su porcentaje e importe.
-4. **Ejecutar la depreciación del período** — ve a [Amortización](../amortizacion/amortizacion.md), o navega desde el mismo periodo y confírmalo. Confirmar ejecuta los asientos contables de forma definitiva; esta acción no se puede deshacer.
+4. **Ejecutar la depreciación del período** — ve a [Amortización](../amortizacion/amortizacion.md), o navega desde el mismo periodo, confírmalo y contabilízalo. Contabilizar genera los asientos contables; si necesitas corregirlo, usa **Reactivar** para volver a Borrador.
 5. **Seguimiento** — las líneas del plan que ya fueron ejecutadas pasan a estado **Confirmado** y se pueden navegar directamente desde el plan del activo hasta el registro de Amortización correspondiente. En la vista de lista podrás ver el progreso de la amortización y los bienes 100% amortizados.
 
 ---
@@ -35,11 +36,11 @@ El flujo completo desde el alta hasta la depreciación total sigue estos pasos:
 ## Vista Lista
 
 <figure markdown="span">
-  ![Vista lista de Activos](lista.png)
+  ![Vista lista de Activos](activos-1.png)
   <figcaption>Vista lista de Activos con columnas de nombre, grupo, fechas, valores y estado de amortización.</figcaption>
 </figure>
 
-La vista lista muestra todos los activos registrados con las columnas **Nombre**, **Grupo activo**, **Fecha compra**, **Fecha inicio**, **Valor del activo**, **Valor a amortizar**, **Amortizado real** y **Estado de amortización**.
+La vista lista muestra todos los activos registrados con las columnas **Identificador**, **Nombre**, **Grupo activo**, **Fecha compra**, **Fecha inicio**, **Valor a amortizar**, **Valor del activo**, **Amortizado real** y **Estado de amortización**.
 
 La columna **Estado de amortización** muestra una barra de progreso con el porcentaje depreciado: naranja cuando está en curso y verde cuando el activo está totalmente depreciado al 100 %.
 
@@ -56,7 +57,7 @@ El formulario se abre al crear un activo nuevo o al hacer clic sobre un registro
 ### Datos del Activo
 
 <figure markdown="span">
-  ![Formulario de Activo](datos.png)
+  ![Formulario de Activo](activos-2.png)
   <figcaption>Formulario de Activo con los campos de identificación del bien.</figcaption>
 </figure>
 
@@ -70,19 +71,19 @@ Los campos de identificación aparecen siempre en la parte superior del formular
 ### Configuración de Depreciación
 
 <figure markdown="span">
-  ![Configuración de depreciación](depreciacion.png)
-  <figcaption>Sección de configuración de depreciación con el switch Depreciar y sus opciones.</figcaption>
+  ![Configuración de depreciación](activos-3.png)
+  <figcaption>Sección de configuración de depreciación con el interruptor Depreciar y sus opciones.</figcaption>
 </figure>
 
 Esta sección controla si el activo se deprecia y qué método se usa.
 
-- **Depreciar** — switch que habilita o deshabilita la depreciación para este activo. Cuando está desactivado, aparece el mensaje *"La depreciación está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
-- **Cada mes tiene 30 días** — switch que aparece al activar **Depreciar** (activo por defecto). Normaliza los meses a 30 días para obtener cuotas uniformes.
+- **Depreciar** — interruptor que habilita o deshabilita la depreciación para este activo. Cuando está desactivado, aparece el mensaje *"La depreciación está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
+- **Cada mes tiene 30 días** — interruptor que aparece al activar **Depreciar** (activo por defecto). Normaliza los meses a 30 días para obtener cuotas uniformes.
 
 ### Información Financiera
 
 <figure markdown="span">
-  ![Información financiera](financiera.png)
+  ![Información financiera](activos-4.png)
   <figcaption>Sección de información financiera con los valores del activo y el método de amortización.</figcaption>
 </figure>
 
@@ -104,7 +105,7 @@ Según el **Tipo de cálculo** seleccionado, aparecen campos adicionales:
 ### Fechas
 
 <figure markdown="span">
-  ![Fechas](fechas.png)
+  ![Fechas](activos-5.png)
   <figcaption>Sección de fechas con los campos de compra, inicio, baja y fin del activo.</figcaption>
 </figure>
 
@@ -117,17 +118,18 @@ Según el **Tipo de cálculo** seleccionado, aparecen campos adicionales:
 
 Campos opcionales para asociar el activo a dimensiones de análisis contable. Se propagan automáticamente a cada línea del plan al generarlo o recalcularlo.
 
-- **Centro de costo** — úsalo cuando la depreciación debe imputarse a un área o departamento específico (ej: Tecnología, Operaciones).
 - **Proyecto** — úsalo cuando el activo está vinculado a un proyecto concreto y su depreciación forma parte del costo de ese proyecto.
-- **Producto** — úsalo cuando la depreciación está asociada a la fabricación o mantenimiento de un producto específico.
+- **Centro de coste** — úsalo cuando la depreciación debe imputarse a un área o departamento específico (ej: Tecnología, Operaciones).
 - **Contacto** — úsalo cuando el activo está asignado a un tercero (proveedor, cliente o entidad relacionada) relevante para la contabilidad.
+- **1ª Dimensión** y **2ª Dimensión** — ejes de análisis contable configurables libremente por la organización.
+- **Región de ventas**, **Actividad** y **Campaña** — dimensiones adicionales para segmentar la depreciación por análisis comercial.
 
 ---
 
 ## Barra de Acciones
 
 <figure markdown="span">
-  ![Barra de acciones del formulario de Activo](acciones.png)
+  ![Barra de acciones del formulario de Activo](activos-6.png)
   <figcaption>Barra de acciones del formulario de Activo.</figcaption>
 </figure>
 
@@ -143,7 +145,7 @@ El menú contextual (**⋮**) ofrece **Añadir a favoritos** y **Ayuda de esta p
 ## Resumen de Depreciación
 
 <figure markdown="span">
-  ![Resumen de Depreciación](resumen.png)
+  ![Resumen de Depreciación](activos-7.png)
   <figcaption>Panel lateral de Resumen de depreciación con el estado actual del activo.</figcaption>
 </figure>
 
@@ -159,7 +161,7 @@ El panel lateral **Resumen de depreciación** muestra el estado actual del activ
 ## Plan de Amortización
 
 <figure markdown="span">
-  ![Plan de amortización](plan.png)
+  ![Plan de amortización](activos-8.png)
   <figcaption>Pestaña Plan de amortización con las líneas generadas por período, porcentaje e importe.</figcaption>
 </figure>
 
@@ -168,11 +170,17 @@ La pestaña **Plan de amortización** muestra las líneas generadas por la acci�
 - **Período** — Fecha del período de depreciación. El formato varía según la periodicidad: `MM-YYYY` para planes mensuales (ej: `04-2026`) o `YYYY` para planes anuales (ej: `2026`).
 - **Porcentaje** — Porcentaje del valor a amortizar aplicado en ese período.
 - **Importe** — Monto en euros a depreciar.
-- **Estado** — **Confirmado** si el período ya fue ejecutado por una amortización; sin estado si está pendiente de ejecutar.
+- **Estado** — muestra **Confirmado** en las líneas ya ejecutadas por una Amortización, o **Pendiente** en las que todavía no se ejecutaron.
 
 Cuando no hay líneas, el plan muestra el mensaje: *"Aún no hay líneas de amortización. Usá 'Crear amortización' para generar el plan."*
 
 Al hacer clic en un período, se navega directamente al registro de [Amortización](../amortizacion/amortizacion.md) correspondiente a ese período.
+
+---
+
+## Contabilidad
+
+La pestaña **Contabilidad** muestra, por cada esquema contable de la organización, las cuentas de **Amortización acumulada** y **Amortización** que se usan al generar los asientos de este activo. Usa **Añadir Contabilidad** para asociar un esquema contable adicional.
 
 ---
 
@@ -188,6 +196,7 @@ La pestaña **Adjuntos** permite subir documentación de soporte del activo (fac
 
 - [Amortización](../amortizacion/amortizacion.md)
 - [Apuntar un Activo](apuntar-un-activo.md)
+- [Crear un plan de amortización](crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
