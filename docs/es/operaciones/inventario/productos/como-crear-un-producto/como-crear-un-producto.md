@@ -32,7 +32,7 @@ En la pestaña **General** completa:
 | **Imagen** | No | Se muestra en la vista catálogo. |
 
 <figure markdown="span">
-  ![Formulario de un producto nuevo, pestaña General](assets/producto-general.png)
+  ![Formulario de un producto nuevo, pestaña General](assets/como-crear-un-producto-1.png)
   <figcaption>Pestaña General del formulario de un producto nuevo.</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ En la pestaña **Información adicional** completa:
 | **Gestión de stock** (Almacenado / Retornable) | No | Indica si el producto se almacena y si es retornable. |
 
 <figure markdown="span">
-  ![Formulario de un producto, pestaña Información adicional](assets/producto-info-adicional.png)
+  ![Formulario de un producto, pestaña Información adicional](assets/como-crear-un-producto-2.png)
   <figcaption>Pestaña Información adicional, con Grupo de impuesto, Disponibilidad y datos de Logística.</figcaption>
 </figure>
 

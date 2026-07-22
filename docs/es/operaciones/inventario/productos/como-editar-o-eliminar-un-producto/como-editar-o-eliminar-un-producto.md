@@ -19,14 +19,14 @@ Ve a **Inventario > Producto** y abre el producto desde la lista. El formulario 
 Pasa el cursor sobre la fila del producto en la lista y haz clic en el ícono de papelera, o abre el producto y usa el ícono de papelera de la barra superior.
 
 <figure markdown="span">
-  ![Íconos de editar y eliminar al pasar el cursor sobre una fila](assets/lista-iconos-acciones.png)
+  ![Íconos de editar y eliminar al pasar el cursor sobre una fila](assets/como-editar-o-eliminar-un-producto-1.png)
   <figcaption>Al pasar el cursor sobre una fila de la lista aparecen los íconos de editar y eliminar.</figcaption>
 </figure>
 
 En ambos casos aparece el modal **Eliminar registro**, con la advertencia de que la acción no se puede deshacer.
 
 <figure markdown="span">
-  ![Modal de confirmación al eliminar un producto](assets/eliminar-modal.png)
+  ![Modal de confirmación al eliminar un producto](assets/como-editar-o-eliminar-un-producto-2.png)
   <figcaption>Modal de confirmación "Eliminar registro".</figcaption>
 </figure>
 

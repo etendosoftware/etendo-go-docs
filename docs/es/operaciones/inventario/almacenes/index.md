@@ -15,7 +15,7 @@ La sección **Almacén** es donde gestionas tus ubicaciones físicas de stock. C
 La lista de almacenes muestra las columnas **Nombre**, **Identificador**, **Ubicación** (la dirección del almacén) y **Productos** (cantidad de productos con stock en ese almacén). Para crear un almacén nuevo usa el botón **+ Nuevo almacén**.
 
 <figure markdown="span">
-  ![Vista lista de Almacén](assets/lista-almacenes.png)
+  ![Vista lista de Almacén](assets/que-es-almacenes-1.png)
   <figcaption>Vista lista de Almacén, con columnas de Nombre, Identificador, Ubicación y Productos.</figcaption>
 </figure>
 

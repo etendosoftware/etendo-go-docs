@@ -15,7 +15,7 @@ Este artículo cubre cómo crear una categoría de producto y configurar la info
 Ve a **Inventario > Categoría del producto** y haz clic en **+ Nueva categoría**.
 
 <figure markdown="span">
-  ![Vista lista de Categoría del producto](assets/categoria-lista.png)
+  ![Vista lista de Categoría del producto](assets/como-crear-una-categoria-de-producto-1.png)
   <figcaption>Vista lista de Categoría del producto, con los íconos de editar y eliminar al pasar el cursor.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Ve a **Inventario > Categoría del producto** y haz clic en **+ Nueva categoría
 | **Agrupable** | No | Actívalo si esta categoría es solo una carpeta para organizar otras categorías (por ejemplo, una categoría "Bebidas" que agrupa a "Bebidas con alcohol" y "Bebidas sin alcohol"). Una categoría agrupable no se puede asignar directamente a un producto. |
 
 <figure markdown="span">
-  ![Formulario de categoría con la pestaña Contabilidad](assets/categoria-formulario-contabilidad.png)
+  ![Formulario de categoría con la pestaña Contabilidad](assets/como-crear-una-categoria-de-producto-2.png)
   <figcaption>Formulario de la categoría, con la pestaña Contabilidad y sus cuatro cuentas.</figcaption>
 </figure>
 

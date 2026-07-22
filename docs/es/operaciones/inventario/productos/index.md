@@ -11,7 +11,7 @@ tags:
 La sección **Productos** concentra toda la información comercial, logística y de stock de lo que vendes o compras en Etendo Go. Es el maestro central del módulo Inventario: cada línea de un presupuesto, pedido, albarán o factura hace referencia a un producto definido acá.
 
 <figure markdown="span">
-  ![Vista lista de Producto](assets/lista-productos.png)
+  ![Vista lista de Producto](assets/que-es-productos-1.png)
   <figcaption>Vista lista de Producto, con columnas de Categoría, Unidad, Tipo, Venta, Compra y Stock.</figcaption>
 </figure>
 
@@ -19,7 +19,7 @@ La columna **Stock** de esta lista no es la de un almacén en particular: suma l
 
 ## Tipos de producto
 
-Al crear un producto elegís su tipo entre cuatro opciones: **Artículo**, **Servicio**, **Recurso** y **Gasto**. Esta es la primera decisión que tomas al dar de alta un producto, y no se puede cambiar después sin crear un producto nuevo.
+Al crear un producto eliges su tipo entre cuatro opciones: **Artículo**, **Servicio**, **Recurso** y **Gasto**. Esta es la primera decisión que tomas al dar de alta un producto, y no se puede cambiar después sin crear un producto nuevo.
 
 Las dos más habituales son:
 

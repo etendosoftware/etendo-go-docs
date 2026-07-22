@@ -30,7 +30,7 @@ Todo lo que necesitas para gestionar tu stock, tus productos y tus almacenes en 
 
     ---
 
-    El maestro central de todo lo que vendes o compras: tipo, categoría, unidad de medida y stock mínimo.
+    El maestro central de todo lo que vendes o compras: tipo, categoría, unidad de medida y tarifas de precio.
 
     [:octicons-arrow-right-24: Leer más](productos/index.md)
 
@@ -38,7 +38,7 @@ Todo lo que necesitas para gestionar tu stock, tus productos y tus almacenes en 
 
     ---
 
-    Da de alta un producto nuevo, ya sea un ítem con stock o un servicio.
+    Da de alta un producto nuevo, ya sea un artículo con stock o un servicio.
 
     [:octicons-arrow-right-24: Leer más](productos/como-crear-un-producto/como-crear-un-producto.md)
 
@@ -84,7 +84,7 @@ Todo lo que necesitas para gestionar tu stock, tus productos y tus almacenes en 
 
     ---
 
-    Da de alta un almacén nuevo y entiende qué se genera automáticamente al guardarlo.
+    Da de alta un almacén nuevo y asígnale su dirección.
 
     [:octicons-arrow-right-24: Leer más](almacenes/como-crear-un-almacen/como-crear-un-almacen.md)
 

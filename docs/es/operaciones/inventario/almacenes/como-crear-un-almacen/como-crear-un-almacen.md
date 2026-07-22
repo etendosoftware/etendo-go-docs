@@ -23,7 +23,7 @@ Ve a **Inventario > Almacén** y haz clic en **+ Nuevo almacén**.
 | **Descripción** | No | Observaciones internas. |
 
 <figure markdown="span">
-  ![Formulario de un almacén nuevo](assets/almacen-nuevo-vacio.png)
+  ![Formulario de un almacén nuevo](assets/como-crear-un-almacen-1.png)
   <figcaption>Formulario de un almacén nuevo, con los datos de stock todavía cargando.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Cuando termines de completar el formulario, haz clic en **Guardar**.
     Hasta que el almacén no esté guardado, el panel de datos de stock y la pestaña Productos muestran "Cargando datos de stock...". Una vez guardado, vas a poder ver ahí el stock y la valoración de cada producto en este almacén.
 
 <figure markdown="span">
-  ![Ficha de un almacén con datos de stock cargados](assets/almacen-con-stock.png)
+  ![Ficha de un almacén con datos de stock cargados](assets/como-crear-un-almacen-2.png)
   <figcaption>Ficha de un almacén guardado, con Valoración total, Productos con stock y la pestaña Productos poblada.</figcaption>
 </figure>
 

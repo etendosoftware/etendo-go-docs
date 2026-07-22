@@ -15,12 +15,12 @@ Este artículo cubre cómo administrar los precios de un producto en las distint
 Abre el producto desde **Inventario > Producto** y ve a la pestaña **Precio**. Un selector a la izquierda te permite alternar entre **Venta** y **Compra** para ver las tarifas de cada tipo por separado.
 
 <figure markdown="span">
-  ![Pestaña Precio, listas de precios de venta](assets/tarifas-venta.png)
+  ![Pestaña Precio, listas de precios de venta](assets/como-gestionar-tarifas-de-producto-1.png)
   <figcaption>Pestaña Precio con las listas de precios de venta del producto.</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Pestaña Precio, listas de precios de compra](assets/tarifas-compra.png)
+  ![Pestaña Precio, listas de precios de compra](assets/como-gestionar-tarifas-de-producto-2.png)
   <figcaption>La misma pestaña, con el selector cambiado a Compra.</figcaption>
 </figure>
 
