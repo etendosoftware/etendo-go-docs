@@ -185,7 +185,7 @@ El botón **Añadir pago** —disponible tanto en la vista detalle como en la ba
 
 - [Presupuesto de venta](../presupuesto-de-venta/presupuesto-de-venta.md)
 - [Pedido de venta](../pedido-de-venta/pedido-de-venta.md)
-- [Contactos](../../contactos/contactos.md)
+- [Cómo crear un contacto](../../contactos/como-crear-un-contacto/como-crear-un-contacto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
