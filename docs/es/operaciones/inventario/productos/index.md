@@ -17,6 +17,13 @@ La sección **Productos** concentra toda la información comercial, logística y
 
 La columna **Stock** de esta lista no es la de un almacén en particular: suma la existencia del producto en todos tus almacenes. Para ver el detalle por almacén, entra al [almacén](../almacenes/index.md) que te interese.
 
+Además de la vista lista, podés alternar a una **vista de cuadrícula** con los botones de la esquina superior — útil para reconocer productos visualmente por su imagen.
+
+<figure markdown="span">
+  ![Vista de cuadrícula de Producto](assets/que-es-productos-2.png)
+  <figcaption>Vista de cuadrícula de Producto, con la imagen, nombre, identificador y categoría de cada uno.</figcaption>
+</figure>
+
 ## Tipos de producto
 
 Al crear un producto eliges su tipo entre cuatro opciones: **Artículo**, **Servicio**, **Recurso** y **Gasto**. Esta es la primera decisión que tomas al dar de alta un producto, y no se puede cambiar después sin crear un producto nuevo.

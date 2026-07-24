@@ -74,12 +74,12 @@ plugins:
                     - Pedido de venta: comercial/ventas/pedido-de-venta/pedido-de-venta.md
                     - Factura de venta: comercial/ventas/factura-de-venta/factura-de-venta.md
             - Operaciones:
+                - operaciones/index.md
                 - Compras:
                     - operaciones/compras/index.md
                     - Pedido de compra: operaciones/compras/pedido-de-compra/pedido-de-compra.md
                     - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
                 - Inventario:
-                    - operaciones/inventario/index.md
                     - ¿Qué es la sección Inventario?: operaciones/inventario/que-es-inventario/que-es-inventario.md
                     - Productos:
                         - operaciones/inventario/productos/index.md

@@ -23,14 +23,19 @@ La lista de almacenes muestra las columnas **Nombre**, **Identificador**, **Ubic
 
 Al seleccionar un almacén de la lista se abre su ficha con el formulario y un resumen de stock en tiempo real:
 
-- **Formulario** — identificador, nombre, dirección y descripción del almacén.
+<figure markdown="span">
+  ![Detalle de un almacén](assets/que-es-almacenes-2.png)
+  <figcaption>Ficha de un almacén, con el formulario, los datos de stock y la pestaña Productos.</figcaption>
+</figure>
+
+- **Formulario** — **Nombre**, **Identificador**, **Dirección** y **Descripción** del almacén.
 - **Datos de stock** (solo lectura) — **Valoración total** (para cada producto del almacén, multiplica su stock por el costo que el sistema tiene registrado para ese producto, y suma el resultado de todos) y **Productos con stock** (cantidad de productos con existencia mayor a cero).
 - **Pestaña Productos** — el stock de cada producto en este almacén: producto, unidad, stock, coste y valoración.
 - **Pestaña Transacciones** — el historial de movimientos.
 - **Pestaña Adjuntos** — archivos asociados al almacén.
 
 !!! info "Mientras el almacén no esté guardado"
-    En un almacén recién creado y todavía sin guardar, el panel de datos de stock y la pestaña Productos muestran "Cargando datos de stock..." — esa información solo termina de resolverse una vez que el almacén existe como registro guardado.
+    En un almacén recién creado y todavía sin guardar, el panel de datos de stock muestra $0,00 y 0 productos, la pestaña Productos muestra "No hay stock para este almacén" y la pestaña Transacciones muestra "No se encontraron transacciones para este almacén" — esa información solo empieza a completarse una vez que el almacén existe como registro guardado y tiene movimientos.
 
 ## Recursos y próximos pasos
 

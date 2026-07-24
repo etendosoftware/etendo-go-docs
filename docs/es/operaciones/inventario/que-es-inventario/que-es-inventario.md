@@ -1,8 +1,7 @@
 ---
 tags:
     - Inventario
-    - Operaciones
-    - Almacenes
+    - Almacén
     - Productos
     - Etendo Go
 ---
@@ -15,7 +14,7 @@ Inventario cubre el ciclo completo de entradas y salidas de mercancía:
 
 ```mermaid
 flowchart LR
-  A[Recepción de compra] --> C[Stock actual]
+  A[Albarán de compra] --> C[Stock actual]
   B[Ajuste de inventario físico] --> C
   C -->|Transferencia| C
   C --> D[Albarán de venta]
@@ -33,13 +32,13 @@ El stock se gestiona **por almacén**: cada almacén mantiene su propio stock de
   <figcaption>Menú de Inventario expandido en la barra lateral, con acceso a Producto y Categoría del producto.</figcaption>
 </figure>
 
-- **Categoría del producto** — agrupa tus productos bajo una configuración contable común, para que no tengas que definirla producto por producto.
 - **Producto** — el maestro central de todo lo que vendes o compras: su tipo (con o sin stock), su categoría, su unidad de medida y sus tarifas de precio.
+- **Categoría del producto** — agrupa tus productos bajo una configuración contable común, para que no tengas que definirla producto por producto.
 - **Almacén** — tus ubicaciones físicas de stock, cada una con su propia valoración y su historial de movimientos.
 
 ## Acceso y roles
 
-Todas las ventanas de Inventario están disponibles para cualquier rol, sin restricciones. La única excepción es la pestaña **Contabilidad** de Categoría del producto, visible solo para los roles **Administrator** y **Finance**, ya que ahí se definen las cuentas contables que hereda cada producto.
+Por el momento, todas las ventanas y pestañas de Inventario están disponibles para cualquier rol, sin restricciones — incluida la pestaña **Contabilidad** de Categoría del producto, donde se definen las cuentas contables que hereda cada producto.
 
 ## Recursos y próximos pasos
 

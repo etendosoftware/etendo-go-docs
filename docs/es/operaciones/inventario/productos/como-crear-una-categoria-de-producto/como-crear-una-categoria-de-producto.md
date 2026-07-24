@@ -12,7 +12,7 @@ Este artículo cubre cómo crear una categoría de producto y configurar la info
 
 ## Ve a la ventana Categoría del producto
 
-Ve a **Inventario > Categoría del producto** y haz clic en **+ Nueva categoría**.
+Ve a **[Inventario > Categoría del producto](https://go.etendo.cloud/product-category){target="_blank"}** y haz clic en **+ Nueva categoría**.
 
 <figure markdown="span">
   ![Vista lista de Categoría del producto](assets/como-crear-una-categoria-de-producto-1.png)
@@ -21,18 +21,16 @@ Ve a **Inventario > Categoría del producto** y haz clic en **+ Nueva categoría
 
 ## Completa el formulario
 
-| Campo | Obligatorio | Notas |
-| :--- | :---: | :--- |
-| **Identificador** | Sí | Código único de la categoría. Ej. `CAT-MAT`. |
-| **Nombre** | Sí | Nombre descriptivo. Ej. "Materiales". |
-| **Descripción** | No | — |
-| **Valor por defecto** | No | Si lo activas, esta categoría se preselecciona al crear un producto nuevo. |
-| **Agrupable** | No | Actívalo si esta categoría es solo una carpeta para organizar otras categorías (por ejemplo, una categoría "Bebidas" que agrupa a "Bebidas con alcohol" y "Bebidas sin alcohol"). Una categoría agrupable no se puede asignar directamente a un producto. |
-
 <figure markdown="span">
   ![Formulario de categoría con la pestaña Contabilidad](assets/como-crear-una-categoria-de-producto-2.png)
   <figcaption>Formulario de la categoría, con la pestaña Contabilidad y sus cuatro cuentas.</figcaption>
 </figure>
+
+- **Nombre** *(obligatorio)* — Nombre descriptivo. Ej. "Materiales".
+- **Identificador** *(obligatorio)* — Código único de la categoría. Ej. `CAT-MAT`.
+- **Descripción** *(opcional)*.
+- **Valor por defecto** *(opcional)* — Si lo activas, esta categoría se preselecciona al crear un producto nuevo.
+- **Agrupable** *(opcional)* — Actívalo si esta categoría es solo una carpeta para organizar otras categorías (por ejemplo, una categoría "Bebidas" que agrupa a "Bebidas con alcohol" y "Bebidas sin alcohol"). Una categoría agrupable no se puede asignar directamente a un producto.
 
 ## Configura la contabilidad de la categoría
 

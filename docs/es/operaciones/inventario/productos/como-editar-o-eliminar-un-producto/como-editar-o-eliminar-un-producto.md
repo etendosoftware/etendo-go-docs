@@ -12,7 +12,7 @@ Este artículo cubre cómo modificar los datos de un producto existente y cómo 
 
 ## Edita un producto
 
-Ve a **Inventario > Producto** y abre el producto desde la lista. El formulario se abre directamente en modo edición: modifica el campo que necesites y haz clic en **Guardar**.
+Ve a **[Inventario > Producto](https://go.etendo.cloud/product){target="_blank"}** y abre el producto desde la lista. El formulario se abre directamente en modo edición: modifica el campo que necesites y haz clic en **Guardar**.
 
 ## Elimina un producto
 

@@ -11,33 +11,31 @@ Este artículo cubre cómo dar de alta un almacén nuevo en Etendo Go.
 
 ## Ve a la ventana Almacén
 
-Ve a **Inventario > Almacén** y haz clic en **+ Nuevo almacén**.
+Ve a **[Inventario > Almacén](https://go.etendo.cloud/warehouse){target="_blank"}** y haz clic en **+ Nuevo almacén**.
 
 ## Completa el formulario
 
-| Campo | Obligatorio | Notas |
-| :--- | :---: | :--- |
-| **Nombre** | Sí | Nombre descriptivo del almacén. |
-| **Identificador** | Sí | Código único. Ej. `ALM-01`. |
-| **Dirección** | Sí | Selector buscable ("Buscar Dirección...") sobre las direcciones ya existentes en tu organización. No permite cargar una dirección nueva desde acá: si la que necesitas todavía no existe como registro, primero tienes que darla de alta en otra parte del sistema. |
-| **Descripción** | No | Observaciones internas. |
+- **Nombre** *(obligatorio)* — Nombre descriptivo del almacén.
+- **Identificador** *(obligatorio)* — Código único. Ej. `ALM-01`.
+- **Dirección** *(obligatorio)* — Al hacer clic se abre el modal **Ubicación**, donde completas **Primera línea**, **Segunda línea**, **Código postal**, **Ciudad**, **País** y **Región** para dar de alta la dirección del almacén.
+- **Descripción** *(opcional)* — Observaciones internas.
 
 <figure markdown="span">
   ![Formulario de un almacén nuevo](assets/como-crear-un-almacen-1.png)
-  <figcaption>Formulario de un almacén nuevo, con los datos de stock todavía cargando.</figcaption>
+  <figcaption>Formulario de un almacén nuevo, todavía sin datos de stock.</figcaption>
 </figure>
 
 Cuando termines de completar el formulario, haz clic en **Guardar**.
 
 !!! info "Los datos de stock aparecen después de guardar"
-    Hasta que el almacén no esté guardado, el panel de datos de stock y la pestaña Productos muestran "Cargando datos de stock...". Una vez guardado, vas a poder ver ahí el stock y la valoración de cada producto en este almacén.
+    Hasta que el almacén no esté guardado, el panel de datos de stock muestra $0,00 y 0 productos, la pestaña Productos muestra "No hay stock para este almacén" y la pestaña Transacciones muestra "No se encontraron transacciones para este almacén". Una vez guardado y con movimientos, vas a poder ver ahí el stock y la valoración de cada producto en este almacén.
 
 <figure markdown="span">
-  ![Ficha de un almacén con datos de stock cargados](assets/como-crear-un-almacen-2.png)
-  <figcaption>Ficha de un almacén guardado, con Valoración total, Productos con stock y la pestaña Productos poblada.</figcaption>
+  ![Ficha de un almacén recién guardado](assets/como-crear-un-almacen-2.png)
+  <figcaption>Ficha de un almacén recién guardado, todavía sin movimientos de stock.</figcaption>
 </figure>
 
-Al guardar, el almacén queda disponible para asignarle stock desde compras, ajustes de inventario o movimientos entre almacenes.
+Al guardar, el almacén queda disponible para cargarle stock. Podés hacerlo de dos formas: con un recuento desde la ventana **Inventario físico**, o registrando compras a proveedores — el stock se suma al completar el albarán de compra correspondiente.
 
 ---
 
