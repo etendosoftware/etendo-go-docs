@@ -74,17 +74,26 @@ plugins:
                     - Pedido de venta: comercial/ventas/pedido-de-venta/pedido-de-venta.md
                     - Factura de venta: comercial/ventas/factura-de-venta/factura-de-venta.md
             - Operaciones:
+                - operaciones/index.md
                 - Compras:
                     - operaciones/compras/index.md
                     - Pedido de compra: operaciones/compras/pedido-de-compra/pedido-de-compra.md
                     - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
+                - Inventario:
+                    - ¿Qué es la sección Inventario?: operaciones/inventario/que-es-inventario/que-es-inventario.md
+                    - Productos:
+                        - operaciones/inventario/productos/index.md
+                        - Cómo crear un producto: operaciones/inventario/productos/como-crear-un-producto/como-crear-un-producto.md
+                        - Cómo crear y configurar una categoría de producto: operaciones/inventario/productos/como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md
+                        - Cómo editar o eliminar un producto: operaciones/inventario/productos/como-editar-o-eliminar-un-producto/como-editar-o-eliminar-un-producto.md
+                        - Cómo gestionar tarifas de producto: operaciones/inventario/productos/como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md
+                    - Almacén:
+                        - operaciones/inventario/almacenes/index.md
+                        - Cómo crear un almacén: operaciones/inventario/almacenes/como-crear-un-almacen/como-crear-un-almacen.md
             - Finanzas:
                 - Activos: finanzas/activos/activos.md
                 - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
                 - Amortización: finanzas/amortizacion/amortizacion.md
-            - Inventario:
-                - Productos: inventario/productos.md
-                - Almacenes: inventario/almacenes.md
             - Configuración:
                 - configuracion/index.md
         
