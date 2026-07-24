@@ -34,9 +34,6 @@ Ve a **[Inventario > Categoría del producto](https://go.etendo.cloud/product-ca
 
 ## Configura la contabilidad de la categoría
 
-!!! info "Visible solo para ciertos roles"
-    La pestaña **Contabilidad** es visible únicamente para los roles **Administrator** y **Finance**.
-
 En la pestaña **Contabilidad** defines las cuentas que van a heredar todos los productos asignados a esta categoría:
 
 - **Inmovilizado del producto** — cuenta donde se valoriza el stock de estos productos mientras están en el almacén.
