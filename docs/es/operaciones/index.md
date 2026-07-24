@@ -1,0 +1,115 @@
+---
+title: Operaciones
+hide:
+    - navigation
+    - toc
+    - path
+---
+
+# Operaciones
+
+Todo lo que necesitas para gestionar tus compras a proveedores y el control de stock en Etendo Go: desde solicitar pedidos y registrar facturas de compra, hasta administrar tus productos y almacenes.
+
+## Compras
+
+<div class="grid cards" markdown>
+
+-   :material-clipboard-list-outline:{ .lg .middle } **Pedido de compra**
+
+    ---
+
+    Formaliza la solicitud de productos o servicios a un proveedor y genera desde él el albarán y la factura de compra correspondientes.
+
+    [:octicons-arrow-right-24: Leer más](compras/pedido-de-compra/pedido-de-compra.md)
+
+-   :material-receipt-text-outline:{ .lg .middle } **Factura de compra**
+
+    ---
+
+    Registra la obligación de pago al proveedor, ya sea de forma directa o generada desde un pedido o un albarán de compra.
+
+    [:octicons-arrow-right-24: Leer más](compras/factura-de-compra/factura-de-compra.md)
+
+</div>
+
+## Inventario
+
+<div class="grid cards" markdown>
+
+-   :material-information-outline:{ .lg .middle } **¿Qué es la sección Inventario?**
+
+    ---
+
+    Descubre qué gestiona la sección Inventario y cómo se relacionan productos, categorías y almacenes.
+
+    [:octicons-arrow-right-24: Leer más](inventario/que-es-inventario/que-es-inventario.md)
+
+</div>
+
+### Productos
+
+<div class="grid cards" markdown>
+
+-   :material-package-variant-closed:{ .lg .middle } **¿Qué es la sección de Productos?**
+
+    ---
+
+    El maestro central de todo lo que vendes o compras: tipo, categoría, unidad de medida y tarifas de precio.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/index.md)
+
+-   :material-plus-box-outline:{ .lg .middle } **Cómo crear un producto**
+
+    ---
+
+    Da de alta un producto nuevo, ya sea un artículo con stock o un servicio.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/como-crear-un-producto/como-crear-un-producto.md)
+
+-   :material-shape-outline:{ .lg .middle } **Cómo crear y configurar una categoría de producto**
+
+    ---
+
+    Agrupa productos bajo una configuración contable común.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md)
+
+-   :material-pencil-outline:{ .lg .middle } **Cómo editar o eliminar un producto**
+
+    ---
+
+    Modifica los datos de un producto existente o dalo de baja.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/como-editar-o-eliminar-un-producto/como-editar-o-eliminar-un-producto.md)
+
+-   :material-currency-usd:{ .lg .middle } **Cómo gestionar tarifas de producto**
+
+    ---
+
+    Administra los precios de tus productos en cada tarifa.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md)
+
+</div>
+
+### Almacén
+
+<div class="grid cards" markdown>
+
+-   :material-warehouse:{ .lg .middle } **¿Qué es la sección Almacén?**
+
+    ---
+
+    Tus ubicaciones físicas de stock, cada una con su propio inventario y su historial de movimientos.
+
+    [:octicons-arrow-right-24: Leer más](inventario/almacenes/index.md)
+
+-   :material-plus-box-outline:{ .lg .middle } **Cómo crear un almacén**
+
+    ---
+
+    Da de alta un almacén nuevo y asígnale su dirección.
+
+    [:octicons-arrow-right-24: Leer más](inventario/almacenes/como-crear-un-almacen/como-crear-un-almacen.md)
+
+</div>
