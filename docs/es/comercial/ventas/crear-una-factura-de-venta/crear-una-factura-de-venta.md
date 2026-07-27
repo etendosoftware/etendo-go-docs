@@ -22,7 +22,7 @@ flowchart LR
 
 ## Pasos
 
-1. Accede a la ventana **Ventas > Factura** y haz clic en **+ Nueva factura**.
+1. Accede a la ventana **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
 
 2. Completa la **Cabecera** del formulario:
 
@@ -40,7 +40,7 @@ flowchart LR
 
     ![Pestaña Líneas de la Factura de venta](lineas.png)
 
-    - Usa **+ Añadir línea** para incorporar productos manualmente, o **Importar desde un envío o pedido** si la factura se origina en un albarán o pedido existente.
+    - Usa **+ Añadir líneas** para incorporar productos manualmente. Si el tipo de documento es **Factura**, además tienes disponibles **Importar desde envío** y **Añadir desde pedido**, para traer las líneas de un albarán o un pedido existente. Estas dos opciones de importación no están disponibles para **Nota de crédito**, cuyas líneas siempre se cargan manualmente.
     - **Producto** — al seleccionarlo autocompleta la descripción y el precio de tarifa; editable.
     - **Cant. facturada**, **Precio tarifa**, **% de descuento** e **Impuesto** — se ajustan por línea.
     - Pulsa ++enter++ para guardar la línea, o ++esc++ para cancelar sin guardar.
@@ -54,7 +54,7 @@ flowchart LR
 5. Haz clic en **Confirmar**. La acción es directa, sin popup, y pasa la factura al estado **Completado**.
 
     !!! warning "La factura no se puede editar tras confirmar"
-        Una vez confirmada, la factura queda bloqueada. Verifica los importes, el contacto y las condiciones de pago antes de confirmar.
+        Una vez confirmada, la factura queda bloqueada. Verifica los importes, el contacto y las condiciones de pago antes de confirmar. Si necesitas corregirla igualmente, puedes usar **Reactivar** desde el menú de tres puntos para devolverla a Borrador — ver [Gestionar tus facturas de venta](../gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md#acciones-disponibles).
 
 Una vez completada, la factura queda pendiente de cobro. Para registrar el pago, consulta [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md); para enviarla al cliente, consulta [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md).
 

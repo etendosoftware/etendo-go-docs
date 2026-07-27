@@ -13,7 +13,7 @@ Una vez creada una factura de venta, puedes enviarla por correo electrónico a t
 
 ## Pasos
 
-1. Abre la factura desde la vista lista o desde la vista detalle de **Ventas > Factura**.
+1. Abre la factura desde la vista lista o desde la vista detalle de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**.
 
 2. Haz clic en **Enviar**. Se abre el panel **Enviar Factura de Venta**:
 

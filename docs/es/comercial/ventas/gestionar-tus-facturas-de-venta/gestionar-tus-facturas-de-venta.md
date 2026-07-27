@@ -10,7 +10,7 @@ tags:
 
 # Gestionar tus facturas de venta
 
-Una vez que tienes facturas de venta creadas, vas a necesitar consultarlas, hacer seguimiento de su cobro o revisar su estado. Este artículo repasa la ventana de **Ventas > Factura** — la vista lista, la vista detalle y los estados del documento. Si todavía no has creado ninguna factura, empieza por [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
+Una vez que tienes facturas de venta creadas, vas a necesitar consultarlas, hacer seguimiento de su cobro o revisar su estado. Este artículo repasa la ventana de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}** — la vista lista, la vista detalle y los estados del documento. Si todavía no has creado ninguna factura, empieza por [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
 
 ## Vista Lista
 
@@ -47,7 +47,7 @@ El estado actual se muestra en la barra superior del formulario junto al botón 
 | <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span> | Confirmada. Ya no es editable. Queda pendiente de cobro. |
 
 !!! warning "La factura no se puede editar tras confirmar"
-    Una vez confirmada, la factura queda bloqueada. Verifica los importes, el contacto y las condiciones de pago antes de confirmar.
+    Una vez confirmada, la factura queda bloqueada. Verifica los importes, el contacto y las condiciones de pago antes de confirmar. Si necesitas corregirla igualmente, puedes usar **Reactivar** (ver [Acciones Disponibles](#acciones-disponibles)) para devolverla a Borrador.
 
 Cuando la fecha de vencimiento ha pasado sin que se registre el pago completo, la barra superior muestra el indicador **Vencido · EUR X** con un enlace para consultar los pagos pendientes.
 
@@ -64,6 +64,7 @@ La barra superior del formulario muestra las siguientes acciones:
 | **Enviar** | Abre el panel de envío por correo electrónico. | Borrador y Completado |
 | **Añadir pago** | Registra un cobro sobre la factura. | Solo en Completado |
 | **Descargar PDF** | Descarga la factura en formato PDF. | Borrador y Completado |
+| **Reactivar** | Disponible en el menú de tres puntos. Devuelve la factura a estado Borrador para poder editarla de nuevo. | Solo en Completado |
 | **Papelera** | Elimina el documento con confirmación previa. | Solo en Borrador |
 
 ## Artículos Relacionados

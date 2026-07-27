@@ -37,7 +37,7 @@ La vista lista muestra todos los presupuestos con las columnas **Fecha de presup
 
 Para filtrar la lista se dispone de dos selectores en la barra superior: el primero filtra por **estado del documento** y el segundo por **fecha de presupuesto**, con las opciones Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo y Personalizado. El ícono de embudo permite aplicar filtros adicionales. Las columnas son ordenables haciendo clic en su encabezado.
 
-Para crear un presupuesto nuevo utiliza el botón **+ Nuevo presupuesto** en la esquina superior derecha.
+Para crear un presupuesto nuevo, accede a **[Ventas > Presupuesto](https://go.etendo.cloud/sales-quotation){target="_blank"}** y utiliza el botón **+ Nuevo presupuesto** en la esquina superior derecha.
 
 ---
 
@@ -161,6 +161,7 @@ La barra superior del formulario muestra las siguientes acciones:
 | **Confirmar** | Envía el presupuesto al estado Bajo evaluación. Desde ese estado, una segunda confirmación lo convierte en Pedido de venta o Factura directa. | Solo en Borrador |
 | **Copia** | Clona el presupuesto actual creando un nuevo borrador con los mismos datos. | Borrador y Bajo evaluación |
 | **Email** | Abre el panel de envío por correo electrónico. | Borrador y Bajo evaluación |
+| **Rechazar** | Disponible en el menú de tres puntos. Marca el presupuesto como **Cerrado - Rechazado**, sin generar ningún documento derivado. | Solo en Bajo evaluación |
 | **Papelera** | Elimina el documento con confirmación previa. | Solo en Borrador |
 
 ### Enviar por Email

@@ -1,5 +1,5 @@
 ---
-title: Documentos de venta: preguntas frecuentes
+title: "Documentos de venta: preguntas frecuentes"
 tags:
     - Ventas
     - Comercial
@@ -18,11 +18,11 @@ El pedido de venta es la opción recomendada cuando hay stock o entrega física 
 
 ## ¿Puedo editar un documento después de confirmarlo?
 
-No. Presupuestos, pedidos, albaranes y facturas quedan bloqueados al confirmarse. Si necesitas corregir un dato, cancela el documento (cuando el estado lo permita) o crea uno nuevo — por ejemplo, clonando el original con la acción **Copia**.
+No directamente. Pedidos y facturas quedan bloqueados al confirmarse, pero puedes reabrirlos: en el pedido o la factura ya Completado, el menú de tres puntos de la barra superior ofrece la opción **Reactivar**, que devuelve el documento a estado Borrador y lo vuelve a hacer editable. Como alternativa, también puedes crear uno nuevo — por ejemplo, clonando el original con la acción **Copia**.
 
 ## ¿Qué pasa si el pedido está parcialmente entregado o facturado?
 
-Las acciones de creación de documentos derivados —**Crear albarán**, **Crear Factura**, **Gestionar factura**— siempre operan sobre las cantidades o importes pendientes, nunca sobre el total del documento de origen. La acción desaparece automáticamente cuando el pedido queda procesado al 100 % en esa dimensión.
+Las acciones de creación de documentos derivados —**Crear albarán**, **Crear Factura**, **Gestionar envío y factura**— siempre operan sobre las cantidades o importes pendientes, nunca sobre el total del documento de origen. La acción desaparece automáticamente cuando el pedido queda procesado al 100 % en esa dimensión.
 
 ## ¿Cuál es la diferencia entre una Factura de Devolución y una Nota de Crédito?
 

@@ -20,7 +20,7 @@ flowchart LR
   A[Presupuesto de venta] -->|Confirmar| B[Pedido de venta]
   A -->|Facturar directamente| D[Factura de venta]
   B -->|Crear albarán| C[Albarán de venta]
-  B -->|Gestionar factura| D
+  B -->|Gestionar envío y factura| D
   C -->|Crear Factura| D
   D -->|Registrar cobro| E[Cobro]
 ```

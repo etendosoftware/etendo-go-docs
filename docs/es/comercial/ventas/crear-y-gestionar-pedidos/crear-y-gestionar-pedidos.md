@@ -39,7 +39,7 @@ La vista lista muestra todos los pedidos con las columnas **Fecha de pedido**, *
 
 **Estado de facturación** y **Estado de entrega** — indican qué porcentaje del pedido ya ha sido facturado o entregado. Ambas columnas muestran barras de progreso con porcentaje: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado.
 
-Para filtrar la lista utiliza los selectores de **estado del documento** y **fecha de pedido** en la barra superior. El ícono de embudo permite aplicar filtros adicionales. Para crear un pedido nuevo usa el botón **+ Nuevo pedido** en la esquina superior derecha.
+Para filtrar la lista utiliza los selectores de **estado del documento** y **fecha de pedido** en la barra superior. El ícono de embudo permite aplicar filtros adicionales. Para crear un pedido nuevo, accede a **[Ventas > Pedido](https://go.etendo.cloud/sales-order){target="_blank"}** y usa el botón **+ Nuevo pedido** en la esquina superior derecha.
 
 ---
 
@@ -145,7 +145,7 @@ La barra superior del formulario muestra el estado actual del pedido junto a los
 | <span style="background:#F0FDF4;color:#22C55E;padding:2px 10px;border-radius:12px;font-size:.85em;white-space:nowrap">Completado</span> | Confirmado. Ya no es editable. Se pueden generar albarán y factura. |
 
 !!! warning "El pedido no se puede editar tras confirmar"
-    Una vez confirmado, el pedido queda bloqueado. Verifica las líneas, cantidades y precios antes de confirmar.
+    Una vez confirmado, el pedido queda bloqueado. Verifica las líneas, cantidades y precios antes de confirmar. Si necesitas corregirlo igualmente, puedes usar **Reactivar** (ver [Acciones Disponibles](#acciones-disponibles)) para devolverlo a Borrador.
 
 ---
 
@@ -160,6 +160,7 @@ La barra superior del formulario muestra las siguientes acciones:
 | **Confirmar** | Confirma el pedido y lo pasa a estado Completado. Ver sección Confirmar Pedido. | Solo en Borrador |
 | **Copia** | Clona el pedido actual creando un nuevo borrador con el mismo contacto, líneas y condiciones. | Borrador y Completado |
 | **Email** | Abre el panel de envío por correo electrónico. | Borrador y Completado |
+| **Reactivar** | Disponible en el menú de tres puntos. Devuelve el pedido a estado Borrador para poder editarlo de nuevo. | Solo en Completado |
 | **Papelera** | Elimina el documento con confirmación previa. | Solo en Borrador |
 
 ### Enviar por Email
@@ -195,7 +196,7 @@ Puedes marcar uno, ambos o ninguno. Si no marcas ninguno, el pedido queda Comple
 
 ### Generar documentos pendientes más adelante
 
-Si al confirmar no generaste el albarán y/o la factura, el pedido ya Completado muestra un botón **Gestionar factura** en la barra superior. Al hacer clic se abre el popup **Gestionar documentos**, con la opción **Crear factura** para las cantidades que todavía estén pendientes de facturar.
+Si al confirmar no generaste el albarán y/o la factura, el pedido ya Completado muestra un botón **Gestionar envío y factura** en la barra superior, junto a los indicadores **Entregado** y **Facturado** con su porcentaje. Al hacer clic se abre el popup **Gestionar documentos**, que ofrece **Crear albarán** y/o **Crear factura** simultáneamente, según qué cantidades sigan pendientes de entrega y de facturación.
 
 !!! info "Solo se ofrecen las cantidades pendientes"
     Si el pedido ya está entregado o facturado al 100 %, la acción correspondiente deja de aparecer en el popup automáticamente.
