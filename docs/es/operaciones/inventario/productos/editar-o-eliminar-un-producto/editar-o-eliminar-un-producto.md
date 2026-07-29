@@ -6,7 +6,7 @@ tags:
     - Etendo Go
 ---
 
-# Cómo editar o eliminar un producto
+# Editar o eliminar un producto
 
 Este artículo cubre cómo modificar los datos de un producto existente y cómo eliminarlo cuando ya no lo necesites.
 
@@ -37,9 +37,9 @@ En ambos casos aparece el modal **Eliminar registro**, con la advertencia de que
 
 ## Artículos Relacionados
 
-- [Cómo crear un producto](../como-crear-un-producto/como-crear-un-producto.md)
+- [Crear un producto](../crear-un-producto/crear-un-producto.md)
 - [¿Qué es la sección de Productos?](../index.md)
-- [Cómo gestionar tarifas de producto](../como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md)
+- [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

@@ -6,7 +6,7 @@ tags:
     - Etendo Go
 ---
 
-# Cómo crear y configurar una categoría de producto
+# Crear y configurar una categoría de producto
 
 Este artículo cubre cómo crear una categoría de producto y configurar la información contable que hereda cada producto asignado a ella.
 
@@ -49,7 +49,7 @@ También puedes usar la pestaña **Adjuntos** para asociar archivos a la categor
 
 ## Artículos Relacionados
 
-- [Cómo crear un producto](../como-crear-un-producto/como-crear-un-producto.md)
+- [Crear un producto](../crear-un-producto/crear-un-producto.md)
 - [¿Qué es la sección de Productos?](../index.md)
 
 ---

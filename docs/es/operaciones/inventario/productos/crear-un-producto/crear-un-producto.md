@@ -6,7 +6,7 @@ tags:
     - Etendo Go
 ---
 
-# Cómo crear un producto
+# Crear un producto
 
 Este artículo cubre cómo dar de alta un producto nuevo en Etendo Go, ya sea un artículo con stock o un servicio.
 
@@ -25,7 +25,7 @@ En la pestaña **General** completa:
 
 - **Nombre** *(obligatorio)* — Nombre comercial del producto.
 - **Identificador** *(obligatorio)* — Código interno (SKU) que lo identifica.
-- **Categoría** *(obligatorio)* — Determina de forma automática las cuentas contables del producto (existencias, gastos, ingresos y costo). Por defecto viene la categoría **Otros**; para definir nuevas categorías, ve a la ventana [Categoría del producto](../como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md).
+- **Categoría** *(obligatorio)* — Determina de forma automática las cuentas contables del producto (existencias, gastos, ingresos y costo). Por defecto viene la categoría **Otros**; para definir nuevas categorías, ve a la ventana [Categoría del producto](../crear-una-categoria-de-producto/crear-una-categoria-de-producto.md).
 - **Unidad de medida** *(obligatorio)* — Ej. Unidad, Kg, Litro.
 - **Tipo de producto** *(obligatorio)* — Cuatro opciones: **Artículo** (gestiona stock), **Servicio** (no genera movimientos de inventario), **Recurso** y **Gasto**.
 - **Descripción** *(opcional)*.
@@ -49,7 +49,7 @@ En la pestaña **Información adicional** completa:
 - **Gestión de stock** (Almacenado / Retornable) *(opcional)* — Indica si el producto se almacena y si es retornable.
 
 !!! info "El precio se define después"
-    El producto no tiene un precio único: los precios se configuran por tarifa, desde la pestaña **Precio**. Consulta [Cómo gestionar tarifas de producto](../como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md).
+    El producto no tiene un precio único: los precios se configuran por tarifa, desde la pestaña **Precio**. Consulta [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md).
 
 Al guardar, el producto queda disponible para usarse en presupuestos, pedidos, albaranes y facturas.
 
@@ -58,8 +58,8 @@ Al guardar, el producto queda disponible para usarse en presupuestos, pedidos, a
 ## Artículos Relacionados
 
 - [¿Qué es la sección de Productos?](../index.md)
-- [Cómo crear y configurar una categoría de producto](../como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md)
-- [Cómo gestionar tarifas de producto](../como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md)
+- [Crear y configurar una categoría de producto](../crear-una-categoria-de-producto/crear-una-categoria-de-producto.md)
+- [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

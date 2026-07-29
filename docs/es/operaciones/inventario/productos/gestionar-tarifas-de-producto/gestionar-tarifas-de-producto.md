@@ -6,7 +6,7 @@ tags:
     - Etendo Go
 ---
 
-# Cómo gestionar tarifas de producto
+# Gestionar tarifas de producto
 
 Este artículo cubre cómo administrar los precios de un producto en las distintas tarifas de venta y compra, sin salir de su ficha.
 
@@ -36,8 +36,8 @@ Para editar, modifica el **Precio unitario** o el **Precio de lista** de una fil
 
 ## Artículos Relacionados
 
-- [Cómo crear un producto](../como-crear-un-producto/como-crear-un-producto.md)
-- [Cómo editar o eliminar un producto](../como-editar-o-eliminar-un-producto/como-editar-o-eliminar-un-producto.md)
+- [Crear un producto](../crear-un-producto/crear-un-producto.md)
+- [Editar o eliminar un producto](../editar-o-eliminar-un-producto/editar-o-eliminar-un-producto.md)
 - [¿Qué es la sección de Productos?](../index.md)
 
 ---

@@ -11,7 +11,7 @@ tags:
 
 ## Descripción general
 
-La **factura de compra** es el documento que registra la obligación de pago al proveedor. Puede crearse directamente, generarse desde un [pedido de compra](../pedido-de-compra/pedido-de-compra.md) confirmado o desde un albarán de compra confirmado. La misma ventana gestiona dos tipos de documento: **Factura** (compra estándar) y **Nota de crédito** (devolución o ajuste financiero del proveedor).
+La **factura de compra** es el documento que registra la obligación de pago al proveedor. Puede crearse directamente, generarse desde un [pedido de compra](../../inventario/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md) confirmado o desde un albarán de compra confirmado. La misma ventana gestiona dos tipos de documento: **Factura** (compra estándar) y **Nota de crédito** (devolución o ajuste financiero del proveedor).
 
 El siguiente diagrama muestra las tres vías para crear una factura de compra y su ciclo de vida hasta el pago:
 
@@ -196,7 +196,7 @@ El botón **Añadir pago** — disponible tanto en la vista detalle como en la b
 
 ## Artículos Relacionados
 
-- [Pedido de compra](../pedido-de-compra/pedido-de-compra.md)
+- [Gestionar tus pedidos de compra](../../inventario/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)
 - [Contactos](../../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 
 ---

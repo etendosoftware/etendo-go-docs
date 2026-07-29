@@ -76,20 +76,26 @@ plugins:
             - Operaciones:
                 - operaciones/index.md
                 - Compras:
-                    - operaciones/compras/index.md
-                    - Pedido de compra: operaciones/compras/pedido-de-compra/pedido-de-compra.md
-                    - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
+                    - ¿Qué es la sección Compras?: operaciones/compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md
+                    - Gestión de compras:
+                        - Crear una factura de compra: operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md
+                        - Añadir pagos a tu factura de compra: operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md
+                        - Gestionar tus facturas de compra: operaciones/compras/gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md
+                        - Crear una devolución de compra: operaciones/compras/crear-una-devolucion-de-compra/crear-una-devolucion-de-compra.md
                 - Inventario:
                     - ¿Qué es la sección Inventario?: operaciones/inventario/que-es-inventario/que-es-inventario.md
+                    - Pedidos:
+                        - Crear un pedido de compra: operaciones/inventario/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md
+                        - Gestionar tus pedidos de compra: operaciones/inventario/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md
                     - Productos:
                         - operaciones/inventario/productos/index.md
-                        - Cómo crear un producto: operaciones/inventario/productos/como-crear-un-producto/como-crear-un-producto.md
-                        - Cómo crear y configurar una categoría de producto: operaciones/inventario/productos/como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md
-                        - Cómo editar o eliminar un producto: operaciones/inventario/productos/como-editar-o-eliminar-un-producto/como-editar-o-eliminar-un-producto.md
-                        - Cómo gestionar tarifas de producto: operaciones/inventario/productos/como-gestionar-tarifas-de-producto/como-gestionar-tarifas-de-producto.md
+                        - Crear un producto: operaciones/inventario/productos/crear-un-producto/crear-un-producto.md
+                        - Crear y configurar una categoría de producto: operaciones/inventario/productos/crear-una-categoria-de-producto/crear-una-categoria-de-producto.md
+                        - Editar o eliminar un producto: operaciones/inventario/productos/editar-o-eliminar-un-producto/editar-o-eliminar-un-producto.md
+                        - Gestionar tarifas de producto: operaciones/inventario/productos/gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md
                     - Almacén:
                         - operaciones/inventario/almacenes/index.md
-                        - Cómo crear un almacén: operaciones/inventario/almacenes/como-crear-un-almacen/como-crear-un-almacen.md
+                        - Crear un almacén: operaciones/inventario/almacenes/crear-un-almacen/crear-un-almacen.md
             - Finanzas:
                 - Activos: finanzas/activos/activos.md
                 - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md

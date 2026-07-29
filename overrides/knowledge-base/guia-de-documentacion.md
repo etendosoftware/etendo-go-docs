@@ -38,7 +38,7 @@ Inicio
 
 ## 2. Tipos de Artículo
 
-Definir exactamente 5 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
+Definir exactamente 6 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
 
 | Tipo | Propósito | Ejemplo |
 |:-----|:----------|:--------|
@@ -46,6 +46,7 @@ Definir exactamente 5 tipos y usarlos de forma consistente. Cada artículo debe 
 | Guía de inicio | Configuración secuencial desde cero | "Facturación: guía de inicio" |
 | Artículo de tarea | Cómo hacer una cosa específica | "Crear una factura de venta" |
 | Referencia / Glosario | Definiciones, explicación de campos | "Glosario de Ventas" |
+| Referencia de ventana / Gestión | Cómo consultar y administrar una ventana ya poblada de registros: vista lista, vista detalle/formulario, estados y acciones disponibles | "Gestionar tus facturas de compra" |
 | Preguntas frecuentes | Resolución de problemas, casos borde | "App móvil: preguntas frecuentes" |
 
 ## 3. Estilo y Tono de Escritura
@@ -124,6 +125,30 @@ H2: [Grupo de pasos 1]
 
 H2: [Grupo de pasos 2 si es necesario]
   ...
+
+[Artículos relacionados: máximo 3 enlaces]
+```
+
+### Referencia de ventana / Gestión
+
+```
+H1: [Nombre de la ventana en plural o "Gestionar tus [documentos]"]
+[1 oración de apertura: qué cubre este artículo y enlace al artículo de tarea de creación si existe]
+
+H2: Vista Lista
+  [Columnas de la vista lista, filtros disponibles]
+  [Captura de pantalla]
+
+H2: Vista Detalle
+  [Información e íconos de la vista detalle, acciones rápidas]
+  [Captura de pantalla]
+
+H2: Estados del Documento
+  [Tabla de estados con descripción]
+
+H2: Acciones Disponibles
+  [Tabla de acciones con descripción y estado en que aplican]
+  [Sub-secciones para popups o flujos de gestión adicionales]
 
 [Artículos relacionados: máximo 3 enlaces]
 ```

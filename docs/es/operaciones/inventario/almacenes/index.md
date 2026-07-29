@@ -39,13 +39,13 @@ Al seleccionar un almacén de la lista se abre su ficha con el formulario y un r
 
 ## Recursos y próximos pasos
 
-Para dar de alta tu primer almacén, sigue la guía [Cómo crear un almacén](como-crear-un-almacen/como-crear-un-almacen.md).
+Para dar de alta tu primer almacén, sigue la guía [Crear un almacén](crear-un-almacen/crear-un-almacen.md).
 
 ---
 
 ## Artículos Relacionados
 
-- [Cómo crear un almacén](como-crear-un-almacen/como-crear-un-almacen.md)
+- [Crear un almacén](crear-un-almacen/crear-un-almacen.md)
 - [¿Qué es la sección de Productos?](../productos/index.md)
 - [¿Qué es la sección Inventario?](../que-es-inventario/que-es-inventario.md)
 

@@ -5,7 +5,7 @@ tags:
     - Etendo Go
 ---
 
-# Cómo crear un almacén
+# Crear un almacén
 
 Este artículo cubre cómo dar de alta un almacén nuevo en Etendo Go.
 
