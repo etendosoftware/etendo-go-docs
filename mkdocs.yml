@@ -91,9 +91,10 @@ plugins:
                         - operaciones/inventario/almacenes/index.md
                         - Cómo crear un almacén: operaciones/inventario/almacenes/como-crear-un-almacen/como-crear-un-almacen.md
             - Finanzas:
-                - Activos: finanzas/activos/activos.md
-                - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
-                - Amortización: finanzas/amortizacion/amortizacion.md
+                - finanzas/index.md
+                - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
+                - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
+                - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
             - Configuración:
                 - configuracion/index.md
         
