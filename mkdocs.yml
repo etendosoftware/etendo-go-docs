@@ -93,10 +93,8 @@ plugins:
             - Finanzas:
                 - finanzas/index.md
                 - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
-                - Activos: finanzas/activos/activos.md
-                - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
-                - Crear un Plan de Amortización: finanzas/activos/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
-                - Amortización: finanzas/amortizacion/amortizacion.md
+                - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
+                - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
             - Configuración:
                 - configuracion/index.md
         

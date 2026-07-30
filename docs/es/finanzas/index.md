@@ -8,7 +8,7 @@ hide:
 
 # Finanzas
 
-Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo Go: desde los términos clave hasta el alta de un activo y la ejecución de su depreciación.
+Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo Go: desde los términos clave hasta el alta de un activo y la ejecución de su amortización.
 
 ## Introducción
 
@@ -28,36 +28,20 @@ Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo Go
 
 <div class="grid cards" markdown>
 
--   :material-office-building-outline:{ .lg .middle } **Activos**
-
-    ---
-
-    Descubre qué es un activo en Etendo Go, cómo configurar su depreciación y cómo hacer seguimiento de su plan de amortización.
-
-    [:octicons-arrow-right-24: Leer más](activos/activos.md)
-
 -   :material-plus-box-outline:{ .lg .middle } **Apuntar un Activo**
 
     ---
 
-    Aprende a registrar un bien fijo nuevo o migrado, completando sus datos financieros y de depreciación.
+    Descubre qué es un activo en Etendo Go y aprende a registrarlo, configurar su amortización y hacer seguimiento de su plan de amortización.
 
-    [:octicons-arrow-right-24: Leer más](activos/apuntar-un-activo.md)
+    [:octicons-arrow-right-24: Leer más](apuntar-un-activo/apuntar-un-activo.md)
 
--   :material-calendar-clock-outline:{ .lg .middle } **Crear un Plan de Amortización**
-
-    ---
-
-    Genera las líneas que distribuyen la depreciación de un activo en períodos contables.
-
-    [:octicons-arrow-right-24: Leer más](activos/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
-
--   :material-file-document-check-outline:{ .lg .middle } **Amortización**
+-   :material-calendar-clock-outline:{ .lg .middle } **Crear y Ejecutar un Plan de Amortización**
 
     ---
 
-    Ejecuta la depreciación de uno o varios activos para un período y confirma sus asientos contables.
+    Genera las líneas que distribuyen la amortización de un activo en períodos contables y ejecútalas mediante un registro de Amortización.
 
-    [:octicons-arrow-right-24: Leer más](amortizacion/amortizacion.md)
+    [:octicons-arrow-right-24: Leer más](crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
 
 </div>

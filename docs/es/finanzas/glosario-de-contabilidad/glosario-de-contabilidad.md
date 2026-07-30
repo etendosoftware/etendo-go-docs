@@ -10,15 +10,11 @@ tags:
 
 ## Activo
 
-Bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se deprecia a lo largo de su vida útil. Cada activo puede tener un plan de amortización asociado. Ver [Activos](../activos/activos.md).
+Bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se amortiza a lo largo de su vida útil. Cada activo puede tener un plan de amortización asociado. Ver [Apuntar un Activo](../apuntar-un-activo/apuntar-un-activo.md).
 
 ## Amortización
 
-Registro que agrupa la ejecución de la depreciación de uno o varios activos para un período contable. Al confirmarla, genera los asientos contables correspondientes. Ver [Amortización](../amortizacion/amortizacion.md).
-
-## Depreciación
-
-Distribución del valor de un activo a lo largo de su vida útil, calculada según el tipo de amortización y el tipo de cálculo definidos en el activo (Porcentaje o Tiempo).
+Distribución del valor de un activo a lo largo de su vida útil, calculada según el tipo de amortización y el tipo de cálculo definidos en el activo (Porcentaje o Tiempo). También es el nombre del registro que agrupa la ejecución de esa distribución para uno o varios activos en un período contable: al confirmarlo, genera los asientos contables correspondientes. Ver [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md).
 
 ## Plan de amortización
 
@@ -26,7 +22,7 @@ Conjunto de líneas generadas al pulsar **Crear amortización** desde un activo,
 
 ## Asiento contable
 
-Registro en la contabilidad que refleja el gasto de depreciación de un período. Se genera de forma definitiva al confirmar una Amortización.
+Registro en la contabilidad que refleja el gasto de amortización de un período. Se genera de forma definitiva al confirmar una Amortización.
 
 ## Grupo activo
 
@@ -38,11 +34,11 @@ Valor estimado de un activo al final de su vida útil. Debe ser menor o igual al
 
 ## Valor a amortizar
 
-Resultado de restar el valor residual al valor del activo. Es la base sobre la que se calcula la depreciación. Se calcula automáticamente.
+Resultado de restar el valor residual al valor del activo. Es la base sobre la que se calcula la amortización. Se autocompleta, pero es editable.
 
 ## Dimensiones contables
 
-Campos opcionales para asociar un activo o una línea de amortización a un eje de análisis. En la cabecera del Activo: **Proyecto**, **Centro de coste**, **Contacto**, **1ª Dimensión**, **2ª Dimensión**, **Región de ventas**, **Actividad** y **Campaña**. En las líneas de Amortización, según el diseño funcional: **Contacto**, **Proyecto** y **Centro de coste** (Producto no aplica).
+Campos opcionales para asociar un activo o una línea de amortización a un eje de análisis. En la cabecera del Activo: **Proyecto**, **Centro de coste**, **Contacto** y **Producto**. En las líneas de Amortización, según el diseño funcional: **Contacto**, **Proyecto** y **Centro de coste**.
 
 ## Borrador
 
@@ -70,9 +66,8 @@ Acción que devuelve una Amortización a Borrador y Sin contabilizar en un solo 
 
 ## Artículos Relacionados
 
-- [Activos](../activos/activos.md)
-- [Amortización](../amortizacion/amortizacion.md)
-- [Crear un plan de amortización](../activos/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
+- [Apuntar un Activo](../apuntar-un-activo/apuntar-un-activo.md)
+- [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
