@@ -62,7 +62,7 @@ Los campos de identificación aparecen siempre en la parte superior del formular
 
 Esta sección controla si el activo se amortiza y qué método se usa.
 
-- **Amortizar** — interruptor que habilita o deshabilita la amortización para este activo. Cuando está desactivado, aparece el mensaje *"La amortización está desactivada. Activala para configurar el método, el cálculo y la vida útil."*
+- **Amortizar** — interruptor que habilita o deshabilita la amortización para este activo. Cuando está desactivado, aparece el mensaje *"La amortización está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
 - **Cada mes tiene 30 días** — interruptor que aparece al activar **Amortizar** (activo por defecto). Normaliza los meses a 30 días para obtener cuotas uniformes.
 
 ### Información Financiera
