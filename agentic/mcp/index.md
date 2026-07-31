@@ -11,7 +11,7 @@ This guide covers:
 - The `spec + entity` model used by every CRUD tool.
 - The list of generic tools the server exposes.
 - The list of report tools the server exposes.
-- The list of specs available (verified through `etendo_neo_discover`).
+- The list of specs available (verified through `neo_discover`).
 - An end-to-end usage example built only with real tools.
 
 ## Prerequisites
@@ -105,7 +105,7 @@ resource: etendo://status
 
 If the read succeeds the server is reachable and authenticated. If it fails, the client surfaces a transport error — re-check the credentials and base URL.
 
-As a second sanity check, invoke `etendo_neo_discover` (it requires no arguments) and confirm you receive a `specs` array.
+As a second sanity check, invoke `neo_discover` (it requires no arguments) and confirm you receive a `specs` array.
 
 ## The `spec + entity` model
 
@@ -114,11 +114,11 @@ Every CRUD tool exposed by the MCP server takes two routing arguments:
 - **`spec`** — the API namespace, typically aligned with an Etendo Go window or business area (for example `sales-order`, `purchase-invoice`, `product`, `contacts`).
 - **`entity`** — the tab or sub-resource inside that spec (for example `header`, `lines`, `lineTax`, `paymentPlan`).
 
-A spec is composed of one or more entities. For example, the `sales-order` spec has the entities `header`, `lines`, `lineTax`, `intrastat`, `reservedStock`, `relatedProducts`, `relatedServices`, `basicDiscounts`, `tax`, `paymentPlan`, `paymentDetails`, and `replacementOrders`. To list sales-order headers you call `etendo_neo_list` with `spec="sales-order"` and `entity="header"`; to list the lines of one sales order you call `etendo_neo_list` with `spec="sales-order"`, `entity="lines"`, and a filter on the parent header ID.
+A spec is composed of one or more entities. For example, the `sales-order` spec has the entities `header`, `lines`, `lineTax`, `intrastat`, `reservedStock`, `relatedProducts`, `relatedServices`, `basicDiscounts`, `tax`, `paymentPlan`, `paymentDetails`, and `replacementOrders`. To list sales-order headers you call `neo_list` with `spec="sales-order"` and `entity="header"`; to list the lines of one sales order you call `neo_list` with `spec="sales-order"`, `entity="lines"`, and a filter on the parent header ID.
 
-The same pattern applies to every tool: `etendo_neo_get`, `etendo_neo_create`, `etendo_neo_update`, `etendo_neo_delete`, `etendo_neo_schema`, `etendo_neo_defaults`, `etendo_neo_selectors`, and `etendo_neo_action` all accept `spec` and `entity` as their routing arguments.
+The same pattern applies to every tool: `neo_get`, `neo_create`, `neo_update`, `neo_delete`, `neo_schema`, `neo_defaults`, `neo_selectors`, and `neo_action` all accept `spec` and `entity` as their routing arguments.
 
-Discover the full list of `(spec, entity)` pairs available to the current user at runtime with `etendo_neo_discover`. Never hard-code spec or entity names from memory — the discoverable list depends on the user's role and the modules installed in the instance.
+Discover the full list of `(spec, entity)` pairs available to the current user at runtime with `neo_discover`. Never hard-code spec or entity names from memory — the discoverable list depends on the user's role and the modules installed in the instance.
 
 ## Available tools
 
@@ -128,17 +128,17 @@ The MCP server exposes a small set of generic tools that operate on any `(spec, 
 
 | Tool | Purpose | Required arguments | Optional arguments |
 |------|---------|--------------------|--------------------|
-| `etendo_neo_discover` | List every spec and entity the current user can access | — | — |
-| `etendo_neo_schema` | Return the field metadata for one entity: names, types, required flags, read-only flags, default expressions, and the buttons available for `etendo_neo_action` | `spec`, `entity` | — |
-| `etendo_neo_defaults` | Return computed default values for a new record (useful before `etendo_neo_create`) | `spec`, `entity` | `parentId`, `assetId` |
-| `etendo_neo_selectors` | Resolve valid values for a foreign-key field (returns IDs the agent can pass into `etendo_neo_create` / `etendo_neo_update`) | `spec`, `entity`, `column` | `query`, `recordContext`, `parentContext`, `field` |
-| `etendo_neo_list` | List records of one entity with filters, pagination, and sort | `spec`, `entity` | `filters`, `limit`, `offset`, `orderBy` |
-| `etendo_neo_get` | Retrieve a single record by ID | `spec`, `entity`, `id` | — |
-| `etendo_neo_create` | Create a record | `spec`, `entity`, `fields` | — |
-| `etendo_neo_update` | Update a record by ID | `spec`, `entity`, `id`, `fields` | — |
-| `etendo_neo_delete` | Delete a record by ID | `spec`, `entity`, `id` | — |
-| `etendo_neo_action` | Fire a `type:button` action on a record (document confirmation, posting, copy-lines, generate-template, etc.). The button column name and the available actions are listed in the entity schema. | `spec`, `entity`, `id`, `action` | `parameters` |
-| `etendo_neo_batch` | Run a sequence of cross-spec create operations atomically. All ops share one transaction (commit on success, rollback on any failure). Use `parentRef` to set the parent FK on a child-tab op, and `$ref:<opId>` substitution inside `body` to chain IDs across ops. | `operations[]` | — |
+| `neo_discover` | List every spec and entity the current user can access | — | — |
+| `neo_schema` | Return the field metadata for one entity: names, types, required flags, read-only flags, default expressions, and the buttons available for `neo_action` | `spec`, `entity` | — |
+| `neo_defaults` | Return computed default values for a new record (useful before `neo_create`) | `spec`, `entity` | `parentId`, `assetId` |
+| `neo_selectors` | Resolve valid values for a foreign-key field (returns IDs the agent can pass into `neo_create` / `neo_update`) | `spec`, `entity`, `column` | `query`, `recordContext`, `parentContext`, `field` |
+| `neo_list` | List records of one entity with filters, pagination, and sort | `spec`, `entity` | `filters`, `limit`, `offset`, `orderBy` |
+| `neo_get` | Retrieve a single record by ID | `spec`, `entity`, `id` | — |
+| `neo_create` | Create a record | `spec`, `entity`, `fields` | — |
+| `neo_update` | Update a record by ID | `spec`, `entity`, `id`, `fields` | — |
+| `neo_delete` | Delete a record by ID | `spec`, `entity`, `id` | — |
+| `neo_action` | Fire a `type:button` action on a record (document confirmation, posting, copy-lines, generate-template, etc.). The button column name and the available actions are listed in the entity schema. | `spec`, `entity`, `id`, `action` | `parameters` |
+| `neo_batch` | Run a sequence of cross-spec create operations atomically. All ops share one transaction (commit on success, rollback on any failure). Use `parentRef` to set the parent FK on a child-tab op, and `$ref:<opId>` substitution inside `body` to chain IDs across ops. | `operations[]` | — |
 
 ### Report tools
 
@@ -146,12 +146,12 @@ Report tools render a pre-built Etendo Go report and return it in the requested 
 
 | Tool | Report |
 |------|--------|
-| `etendo_generate_aging_receivable` | Aging of Receivables |
-| `etendo_generate_bank_statements` | Bank statement list, import (C43), and lines view for a financial account |
-| `etendo_generate_financial_account_transactions` | Transactions list for a single financial account |
-| `etendo_generate_financial_accounts_page` | Financial Accounts Page |
-| `etendo_generate_inventory_stock_report` | Inventory Stock Report |
-| `etendo_generate_tax_report` | Tax Report |
+| `generate_aging_receivable` | Aging of Receivables |
+| `generate_bank_statements` | Bank statement list, import (C43), and lines view for a financial account |
+| `generate_financial_account_transactions` | Transactions list for a single financial account |
+| `generate_financial_accounts_page` | Financial Accounts Page |
+| `generate_inventory_stock_report` | Inventory Stock Report |
+| `generate_tax_report` | Tax Report |
 
 All report tools accept an optional `format` argument (`pdf`, `xlsx`, `csv`; default `pdf`).
 
@@ -163,13 +163,13 @@ Resources in the Etendo Go MCP server are intentionally minimal. The server expo
 |--------------|-------------|
 | `etendo://status` | Server health and instance metadata. Read it to verify the server is reachable. |
 
-There are **no** `etendo://schema/<entity>` resources. To obtain the JSON-Schema-like field metadata for an entity, call the tool `etendo_neo_schema(spec, entity)` instead of reading a resource. Schema metadata is exposed through a tool rather than a resource because it depends on the spec/entity pair the agent is about to operate on.
+There are **no** `etendo://schema/<entity>` resources. To obtain the JSON-Schema-like field metadata for an entity, call the tool `neo_schema(spec, entity)` instead of reading a resource. Schema metadata is exposed through a tool rather than a resource because it depends on the spec/entity pair the agent is about to operate on.
 
 ## Specs available
 
-The list below was obtained from `etendo_neo_discover` against a current Etendo Go instance. The set of specs the **current user** can see depends on the user's role and the modules installed; rerun `etendo_neo_discover` in your own environment to obtain the authoritative list.
+The list below was obtained from `neo_discover` against a current Etendo Go instance. The set of specs the **current user** can see depends on the user's role and the modules installed; rerun `neo_discover` in your own environment to obtain the authoritative list.
 
-Specs of type `W` (write/CRUD windows) expose one or more entities through `etendo_neo_*`. Specs of type `R` (reports) are rendered through their corresponding `etendo_generate_*` tool.
+Specs of type `W` (write/CRUD windows) expose one or more entities through `neo_*`. Specs of type `R` (reports) are rendered through their corresponding `generate_*` tool.
 
 | Spec | Type | Main entities |
 |------|------|---------------|
@@ -227,7 +227,7 @@ Tool call:
 
 ```json
 {
-  "tool": "etendo_neo_discover",
+  "tool": "neo_discover",
   "arguments": {}
 }
 ```
@@ -240,7 +240,7 @@ Before creating any record, read the schema for the target entity so the agent k
 
 ```json
 {
-  "tool": "etendo_neo_schema",
+  "tool": "neo_schema",
   "arguments": {
     "spec": "sales-order",
     "entity": "header"
@@ -248,7 +248,7 @@ Before creating any record, read the schema for the target entity so the agent k
 }
 ```
 
-The response lists every field with its `name`, `column`, `type`, `required`, `readOnly`, `hasSelector`, and `defaultExpression`. For `sales-order/header` the required, writable fields the agent typically must supply include `transactionDocument`, `businessPartner`, `orderDate`, `scheduledDeliveryDate`, `accountingDate`, `partnerAddress`, `invoiceAddress`, `priceList`, `paymentTerms`, `warehouse`, `currency`, `invoiceTerms`, `deliveryTerms`, `deliveryMethod`, `freightCostRule`, `formOfPayment`, and `priority`. Fields marked `readOnly:true` (such as `documentNo` and `id`) are auto-generated and must be omitted from `etendo_neo_create`. Buttons (`type:"button"`, with `invokeVia:"neo_action"`) are not regular fields — they are fired through `etendo_neo_action` once the record exists.
+The response lists every field with its `name`, `column`, `type`, `required`, `readOnly`, `hasSelector`, and `defaultExpression`. For `sales-order/header` the required, writable fields the agent typically must supply include `transactionDocument`, `businessPartner`, `orderDate`, `scheduledDeliveryDate`, `accountingDate`, `partnerAddress`, `invoiceAddress`, `priceList`, `paymentTerms`, `warehouse`, `currency`, `invoiceTerms`, `deliveryTerms`, `deliveryMethod`, `freightCostRule`, `formOfPayment`, and `priority`. Fields marked `readOnly:true` (such as `documentNo` and `id`) are auto-generated and must be omitted from `neo_create`. Buttons (`type:"button"`, with `invokeVia:"neo_action"`) are not regular fields — they are fired through `neo_action` once the record exists.
 
 ### Step 3 — Resolve the business partner foreign key
 
@@ -256,7 +256,7 @@ The `businessPartner` field uses a selector. Find a valid customer ID by queryin
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "sales-order",
     "entity": "header",
@@ -274,7 +274,7 @@ Selectors that depend on other field values (for example, `partnerAddress` depen
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "sales-order",
     "entity": "header",
@@ -290,11 +290,11 @@ Repeat for `invoiceAddress`, `priceList`, `paymentTerms`, `warehouse`, `currency
 
 ### Step 5 — (Optional) Inspect defaults
 
-`etendo_neo_create` auto-fills server-side defaults, so this step is optional. If the agent wants to preview which fields will be auto-filled, call:
+`neo_create` auto-fills server-side defaults, so this step is optional. If the agent wants to preview which fields will be auto-filled, call:
 
 ```json
 {
-  "tool": "etendo_neo_defaults",
+  "tool": "neo_defaults",
   "arguments": {
     "spec": "sales-order",
     "entity": "header"
@@ -308,7 +308,7 @@ Send only the fields confirmed in step 2 and resolved in steps 3–4:
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "sales-order",
     "entity": "header",
@@ -337,14 +337,14 @@ Inspect the line schema, then resolve the line-level selectors that depend on th
 
 ```json
 {
-  "tool": "etendo_neo_schema",
+  "tool": "neo_schema",
   "arguments": { "spec": "sales-order", "entity": "lines" }
 }
 ```
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "sales-order",
     "entity": "lines",
@@ -356,7 +356,7 @@ Inspect the line schema, then resolve the line-level selectors that depend on th
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "sales-order",
     "entity": "lines",
@@ -374,7 +374,7 @@ Create the line:
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "sales-order",
     "entity": "lines",
@@ -395,7 +395,7 @@ Create the line:
 
 ```json
 {
-  "tool": "etendo_neo_action",
+  "tool": "neo_action",
   "arguments": {
     "spec": "sales-order",
     "entity": "header",
@@ -410,11 +410,11 @@ The response carries `processResult` (`success` | `error` | `warning`) and `proc
 
 ### Step 9 — (Alternative) Create the whole order atomically
 
-When the agent needs to create the header and its lines in a single transaction (so that a failure in the line rolls back the header), use `etendo_neo_batch` and chain ops with `parentRef` / `$ref:`:
+When the agent needs to create the header and its lines in a single transaction (so that a failure in the line rolls back the header), use `neo_batch` and chain ops with `parentRef` / `$ref:`:
 
 ```json
 {
-  "tool": "etendo_neo_batch",
+  "tool": "neo_batch",
   "arguments": {
     "operations": [
       {
@@ -456,20 +456,20 @@ A successful response has `committed: true` and an `operations` array with the r
 
 ## Error handling
 
-> The error payload shapes below describe how the server signals failure today. Codes other than the ones explicitly verified (`processResult: "error"` and `processResult: "warning"` from `etendo_neo_action`, plus the underlying NEO Headless API HTTP errors propagated by the server) **need to be confirmed against the running MCP server** before being treated as load-bearing in agent logic.
+> The error payload shapes below describe how the server signals failure today. Codes other than the ones explicitly verified (`processResult: "error"` and `processResult: "warning"` from `neo_action`, plus the underlying NEO Headless API HTTP errors propagated by the server) **need to be confirmed against the running MCP server** before being treated as load-bearing in agent logic.
 
 Tool calls fail in one of two ways:
 
 1. **Transport / protocol error.** The MCP client surfaces an error before the call returns. Inspect the client error message; the most common causes are an unreachable `ETENDO_BASE_URL`, invalid credentials, or a missing role on the API user.
-2. **API-level error.** The call returns a structured payload describing the failure from the NEO Headless API. The shape depends on the underlying endpoint — typically an HTTP status, a `message`, and an optional `detail` field. For batch calls (`etendo_neo_batch`), the wrapper is normalised to `{ committed: false, failedAt: { id, index }, error: { status, message, detail? } }`.
+2. **API-level error.** The call returns a structured payload describing the failure from the NEO Headless API. The shape depends on the underlying endpoint — typically an HTTP status, a `message`, and an optional `detail` field. For batch calls (`neo_batch`), the wrapper is normalised to `{ committed: false, failedAt: { id, index }, error: { status, message, detail? } }`.
 
-For `etendo_neo_action`, success is signalled inside the response body, not by an exception: read `processResult` and `processMessage`.
+For `neo_action`, success is signalled inside the response body, not by an exception: read `processResult` and `processMessage`.
 
 | Symptom | Likely cause | Resolution |
 |---------|--------------|------------|
 | Transport error on first call of a session | `ETENDO_BASE_URL` unreachable or credentials wrong | Re-read `etendo://status`; verify `ETENDO_BASE_URL`, `ETENDO_USERNAME`, `ETENDO_PASSWORD` |
-| `etendo_neo_discover` returns an empty `specs` array | API user has no role granting access to NEO Headless windows | Assign the appropriate role in **Configuration → Users and permissions** |
-| `etendo_neo_create` rejects a field as required | A field with `required: true` was omitted, or a field with `readOnly: true` was sent | Re-run `etendo_neo_schema`; submit only writable fields; resolve FK fields via `etendo_neo_selectors` |
-| `etendo_neo_action` returns `processResult: "error"` | The button's underlying Etendo process raised an error (validation, state machine, or business rule) | Read `processMessage` and report it verbatim; do not retry blindly |
-| `etendo_neo_action` returns `processResult: "warning"` | The process completed with a warning Etendo wants surfaced | Treat the document as processed but surface `processMessage` to the user |
-| `etendo_neo_batch` returns `committed: false` | One op failed; the whole transaction was rolled back | Use `failedAt.index` to locate the offending op and `error.message` to diagnose; rebuild and retry |
+| `neo_discover` returns an empty `specs` array | API user has no role granting access to NEO Headless windows | Assign the appropriate role in **Configuration → Users and permissions** |
+| `neo_create` rejects a field as required | A field with `required: true` was omitted, or a field with `readOnly: true` was sent | Re-run `neo_schema`; submit only writable fields; resolve FK fields via `neo_selectors` |
+| `neo_action` returns `processResult: "error"` | The button's underlying Etendo process raised an error (validation, state machine, or business rule) | Read `processMessage` and report it verbatim; do not retry blindly |
+| `neo_action` returns `processResult: "warning"` | The process completed with a warning Etendo wants surfaced | Treat the document as processed but surface `processMessage` to the user |
+| `neo_batch` returns `committed: false` | One op failed; the whole transaction was rolled back | Use `failedAt.index` to locate the offending op and `error.message` to diagnose; rebuild and retry |
