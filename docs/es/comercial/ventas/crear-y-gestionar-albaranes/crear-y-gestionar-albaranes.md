@@ -33,6 +33,11 @@ Al hacer clic sobre un albarán existente se abre la vista detalle, con la previ
 
 ## Vista Formulario
 
+<figure markdown="span">
+  ![Vista formulario del Albarán de venta](formulario.png)
+  <figcaption>Formulario de creación y edición del Albarán de venta.</figcaption>
+</figure>
+
 El formulario se abre al crear un albarán nuevo o al hacer clic en **Editar** desde la vista detalle.
 
 ### Cabecera
