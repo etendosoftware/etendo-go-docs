@@ -12,7 +12,7 @@ tags:
 
 Sigue esta guía cuando necesites devolver mercancía a un proveedor o corregir el importe de una factura de compra ya emitida. Etendo Go distingue dos situaciones distintas, según si hay mercancía física de por medio o solo un ajuste económico:
 
-- **Devolución física** — se registra un **Albarán de Devolución a Proveedor**, vinculado a un albarán de compra (recepción) ya confirmado. Genera automáticamente la **Nota de crédito** correspondiente.
+- **Devolución física** — se registra un **Albarán de devolución**, vinculado a un albarán de compra (recepción) ya confirmado. Genera automáticamente la **Nota de crédito** correspondiente.
 - **Ajuste financiero** — se crea directamente una **Nota de crédito** desde la ventana de Factura de Compra, sin devolver mercancía (por ejemplo, para corregir un precio o aplicar un descuento o bonificación del proveedor).
 
 ```mermaid
@@ -32,7 +32,7 @@ flowchart LR
 5. Al confirmar el albarán de devolución aparece el popup **¿Gestionar crédito?** con la opción **Crear Nota de Crédito** activada por defecto — genera una Nota de crédito en Borrador, prellenada con los productos devueltos y los precios de la factura de origen. Puedes desactivarla si no quieres generarla en este paso.
 
     <figure markdown="span">
-      ![Popup ¿Gestionar crédito? al confirmar un Albarán de devolución](popup-credito.png)
+      ![Popup ¿Gestionar crédito? al confirmar un Albarán de devolución](crear-una-devolucion-de-compra-1.png)
       <figcaption>Popup mostrado al confirmar el albarán de devolución, con la opción Crear Nota de Crédito activada por defecto.</figcaption>
     </figure>
 
@@ -42,7 +42,7 @@ flowchart LR
 2. En **Tipo de documento**, selecciona **Nota de crédito**. A diferencia de una Factura, aquí solo se pueden añadir líneas manualmente (no hay opción de importar desde pedido o recibo).
 
     <figure markdown="span">
-      ![Cabecera de la Factura de Compra con Tipo de documento = Nota de crédito](nota-credito.png)
+      ![Cabecera de la Factura de Compra con Tipo de documento = Nota de crédito](crear-una-devolucion-de-compra-2.png)
       <figcaption>Nota de crédito manual: mismos campos de cabecera que una factura, con Tipo de documento en Nota de crédito.</figcaption>
     </figure>
 3. Completa el resto de la cabecera igual que en una [factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md): Contacto, Dirección, Método de pago, Condiciones de pago, Moneda y Tarifa.

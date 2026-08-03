@@ -10,14 +10,12 @@ tags:
 
 # Gestionar tus facturas de compra
 
-<!-- NOTA INTERNA — terminología: verificada contra el comportamiento real de la app en go.experimental.etendo.cloud durante la redacción. Difiere de docs/es/operaciones/compras/factura-de-compra/factura-de-compra.md (doc. legacy, ya fuera del nav desde que se armó esta sección). Esta página es la fuente de verdad vigente. La eliminación del archivo legacy fue solicitada explícitamente por Anita para más adelante ("cambia el nav pero no borres los archivos viejos todavía") — no es un descuido del Escritor ni algo que Bruno/QA/Teo puedan resolver en este ciclo; queda como página huérfana intencional hasta que Anita autorice borrarla. -->
-
 Una vez que tienes facturas de compra cargadas, vas a necesitar consultarlas, editarlas o revisar su estado de pago. Este artículo repasa la ventana de **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}** — la vista lista, la vista detalle y la vista formulario. Si todavía no has creado ninguna, empieza por [Crear una factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md).
 
 ## Vista Lista
 
 <figure markdown="span">
-  ![Vista lista de Factura de compra](lista.png)
+  ![Vista lista de Factura de compra](gestionar-tus-facturas-de-compra-1.png)
   <figcaption>Vista lista de Factura de compra con columnas de estado, importe pendiente y estado de recepción.</figcaption>
 </figure>
 
@@ -25,16 +23,18 @@ La vista lista muestra todas las facturas con las columnas **Fecha de la factura
 
 La barra superior incluye tabs para filtrar por tipo de documento: **Todos**, **Factura** y **Nota de crédito**. Los selectores de **estado del documento** y **fecha** permiten filtrar la lista, y **Filtros** habilita condiciones adicionales. Para crear una factura nueva usa **+ Nueva factura**.
 
+La columna **Vencimiento** muestra un punto de color junto a la fecha según el estado de pago: verde cuando la factura está pagada, rojo cuando venció y sigue pendiente, ámbar cuando el vencimiento está próximo, y gris cuando queda pendiente pero el vencimiento todavía está lejos.
+
 ## Vista Detalle
 
 <figure markdown="span">
-  ![Vista detalle de Factura de compra](detalle.png)
-  <figcaption>Vista detalle de una factura en moneda extranjera: el Total se muestra en la moneda del documento (USD), con su equivalente en la moneda de la empresa debajo.</figcaption>
+  ![Vista detalle de Factura de compra](gestionar-tus-facturas-de-compra-2.png)
+  <figcaption>Vista detalle de una factura en moneda extranjera: el Total se muestra en la moneda de la empresa (EUR), con el importe original en la moneda del documento (USD) debajo.</figcaption>
 </figure>
 
 Al hacer clic sobre una factura existente en la lista se abre el panel de detalle, con las acciones **Añadir pago** y **Editar** en la cabecera. El panel muestra:
 
-- **Total**, **Contacto**, **Fecha**, **Fecha de vencimiento** y **Estado**. Si la factura está en una moneda distinta a la de tu empresa, el Total se muestra en la moneda del documento, con el equivalente convertido justo debajo.
+- **Total**, **Contacto**, **Fecha**, **Fecha de vencimiento** y **Estado**. Si la factura está en una moneda distinta a la de tu empresa, el Total se muestra en la moneda de tu empresa, con el importe original en la moneda del documento justo debajo entre paréntesis.
 - Sección **PAGOS** — con el indicador **Pagada** cuando corresponde, el historial de pagos registrados (número, método, importe y su propio estado) y el acceso directo a **Añadir pago**. Ver [Añadir pagos a tu factura de compra](../anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md).
 - Sección **DOCUMENTOS** — con el pedido y/o albarán de origen, cuando la factura se generó a partir de alguno de ellos.
 - Pestañas **General**, **Mensajes** e **Historial**.
@@ -55,12 +55,14 @@ Al hacer clic en **Editar** se abre el formulario completo, con la cabecera (Con
 !!! warning "La factura no se puede editar tras confirmar"
     Una vez confirmada, la factura queda bloqueada. Verifica los importes, el contacto y las condiciones de pago antes de confirmar. Para corregir errores en una factura completada, emite una Nota de crédito — ver [Crear una devolución de compra](../crear-una-devolucion-de-compra/crear-una-devolucion-de-compra.md).
 
+En estado Completado, la barra superior del formulario muestra además un indicador con el importe: **Pendiente · [importe]** en ámbar mientras queda saldo por pagar, o **Pagado · [importe]** en verde una vez saldada. A diferencia del punto de color de la Vista Lista, este indicador no distingue si la factura está vencida — se mantiene en ámbar tanto si el vencimiento es próximo como si ya pasó.
+
 ## Gestionar Notas de crédito
 
 Una Nota de crédito se gestiona desde la misma ventana y vista lista de **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}**, filtrando por el tab **Nota de crédito**. Al confirmarla, la columna **Pendiente de pago** muestra **Saldo a favor** por el importe de la nota, en vez de un importe pendiente: es un saldo a favor general del proveedor, no un descuento aplicado automáticamente a una factura puntual — se concilia por Contacto, no seleccionando una factura origen específica.
 
 <figure markdown="span">
-  ![Vista lista filtrada por Nota de crédito](notas-credito.png)
+  ![Vista lista filtrada por Nota de crédito](gestionar-tus-facturas-de-compra-3.png)
   <figcaption>Vista lista filtrada por el tab Nota de crédito: la columna Pendiente de pago muestra Saldo a favor en vez de un importe pendiente.</figcaption>
 </figure>
 

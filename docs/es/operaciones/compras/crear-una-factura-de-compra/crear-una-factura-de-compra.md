@@ -36,7 +36,7 @@ flowchart LR
     - **Tarifa** — lista de precios de compra aplicada; se carga desde el proveedor y es editable.
 
     <figure markdown="span">
-      ![Cabecera y pestañas del formulario de Factura de compra](formulario.png)
+      ![Cabecera y pestañas del formulario de Factura de compra](crear-una-factura-de-compra-1.png)
       <figcaption>Cabecera de la factura con las pestañas Líneas, Exchange Rates, Adjuntos y Rectificaciones.</figcaption>
     </figure>
 
@@ -54,15 +54,20 @@ En la pestaña **Líneas** tienes tres formas de incorporar productos:
 - **Importar desde pedido** — importa líneas desde un pedido de compra confirmado del mismo proveedor.
 
 <figure markdown="span">
-  ![Pestaña Líneas vacía con las tres formas de añadir productos](lineas.png)
-  <figcaption>Pestaña Líneas antes de añadir productos, con las opciones + Añadir líneas, Importar desde recibo e Importar desde pedido.</figcaption>
+  ![Cabecera completa y pestaña Líneas vacía con las tres formas de añadir productos](crear-una-factura-de-compra-2.png)
+  <figcaption>Cabecera ya completada y pestaña Líneas antes de añadir productos, con las opciones + Añadir líneas, Importar desde recibo e Importar desde pedido.</figcaption>
 </figure>
 
-Al seleccionar un producto se autocompletan su descripción, precio de tarifa e impuesto; ambos son editables por línea. Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila; para cancelar sin guardar, pulsa ++esc++.
+Al seleccionar un producto se autocompletan su descripción, precio de tarifa e impuesto; los tres son editables por línea. La columna **Importe bruto de línea** se calcula automáticamente como precio × cantidad facturada, menos el descuento de línea aplicado (antes de impuesto). Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila; para cancelar sin guardar, pulsa ++esc++.
 
 ### Totales, notas y documentos
 
 El panel de totales muestra **Subtotal sin descuento**, **Descuento por producto**, **Subtotal**, **Impuesto** y **Total** (con la opción de añadir un descuento global vía **+ Añadir descuento total**). El campo **Notas** permite agregar observaciones internas que no se incluyen en el PDF, y la sección **Documentos** muestra el pedido o albarán de origen, cuando corresponda.
+
+<figure markdown="span">
+  ![Factura con varias líneas de producto y el panel de totales](crear-una-factura-de-compra-3.png)
+  <figcaption>Factura con varias líneas y cantidades — el panel de totales calcula el Subtotal y el Total a partir de todas las líneas.</figcaption>
+</figure>
 
 ## Generar la factura desde un pedido de compra
 

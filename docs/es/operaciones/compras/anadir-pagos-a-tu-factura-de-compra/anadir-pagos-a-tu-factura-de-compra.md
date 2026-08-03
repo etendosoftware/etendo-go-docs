@@ -26,7 +26,7 @@ Sigue esta guía cuando necesites registrar uno o varios pagos a un proveedor so
     - Panel de conciliación **Total factura / Dinero / Aplicado / Diferencia** — muestra si el importe indicado cubre exactamente el total pendiente. El enlace **Igualar** ajusta el importe aplicado para que la diferencia quede en 0.00.
 
     <figure markdown="span">
-      ![Popup Nuevo pago sobre una factura en moneda extranjera](nuevo-pago.png)
+      ![Popup Nuevo pago sobre una factura en moneda extranjera](anadir-pagos-a-tu-factura-de-compra-1.png)
       <figcaption>Popup Nuevo pago sobre una factura en USD, con los campos Tasa de conversión e Importe en moneda de la cuenta visibles.</figcaption>
     </figure>
 
@@ -40,7 +40,7 @@ Al confirmar el pago:
 - Cuando el importe pagado cubre el total, la sección **PAGOS** muestra el indicador **Pagada** y el botón **Añadir pago** se deshabilita.
 
 <figure markdown="span">
-  ![Sección PAGOS de una factura totalmente pagada](efecto-pago.png)
+  ![Sección PAGOS de una factura totalmente pagada](anadir-pagos-a-tu-factura-de-compra-2.png)
   <figcaption>Vista detalle de una factura pagada: la sección PAGOS muestra el indicador Pagada y el pago registrado.</figcaption>
 </figure>
 
