@@ -95,6 +95,22 @@ plugins:
                 - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
                 - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
                 - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
+            - Tesorería:
+                - tesoreria/index.md
+                - ¿Qué es la sección Tesorería?: tesoreria/que-es-tesoreria/que-es-tesoreria.md
+                - Cuentas financieras:
+                    - Añadir y configurar un banco, tarjeta o caja: tesoreria/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md
+                    - Conectar, desconectar, desactivar o eliminar una cuenta bancaria: tesoreria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md
+                    - Gestionar cajas contables y movimientos en efectivo: tesoreria/como-gestionar-cajas-contables-y-movimientos-en-efectivo/como-gestionar-cajas-contables-y-movimientos-en-efectivo.md
+                - Extracto bancario:
+                    - Importar o descargar el extracto bancario: tesoreria/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
+                    - Borrar transacciones del extracto bancario: tesoreria/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
+                - Conciliación bancaria:
+                    - ¿Qué es la conciliación bancaria en Etendo Go?: tesoreria/que-es-la-conciliacion-bancaria-en-etendo-go/que-es-la-conciliacion-bancaria-en-etendo-go.md
+                    - Conciliar o desconciliar movimientos contra documentos: tesoreria/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
+                    - Configurar reglas para automatizar la conciliación: tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
+                - Pagos y cobros:
+                    - Gestionar pagos y cobros: tesoreria/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md
             - Configuración:
                 - configuracion/index.md
         
