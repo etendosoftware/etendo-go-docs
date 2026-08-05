@@ -1,5 +1,8 @@
 ---
 title: ¿Qué es la sección Ventas?
+description: >-
+  Descubre qué documentos componen el ciclo de ventas en Etendo Go, desde el
+  presupuesto hasta el cobro, y cómo se encadenan entre sí sin reingresar datos.
 tags:
   - Ventas
   - Comercial
@@ -17,7 +20,7 @@ El ciclo de ventas de Etendo Go sigue un modelo lineal de documentos encadenados
 
 ```mermaid
 flowchart LR
-  A[Presupuesto de venta] -->|Confirmar| B[Pedido de venta]
+  A[Presupuesto de venta] -->|Crear pedido| B[Pedido de venta]
   A -->|Facturar directamente| D[Factura de venta]
   B -->|Crear albarán| C[Albarán de venta]
   B -->|Gestionar envío y factura| D
@@ -44,9 +47,9 @@ Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del f
 
 ## Artículos Relacionados
 
-- [¿Qué es la sección Contactos?](../../contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
-- [Crear y gestionar presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)
-- [Documentos de venta: preguntas frecuentes](../../ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md)
+- [Crear y gestionar pedidos](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)
+- [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
+- [Documentos de venta: preguntas frecuentes](../documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

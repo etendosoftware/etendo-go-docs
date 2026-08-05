@@ -1,5 +1,8 @@
 ---
 title: Gestionar tus facturas de venta
+description: >-
+  Aprende a consultar, filtrar y hacer seguimiento del cobro de tus facturas
+  de venta en Etendo Go desde la vista lista y la vista detalle del documento.
 tags:
   - Factura de Venta
   - Ventas
@@ -14,9 +17,11 @@ Una vez que tienes facturas de venta creadas, vas a necesitar consultarlas, hace
 
 ## Vista Lista
 
-![Vista lista de Factura de venta](lista.png)
+![Vista lista de Factura de venta](assets/gestionar-tus-facturas-de-venta-1.png)
 
 La vista lista muestra todas las facturas con las columnas **Fecha de la factura**, **Tipo de documento**, **Nº documento**, **Vencimiento**, **Contacto**, **Estado doc.**, **Imp. total**, **Pendiente de pago** y **Estado de entrega**.
+
+**Estado de entrega** — indica qué porcentaje de la factura ya se entregó mediante un [albarán](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) asociado. Se muestra como una barra de progreso con porcentaje: verde al 100 %, naranja cuando es parcial y gris cuando todavía no hay ningún albarán vinculado.
 
 La barra superior incluye tabs para filtrar por tipo de documento: **Todos**, **Factura**, **Nota de crédito** y **Factura de devolución**. Los selectores de **estado del documento** y **fecha de factura** permiten filtrar la lista. Para crear una factura nueva usa el botón **+ Nueva factura** en la esquina superior derecha.
 
@@ -24,7 +29,7 @@ Al pasar el cursor sobre una fila aparecen accesos rápidos para **Editar**, **C
 
 ## Vista Detalle
 
-![Vista detalle de Factura de venta](detalle.png)
+![Vista detalle de Factura de venta](assets/gestionar-tus-facturas-de-venta-2.png)
 
 Al hacer clic sobre una factura existente en la lista se abre la vista detalle. El centro muestra una previsualización del PDF y el panel derecho muestra la información clave: total, contacto, fecha, fecha de vencimiento y estado.
 
@@ -72,7 +77,6 @@ La barra superior del formulario muestra las siguientes acciones:
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 - [Enviar tus facturas por email](../enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
 - [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md)
-- [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

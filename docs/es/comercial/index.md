@@ -84,6 +84,30 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md)
 
+-   :material-format-list-checks:{ .lg .middle } **Gestionar tus facturas de venta**
+
+    ---
+
+    Consulta, filtra y haz seguimiento del cobro de tus facturas desde la vista lista y la vista detalle del documento.
+
+    [:octicons-arrow-right-24: Leer más](ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md)
+
+-   :material-email-arrow-right-outline:{ .lg .middle } **Enviar tus facturas por email**
+
+    ---
+
+    Aprende a enviar una factura al cliente por correo electrónico, con o sin adjuntar el PDF, y a consultar el historial de envíos.
+
+    [:octicons-arrow-right-24: Leer más](ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md)
+
+-   :material-cash-plus:{ .lg .middle } **Añadir pagos a tu factura de venta**
+
+    ---
+
+    Registra cobros totales o parciales sobre tus facturas de venta, y aplica saldo a favor o crédito disponible del cliente.
+
+    [:octicons-arrow-right-24: Leer más](ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md)
+
 -   :material-cash-refund:{ .lg .middle } **Crear y gestionar devoluciones**
 
     ---

@@ -1,5 +1,8 @@
 ---
 title: Crear y gestionar pedidos
+description: >-
+  Aprende a crear pedidos de venta en Etendo Go, hacer seguimiento de su ciclo
+  de vida y generar los albaranes y facturas derivados de cada pedido.
 tags:
     - Pedido de Venta
     - Ventas
@@ -31,7 +34,7 @@ flowchart LR
 ## Vista Lista
 
 <figure markdown="span">
-  ![Vista lista de Pedido de venta](lista.png)
+  ![Vista lista de Pedido de venta](assets/crear-y-gestionar-pedidos-1.png)
   <figcaption>Vista lista del Pedido de venta con columnas de estado, facturación y entrega.</figcaption>
 </figure>
 
@@ -46,7 +49,7 @@ Para filtrar la lista utiliza los selectores de **estado del documento** y **fec
 ## Vista Detalle
 
 <figure markdown="span">
-  ![Vista detalle de Pedido de venta](detalle.png)
+  ![Vista detalle de Pedido de venta](assets/crear-y-gestionar-pedidos-2.png)
   <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
 </figure>
 
@@ -65,7 +68,7 @@ El panel también incluye la sección **Emails** con el historial de correos env
 ## Vista Formulario
 
 <figure markdown="span">
-  ![Vista formulario de Pedido de venta](formulario.png)
+  ![Vista formulario de Pedido de venta](assets/crear-y-gestionar-pedidos-3.png)
   <figcaption>Formulario de creación y edición del Pedido de venta.</figcaption>
 </figure>
 
@@ -84,21 +87,21 @@ El formulario se abre al crear un pedido nuevo o al hacer clic en **Editar** des
 - **Almacén** — almacén desde el cual se despachará la mercadería de este pedido.
 
 !!! tip "Campos autocargados desde el contacto"
-    Todos los campos cargados automáticamente al seleccionar el contacto (dirección, tarifa, método de pago, condiciones de pago) son editables para este pedido sin afectar la configuración del cliente.
+    Son editables solo para este pedido, sin afectar la configuración del cliente.
 
 ### Pestaña Líneas
 
 <figure markdown="span">
-  ![Pestaña Líneas del Pedido de venta](lineas.png)
+  ![Pestaña Líneas del Pedido de venta](assets/crear-y-gestionar-pedidos-4.png)
   <figcaption>Pestaña Líneas con los productos y servicios incluidos en el pedido.</figcaption>
 </figure>
 
 Las líneas representan los productos o servicios incluidos en el pedido. Usa el botón **+ Añadir línea** para incorporar una nueva línea.
 
-- **Producto** — al seleccionarlo autocompleta la descripción y el precio de tarifa según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este pedido.
+- **Producto** — al seleccionarlo autocompleta la descripción y el precio según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este pedido.
 - **Descripción** — precompletada desde el producto; editable por línea.
 - **Cant. pedido** — cantidad del producto. Por defecto 1.
-- **Precio tarifa** — precio del producto según la tarifa de la cabecera; editable.
+- **Precio** — precio del producto según la tarifa de la cabecera; editable.
 - **% de descuento** — descuento aplicado sobre el precio de tarifa de la línea.
 - **Impuesto** — tipo impositivo aplicable a la línea.
 - **Importe bruto de línea** — resultado de multiplicar el precio unitario por la cantidad, menos el descuento de línea aplicado.
@@ -108,7 +111,7 @@ Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila. Para cancel
 #### Totales
 
 <figure markdown="span">
-  ![Panel de totales del Pedido de venta](totales.png)
+  ![Panel de totales del Pedido de venta](assets/crear-y-gestionar-pedidos-5.png)
   <figcaption>Panel de totales con desglose de subtotal, descuentos, impuesto e importe final.</figcaption>
 </figure>
 
@@ -151,6 +154,11 @@ La barra superior del formulario muestra el estado actual del pedido junto a los
 
 ## Acciones Disponibles
 
+<figure markdown="span">
+  ![Barra de acciones del Pedido de venta](assets/crear-y-gestionar-pedidos-6.png)
+  <figcaption>Barra de acciones del Pedido de venta.</figcaption>
+</figure>
+
 La barra superior del formulario muestra las siguientes acciones:
 
 | Acción | Descripción | Estado |
@@ -166,7 +174,7 @@ La barra superior del formulario muestra las siguientes acciones:
 ### Enviar por Email
 
 <figure markdown="span">
-  ![Popup de envío por email del Pedido de venta](enviar.png)
+  ![Popup de envío por email del Pedido de venta](assets/crear-y-gestionar-pedidos-7.png)
   <figcaption>Panel de envío por email del Pedido de venta.</figcaption>
 </figure>
 
@@ -175,7 +183,7 @@ El icono de sobre abre el panel **Enviar Pedido de Venta**, con los campos **Par
 ### Confirmar Pedido
 
 <figure markdown="span">
-  ![Popup de confirmación del Pedido de venta](confirmacion.png)
+  ![Popup de confirmación del Pedido de venta](assets/crear-y-gestionar-pedidos-8.png)
   <figcaption>Popup de confirmación del Pedido de venta con opciones para generar documentos derivados.</figcaption>
 </figure>
 
@@ -196,6 +204,11 @@ Puedes marcar uno, ambos o ninguno. Si no marcas ninguno, el pedido queda Comple
 
 ### Generar documentos pendientes más adelante
 
+<figure markdown="span">
+  ![Popup Gestionar documentos del Pedido de venta](assets/crear-y-gestionar-pedidos-9.png)
+  <figcaption>Popup Gestionar documentos, con las opciones para crear el albarán y/o la factura pendientes.</figcaption>
+</figure>
+
 Si al confirmar no generaste el albarán y/o la factura, el pedido ya Completado muestra un botón **Gestionar envío y factura** en la barra superior, junto a los indicadores **Entregado** y **Facturado** con su porcentaje. Al hacer clic se abre el popup **Gestionar documentos**, que ofrece **Crear albarán** y/o **Crear factura** simultáneamente, según qué cantidades sigan pendientes de entrega y de facturación.
 
 !!! info "Solo se ofrecen las cantidades pendientes"
@@ -206,7 +219,6 @@ Si al confirmar no generaste el albarán y/o la factura, el pedido ya Completado
 - [Crear y gestionar presupuestos](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)
 - [Crear y gestionar albaranes](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md)
 - [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)
-- [Cómo crear un contacto](../../contactos/como-crear-un-contacto/como-crear-un-contacto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

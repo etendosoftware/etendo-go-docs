@@ -1,5 +1,8 @@
 ---
 title: Crear y gestionar albaranes
+description: >-
+  Aprende a crear y gestionar albaranes de venta en Etendo Go para documentar
+  la entrega física de mercadería y habilitar la factura correspondiente.
 tags:
     - Albarán de Venta
     - Ventas
@@ -25,16 +28,26 @@ flowchart LR
 
 ## Vista Lista
 
+<figure markdown="span">
+  ![Vista lista del Albarán de venta](assets/crear-y-gestionar-albaranes-1.png)
+  <figcaption>Vista lista del Albarán de venta con columnas de estado y facturación.</figcaption>
+</figure>
+
 La vista lista de **[Ventas > Albarán](https://go.etendo.cloud/goods-shipment){target="_blank"}** muestra las columnas **Fecha del movimiento**, **Nº documento**, **Contacto**, **Estado doc.**, **Almacén** y **Estado de facturación**. Al pasar el cursor sobre una fila aparecen accesos rápidos para editar, clonar y enviar por email. Para crear un albarán nuevo usa el botón **+ Nuevo albarán** en la esquina superior derecha.
 
 ## Vista Detalle
+
+<figure markdown="span">
+  ![Vista detalle del Albarán de venta](assets/crear-y-gestionar-albaranes-2.png)
+  <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
+</figure>
 
 Al hacer clic sobre un albarán existente se abre la vista detalle, con la previsualización del PDF a la izquierda y, a la derecha, los botones **Enviar**, **Descargar PDF** y **Editar**. El panel incluye las pestañas **General**, **Mensajes** e **Historial**; la pestaña General muestra el **Nº documento**, **Contacto**, **Almacén**, **Fecha movimiento**, **Estado** y **Estado de facturación**, seguidos de las secciones **EMAILS** y **DOCUMENTOS RELACIONADOS** (el pedido de origen, si lo tiene).
 
 ## Vista Formulario
 
 <figure markdown="span">
-  ![Vista formulario del Albarán de venta](formulario.png)
+  ![Vista formulario del Albarán de venta](assets/crear-y-gestionar-albaranes-3.png)
   <figcaption>Formulario de creación y edición del Albarán de venta.</figcaption>
 </figure>
 
@@ -82,6 +95,15 @@ El formulario incluye también una pestaña **Adjuntos** para vincular archivos 
 
 !!! info "Cantidades pendientes"
     Cuando un pedido está parcialmente entregado, la opción de crear el albarán solo propone las unidades aún no incluidas en albaranes confirmados. La acción deja de estar disponible cuando el pedido queda entregado al 100 %.
+
+### Enviar por Email
+
+<figure markdown="span">
+  ![Popup de envío por email del Albarán de venta](assets/crear-y-gestionar-albaranes-4.png)
+  <figcaption>Panel de envío por email del Albarán de venta.</figcaption>
+</figure>
+
+El botón **Enviar** abre el panel **Enviar Albarán de Venta**, con los campos **Para**, el enlace **Añadir CC** para sumar destinatarios en copia, **Asunto** (autocompletado con el número de documento y nombre del contacto) y **Mensaje**. Desde este panel también puedes descargar el PDF con el botón **Descargar PDF**.
 
 ## Artículos Relacionados
 

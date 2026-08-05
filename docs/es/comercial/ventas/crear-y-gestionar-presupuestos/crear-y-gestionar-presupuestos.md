@@ -1,5 +1,8 @@
 ---
 title: Crear y gestionar presupuestos
+description: >-
+  Aprende a crear, enviar y confirmar presupuestos de venta en Etendo Go, y a
+  convertirlos en pedidos o facturas sin volver a cargar los mismos datos.
 tags:
     - Presupuesto de Venta
     - Ventas
@@ -29,7 +32,7 @@ flowchart LR
 ## Vista Lista
 
 <figure markdown="span">
-  ![Vista lista de Presupuesto de venta](lista.png)
+  ![Vista lista de Presupuesto de venta](assets/crear-y-gestionar-presupuestos-1.png)
   <figcaption>Vista lista del Presupuesto de venta con columnas de estado, vigencia e importe total.</figcaption>
 </figure>
 
@@ -44,7 +47,7 @@ Para crear un presupuesto nuevo, accede a **[Ventas > Presupuesto](https://go.et
 ## Vista Detalle
 
 <figure markdown="span">
-  ![Vista detalle de un Presupuesto de venta](detalle.png)
+  ![Vista detalle de un Presupuesto de venta](assets/crear-y-gestionar-presupuestos-2.png)
   <figcaption>Vista detalle con la previsualización del PDF y el panel lateral de información clave.</figcaption>
 </figure>
 
@@ -63,7 +66,7 @@ El panel también incluye la pestaña **General**, la sección **Emails** que re
 ## Vista Formulario
 
 <figure markdown="span">
-  ![Vista formulario de Presupuesto de venta](formulario.png)
+  ![Vista formulario de Presupuesto de venta](assets/crear-y-gestionar-presupuestos-3.png)
   <figcaption>Formulario de creación y edición del Presupuesto de venta.</figcaption>
 </figure>
 
@@ -82,21 +85,21 @@ El formulario se abre al crear un presupuesto nuevo o al hacer clic en **Editar*
 - **Moneda** — moneda en la que se expresa el presupuesto. Por defecto, la moneda de la organización.
 
 !!! tip "Autocompletado al elegir el contacto"
-    Al seleccionar el contacto, el sistema carga automáticamente la dirección principal, la tarifa, el método de pago y las condiciones de pago configuradas en ese contacto. Todos estos campos son editables dentro del presupuesto: cualquier cambio que realices aplica únicamente a este documento y no modifica la configuración del cliente. Si el contacto no tiene una dirección registrada, el campo quedará vacío y deberá completarse manualmente.
+    Todos los campos autocompletados son editables solo para este presupuesto, sin afectar la configuración del cliente. Si el contacto no tiene una dirección registrada, el campo queda vacío y debe completarse manualmente.
 
 ### Pestaña Líneas
 
 <figure markdown="span">
-  ![Pestaña Líneas del Presupuesto de venta](lineas.png)
+  ![Pestaña Líneas del Presupuesto de venta](assets/crear-y-gestionar-presupuestos-4.png)
   <figcaption>Pestaña Líneas con los productos y servicios incluidos en el presupuesto.</figcaption>
 </figure>
 
 Las líneas representan los productos o servicios incluidos en la oferta. Usa el botón **+ Añadir línea** para incorporar una nueva línea al presupuesto.
 
-- **Producto** — al seleccionarlo autocompleta la descripción y el precio de tarifa.
+- **Producto** — al seleccionarlo autocompleta la descripción y el precio según la tarifa de la cabecera.
 - **Descripción** — precompletada desde el producto; editable por línea.
 - **Cant. pedido** — cantidad del producto. Por defecto 1.
-- **Precio tarifa** — precio del producto según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este presupuesto.
+- **Precio** — precio del producto según la tarifa seleccionada en la cabecera; editable si se necesita ajustar para este presupuesto.
 - **% de descuento** — descuento aplicado sobre el precio de tarifa de la línea.
 - **Impuesto** — tipo impositivo aplicable a la línea.
 - **Importe bruto de línea** — se calcula automáticamente aplicando el descuento al precio unitario multiplicado por la cantidad.
@@ -106,7 +109,7 @@ Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila. Para cancel
 #### Totales
 
 <figure markdown="span">
-  ![Panel de totales del Presupuesto de venta](totales.png)
+  ![Panel de totales del Presupuesto de venta](assets/crear-y-gestionar-presupuestos-5.png)
   <figcaption>Panel de totales con desglose de subtotal, descuentos, impuesto e importe final.</figcaption>
 </figure>
 
@@ -148,7 +151,7 @@ El estado actual se muestra como una etiqueta junto al botón **Cancelar** en la
 ## Acciones Disponibles
 
 <figure markdown="span">
-  ![Barra de acciones del Presupuesto de venta](acciones.png)
+  ![Barra de acciones del Presupuesto de venta](assets/crear-y-gestionar-presupuestos-6.png)
   <figcaption>Barra de acciones del Presupuesto de venta.</figcaption>
 </figure>
 
@@ -167,7 +170,7 @@ La barra superior del formulario muestra las siguientes acciones:
 ### Enviar por Email
 
 <figure markdown="span">
-  ![Popup de envío por correo del presupuesto](enviar.png)
+  ![Popup de envío por correo del presupuesto](assets/crear-y-gestionar-presupuestos-7.png)
   <figcaption>Panel de envío por email del Presupuesto de venta.</figcaption>
 </figure>
 
@@ -178,7 +181,7 @@ El icono **Enviar** que se muestra con un sobre abre el panel **Enviar Presupues
 Al hacer clic en **Confirmar** desde el estado *Bajo evaluación*, el sistema muestra un popup con dos opciones:
 
 <figure markdown="span">
-  ![Popup de confirmación del Presupuesto de venta](confirmacion.png){ width=420 }
+  ![Popup de confirmación del Presupuesto de venta](assets/crear-y-gestionar-presupuestos-8.png){ width=420 }
   <figcaption>Popup de confirmación del Presupuesto de venta con las opciones para generar documentos derivados.</figcaption>
 </figure>
 

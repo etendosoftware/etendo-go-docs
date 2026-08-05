@@ -1,5 +1,8 @@
 ---
 title: Enviar tus facturas por email
+description: >-
+  Aprende a enviar tus facturas de venta por email desde Etendo Go, sumar
+  destinatarios en copia, editar el mensaje y descargar el PDF antes de enviar.
 tags:
   - Factura de Venta
   - Ventas
@@ -17,7 +20,7 @@ Una vez creada una factura de venta, puedes enviarla por correo electrónico a t
 
 2. Haz clic en **Enviar**. Se abre el panel **Enviar Factura de Venta**:
 
-    ![Popup de envío por email de la Factura de venta](enviar.png)
+    ![Popup de envío por email de la Factura de venta](assets/enviar-tus-facturas-por-email-1.png)
 
 3. Completa los campos del panel:
 

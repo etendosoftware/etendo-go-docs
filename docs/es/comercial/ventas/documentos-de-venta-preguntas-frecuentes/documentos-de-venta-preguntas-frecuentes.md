@@ -1,5 +1,8 @@
 ---
 title: "Documentos de venta: preguntas frecuentes"
+description: >-
+  Respuestas a las preguntas más frecuentes sobre presupuestos, pedidos,
+  facturas y devoluciones de venta en Etendo Go, y cómo se relacionan entre sí.
 tags:
     - Ventas
     - Comercial
@@ -24,9 +27,9 @@ No directamente. Pedidos y facturas quedan bloqueados al confirmarse, pero puede
 
 Las acciones de creación de documentos derivados —**Crear albarán**, **Crear Factura**, **Gestionar envío y factura**— siempre operan sobre las cantidades o importes pendientes, nunca sobre el total del documento de origen. La acción desaparece automáticamente cuando el pedido queda procesado al 100 % en esa dimensión.
 
-## ¿Cuál es la diferencia entre una Factura de Devolución y una Nota de Crédito?
+## ¿Cuál es la diferencia entre una factura de devolución y una nota de crédito?
 
-Ambas reducen el saldo pendiente de cobro de una factura de venta, pero se usan en situaciones distintas: la **Factura de Devolución** está vinculada a una devolución física de mercadería (se genera desde un albarán de devolución), mientras que la **Nota de Crédito** es un ajuste financiero sin retorno de mercadería, como un error de precio, un descuento o una bonificación. Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+Ambas reducen el saldo pendiente de cobro de una factura de venta, pero se usan en situaciones distintas: la **factura de devolución** está vinculada a una devolución física de mercadería (se genera desde un albarán de devolución), mientras que la **nota de crédito** es un ajuste financiero sin retorno de mercadería, como un error de precio, un descuento o una bonificación. Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
 
 ## ¿Puedo registrar pagos parciales en una factura?
 
