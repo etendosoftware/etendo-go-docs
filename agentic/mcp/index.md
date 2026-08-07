@@ -129,16 +129,41 @@ The MCP server exposes a small set of generic tools that operate on any `(spec, 
 | Tool | Purpose | Required arguments | Optional arguments |
 |------|---------|--------------------|--------------------|
 | `neo_discover` | List every spec and entity the current user can access | — | — |
-| `neo_schema` | Return the field metadata for one entity: names, types, required flags, read-only flags, default expressions, and the buttons available for `neo_action` | `spec`, `entity` | — |
-| `neo_defaults` | Return computed default values for a new record (useful before `neo_create`) | `spec`, `entity` | `parentId`, `assetId` |
-| `neo_selectors` | Resolve valid values for a foreign-key field (returns IDs the agent can pass into `neo_create` / `neo_update`) | `spec`, `entity`, `column` | `query`, `recordContext`, `parentContext`, `field` |
-| `neo_list` | List records of one entity with filters, pagination, and sort | `spec`, `entity` | `filters`, `limit`, `offset`, `orderBy` |
-| `neo_get` | Retrieve a single record by ID | `spec`, `entity`, `id` | — |
+| `neo_schema` | Return the field metadata for one entity: names, types, required flags, read-only flags, default expressions, and the buttons available for `neo_action` | `spec`, `entity` | `view` (`"create"` \| `"actions"`), `fields[]` |
+| `neo_defaults` | Return computed default values for a new record (useful before `neo_create`) | `spec`, `entity` | `parentId`, `assetId`, `view` (`"full"` \| `"grouped"` \| `"minimal"`) |
+| `neo_selectors` | Resolve valid values for a foreign-key field (returns IDs the agent can pass into `neo_create` / `neo_update`) | `spec`, `entity`, `column` (`field` is an accepted alias) | `query`, `recordContext`, `parentContext` |
+| `neo_list` | List records of one entity with filters, pagination, and sort | `spec`, `entity` | `filters`, `limit`, `offset`, `orderBy`, `fields[]`, `view` (`"summary"`) |
+| `neo_get` | Retrieve a single record by ID | `spec`, `entity`, `id` | `fields[]`, `view` (`"summary"`) |
 | `neo_create` | Create a record | `spec`, `entity`, `fields` | — |
 | `neo_update` | Update a record by ID | `spec`, `entity`, `id`, `fields` | — |
 | `neo_delete` | Delete a record by ID | `spec`, `entity`, `id` | — |
 | `neo_action` | Fire a `type:button` action on a record (document confirmation, posting, copy-lines, generate-template, etc.). The button column name and the available actions are listed in the entity schema. | `spec`, `entity`, `id`, `action` | `parameters` |
-| `neo_batch` | Run a sequence of cross-spec create operations atomically. All ops share one transaction (commit on success, rollback on any failure). Use `parentRef` to set the parent FK on a child-tab op, and `$ref:<opId>` substitution inside `body` to chain IDs across ops. | `operations[]` | — |
+| `neo_batch` | Run a sequence of cross-spec create operations in one call, chaining their IDs. Use `parentRef` to set the parent FK on a child-tab op, and `$ref:<opId>` substitution inside `body` to chain IDs across ops. Reports `{committed:true, operations:[…]}` or `{committed:false, failedAt:{index,id}, error:{…}}`. **Do not treat `committed:false` as "nothing happened"** — see the caveat below. | `operations[]` | — |
+
+### Response-shaping arguments: `view` and `fields`
+
+Four of the tools above accept arguments that shape the **size** of the response. They are optional
+and every default is unchanged from before they existed — but on compliance-heavy specs (invoices,
+payments, orders) the full response can exceed 60 kB and simply not fit in your context. Reach for
+these first, not after a failed call.
+
+| Instead of | Call | Why |
+|---|---|---|
+| `neo_schema(spec, entity)` before a create | `neo_schema(spec, entity, view: "create")` | Returns **only the fields you may send to `neo_create`**, already split into `required` / `optional`. A field that is mandatory in the database but that the server can resolve on its own appears under `optional` with `serverDefaulted: true`, so `required` is the short list you actually have to fill. |
+| Reading the full dump to find the buttons | `neo_schema(spec, entity, view: "actions")` | Returns only the callable buttons/processes, each with the `action` value `neo_action` expects. |
+| Reading the full dump to check two fields | `neo_schema(spec, entity, fields: ["businessPartner", "invoiceDate"])` | Returns just those descriptors. Names that match nothing come back under `unknownFields` — **check that key** if a field you expected is missing, rather than assuming the entity lacks it. Ignored when `view` is set. |
+| `neo_defaults(spec, entity)` | `neo_defaults(spec, entity, view: "grouped")` | Splits the result into `confirm` (writable values you should review or override) and `systemManaged` (compliance/audit flags the server owns — leave them alone). `view: "minimal"` returns only `confirm`. In both, a field the server knows but could not resolve is listed under `metadata.unresolvedFields` instead of appearing in `confirm` with an empty value — **those are the ones you must supply yourself**. |
+| `neo_list` / `neo_get` returning every column | `neo_list(…, fields: ["documentNo", "businessPartner", "grandTotalAmount"])` | Returns only those keys per row. A foreign key's `$_identifier` label comes along automatically, so you do not need to request it. `view: "summary"` is the curated equivalent — the spec's business-critical fields — and is ignored when `fields` is given. |
+
+Two rules worth internalizing:
+
+- **`fields` on `neo_schema` and `fields` on `neo_create` / `neo_update` are different arguments.**
+  On `neo_schema` it is an array of names to *describe*; on the write tools it is the object of
+  values to *write*.
+- **`view` never changes semantics, only verbosity** — with one exception worth knowing: in
+  `neo_schema`'s full dump, `userRequired` is a static approximation (it reads the column's own
+  default only, so it over-reports). `view: "create"` cross-checks against the real defaults and is
+  the authoritative answer to "what must I send?".
 
 ### Report tools
 
@@ -408,7 +433,7 @@ Create the line:
 
 The response carries `processResult` (`success` | `error` | `warning`) and `processMessage`. Read both: a `warning` result means the document was processed but the agent should surface the message to the user.
 
-### Step 9 — (Alternative) Create the whole order atomically
+### Step 9 — (Alternative) Create the whole order in one call
 
 When the agent needs to create the header and its lines in a single transaction (so that a failure in the line rolls back the header), use `neo_batch` and chain ops with `parentRef` / `$ref:`:
 
@@ -453,6 +478,15 @@ When the agent needs to create the header and its lines in a single transaction 
 ```
 
 A successful response has `committed: true` and an `operations` array with the resolved `recordId` for every op. A failure returns `committed: false` and a `failedAt` pointer with the underlying error.
+
+> **Caveat — a failed batch is not guaranteed to be clean.** `committed: false` tells you the batch
+> did **not** complete; it does not currently guarantee that the operations *before* `failedAt` were
+> undone. Verified against a live instance on 2026-08-07: a two-op batch that failed on the line op
+> left the order header persisted as a zero-line draft. So after a `committed: false`, **do not
+> blindly retry the same batch** — that creates a second partial document. Instead, `neo_list` the
+> parent entity to see whether the earlier op landed, then either continue from where it stopped or
+> `neo_delete` the partial record before retrying. This is a known server-side defect, not the
+> intended contract; the intent is all-or-nothing.
 
 ## Error handling
 
