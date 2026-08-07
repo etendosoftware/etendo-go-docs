@@ -18,6 +18,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 | [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, discover specs, read schemas, resolve selectors, chain tool calls, and react to failures end-to-end |
 | [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server: prerequisites, the `spec + entity` model, the generic `neo_*` tools, the `generate_*` report tools, and the single `etendo://status` resource |
 | [Finance](./finance/index.md) | Finance domain mapped to MCP specs: financial accounts, payments in / out, payment terms, conversion rates, and the full bank-reconciliation flow (`import → process → match → reconcile`) |
+| [Contacts](./contacts/index.md) | `contacts` spec mapped to the Contactos window: business partners with customer / vendor / employee roles, contact persons, addresses, bank accounts, accounting overrides, discounts, intrastat and document-type defaults |
 
 ## How to read these guides
 
