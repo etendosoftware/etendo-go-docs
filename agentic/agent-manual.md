@@ -58,7 +58,7 @@ Map the user goal to one of the tools from `agentic/mcp/index.md` using this dec
 | Update one record by ID | `neo_update` |
 | Delete one record by ID | `neo_delete` |
 | Fire a process / document action on a record (confirm, post, copy lines, generate template, etc.) | `neo_action` |
-| Create a header and its children atomically across one or more specs | `neo_batch` |
+| Create a header and its children in one call across one or more specs | `neo_batch` |
 | Render a pre-built report | `generate_aging_receivable`, `generate_bank_statements`, `generate_financial_account_transactions`, `generate_financial_accounts_page`, `generate_inventory_stock_report`, `generate_tax_report` |
 
 ## Resolving foreign-key fields
