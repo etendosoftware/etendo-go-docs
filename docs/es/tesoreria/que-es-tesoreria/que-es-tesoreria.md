@@ -29,10 +29,6 @@ Cada cuenta financiera mantiene su propio saldo y su propio historial. Cuando co
 - **Conciliación** — el cruce entre las líneas del extracto y tus movimientos, pagos y cobros, con sugerencias automáticas (**Automatch**) y conciliación manual.
 - **Cobro** y **Pago** — el listado global de cobros a clientes y pagos a proveedores de todas tus cuentas, más allá de una cuenta en particular.
 
-## Acceso y roles
-
-_Pendiente de confirmación manual: no se verificaron restricciones de rol específicas para las ventanas de Tesorería en esta pasada. Confirmar si todos los roles ven Cuentas, Cobro y Pago o si hay pantallas restringidas a Finanzas/Administración._
-
 ## Recursos y próximos pasos
 
 Para empezar a operar, da de alta tu primera cuenta desde [Añadir y configurar un banco, tarjeta o caja](../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md). Si tu banco lo permite, puedes conectarla directamente en lugar de introducir los movimientos a mano.

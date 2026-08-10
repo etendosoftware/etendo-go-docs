@@ -10,8 +10,6 @@ tags:
 
 Una caja es un tipo de cuenta financiera para el efectivo que manejas fuera del banco: la caja chica de la oficina, la caja de un punto de venta, etc.
 
-- Prerrequisitos: tener una caja creada (ver [Añadir y configurar un banco, tarjeta o caja](../como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md)).
-
 ## Qué es una caja contable
 
 Dentro de Tesorería, **Caja** es uno de los tres tipos de cuenta financiera (junto a Banco y Tarjeta). A diferencia de un banco, una caja no se conecta ni importa extractos de una entidad externa: todos sus movimientos se registran a mano, directamente en Etendo Go. Aun así, la ficha de una caja tiene las mismas pestañas que una cuenta de banco (**Movimientos**, **Conciliación**, **Extractos importados**), aunque en la práctica una caja no suele tener extractos para importar.
@@ -22,8 +20,10 @@ Dentro de Tesorería, **Caja** es uno de los tres tipos de cuenta financiera (ju
 2. En la pestaña **Movimientos**, haz clic en **Nuevo movimiento**.
 3. Elige el **Tipo**: **Entrada** (dinero que ingresa a la caja) o **Salida** (dinero que sale de la caja).
 4. Completa **Fecha**, **Concepto contable** (la cuenta contable del movimiento) e **Importe**.
-5. Opcionalmente, agrega una **Descripción** y, dentro de **Dimensiones contables**, un **Contacto**, **Centro de coste** o **Proyecto**.
+5. Opcionalmente, agrega una **Descripción** y, dentro de **Dimensiones contables**, un **Contacto**.
 6. Haz clic en **Guardar** para dejarlo en borrador, o en **Confirmar** para registrarlo directamente.
+
+![Formulario Nuevo movimiento de una caja, con Tipo Entrada, Concepto contable, Importe y Descripción completados](assets/nuevo-movimiento-caja.png)
 
 Cada movimiento queda con dos estados independientes: si está conciliado (**Sin conciliar** / **Conciliado**) y si está contabilizado (**Sin contabilizar** / **Contabilizado**).
 
@@ -31,6 +31,8 @@ Cada movimiento queda con dos estados independientes: si está conciliado (**Sin
 
 - Dentro de la caja, la pestaña **Movimientos** muestra el **Saldo total** junto con las **Entradas** y **Salidas** del período seleccionado (por ejemplo, últimos 30 días).
 - Desde el listado general de **Cuentas**, el panel **Saldo** agrega el total de todas tus cuentas (bancos, tarjetas y cajas) y lo desglosa en **Detalle de saldos por moneda**.
+
+![Pestaña Movimientos de una caja con Saldo total, Entradas y Salidas, y el movimiento confirmado en el listado](assets/saldo-caja.png)
 
 ---
 
