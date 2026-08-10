@@ -487,6 +487,18 @@ A successful response has `committed: true` and an `operations` array with the r
 > parent entity to see whether the earlier op landed, then either continue from where it stopped or
 > `neo_delete` the partial record before retrying. This is a known server-side defect, not the
 > intended contract; the intent is all-or-nothing.
+>
+> **Do not conclude from one clean failure that the batch is atomic.** Whether the earlier ops
+> survive depends on *when* the batch failed, which is why the defect looks intermittent:
+>
+> - A failure the server catches **before opening the transaction** — an unresolvable foreign-key
+>   name, or a `$ref:<opId>` pointing at an op that does not exist — rolls back cleanly and looks
+>   perfectly atomic.
+> - A failure **at persist time** — a value the database rejects, such as a string longer than the
+>   column, or a trigger refusing the row — leaves every op before `failedAt` committed.
+>
+> Reproduced in both shapes as recently as 2026-08-10. Treat `committed: false` as *"state unknown,
+> go look"* in every case, not only the ones where you have seen it leak.
 
 ## Error handling
 
