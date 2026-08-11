@@ -86,7 +86,7 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
 
     Formaliza la solicitud de productos o servicios a un proveedor y genera desde él el albarán y la factura de compra correspondientes.
 
-    [:octicons-arrow-right-24: Leer más](inventario/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
+    [:octicons-arrow-right-24: Leer más](compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
 
 -   :material-clipboard-check-outline:{ .lg .middle } **Gestionar tus pedidos de compra**
 
@@ -94,7 +94,7 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
 
     Consulta, edita y gestiona la recepción y facturación de tus pedidos de compra ya cargados.
 
-    [:octicons-arrow-right-24: Leer más](inventario/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)
+    [:octicons-arrow-right-24: Leer más](compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)
 
 </div>
 

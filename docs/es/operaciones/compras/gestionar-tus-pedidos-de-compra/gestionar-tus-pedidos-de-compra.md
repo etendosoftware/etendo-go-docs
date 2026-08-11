@@ -15,35 +15,32 @@ Una vez que tienes pedidos de compra cargados, vas a necesitar consultarlos, edi
 ## Vista Lista
 
 <figure markdown="span">
-  ![Vista lista de Pedido de compra](lista.png)
+  ![Vista lista de Pedido de compra](assets/lista.png)
   <figcaption>Vista lista del Pedido de compra con columnas de estado, progreso de facturación y recepción.</figcaption>
 </figure>
 
 La vista lista muestra todos los pedidos con las columnas **Fecha de pedido**, **Nº documento**, **Contacto**, **Estado doc.**, **Imp. total**, **Estado de facturación** y **Estado de recepción**.
 
-**Estado de facturación** y **Estado de recepción** — indican qué porcentaje del pedido ya ha sido facturado o recibido. Ambas columnas muestran barras de progreso con porcentaje: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado.
+**Estado de facturación** y **Estado de recepción** indican qué parte del pedido ya se facturó o se recibió. Ambas columnas muestran barras de progreso con porcentaje: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado.
 
-Para filtrar la lista utiliza los selectores de **estado del documento** y **fecha de pedido** en la barra superior. El ícono de embudo permite aplicar filtros adicionales. Para crear un pedido nuevo usa el botón **+ Nuevo pedido** en la esquina superior derecha.
+Los selectores de **estado del documento** y **fecha de pedido**, en la barra superior, permiten filtrar la lista, y el ícono de embudo habilita filtros adicionales. El botón **+ Nuevo pedido**, en la esquina superior derecha, crea un pedido nuevo.
 
 ---
 
 ## Vista Detalle
 
 <figure markdown="span">
-  ![Vista detalle de Pedido de compra](detalle.png)
+  ![Vista detalle de Pedido de compra](assets/detalle.png)
   <figcaption>Vista detalle con previsualización del PDF y panel lateral de información clave.</figcaption>
 </figure>
 
 Al hacer clic sobre un pedido existente en la lista se abre la vista detalle. El centro muestra una previsualización del PDF y el panel derecho muestra la información clave: total, contacto, fecha, estado, y las barras de progreso de **Facturado** y **Entregado**.
 
-!!! info "Un mismo dato, distintos nombres según la vista"
-    El progreso de recepción de mercancía se llama **Estado de recepción** en la vista lista, **Entregado** en este panel de detalle y **Recibido** en la barra superior del formulario y en el popup de gestión — es el mismo indicador, solo cambia la etiqueta según dónde lo estés viendo.
-
 Desde este panel puedes:
 
-- **Enviar** — abre el panel de envío por email al proveedor.
+- **Enviar** — abre el panel de envío por email al proveedor. El destinatario y el asunto vienen precompletados con los datos del proveedor; si no tiene un email registrado, debes escribirlo manualmente antes de poder enviar. Desde el mismo panel también puedes usar **Descargar PDF** si prefieres enviarlo por otro medio o imprimirlo.
 - **Descargar PDF** — descarga el pedido en formato PDF.
-- **Editar** — abre el formulario completo para modificar el documento. Ver [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md) para el detalle de estos campos.
+- **Editar** — abre el formulario completo. En Borrador es editable; en Completado se abre en solo lectura, ya que el pedido queda bloqueado tras confirmar (ver [Estados del Documento](#estados-del-documento)). Ver [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md) para el detalle de estos campos.
 
 El panel también incluye la sección **Emails** con el historial de correos enviados. Los albaranes y facturas generados a partir del pedido se consultan desde la sección **Documentos** de la vista formulario, no desde este panel de detalle.
 
@@ -71,13 +68,13 @@ La barra superior del formulario muestra las siguientes acciones:
 | **Guardar** | Guarda el documento sin cambiar su estado. | Solo en Borrador |
 | **Confirmar** | Confirma el pedido y lo pasa a [estado Completado](#estados-del-documento). | Solo en Borrador |
 | **Copia** | Clona el pedido actual creando un nuevo borrador con el mismo proveedor, líneas y condiciones. | Borrador y Completado |
-| **Email** | Abre el panel de envío por correo electrónico. | Solo en Completado |
+| **Email** | Abre el panel de envío por email. | Borrador y Completado |
 | **Papelera** | Elimina el documento con confirmación previa. | Solo en Borrador |
 
 ### Gestionar Recepción y Factura
 
 <figure markdown="span">
-  ![Popup Gestionar documentos del Pedido de compra](gestionar-documentos.png)
+  ![Popup Gestionar documentos del Pedido de compra](assets/gestionar-documentos.png)
   <figcaption>Popup Gestionar documentos para generar albarán y factura desde el pedido confirmado.</figcaption>
 </figure>
 
@@ -86,7 +83,7 @@ En estado Completado, el botón **Gestionar recepción y factura** abre el popup
 La sección **Generar documentos (opcional)** permite seleccionar qué documentos crear:
 
 - **Crear albarán de proveedor** — genera un albarán de compra en estado Borrador con las unidades pendientes de recibir. El popup indica la cantidad pendiente (ej: *1 uds. pendientes de recibir*).
-- **Crear factura** — genera una [factura de compra](../../compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md) en estado Borrador con el importe pendiente de facturar (ej: *5.00 EUR pendientes de facturar*).
+- **Crear factura** — genera una [factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md) en estado Borrador con el importe pendiente de facturar (ej: *5.00 EUR pendientes de facturar*).
 
 Puedes marcar uno, ambos o ninguno antes de pulsar **Crear →**. Si no marcas ninguno, el pedido permanece Completado y puedes generar los documentos más adelante.
 
@@ -104,7 +101,7 @@ Puedes marcar uno, ambos o ninguno antes de pulsar **Crear →**. Si no marcas n
 ## Artículos Relacionados
 
 - [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
-- [Gestionar tus facturas de compra](../../compras/gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)
+- [Gestionar tus facturas de compra](../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)
 - [Contactos](../../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 
 ---
