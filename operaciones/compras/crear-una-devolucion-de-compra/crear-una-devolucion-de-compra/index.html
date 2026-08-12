@@ -1450,10 +1450,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-ajuste-financiero-nota-de-credito-manual" class="md-nav__link">
+  <a href="#crear-un-ajuste-financiero-factura-rectificativa-manual" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear un ajuste financiero (Nota de crédito manual)
+        Crear un ajuste financiero (Factura Rectificativa manual)
       
     </span>
   </a>
@@ -2173,10 +2173,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-un-ajuste-financiero-nota-de-credito-manual" class="md-nav__link">
+  <a href="#crear-un-ajuste-financiero-factura-rectificativa-manual" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crear un ajuste financiero (Nota de crédito manual)
+        Crear un ajuste financiero (Factura Rectificativa manual)
       
     </span>
   </a>
@@ -2313,14 +2313,14 @@
       
       
       
-        <span class="md-tag">Factura de Compra</span>
+        <span class="md-tag">Factura Rectificativa</span>
       
     
       
       
       
       
-        <span class="md-tag">Nota de Crédito</span>
+        <span class="md-tag">Factura de Compra</span>
       
     
       
@@ -2340,12 +2340,17 @@
 <h1 id="crear-una-devolucion-de-compra">Crear una devolución de compra<a class="headerlink" href="#crear-una-devolucion-de-compra" title="Permanent link">¶</a></h1>
 <p>Sigue esta guía cuando necesites devolver mercancía a un proveedor o corregir el importe de una factura de compra ya emitida. Etendo Go distingue dos situaciones distintas, según si hay mercancía física de por medio o solo un ajuste económico:</p>
 <ul>
-<li><strong>Devolución física</strong> — se registra un <strong>Albarán de devolución</strong>, vinculado a un albarán de compra (recepción) ya confirmado. Genera automáticamente la <strong>Nota de crédito</strong> correspondiente.</li>
-<li><strong>Ajuste financiero</strong> — se crea directamente una <strong>Nota de crédito</strong> desde la ventana de Factura de Compra, sin devolver mercancía (por ejemplo, para corregir un precio o aplicar un descuento o bonificación del proveedor).</li>
+<li><strong>Devolución física</strong> — se registra un <strong>Albarán de devolución</strong>, vinculado a un albarán de compra (recepción) ya confirmado. Genera automáticamente la <strong>Factura Rectificativa</strong> correspondiente.</li>
+<li><strong>Ajuste financiero</strong> — se crea directamente una <strong>Factura Rectificativa</strong> desde la ventana de Factura de Compra, sin devolver mercancía (por ejemplo, para corregir un precio o aplicar un descuento o bonificación del proveedor).</li>
+</ul>
+<p><strong>Antes de empezar</strong>, necesitas tener:</p>
+<ul>
+<li>Para una devolución física: un <strong>albarán de compra (recepción)</strong> ya confirmado, del que se vaya a devolver la mercancía.</li>
+<li>Para un ajuste financiero por importación: la <strong>factura de origen</strong> ya confirmada, si vas a crear la Factura Rectificativa importando sus líneas en vez de añadirlas manualmente.</li>
 </ul>
 <pre class="mermaid"><code>flowchart LR
-  A[Albarán de compra confirmado] --&gt;|Albarán de devolución| B[Nota de crédito]
-  C[Ajuste manual] --&gt;|Factura de Compra: Tipo de documento = Nota de crédito| B</code></pre>
+  A[Albarán de compra confirmado] --&gt;|Albarán de devolución| B[Factura Rectificativa]
+  C[Ajuste manual] --&gt;|Factura de Compra: Tipo de documento = Factura Rectificativa| B</code></pre>
 <hr>
 <h2 id="registrar-una-devolucion-fisica">Registrar una devolución física<a class="headerlink" href="#registrar-una-devolucion-fisica" title="Permanent link">¶</a></h2>
 <ol>
@@ -2354,27 +2359,27 @@
 <li>En <strong>Albarán origen</strong>, selecciona el albarán de compra (recepción) del que se devuelve la mercancía — las líneas se importan desde ahí.</li>
 <li>Ajusta las cantidades a devolver por línea si no se devuelve la totalidad de lo recibido.</li>
 <li>
-<p>Al confirmar el albarán de devolución aparece el popup <strong>¿Gestionar crédito?</strong> con la opción <strong>Crear Nota de Crédito</strong> activada por defecto — genera una Nota de crédito en Borrador, prellenada con los productos devueltos y los precios de la factura de origen. Puedes desactivarla si no quieres generarla en este paso.</p>
+<p>Al confirmar el albarán de devolución aparece el popup <strong>¿Gestionar factura rectificativa?</strong> con la opción <strong>Crear Factura Rectificativa</strong> activada por defecto — genera una Factura Rectificativa en Borrador, prellenada con los productos devueltos y los precios de la factura de origen. Puedes desactivarla si no quieres generarla en este paso.</p>
 <p></p><figure markdown="span">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../crear-una-devolucion-de-compra-1.png" data-desc-position="bottom"><img alt="Popup ¿Gestionar crédito? al confirmar un Albarán de devolución" src="../crear-una-devolucion-de-compra-1.png"></a>
-  <figcaption>Popup mostrado al confirmar el albarán de devolución, con la opción Crear Nota de Crédito activada por defecto.</figcaption>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/confirmacion.png" data-desc-position="bottom"><img alt="Popup ¿Gestionar factura rectificativa? al confirmar un Albarán de devolución" src="../assets/confirmacion.png"></a>
+  <figcaption>Popup mostrado al confirmar el albarán de devolución, con la opción Crear Factura Rectificativa activada por defecto.</figcaption>
 </figure><p></p>
 </li>
 </ol>
-<h2 id="crear-un-ajuste-financiero-nota-de-credito-manual">Crear un ajuste financiero (Nota de crédito manual)<a class="headerlink" href="#crear-un-ajuste-financiero-nota-de-credito-manual" title="Permanent link">¶</a></h2>
+<h2 id="crear-un-ajuste-financiero-factura-rectificativa-manual">Crear un ajuste financiero (Factura Rectificativa manual)<a class="headerlink" href="#crear-un-ajuste-financiero-factura-rectificativa-manual" title="Permanent link">¶</a></h2>
 <ol>
 <li>Accede a <strong><a href="https://go.etendo.cloud/purchase-invoice" target="_blank">Compras &gt; Factura</a></strong> y haz clic en <strong>+ Nueva factura</strong>.</li>
 <li>
-<p>En <strong>Tipo de documento</strong>, selecciona <strong>Nota de crédito</strong>. A diferencia de una Factura, aquí solo se pueden añadir líneas manualmente (no hay opción de importar desde pedido o recibo).</p>
+<p>En <strong>Tipo de documento</strong>, selecciona <strong>Factura Rectificativa</strong>. A diferencia de una Factura, aquí no puedes importar líneas desde un pedido ni desde un recibo — en cambio, puedes añadirlas manualmente, importarlas desde una devolución de compra ya confirmada, o importarlas desde la factura de origen (útil para corregir un precio o aplicar un descuento o bonificación sobre líneas ya facturadas).</p>
 <p></p><figure markdown="span">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../crear-una-devolucion-de-compra-2.png" data-desc-position="bottom"><img alt="Cabecera de la Factura de Compra con Tipo de documento = Nota de crédito" src="../crear-una-devolucion-de-compra-2.png"></a>
-  <figcaption>Nota de crédito manual: mismos campos de cabecera que una factura, con Tipo de documento en Nota de crédito.</figcaption>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/cabecera.png" data-desc-position="bottom"><img alt="Cabecera de la Factura de Compra con Tipo de documento = Factura Rectificativa, con las opciones para añadir o importar líneas" src="../assets/cabecera.png"></a>
+  <figcaption>Factura Rectificativa manual: mismos campos de cabecera que una factura, con Tipo de documento en Factura Rectificativa y las opciones para añadir líneas manualmente o importarlas desde una devolución de compra o desde la factura de origen.</figcaption>
 </figure>
 3. Completa el resto de la cabecera igual que en una <a href="../../crear-una-factura-de-compra/crear-una-factura-de-compra/">factura de compra</a>: Contacto, Dirección, Método de pago, Condiciones de pago, Moneda y Tarifa.
 4. Añade las líneas correspondientes al ajuste (precio, descuento o bonificación) y confirma el documento.<p></p>
 </li>
 </ol>
-<p>Una vez confirmada, la Nota de crédito queda como saldo a favor del proveedor (no se aplica automáticamente contra una factura puntual) — ver <a href="../../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra/">Gestionar tus facturas de compra</a> para el detalle de esa gestión.</p>
+<p>Una vez confirmada, la Factura Rectificativa queda como saldo a favor del proveedor (no se aplica automáticamente contra una factura puntual) — ver <a href="../../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra/">Gestionar tus facturas de compra</a> para el detalle de esa gestión.</p>
 <h2 id="articulos-relacionados">Artículos Relacionados<a class="headerlink" href="#articulos-relacionados" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../../crear-una-factura-de-compra/crear-una-factura-de-compra/">Crear una factura de compra</a></li>
@@ -2404,7 +2409,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="3 de agosto de 2026 17:32:36 UTC">3 de agosto de 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 de agosto de 2026 11:42:58 UTC">12 de agosto de 2026</span>
   </span>
 
     
@@ -2431,6 +2436,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/isaiasb-etendo" class="md-author" title="@isaiasb-etendo">
+          
+          <img src="https://avatars.githubusercontent.com/u/106354215?v=4&amp;size=72" alt="isaiasb-etendo">
+        </a>
       
         <a href="https://github.com/mapenglishservices" class="md-author" title="@mapenglishservices">
           
