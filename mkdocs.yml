@@ -92,25 +92,25 @@ plugins:
                         - Cómo crear un almacén: operaciones/inventario/almacenes/como-crear-un-almacen/como-crear-un-almacen.md
             - Finanzas:
                 - finanzas/index.md
-                - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
-                - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
-                - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
-            - Tesorería:
-                - tesoreria/index.md
-                - ¿Qué es la sección Tesorería?: tesoreria/que-es-tesoreria/que-es-tesoreria.md
+                - ¿Qué es la sección Finanzas?: finanzas/que-es-finanzas/que-es-finanzas.md
+                - Glosario de Finanzas: finanzas/glosario-de-finanzas/glosario-de-finanzas.md
                 - Cuentas financieras:
-                    - Añadir y configurar un banco, tarjeta o caja: tesoreria/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md
-                    - Conectar, desconectar, desactivar o eliminar una cuenta bancaria: tesoreria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md
-                    - Gestionar cajas contables y movimientos en efectivo: tesoreria/como-gestionar-cajas-contables-y-movimientos-en-efectivo/como-gestionar-cajas-contables-y-movimientos-en-efectivo.md
-                - Extracto bancario:
-                    - Importar o descargar el extracto bancario: tesoreria/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
-                    - Borrar transacciones del extracto bancario: tesoreria/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
-                - Conciliación bancaria:
-                    - ¿Qué es la conciliación bancaria en Etendo Go?: tesoreria/que-es-la-conciliacion-bancaria-en-etendo-go/que-es-la-conciliacion-bancaria-en-etendo-go.md
-                    - Conciliar o desconciliar movimientos contra documentos: tesoreria/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
-                    - Configurar reglas para automatizar la conciliación: tesoreria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
+                    - Añadir y configurar un banco, tarjeta o caja: finanzas/como-anadir-y-configurar-un-banco-tarjeta-o-caja/como-anadir-y-configurar-un-banco-tarjeta-o-caja.md
+                    - Conectar, desconectar, desactivar o reactivar una cuenta: finanzas/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md
+                    - Gestionar cajas contables y movimientos en efectivo: finanzas/como-gestionar-cajas-contables-y-movimientos-en-efectivo/como-gestionar-cajas-contables-y-movimientos-en-efectivo.md
                 - Pagos y cobros:
-                    - Gestionar pagos y cobros: tesoreria/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md
+                    - Gestionar pagos y cobros: finanzas/como-gestionar-pagos-y-cobros/como-gestionar-pagos-y-cobros.md
+                - Extracto bancario:
+                    - Importar o descargar el extracto bancario: finanzas/como-importar-o-descargar-el-extracto-bancario/como-importar-o-descargar-el-extracto-bancario.md
+                    - Borrar transacciones del extracto bancario: finanzas/como-borrar-transacciones-del-extracto-bancario/como-borrar-transacciones-del-extracto-bancario.md
+                - Conciliación bancaria:
+                    - ¿Qué es la conciliación bancaria en Etendo Go?: finanzas/que-es-la-conciliacion-bancaria-en-etendo-go/que-es-la-conciliacion-bancaria-en-etendo-go.md
+                    - Conciliar o desconciliar movimientos contra documentos: finanzas/como-conciliar-o-desconciliar-movimientos-contra-documentos/como-conciliar-o-desconciliar-movimientos-contra-documentos.md
+                    - Configurar reglas para automatizar la conciliación: finanzas/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
+                - Activos y amortización:
+                    - Apuntar un activo: finanzas/como-apuntar-un-activo/como-apuntar-un-activo.md
+                    - "Activo: referencia de campos": finanzas/referencia-de-campos-de-activo/referencia-de-campos-de-activo.md
+                    - Crear y ejecutar un plan de amortización: finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md
             - Configuración:
                 - configuracion/index.md
         
