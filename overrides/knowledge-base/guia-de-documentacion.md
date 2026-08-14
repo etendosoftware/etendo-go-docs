@@ -11,25 +11,29 @@ tags:
 
 ### Estructura del sitio
 
-La organización general del sitio sigue una jerarquía de tres niveles:
+La organización general del sitio sigue una jerarquía de cuatro niveles (actualizado 2026-08-06 para reflejar la estructura real de carpetas del repositorio, que agrupa los módulos bajo categorías temáticas de nivel superior):
 
-- **Página de inicio**: grilla de categorías (3 columnas) con tarjetas que muestran: icono + nombre de categoría + descripción en una línea + cantidad de artículos + avatares de autores.
-- **Categorías**: corresponden a las grandes áreas del producto (Ventas, Compras, Contabilidad, Inventario, RRHH, CRM, Proyectos, Analítica, TPV, etc.) — una categoría por módulo funcional.
-- **Colecciones**: subcategorías dentro de un módulo que agrupan artículos por tema. Por ejemplo, dentro de Ventas → "Configuración de facturación", "Documentos de ventas", "Preguntas frecuentes".
+- **Página de inicio**: grilla de grupos temáticos (3 columnas) con tarjetas que muestran: icono + nombre del grupo + descripción en una línea + cantidad de artículos + avatares de autores.
+- **Grupos temáticos**: carpetas de nivel 1 dentro de `docs/es/`, cada una reúne uno o más módulos funcionales relacionados. Grupos actuales: **Primeros pasos**, **Comercial** (Contactos, Ventas), **Operaciones** (Compras, Inventario), **Finanzas** (Activos, Amortización), y las categorías aún no desarrolladas Configuración y Dashboard. RRHH, CRM, Proyectos, Analítica y TPV todavía no tienen grupo asignado en el repo — al incorporarlos, decidir si son grupo propio o módulo dentro de uno existente antes de crear la carpeta.
+- **Módulos**: carpetas de nivel 2, una por área funcional del producto (ej. Ventas y Contactos dentro de Comercial; Compras e Inventario dentro de Operaciones). Cada módulo tiene su propia página de descripción general ("¿Qué es la sección X?").
+- **Colecciones**: subcategorías dentro de un módulo que agrupan artículos por tema. Por ejemplo, dentro de Ventas → "Configuración de facturación", "Documentos de ventas", "Preguntas frecuentes". En módulos chicos, la colección puede quedar implícita (los artículos viven directamente bajo el módulo).
 - **Artículos**: hojas del sitio. Nunca mezclar tipos de artículo dentro de una misma subcolección.
 
 ### Patrón de profundidad
 
 ```
 Inicio
-└── Categoría (nivel de módulo, ej. "Ventas")
-    ├── [2-3 artículos de descripción general al inicio]
-    ├── Subcolección: "Configuración"
-    ├── Subcolección: "Documentos / Operaciones"
-    ├── Subcolección: "Cumplimiento / Legal" (si aplica)
-    ├── Subcolección: "Importación / Migración" (si aplica)
-    └── Subcolección: "Preguntas frecuentes"
+└── Grupo temático (nivel 1, ej. "Operaciones")
+    └── Módulo (nivel 2, ej. "Compras")
+        ├── [2-3 artículos de descripción general al inicio]
+        ├── Subcolección: "Configuración"
+        ├── Subcolección: "Documentos / Operaciones"
+        ├── Subcolección: "Cumplimiento / Legal" (si aplica)
+        ├── Subcolección: "Importación / Migración" (si aplica)
+        └── Subcolección: "Preguntas frecuentes"
 ```
+
+Ejemplo real: `docs/es/operaciones/compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md` — grupo "Operaciones", módulo "Compras", artículo "¿Qué es la sección Compras?".
 
 ### Cantidad de artículos por categoría
 
@@ -38,7 +42,7 @@ Inicio
 
 ## 2. Tipos de Artículo
 
-Definir exactamente 5 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
+Definir exactamente 6 tipos y usarlos de forma consistente. Cada artículo debe ser de un solo tipo: nunca mezclar una guía con una FAQ en la misma página.
 
 | Tipo | Propósito | Ejemplo |
 |:-----|:----------|:--------|
@@ -46,6 +50,7 @@ Definir exactamente 5 tipos y usarlos de forma consistente. Cada artículo debe 
 | Guía de inicio | Configuración secuencial desde cero | "Facturación: guía de inicio" |
 | Artículo de tarea | Cómo hacer una cosa específica | "Crear una factura de venta" |
 | Referencia / Glosario | Definiciones, explicación de campos | "Glosario de Ventas" |
+| Referencia de ventana / Gestión | Cómo consultar y administrar una ventana ya poblada de registros: vista lista, vista detalle/formulario, estados y acciones disponibles | "Gestionar tus facturas de compra" |
 | Preguntas frecuentes | Resolución de problemas, casos borde | "App móvil: preguntas frecuentes" |
 
 ## 3. Estilo y Tono de Escritura
@@ -128,6 +133,30 @@ H2: [Grupo de pasos 2 si es necesario]
 [Artículos relacionados: máximo 3 enlaces]
 ```
 
+### Referencia de ventana / Gestión
+
+```
+H1: [Nombre de la ventana en plural o "Gestionar tus [documentos]"]
+[1 oración de apertura: qué cubre este artículo y enlace al artículo de tarea de creación si existe]
+
+H2: Vista Lista
+  [Columnas de la vista lista, filtros disponibles]
+  [Captura de pantalla]
+
+H2: Vista Detalle
+  [Información e íconos de la vista detalle, acciones rápidas]
+  [Captura de pantalla]
+
+H2: Estados del Documento
+  [Tabla de estados con descripción]
+
+H2: Acciones Disponibles
+  [Tabla de acciones con descripción y estado en que aplican]
+  [Sub-secciones para popups o flujos de gestión adicionales]
+
+[Artículos relacionados: máximo 3 enlaces]
+```
+
 ### Artículo de referencia / glosario
 
 ```
@@ -192,9 +221,8 @@ H2: [Siguiente pregunta]
 
 ### Imágenes y capturas de pantalla
 
-- Colocar las capturas después del texto explicativo, antes de pasar al siguiente paso.
-- Toda captura debe estar referenciada en el texto ("Verás que..." / "Aparecerá...").
-- Sin capturas sin contexto; sin texto que haga referencia a una captura que no está presente.
+- Colocar la captura inmediatamente después del encabezado de la sección, antes del texto explicativo: el lector ve primero el contexto visual y después la descripción (actualizado 2026-08-06, según la convención vigente en los artículos ya publicados).
+- La `<figcaption>` de la captura debe describir qué muestra la imagen; al ir la captura antes del texto, esa leyenda cumple el rol de contexto y el párrafo que sigue no necesita repetir una referencia textual a la imagen.
 - Usar capturas anotadas (flechas, resaltados) para interfaces complejas.
 - No insertar videos en medio de guías de tareas — interrumpen la lectura.
 
@@ -229,8 +257,7 @@ Cada artículo debe tener los siguientes metadatos completos:
 
 - **Título**: descriptivo, orientado a la acción o en forma de pregunta. Máximo ~60 caracteres.
 - **Tags**: mínimo 3, relacionados directamente al contenido de la página.
-- **Autor**: visible en el artículo.
-- **Fecha de última actualización**: visible en el artículo.
+- **Autor** y **Fecha de última actualización**: visibles en el artículo, pero se resuelven automáticamente vía el plugin `git-committers` (a partir del historial de git del archivo). **No** agregar `author:` ni `date:` a mano en el front matter — eso genera datos falsos/desactualizados y ningún artículo del repo lo hace hoy.
 
 ## 9. Guías de Extensión de Contenido
 
@@ -415,7 +442,7 @@ Señalar con una nota destacada cuando una funcionalidad es exclusiva de cierto 
 - Longitud: 140-155 caracteres.
 - Incluir el nombre de la funcionalidad principal y un verbo de acción.
 - Ejemplo: "Aprende a crear, personalizar y enviar facturas de venta desde el módulo de Facturación."
-- Debe estar en la sección `description:` dentro de cada página.
+- **Pendiente (2026-08-06):** mkdocs no procesa todavía el campo `description:` en el sitio actual. No agregarlo en el frontmatter de los artículos hasta que se habilite este soporte; se incorporará más adelante.
 
 ### Optimización del contenido para búsqueda
 

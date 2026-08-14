@@ -29,7 +29,7 @@ Etendo Go organiza la operación de tu empresa en módulos conectados entre sí,
 
 - **Comercial**: un único maestro de **Contactos** para clientes y proveedores, con tarifas y condiciones de pago que se heredan en cada documento; **Ventas** para presupuestos, pedidos y facturas de venta; **Compras** para pedidos y facturas de compra.
 - **Inventario**: productos, categorías de producto, almacenes, movimientos de mercancías, consumo interno, inventario físico e informes de stock.
-- **Finanzas**: **Contabilidad** con asientos y cuentas contables; **Activos y Amortización** para tus bienes fijos y el cálculo automático de su depreciación; **Cuentas Financieras y Conciliación Bancaria**; **Cobros y Pagos**; y gestión de **Monedas y Tarifas**.
+- **Finanzas**: **Contabilidad** con asientos y cuentas contables; **Activos y Amortización** para tus bienes fijos y el cálculo automático de su amortización; **Cuentas Financieras y Conciliación Bancaria**; **Cobros y Pagos**; y gestión de **Monedas y Tarifas**.
 - **Cumplimiento**: la **Localización Española** cubre el envío a los Sistemas de Facturación (SIF) y la generación de los modelos fiscales `303` y `349`, entre otros.
 - **Roles y Usuarios**: define qué puede hacer cada persona en el sistema mediante 5 roles predefinidos (**Administrador, Finanzas, Ventas, Compras** e **Inventario**); por ejemplo, solo **Administrador** y **Finanzas** pueden ejecutar las acciones contables de Activos y Amortización.
 
