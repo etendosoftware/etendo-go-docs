@@ -3,57 +3,25 @@ tags:
     - Activos
     - Amortización
     - Finanzas
-    - Gestión Contable
+    - Referencia
     - Etendo Go
-    - Cómo hacer
 ---
 
-# Apuntar un Activo
+# Activos: referencia de campos
 
-Un **activo** es un bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se amortiza a lo largo de su vida útil. **Apuntar** un activo es el proceso de registrarlo en Etendo Go para que el sistema pueda calcular y gestionar su amortización: se hace cada vez que la empresa adquiere un bien fijo o cuando se migran activos existentes desde otro sistema. Este artículo cubre cómo crear un activo y completar su formulario; para generar y ejecutar el plan de amortización una vez creado, consulta [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md).
+Detalle de los campos del formulario de Activo, agrupados por sección, y de la información que se agrega automáticamente una vez que generas el plan de amortización. Para los pasos de creación, consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md).
 
-```mermaid
-flowchart LR
-  A[Activo] -->|Crear amortización| B[Plan generado]
-  B -->|Ejecutar período| C[Amortización - Borrador]
-  C -->|Confirmar| D[Amortización - Procesado]
-  D -->|Contabilizar| E[Asientos contables]
-```
-
-## Cómo Apuntar un Activo
-
-1. Ve a **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** y pulsa **+ Nuevo activo**.
-2. Completa el formulario:
-    1. **Datos del Activo** — identificación del bien y su valor de adquisición (usa el número de inventario interno como **Identificador**). Detalle de cada campo más abajo.
-    2. **Configuración de Amortización** e **Información Financiera** — activa el interruptor **Amortizar** y define el método de cálculo. Detalle de cada campo más abajo.
-    3. **Fechas** — define la **Fecha inicio**; opcionalmente completa **Dimensiones Contables**. Detalle de cada campo más abajo.
-3. Pulsa **Guardar**.
-4. Pulsa **Crear amortización** para generar el plan de amortización — este paso se explica en detalle en [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md).
-
-!!! tip "Si tienes la factura de compra"
-    Ve a la pestaña **Adjuntos** y sube el documento arrastrándolo y soltándolo (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes). Así el activo queda vinculado a su comprobante de forma centralizada: cada archivo muestra su nombre, tamaño, fecha de carga y el usuario que lo subió.
-
-!!! warning "Paso obligatorio"
-    Sin pulsar **Crear amortización**, el activo queda registrado pero sin plan de amortización. Consulta [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md) para ver cómo generar y procesar los períodos.
-
-El formulario se abre al crear un activo nuevo o al hacer clic sobre un registro existente en la lista.
-
-### Datos del Activo
-
-<figure markdown="span">
-  ![Formulario de Activo](assets/apuntar-un-activo-2.png)
-  <figcaption>Formulario de Activo con los campos de identificación del bien y su valor de adquisición.</figcaption>
-</figure>
+## Datos del activo
 
 Los campos de identificación aparecen siempre en la parte superior del formulario.
 
 - **Identificador** — Código único del activo dentro de la organización (ej: número de inventario). Lo ingresa el usuario; no se genera automáticamente. Requerido.
-- **Nombre** — Nombre descriptivo del activo (ej: *Servidor Dell R740*). Requerido.
+- **Nombre** — Nombre descriptivo del activo (ej: *Servidor Dell PowerEdge R740*). Requerido.
 - **Grupo activo** — Categoría contable del activo. Valor por defecto: *Otros*. Determina las cuentas contables de los asientos. Requerido.
 - **Valor del activo** — Importe de adquisición. Base bruta antes de descontar el valor residual.
 - **Descripción** — Información adicional: número de serie, ubicación, proveedor, etc.
 
-### Configuración de Amortización
+## Configuración de amortización
 
 <figure markdown="span">
   ![Configuración de amortización](assets/apuntar-un-activo-3.png)
@@ -65,7 +33,7 @@ Esta sección controla si el activo se amortiza y qué método se usa.
 - **Amortizar** — interruptor que habilita o deshabilita la amortización para este activo. Cuando está desactivado, aparece el mensaje *"La amortización está desactivada. Actívala para configurar el método, el cálculo y la vida útil."*
 - **Cada mes tiene 30 días** — interruptor que aparece al activar **Amortizar** (activo por defecto). Normaliza los meses a 30 días para obtener cuotas uniformes.
 
-### Información Financiera
+## Información financiera
 
 <figure markdown="span">
   ![Información financiera](assets/apuntar-un-activo-4.png)
@@ -86,7 +54,7 @@ Según el **Tipo de cálculo** seleccionado, aparecen campos adicionales:
     - **Amortizar** — periodicidad del plan: *Mensual* (una línea por mes) o *Anual* (una línea por año). Por defecto: *Mensual*.
     - **Vida útil** — duración total del activo. La etiqueta y la unidad cambian según la periodicidad elegida: *Vida útil - Meses* si es *Mensual*, *Vida útil - Años* si es *Anual*. Ej: *48* meses equivale a 4 años. Con un activo de 10.000 € a 48 meses, cada cuota es de 208,33 €/mes.
 
-### Fechas
+## Fechas
 
 <figure markdown="span">
   ![Fechas](assets/apuntar-un-activo-5.png)
@@ -98,7 +66,7 @@ Según el **Tipo de cálculo** seleccionado, aparecen campos adicionales:
 - **Fecha inicio** — Inicio de la vida útil contable del activo. Es el punto de partida para generar el plan de amortización; sin esta fecha el plan no puede crearse. **Requerido para generar el plan**.
 - **Fecha fin** — Informativa. Se calcula automáticamente cuando el Tipo de cálculo es *Tiempo*; debe completarse manualmente si es *Porcentaje*.
 
-### Dimensiones Contables
+## Dimensiones contables
 
 <figure markdown="span">
   ![Dimensiones contables](assets/apuntar-un-activo-10.png)
@@ -112,9 +80,9 @@ Campos opcionales para asociar el activo a dimensiones de análisis contable. Se
 - **Contacto** — úsalo cuando el activo está asignado a un tercero (proveedor, cliente o entidad relacionada) relevante para la contabilidad.
 - **Producto** — vincula el activo a un producto del catálogo cuando corresponda, por ejemplo para relacionarlo con un ítem de inventario concreto.
 
-### Qué Ves Después de Generar el Plan de Amortización
+## Qué ves después de generar el plan de amortización
 
-Al pulsar **Crear amortización** (paso 4), el formulario se completa con información que genera el sistema.
+Al pulsar **Crear amortización**, el formulario se completa con información que genera el sistema.
 
 **Resumen de amortización** — panel lateral que muestra el estado del activo de forma permanente mientras trabajas en el formulario:
 
@@ -126,11 +94,11 @@ Al pulsar **Crear amortización** (paso 4), el formulario se completa con inform
 - **Valor actual** — Valor contable del activo a la fecha (euros).
 - **Valor residual del activo** — Valor estimado al final de la vida útil.
 - **Amortización planificada** — Monto total programado en el plan vigente.
-- **Amortizado %** — Porcentaje ya amortizado. Subtítulo *En progreso* mientras hay períodos pendientes; cambia a *Totalmente amortizado* al llegar al 100 %.
+- **Amortizado** — Porcentaje ya amortizado, calculado solo sobre los períodos en estado **Confirmado** del plan (no se cuentan los períodos **Pendientes**, aunque su fecha ya haya pasado). Subtítulo *En progreso* mientras hay períodos pendientes; cambia a *Totalmente amortizado* al llegar al 100 %. En la **Vista lista** de Activos, este mismo valor se muestra en euros en la columna **Amortizado real**, junto a una barra con el porcentaje.
 
 **Plan de amortización y Contabilidad** — dos pestañas adicionales en el activo ya creado:
 
-- **Plan de amortización** — muestra las líneas por período que produce **Crear amortización**. Consulta [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md) para ver cómo generarlas y procesarlas.
+- **Plan de amortización** — muestra las líneas por período que produce **Crear amortización**. Consulta [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md) para ver cómo generarlas y procesarlas.
 
 <figure markdown="span">
   ![Pestaña Plan de amortización con las líneas generadas](assets/apuntar-un-activo-8.png)
@@ -144,21 +112,22 @@ Al pulsar **Crear amortización** (paso 4), el formulario se completa con inform
   <figcaption>Pestaña Contabilidad con las cuentas de amortización acumulada y amortización por esquema contable.</figcaption>
 </figure>
 
-## Vista Lista
+## Vista lista
 
 <figure markdown="span">
   ![Vista lista de Activos filtrada por Grupo activo](assets/apuntar-un-activo-1.png)
   <figcaption>Vista lista de Activos filtrada por Grupo activo "Equipos Informáticos", con columnas de identificador, grupo, fechas, valores y estado de amortización.</figcaption>
 </figure>
 
-Desde **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas, valores y **Estado de amortización** (barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
+Desde **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas y valores, además de **Amortizado real** (el importe ya amortizado, ver más arriba) y **Estado de amortización** (el mismo porcentaje, como barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
 
 *[EUR]: Euro — moneda oficial de la zona euro
 
 ## Artículos Relacionados
 
-- [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md)
-- [Glosario de Contabilidad](../glosario-de-contabilidad/glosario-de-contabilidad.md)
+- [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md)
+- [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md)
+- [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
