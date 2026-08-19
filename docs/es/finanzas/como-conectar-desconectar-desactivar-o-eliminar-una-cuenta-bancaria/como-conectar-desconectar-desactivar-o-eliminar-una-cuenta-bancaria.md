@@ -33,9 +33,9 @@ Aplica solo a cuentas ya conectadas (estado **Sincronizado**). Detiene la sincro
 
 La cuenta vuelve a mostrarse como **Sin conexión** en el listado, con el enlace **Conectar banco** disponible para reconectarla. Conserva su saldo y el estado de conciliación de los movimientos ya sincronizados.
 
-## Desactivar una cuenta bancaria
+## Archivar una cuenta
 
-En Etendo Go, "desactivar" corresponde a la acción **Archivar cuenta**.
+En Etendo Go, "desactivar" una cuenta corresponde a la acción **Archivar cuenta**.
 
 1. En el listado de **Cuentas**, abre **Acciones de la fila** (o **Editar cuenta**) sobre la cuenta.
 2. Selecciona **Archivar cuenta**.

@@ -72,7 +72,7 @@ Consulta el [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.
 ## Artículos Relacionados
 
 - [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md)
-- [Activo: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md)
+- [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md)
 - [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
 
 ---

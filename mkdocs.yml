@@ -109,7 +109,7 @@ plugins:
                     - Configurar reglas para automatizar la conciliación: finanzas/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria/como-configurar-reglas-para-automatizar-la-conciliacion-bancaria.md
                 - Activos y amortización:
                     - Apuntar un activo: finanzas/como-apuntar-un-activo/como-apuntar-un-activo.md
-                    - "Activo: referencia de campos": finanzas/referencia-de-campos-de-activo/referencia-de-campos-de-activo.md
+                    - "Activos: referencia de campos": finanzas/referencia-de-campos-de-activo/referencia-de-campos-de-activo.md
                     - Crear y ejecutar un plan de amortización: finanzas/como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md
             - Configuración:
                 - configuracion/index.md

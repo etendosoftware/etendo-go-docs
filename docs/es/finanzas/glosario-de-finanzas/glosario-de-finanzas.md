@@ -17,6 +17,10 @@ Bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se amor
 
 Distribución del valor de un activo a lo largo de su vida útil, calculada según el tipo de amortización y el tipo de cálculo definidos en el activo (Porcentaje o Tiempo). También es el nombre del registro que agrupa la ejecución de esa distribución para uno o varios activos en un período contable: al confirmarlo, genera los asientos contables correspondientes. Ver [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md).
 
+## Amortizado
+
+Porcentaje o importe ya amortizado de un activo, calculado solo sobre los períodos de su plan que están en estado **Confirmado** (los **Pendientes** no cuentan, aunque su fecha ya haya pasado). Se muestra como porcentaje en el panel **Resumen de amortización** del activo, y como importe en euros en la columna **Amortizado real** de la vista de lista de **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}**. Ver [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md).
+
 ## Archivar
 
 Acción que deja de mostrar una cuenta financiera en el listado de **Todas las cuentas** sin borrar su saldo ni su historial: la cuenta pasa al filtro **Inactivas**. Su opuesto es **Desarchivar**. No implica eliminar la cuenta: en Etendo Go no existe una acción para borrar una cuenta financiera de forma permanente. Ver [Conectar, desconectar, desactivar o reactivar una cuenta](../como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria/como-conectar-desconectar-desactivar-o-eliminar-una-cuenta-bancaria.md).

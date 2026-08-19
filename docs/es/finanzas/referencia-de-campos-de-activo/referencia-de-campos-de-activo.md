@@ -7,7 +7,7 @@ tags:
     - Etendo Go
 ---
 
-# Activo: referencia de campos
+# Activos: referencia de campos
 
 Detalle de los campos del formulario de Activo, agrupados por sección, y de la información que se agrega automáticamente una vez que generas el plan de amortización. Para los pasos de creación, consulta [Apuntar un activo](../como-apuntar-un-activo/como-apuntar-un-activo.md).
 
@@ -94,7 +94,7 @@ Al pulsar **Crear amortización**, el formulario se completa con información qu
 - **Valor actual** — Valor contable del activo a la fecha (euros).
 - **Valor residual del activo** — Valor estimado al final de la vida útil.
 - **Amortización planificada** — Monto total programado en el plan vigente.
-- **Amortizado %** — Porcentaje ya amortizado. Subtítulo *En progreso* mientras hay períodos pendientes; cambia a *Totalmente amortizado* al llegar al 100 %.
+- **Amortizado** — Porcentaje ya amortizado, calculado solo sobre los períodos en estado **Confirmado** del plan (no se cuentan los períodos **Pendientes**, aunque su fecha ya haya pasado). Subtítulo *En progreso* mientras hay períodos pendientes; cambia a *Totalmente amortizado* al llegar al 100 %. En la **Vista lista** de Activos, este mismo valor se muestra en euros en la columna **Amortizado real**, junto a una barra con el porcentaje.
 
 **Plan de amortización y Contabilidad** — dos pestañas adicionales en el activo ya creado:
 
@@ -119,7 +119,7 @@ Al pulsar **Crear amortización**, el formulario se completa con información qu
   <figcaption>Vista lista de Activos filtrada por Grupo activo "Equipos Informáticos", con columnas de identificador, grupo, fechas, valores y estado de amortización.</figcaption>
 </figure>
 
-Desde **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas, valores y **Estado de amortización** (barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
+Desde **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas y valores, además de **Amortizado real** (el importe ya amortizado, ver más arriba) y **Estado de amortización** (el mismo porcentaje, como barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
 
 *[EUR]: Euro — moneda oficial de la zona euro
 

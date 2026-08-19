@@ -140,7 +140,7 @@ Todo lo que necesitas para gestionar las finanzas de tu empresa en Etendo Go: cu
 
     [:octicons-arrow-right-24: Leer más](como-apuntar-un-activo/como-apuntar-un-activo.md)
 
--   :material-format-list-bulleted:{ .lg .middle } **Activo: referencia de campos**
+-   :material-format-list-bulleted:{ .lg .middle } **Activos: referencia de campos**
 
     ---
 

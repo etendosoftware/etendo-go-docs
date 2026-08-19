@@ -18,7 +18,7 @@ flowchart LR
   D -->|Contabilizar| E([Asientos contables])
 ```
 
-Este artículo cubre cómo crear un activo y completar su formulario. Para el detalle de cada campo, consulta [Activo: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md); para generar y ejecutar el plan de amortización una vez creado, consulta [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md).
+Este artículo cubre cómo crear un activo y completar su formulario. Para el detalle de cada campo, consulta [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md); para generar y ejecutar el plan de amortización una vez creado, consulta [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md).
 
 ## Cómo apuntar un activo
 
@@ -47,7 +47,7 @@ El formulario se abre al crear un activo nuevo o al hacer clic sobre un registro
 
 ## Artículos Relacionados
 
-- [Activo: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md)
+- [Activos: referencia de campos](../referencia-de-campos-de-activo/referencia-de-campos-de-activo.md)
 - [Crear y ejecutar un plan de amortización](../como-crear-y-ejecutar-un-plan-de-amortizacion/como-crear-y-ejecutar-un-plan-de-amortizacion.md)
 - [Glosario de Finanzas](../glosario-de-finanzas/glosario-de-finanzas.md)
 
