@@ -100,6 +100,18 @@ plugins:
                 - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
                 - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
                 - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
+            - Impuestos:
+                - impuestos/index.md
+                - ¿Qué puedes hacer en Impuestos?: impuestos/que-puedes-hacer-en-impuestos/que-puedes-hacer-en-impuestos.md
+                - Glosario de Impuestos: impuestos/glosario-de-impuestos/glosario-de-impuestos.md
+                - Cómo Activar un Modelo Tributario: impuestos/como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md
+                - Tipos de Impuestos y sus Porcentajes: impuestos/tipos-de-impuestos-y-sus-porcentajes/tipos-de-impuestos-y-sus-porcentajes.md
+                - SII: impuestos/sii/sii.md
+                - TicketBAI: impuestos/ticketbai/ticketbai.md
+                - VERI*FACTU: impuestos/verifactu/verifactu.md
+                - Monitor Fiscal: impuestos/monitor-fiscal/monitor-fiscal.md
+                - Modelo 303: impuestos/modelo-303/modelo-303.md
+                - Modelo 349: impuestos/modelo-349/modelo-349.md
             - Configuración:
                 - configuracion/index.md
         
