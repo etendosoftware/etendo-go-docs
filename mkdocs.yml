@@ -3,6 +3,8 @@ docs_dir: docs
 site_url: https://etendosoftware.github.io/etendo-go-docs/
 repo_url: https://github.com/etendosoftware/etendo-go-docs
 repo_name: etendosoftware/etendo-go-docs
+watch:
+  - overrides
 theme:
   name: material
   custom_dir: overrides
