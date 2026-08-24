@@ -65,6 +65,7 @@ Cada Impuesto define:
 - **Válido desde** — fecha a partir de la cual el impuesto está vigente.
 - **Cálculo del importe de impuestos del documento** — método usado para calcular el importe total de impuestos de un documento (por ejemplo, suma de las bases imponibles de línea).
 - **Base Imponible** — importe sobre el que se calcula el impuesto (por ejemplo, importe neto de línea).
+- **TBAI - Clave de Régimen Especial de IVA** — el código oficial de régimen especial o trascendencia de la AEAT (por ejemplo, *01 — Operación de régimen general* o *07 — Régimen especial del criterio de caja*) que se incluye en los envíos a TicketBAI.
 - **Contabilidad** — cuentas de **Impuesto repercutido** e **Impuesto reclamado** que genera al contabilizar.
 
 ## Campos del Registro Categoría de Impuesto
@@ -85,6 +86,7 @@ Cada Categoría de Impuesto define:
 
 - [¿Qué puedes hacer en Impuestos?](../que-puedes-hacer-en-impuestos/que-puedes-hacer-en-impuestos.md)
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
+- [Modelo 303](../modelo-303/modelo-303.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

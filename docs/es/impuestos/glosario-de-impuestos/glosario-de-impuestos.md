@@ -61,19 +61,25 @@ Registro de Devolución Mensual del IVA. Estar inscrito en REDEME obliga a acoge
 
 Organización cuyo volumen de operaciones superó los 6.010.121,04 € en el ejercicio anterior. Está obligada al SII y no puede acogerse a VERI\*FACTU.
 
+## Catálogo de modelos
+
+Panel en **Finanzas > Modelos Fiscales** donde activas los modelos fiscales que vas a gestionar (Modelo 303, Modelo 349). Un modelo tiene que estar activo antes de poder crear declaraciones para él.
+
 ## Declaración
 
-Documento periódico que resume la información fiscal de un período para presentarlo ante Hacienda, por ejemplo el Modelo 303 o el Modelo 349. Se gestiona desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**.
+Documento periódico que resume la información fiscal de un período para presentarlo ante Hacienda, por ejemplo el Modelo 303 o el Modelo 349. Se crea desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**, una vez activado el modelo correspondiente en el Catálogo de modelos.
 
 ## Período
 
-Tramo de tiempo que cubre una declaración. En el Modelo 303 es siempre trimestral (T1, T2, T3 o T4). En el Modelo 349 puede ser trimestral o mensual (01 a 12), según el volumen de operaciones intracomunitarias.
+Tramo de tiempo que cubre una declaración. Tanto el Modelo 303 como el Modelo 349 admiten periodicidad **trimestral** (T1 a T4) o **mensual**, según el volumen de operaciones de tu organización.
 
 ## Artículos Relacionados
 
 - [¿Qué puedes hacer en Impuestos?](../que-puedes-hacer-en-impuestos/que-puedes-hacer-en-impuestos.md)
 - [Cómo activar un modelo tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [Tipos de impuestos y sus porcentajes](../tipos-de-impuestos-y-sus-porcentajes/tipos-de-impuestos-y-sus-porcentajes.md)
+- [Modelo 303](../modelo-303/modelo-303.md)
+- [Modelo 349](../modelo-349/modelo-349.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

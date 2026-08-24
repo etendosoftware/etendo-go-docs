@@ -10,18 +10,76 @@ tags:
 
 # Modelo 349
 
-El **Modelo 349** es la declaración informativa de operaciones intracomunitarias: recoge las entregas y adquisiciones de bienes y servicios realizadas con clientes y proveedores de otros países de la Unión Europea. Como el Modelo 303, se gestiona desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**.
+El **Modelo 349** es la declaración informativa de operaciones intracomunitarias: recoge las entregas y adquisiciones de bienes, y los servicios prestados y recibidos, con empresas de otros países de la Unión Europea. Como el Modelo 303, se gestiona desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**.
+
+## Antes de Empezar: Activar el Modelo
+
+Para poder crear declaraciones, primero tienes que activar el Modelo 349 en el **Catálogo de modelos**:
+
+1. Ve a **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**.
+2. Pulsa **Catálogo de modelos**.
+3. Activa el interruptor de **Modelo 349 — Operaciones intracomunitarias**.
 
 ## Cómo Crear una Declaración
 
-1. Ve a **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**.
-2. Pulsa **+ Nueva declaración**.
-3. Selecciona **Modelo 349** y el **Año**.
-4. Elige el **Período**: Etendo Go ofrece periodicidad **trimestral** (T1 a T4) o **mensual** (01 a 12), según el volumen de operaciones intracomunitarias que debas declarar.
-5. Pulsa **Crear**.
+1. Pulsa **+ Nueva declaración**.
+2. Elige el **Modelo 349** en el selector.
+3. Selecciona el **Año** y la **Frecuencia**: **Trimestral** (T1 a T4) o **Mensual**, según el volumen de operaciones intracomunitarias que debas declarar.
+4. Elige el **Período** y pulsa **Crear declaración**.
 
-!!! info "Artículo en construcción"
-    Este artículo documenta por ahora la creación de la declaración. Todavía no hay ninguna declaración Modelo 349 creada en la organización de referencia, por lo que la pestaña de Casillas específicas de este modelo se documentará en una próxima actualización.
+<figure markdown="span">
+  ![Diálogo Nueva declaración con el Modelo 349 y frecuencia trimestral seleccionados](assets/modelo-349-1.jpg)
+  <figcaption>Selecciona el modelo, el año, la frecuencia (Trimestral o Mensual) y el período. El diálogo muestra una vista previa, por ejemplo "Se creará como Modelo 349 · T1 2026".</figcaption>
+</figure>
+
+La declaración se crea en estado **Borrador** y aparece junto al resto de tus declaraciones activas.
+
+<figure markdown="span">
+  ![Listado de Declaraciones con un Modelo 349 junto a dos Modelos 303](assets/modelo-349-0.jpg)
+  <figcaption>El Modelo 349 aparece en el mismo listado de Declaraciones que el Modelo 303, cada uno con su propio período y estado.</figcaption>
+</figure>
+
+## El Detalle de una Declaración
+
+La cabecera de una declaración Modelo 349 ofrece tres acciones: **Calcular**, **Generar fichero 349** y **Marcar presentada**.
+
+<figure markdown="span">
+  ![Cabecera del Modelo 349 con sus indicadores principales](assets/modelo-349-2.jpg)
+  <figcaption>Cabecera del Modelo 349: operadores activos, total de operaciones, rectificaciones de períodos previos y pendientes de validación VIES.</figcaption>
+</figure>
+
+Los cuatro indicadores de la cabecera son:
+
+- **Operadores** — cantidad de terceros con operaciones intracomunitarias en el período.
+- **Total operaciones** — base total declarada, sumando todas las claves.
+- **Rectificaciones** — operaciones que corrigen datos ya declarados en períodos anteriores.
+- **Pendientes VIES** — operadores cuyo NIF-IVA todavía no fue validado contra el sistema VIES de la Unión Europea.
+
+### Pestaña Operadores
+
+Lista cada tercero con operaciones intracomunitarias en el período, con su NIF-IVA, la **Clave** de la operación, la base imponible, el estado de validación **VIES** y el documento de **Origen**.
+
+<figure markdown="span">
+  ![Pestaña Operadores con el filtro Todas las claves desplegado](assets/modelo-349-3.jpg)
+  <figcaption>El panel "Totales por clave" resume la base imponible de cada tipo de operación, y el filtro permite acotar la lista por clave.</figcaption>
+</figure>
+
+Las cuatro claves de operación son:
+
+- **E — Entregas** — venta de bienes a un cliente de otro país de la UE.
+- **S — Servicios prestados** — servicios facturados a un cliente de otro país de la UE.
+- **A — Adquisiciones** — compra de bienes a un proveedor de otro país de la UE.
+- **I — Servicios recibidos** — servicios facturados por un proveedor de otro país de la UE.
+
+### Otras Pestañas
+
+- **Rectificaciones** — operaciones que corrigen la base imponible ya declarada en un período anterior; muestra *"Sin rectificaciones correctivas en este periodo"* cuando no hay ninguna.
+- **Facturas origen** — las facturas que Etendo Go usó (o usará, tras pulsar Calcular) para completar la declaración.
+- **Incidencias** — detalle de los datos que generaron alguna advertencia durante el cálculo, por ejemplo un NIF-IVA pendiente de validar en VIES.
+- **Justificante** — sube aquí el comprobante de presentación de tu declaración.
+
+!!! tip "Justificante es un área de carga manual"
+    Etendo Go no genera el comprobante de presentación de forma automática. Arrastra el archivo o selecciónalo desde tu equipo una vez que ya presentaste la declaración ante Hacienda (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes).
 
 ## Artículos Relacionados
 

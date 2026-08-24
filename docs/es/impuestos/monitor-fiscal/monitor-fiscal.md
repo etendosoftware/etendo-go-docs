@@ -22,8 +22,39 @@ Si tu organización todavía no tiene un sistema fiscal configurado, el Monitor 
 
 Pulsa **Configurar sistema fiscal** para ir a Configuración Fiscal y activar SII, TicketBAI o VERI\*FACTU. Ver [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md).
 
-!!! info "Artículo en construcción"
-    Esta organización de referencia aún no tiene un sistema fiscal activo, por lo que este artículo todavía no documenta la vista del Monitor Fiscal con facturas enviadas e incidencias reales. Se completará una vez validado contra una organización con SII, TicketBAI o VERI\*FACTU en funcionamiento.
+## Con un Sistema Fiscal Activo
+
+Una vez que tu organización tiene un sistema fiscal configurado, el Monitor Fiscal organiza el envío de tus facturas en una pestaña por cada sistema activo. Por ejemplo, una organización con **SII** y **TicketBAI** activos ve ambas pestañas, cada una con su propio contador de facturas:
+
+<figure markdown="span">
+  ![Monitor Fiscal con las pestañas SII y TicketBAI](assets/monitor-fiscal-2.jpg)
+  <figcaption>Pestaña SII: Facturas emitidas y recibidas del período, con su Estado y el CSV de la AEAT una vez enviadas.</figcaption>
+</figure>
+
+### Pestaña SII
+
+Se divide en **Facturas emitidas** y **Facturas recibidas**, y un filtro de período (**Período actual** o **Período anterior**). Cada fila muestra la Fecha, el Nº de Factura (enlaza a la factura original), el Cliente o Proveedor, el Tipo, el Total, el **Estado** del envío (por ejemplo *Pendiente*) y el **CSV AEAT** (el código de verificación que devuelve Hacienda una vez aceptado el envío). Puedes seleccionar facturas con la casilla de la izquierda y exportar el listado con el botón **Exportar**.
+
+### Pestaña TicketBAI
+
+Se divide en **Enviadas** y **Rechazadas**. Cada fila muestra la Fecha, el Nº de Factura, una Descripción, si tiene **Firma** digital aplicada, y el **Estado** de la respuesta de la Hacienda Foral (por ejemplo *Aceptado*, en verde):
+
+<figure markdown="span">
+  ![Pestaña TicketBAI del Monitor Fiscal con facturas aceptadas](assets/monitor-fiscal-3.jpg)
+  <figcaption>Pestaña TicketBAI: cada envío muestra su Firma y el Estado devuelto por la Hacienda Foral.</figcaption>
+</figure>
+
+### Estado de envío en el detalle de la factura
+
+El estado de envío también aparece directamente en el detalle de cada factura, junto al resto de su información general. Si tu organización tiene varios sistemas activos (como SII y TicketBAI), la factura muestra un indicador de estado por cada uno:
+
+<figure markdown="span">
+  ![Detalle de una factura con Estado SII y Estado TicketBAI](assets/monitor-fiscal-4.jpg)
+  <figcaption>El detalle de la factura resume su Estado SII y su Estado TicketBAI de forma independiente.</figcaption>
+</figure>
+
+!!! tip "Cada sistema fiscal tiene su propia configuración"
+    Los campos operativos de cada sistema (régimen REDEME, autorizaciones especiales AEAT, certificado digital para SII; territorio y envío automático para TicketBAI) se gestionan desde Configuración Fiscal. Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
 
 ## Artículos Relacionados
 

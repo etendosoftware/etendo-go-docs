@@ -47,13 +47,16 @@ Si no estás en ninguno de estos supuestos, puedes acogerte al SII de forma **vo
 
 ## Detalles Operativos
 
-Tras confirmar, desde **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}** puedes completar los detalles operativos del SII:
+Tras confirmar, la pantalla se llama **Configuración Fiscal** (con el sufijo del sistema activo, por ejemplo *"Configuración Fiscal SII + TBAI"* si además activaste TicketBAI) y queda disponible en **[Configuración > Monitor de facturas > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}**, con una pestaña **SII** para completar sus detalles operativos:
 
-- **Estado** — fecha de incorporación al SII, fecha de inicio del Monitor SII y si el sistema está activo (**En sistema SII**).
-- **Entorno** — si operas en **Entorno producción** o en modo de pruebas, y si adjuntas los XML generados a cada factura.
-- **Envíos** — el **plazo de envío** en días que aplica tu organización (el plazo legal general del SII es de 4 días hábiles), la **cadencia** de envío de facturas de venta y de compra, y si solo se envían las **facturas contabilizadas**.
-- **Régimen especial** — indicadores de **RECC** (régimen especial de criterio de caja) y **REDEME**, con su **número de autorización** si aplica.
-- **Certificado digital** — el certificado necesario para autenticar los envíos con Hacienda, con su fecha de vigencia.
+<figure markdown="span">
+  ![Pestaña SII de Configuración Fiscal con Régimen especial, Autorizaciones AEAT y Certificado digital](assets/sii-3.jpg)
+  <figcaption>Pestaña SII: interruptor de Régimen especial REDEME, Autorizaciones especiales AEAT y el certificado digital para autenticar con Hacienda.</figcaption>
+</figure>
+
+- **Régimen especial** — interruptor de **REDEME** (Registro de Devolución Mensual del IVA).
+- **Autorizaciones especiales AEAT** — número de registro de la autorización, si tu organización cuenta con alguna.
+- **Certificado digital** — el certificado necesario para autenticar los envíos con Hacienda; muestra su fecha de vigencia y un botón **Reemplazar** para actualizarlo.
 
 ## Artículos Relacionados
 

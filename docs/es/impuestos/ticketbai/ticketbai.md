@@ -44,12 +44,15 @@ tags:
 
 ## Detalles Operativos
 
-Tras confirmar, desde **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}** puedes completar los detalles operativos de TicketBAI:
+Tras confirmar, la pantalla **[Configuración > Monitor de facturas > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}** incluye una pestaña **TicketBAI** con sus detalles operativos:
 
-- **Fecha acogida TicketBAI** — fecha desde la que tu organización opera bajo este sistema.
-- **Entorno producción** — si envías al entorno real de Hacienda o a un entorno de pruebas.
-- **Facturación** — si usas la descripción de la factura como su nombre, si el envío a Hacienda es automático al completar la factura, y el texto de **Descripción de facturas** por defecto.
-- **Técnico** — si se valida la factura anterior de la cadena (encadenamiento de facturas, requisito técnico de TicketBAI).
+<figure markdown="span">
+  ![Pestaña TicketBAI de Configuración Fiscal con el territorio y el envío automático](assets/ticketbai-4.jpg)
+  <figcaption>Pestaña TicketBAI: el territorio confirmado en el asistente y el interruptor de envío automático al completar factura.</figcaption>
+</figure>
+
+- **Territorio** — el territorio histórico confirmado en el asistente de activación (Álava, Bizkaia o Gipuzkoa).
+- **Facturación** — interruptor de **envío automático al completar factura**: si está desactivado, tienes que enviar cada factura a Hacienda manualmente desde el Monitor Fiscal.
 
 ## Artículos Relacionados
 

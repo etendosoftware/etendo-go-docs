@@ -106,7 +106,7 @@ Todo lo que necesitas para gestionar la fiscalidad de tu organización en Etendo
 
     ---
 
-    Genera y presenta tu autoliquidación trimestral del IVA.
+    Genera y presenta tu autoliquidación del IVA, trimestral o mensual.
 
     [:octicons-arrow-right-24: Leer más](modelo-303/modelo-303.md)
 

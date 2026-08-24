@@ -46,7 +46,7 @@ Antes de poder facturar, cada organización debe activar su **modelo tributario*
       <figcaption>Resumen final: territorio, Hacienda y sistema fiscal activado.</figcaption>
     </figure>
 
-5. Pulsa **Confirmar**. A continuación podrás completar los detalles operativos (fechas de incorporación, cadencia de envío, entorno de pruebas o producción).
+5. Pulsa **Confirmar**. A continuación podrás completar los detalles operativos de tu sistema fiscal (por ejemplo, régimen especial, autorizaciones AEAT y certificado digital para SII, o territorio y envío automático para TicketBAI). Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
 
 !!! tip "Territorios forales"
     Para **Navarra**, el sistema fiscal es siempre **SII** y el asistente salta directo del paso 1 al paso 3 (confirmar), sin preguntas adicionales. Para **Álava, Bizkaia y Gipuzkoa**, el paso 2 pregunta si además debes declarar por SII foral, y el resultado es **TicketBAI**, combinado o no con SII.
@@ -61,7 +61,7 @@ Si prefieres elegir el sistema fiscal tú mismo, sin responder a las preguntas d
 4. Pulsa **Continuar** y confirma.
 
 !!! info "Puedes cambiarlo más adelante"
-    Tanto si usas el asistente guiado como la configuración manual, podrás editar cualquier campo después desde **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}**.
+    Tanto si usas el asistente guiado como la configuración manual, podrás editar cualquier campo después desde la misma pantalla, que una vez configurada pasa a llamarse **Configuración Fiscal** con el sufijo de tu sistema activo (por ejemplo, *"Configuración Fiscal SII + TBAI"*) y se ubica en **Configuración > Monitor de facturas > Configuración Fiscal**.
 
 ## Artículos Relacionados
 
