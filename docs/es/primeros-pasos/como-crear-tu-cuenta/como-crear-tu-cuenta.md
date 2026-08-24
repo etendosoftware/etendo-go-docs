@@ -91,6 +91,7 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 ## Artículos Relacionados
 
 - [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
+- [Cómo gestionar tu cuenta](../como-gestionar-tu-cuenta/como-gestionar-tu-cuenta.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 - [Configuración](../../configuracion/index.md)
 
