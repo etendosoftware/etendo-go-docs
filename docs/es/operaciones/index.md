@@ -22,11 +22,29 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
 
     [:octicons-arrow-right-24: Leer más](compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md)
 
-</div>
+-   :material-clipboard-list-outline:{ .lg .middle } **Crear un pedido de compra**
 
-### Facturas de compra
+    ---
 
-<div class="grid cards" markdown>
+    Formaliza la solicitud de productos o servicios a un proveedor y genera desde él el albarán y la factura de compra correspondientes.
+
+    [:octicons-arrow-right-24: Leer más](compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
+
+-   :material-clipboard-check-outline:{ .lg .middle } **Gestionar tus pedidos de compra**
+
+    ---
+
+    Consulta, edita y gestiona la recepción y facturación de tus pedidos de compra ya cargados.
+
+    [:octicons-arrow-right-24: Leer más](compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)
+
+-   :material-truck-outline:{ .lg .middle } **Crear y gestionar albaranes de compra**
+
+    ---
+
+    Aprende a registrar la recepción física de mercancía de un proveedor y a generar la factura correspondiente.
+
+    [:octicons-arrow-right-24: Leer más](compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md)
 
 -   :material-receipt-text-outline:{ .lg .middle } **Crear una factura de compra**
 
@@ -56,7 +74,7 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
 
     ---
 
-    Devuelve mercancía a un proveedor o corrige el importe de una factura ya emitida con una Nota de crédito.
+    Devuelve mercancía a un proveedor o corrige el importe de una factura ya emitida con una Factura Rectificativa.
 
     [:octicons-arrow-right-24: Leer más](compras/crear-una-devolucion-de-compra/crear-una-devolucion-de-compra.md)
 
@@ -73,28 +91,6 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
     Descubre qué gestiona la sección Inventario y cómo se relacionan productos, categorías y almacenes.
 
     [:octicons-arrow-right-24: Leer más](inventario/que-es-inventario/que-es-inventario.md)
-
-</div>
-
-### Pedidos
-
-<div class="grid cards" markdown>
-
--   :material-clipboard-list-outline:{ .lg .middle } **Crear un pedido de compra**
-
-    ---
-
-    Formaliza la solicitud de productos o servicios a un proveedor y genera desde él el albarán y la factura de compra correspondientes.
-
-    [:octicons-arrow-right-24: Leer más](compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
-
--   :material-clipboard-check-outline:{ .lg .middle } **Gestionar tus pedidos de compra**
-
-    ---
-
-    Consulta, edita y gestiona la recepción y facturación de tus pedidos de compra ya cargados.
-
-    [:octicons-arrow-right-24: Leer más](compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md)
 
 </div>
 

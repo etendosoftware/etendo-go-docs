@@ -58,7 +58,7 @@ flowchart LR
 En la pestaña **Líneas** tienes tres formas de incorporar productos:
 
 - **+ Añadir líneas** — agrega una línea vacía para completar manualmente: producto, cantidad facturada, precio, % de descuento e impuesto.
-- **Importar desde recibo** — importa líneas desde un albarán de compra (recepción) existente del mismo proveedor.
+- **Importar desde recibo** — importa líneas desde un [albarán de compra](../crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md) (recepción) existente del mismo proveedor.
 - **Importar desde pedido** — importa líneas desde un pedido de compra confirmado del mismo proveedor.
 
 Al seleccionar un producto se autocompletan su descripción, precio de tarifa e impuesto; los tres son editables por línea. La columna **Importe bruto de línea** se calcula automáticamente como precio × cantidad facturada, menos el descuento de línea aplicado, más el impuesto de la línea. Para guardar una línea pulsa ++enter++ o haz clic fuera de la fila; para cancelar sin guardar, pulsa ++esc++.

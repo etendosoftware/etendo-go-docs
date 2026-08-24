@@ -57,6 +57,7 @@ Una vez confirmada, la Factura Rectificativa queda como saldo a favor del provee
 
 ## Artículos Relacionados
 
+- [Crear y gestionar albaranes de compra](../crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md)
 - [Crear una factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md)
 - [Gestionar tus facturas de compra](../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)
 
