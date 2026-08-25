@@ -23,20 +23,20 @@ flowchart LR
   A[Presupuesto de venta] -->|Crear pedido| B[Pedido de venta]
   A -->|Facturar directamente| D[Factura de venta]
   B -->|Crear albarán| C[Albarán de venta]
-  B -->|Crear factura| D
-  C -->|Crear factura| D
-  D -->|Añadir pago| E[Cobro]
+  B -->|Gestionar envío y factura| D
+  C -->|Crear Factura| D
+  D -->|Registrar cobro| E[Cobro]
 ```
 
 - **[Presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md)** — documento opcional. Es la oferta comercial que le envías al cliente con productos, precios y condiciones, antes de que se comprometa a comprar.
-- **[Pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)** — formaliza el compromiso de entrega con el cliente. Es el punto de partida habitual cuando hay stock o entregas físicas de por medio.
+- **[Pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)** — formaliza el compromiso de compra del cliente. Es el punto de partida habitual cuando hay stock o entregas físicas de por medio.
 - **[Albarán de venta](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md)** — documenta la entrega física de la mercadería.
 - **[Factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md)** — el documento fiscal que formaliza el cobro al cliente.
 - **Cobro** — el registro del pago recibido sobre una factura, total o parcial. Ver [Añadir pagos a tu factura de venta](../anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md).
 
 ## El ciclo de devolución
 
-Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del financiero: el reingreso de la mercadería se registra en un albarán de devolución, y el ajuste del saldo de cobro se resuelve con la factura de devolución correspondiente. Para ajustar el saldo sin que haya devolución física de por medio (por ejemplo, ante un error de precio o un descuento), existe la Factura Rectificativa, una vía independiente de este flujo. Para el detalle completo, consulta [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del financiero: el reingreso de la mercadería se registra en un albarán de devolución, y el ajuste del saldo de cobro se resuelve con una factura rectificativa. Para el detalle completo de este flujo, consulta [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
 
 ## Qué vas a encontrar en esta sección
 

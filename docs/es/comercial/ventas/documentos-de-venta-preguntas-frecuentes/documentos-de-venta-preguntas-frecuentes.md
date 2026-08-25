@@ -21,15 +21,20 @@ El pedido de venta es la opción recomendada cuando hay stock o entrega física 
 
 ## ¿Puedo editar un documento después de confirmarlo?
 
-No directamente. Pedidos y facturas quedan bloqueados al confirmarse, pero puedes reabrirlos: en el pedido o la factura ya Completado, el menú de tres puntos de la barra superior ofrece la opción **Reactivar**, que devuelve el documento a estado Borrador y lo vuelve a hacer editable. Como alternativa, también puedes crear uno nuevo — por ejemplo, clonando el original con la acción **Copia**.
+No directamente. Pedidos y facturas quedan bloqueados al confirmarse, pero en algunos casos puedes reabrirlos con la opción **Reactivar** del menú de tres puntos de la barra superior, que devuelve el documento a estado Borrador y lo vuelve a hacer editable.
+
+- En un **pedido**, **Reactivar** solo aparece en el menú cuando el pedido no tiene ningún albarán ni factura relacionados, ni siquiera en estado Borrador; si tiene alguno, la opción no se ofrece.
+- En una **factura**, **Reactivar** aparece en el menú, pero falla si la factura tiene algún pago registrado.
+
+Como alternativa, siempre puedes crear un documento nuevo — por ejemplo, clonando el original con la acción **Copia**.
 
 ## ¿Qué pasa si el pedido está parcialmente entregado o facturado?
 
 Las acciones de creación de documentos derivados —**Crear albarán**, **Crear Factura**, **Gestionar envío y factura**— siempre operan sobre las cantidades o importes pendientes, nunca sobre el total del documento de origen. La acción desaparece automáticamente cuando el pedido queda procesado al 100 % en esa dimensión.
 
-## ¿Cuál es la diferencia entre una factura de devolución y una nota de crédito?
+## ¿Necesito un tipo de factura distinto si no hay devolución física de mercadería?
 
-Ambas reducen el saldo pendiente de cobro de una factura de venta, pero se usan en situaciones distintas: la **factura de devolución** está vinculada a una devolución física de mercadería (se genera desde un albarán de devolución), mientras que la **nota de crédito** es un ajuste financiero sin retorno de mercadería, como un error de precio, un descuento o una bonificación. Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+No. Etendo Go usa un único tipo de documento, la **factura rectificativa**, tanto si hay devolución física como si no — no hay un tipo separado para cada caso. Lo que cambia es cómo se generan sus líneas: vinculada a un albarán de devolución cuando el cliente devolvió mercadería, o cargada manualmente cuando es un ajuste financiero sin retorno de mercadería (error de precio, descuento o bonificación). Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
 
 ## ¿Puedo registrar pagos parciales en una factura?
 
