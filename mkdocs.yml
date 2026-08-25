@@ -3,6 +3,8 @@ docs_dir: docs
 site_url: https://etendosoftware.github.io/etendo-go-docs/
 repo_url: https://github.com/etendosoftware/etendo-go-docs
 repo_name: etendosoftware/etendo-go-docs
+watch:
+  - overrides
 theme:
   name: material
   custom_dir: overrides
@@ -69,10 +71,18 @@ plugins:
                     - Cómo crear un contacto: comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md
                     - Gestionar tus contactos: comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md
                 - Ventas:
-                    - comercial/ventas/index.md
-                    - Presupuesto de venta: comercial/ventas/presupuesto-de-venta/presupuesto-de-venta.md
-                    - Pedido de venta: comercial/ventas/pedido-de-venta/pedido-de-venta.md
-                    - Factura de venta: comercial/ventas/factura-de-venta/factura-de-venta.md
+                    - Introducción:
+                        - ¿Qué es la sección Ventas?: comercial/ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md
+                    - Gestión de ventas:
+                        - Crear y gestionar presupuestos: comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md
+                        - Crear y gestionar pedidos: comercial/ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md
+                        - Crear y gestionar albaranes: comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md
+                        - Crear una factura de venta: comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md
+                        - Gestionar tus facturas de venta: comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md
+                        - Enviar tus facturas por email: comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md
+                        - Añadir pagos a tu factura de venta: comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md
+                        - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
+                    - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
                 - operaciones/index.md
                 - Compras:

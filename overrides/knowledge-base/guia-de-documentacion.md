@@ -204,7 +204,7 @@ H2: [Siguiente pregunta]
 | Concepto importante | Negrita en la primera mención |
 | Artículos enlazados | Hipervínculo en línea, no al pie de página |
 | Valores del sistema | Usar backticks |
-| Advertencias / notas importantes | Blockquotes |
+| Advertencias / notas importantes | Admonitions de MkDocs (`!!! warning`, `!!! tip`, `!!! info`) con un título breve entre comillas — actualizado 2026-08-24 para reflejar la convención ya en uso en todos los artículos publicados; no usar blockquotes (`>`) para este caso |
 
 ### Listas
 
@@ -269,7 +269,7 @@ Cada artículo debe tener los siguientes metadatos completos:
 | Referencia / Glosario | Variable (definición por término) |
 | Preguntas frecuentes | 200-500 palabras (suma de Q&A) |
 
-Más corto es mejor. Si un artículo supera estos rangos, dividirlo en dos artículos enlazados.
+Más corto es mejor. Si un artículo supera estos rangos, evaluar dividirlo en dos artículos enlazados — pero no es una regla absoluta: cuando el contenido cubre variantes estrechamente relacionadas de un mismo flujo (por ejemplo, distintas formas de completar el mismo popup o pantalla), mantenerlo en un solo artículo puede ser preferible a fragmentar la navegación, aunque supere el rango objetivo (actualizado 2026-08-24, caso de referencia: `anadir-pagos-a-tu-factura-de-venta.md`).
 
 ## 10. Qué Evitar
 
@@ -442,7 +442,7 @@ Señalar con una nota destacada cuando una funcionalidad es exclusiva de cierto 
 - Longitud: 140-155 caracteres.
 - Incluir el nombre de la funcionalidad principal y un verbo de acción.
 - Ejemplo: "Aprende a crear, personalizar y enviar facturas de venta desde el módulo de Facturación."
-- **Pendiente (2026-08-06):** mkdocs no procesa todavía el campo `description:` en el sitio actual. No agregarlo en el frontmatter de los artículos hasta que se habilite este soporte; se incorporará más adelante.
+- Agregar siempre el campo `description:` en el frontmatter con este texto (actualizado 2026-08-24: el soporte en mkdocs ya está habilitado y es la convención en uso en todos los artículos publicados).
 
 ### Optimización del contenido para búsqueda
 
