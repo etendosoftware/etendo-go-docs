@@ -2,7 +2,7 @@
 title: Crear y gestionar devoluciones
 description: >-
   Aprende cómo Etendo Go separa el evento físico y financiero de una devolución
-  de venta, y cuándo usar una factura de devolución o una nota de crédito.
+  de venta, y cómo generar la factura rectificativa correspondiente.
 tags:
     - Devolución de Venta
     - Ventas
@@ -18,38 +18,51 @@ tags:
 Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del financiero:
 
 1. **El evento físico** — la mercadería vuelve al stock del vendedor. Se registra en el **albarán de devolución**, disponible en **[Ventas > Albarán de devolución](https://go.etendo.cloud/return-material-receipt){target="_blank"}**.
-2. **El evento financiero** — el cliente recibe un crédito. Se registra en una **factura de devolución** o en una **nota de crédito**, según si hubo o no devolución física de mercadería.
+2. **El evento financiero** — el cliente recibe un crédito. Se registra con una **[factura rectificativa](#factura-rectificativa)**, que se genera habitualmente desde el albarán de devolución ya Completado.
 
 ```mermaid
 flowchart LR
   A[Albarán de venta Completado] -->|Crear Devolución| B[Albarán de devolución Borrador]
+  F[Ventas > Albarán de devolución +Nuevo] --> B
   B -->|Confirmar| C[Albarán de devolución Completado]
-  C -->|Crear Factura de Devolución| D[Factura de devolución]
-  E[Ventas > Factura +Nuevo] -->|Tipo: Nota de crédito| F[Nota de crédito]
+  C -->|Crear Factura Rectificativa| D[Factura rectificativa]
+  E[Ventas > Factura +Nueva factura] -->|Tipo de documento: Factura rectificativa| D
 ```
 
 ## Crear un albarán de devolución
 
+Etendo Go ofrece dos caminos para crear un albarán de devolución.
+
+### Desde un albarán de venta ya completado
+
 La forma habitual de crear una devolución es desde el [albarán de venta](../crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md) ya completado, con el botón **Crear Devolución**. Esto abre un asistente de 2 pasos:
 
-1. **Paso 1 — Cantidades a devolver.** Muestra cada producto del envío con su cantidad **Entregado** y un campo editable **Cant. devolución** (por defecto, la cantidad total entregada; se puede reducir para devoluciones parciales, y destildar los productos que no se devuelven). Incluye un campo opcional **Motivo de devolución**.
+1. **Paso 1 — Cantidades a devolver.**
 
     <figure markdown="span">
       ![Paso 1 del asistente Crear Devolución](assets/crear-y-gestionar-devoluciones-1.png)
       <figcaption>Paso 1: cantidades a devolver por producto.</figcaption>
     </figure>
 
-2. **Paso 2 — Confirmación.** Muestra el documento que se va a crear — **Recepción de Devolución**, descrito como "movimiento de stock de vuelta al almacén" — junto con el detalle de productos, cantidades e importes y el total. Al hacer clic en **Crear Devolución** se genera el albarán de devolución en estado Borrador.
+    Muestra cada producto del envío con su cantidad **Entregado** y un campo editable **Cant. devolución** (por defecto, la cantidad total entregada; se puede reducir para devoluciones parciales, y destildar los productos que no se devuelven). Incluye un campo opcional **Motivo de devolución**.
+
+2. **Paso 2 — Confirmación.**
 
     <figure markdown="span">
       ![Paso 2 del asistente Crear Devolución](assets/crear-y-gestionar-devoluciones-2.png)
       <figcaption>Paso 2: confirmación de la Recepción de Devolución a crear.</figcaption>
     </figure>
 
-!!! info "Este paso solo mueve stock"
-    La factura de devolución se genera en un paso posterior, al confirmar este albarán — ver [Confirmar el albarán de devolución](#confirmar-el-albaran-de-devolucion) más abajo.
+    Muestra el documento que se va a crear — llamado aquí **Recepción de Devolución** (es el mismo albarán de devolución; esta pantalla y el popup de confirmación se refieren a él por el nombre del movimiento físico) — junto con el detalle de productos, cantidades e importes y el total. Al hacer clic en **Crear Devolución** se genera el albarán de devolución en estado Borrador.
+
+### Desde Ventas > Albarán de devolución
 
 También es posible crear un albarán de devolución directamente desde **[Ventas > Albarán de devolución](https://go.etendo.cloud/return-material-receipt){target="_blank"}** con el botón **+ Nuevo albarán de devolución**.
+
+!!! info "Este paso solo mueve stock"
+    Sea cual sea el camino que uses para crear el albarán de devolución, la factura rectificativa se genera en un paso posterior, al confirmar este albarán — ver [Confirmar el albarán de devolución](#confirmar-el-albaran-de-devolucion) más abajo.
+
+## El albarán de devolución
 
 ### Cabecera del documento
 
@@ -71,7 +84,7 @@ Las líneas muestran, por producto, la **Cant. movida** (cantidad devuelta) y la
   <figcaption>Vista detalle del Albarán de devolución, con el área "Sube tu documento" y el panel lateral de información clave.</figcaption>
 </figure>
 
-A diferencia de los demás documentos de venta, la vista detalle del albarán de devolución no genera un PDF automático: en su lugar muestra un área **Sube tu documento**, para adjuntar manualmente un comprobante (PDF, JPG, PNG, WebP o GIF) si lo necesitas. El panel lateral muestra el **Nº documento**, **Contacto**, **Almacén**, **Fecha movimiento**, **Estado**, **Facturado** (% del importe ya cubierto por una factura de devolución) y la sección **DOCUMENTOS RELACIONADOS**, con el envío de origen y la factura de devolución vinculada, si ya existe.
+A diferencia de los demás documentos de venta, la vista detalle del albarán de devolución no genera un PDF automático: en su lugar muestra un área **Sube tu documento**, para adjuntar manualmente un comprobante (PDF, JPG, PNG, WebP o GIF) si lo necesitas. El panel lateral muestra el **Nº documento**, **Contacto**, **Almacén**, **Fecha movimiento**, **Estado**, **Facturado** (% del importe ya cubierto por una factura rectificativa) y la sección **DOCUMENTOS RELACIONADOS**, con el envío de origen y la factura rectificativa vinculada, si ya existe.
 
 ### Estados del Documento
 
@@ -84,29 +97,28 @@ A diferencia de los demás documentos de venta, la vista detalle del albarán de
 
 <figure markdown="span">
   ![Popup Confirmar recepción de devolución](assets/crear-y-gestionar-devoluciones-4.png)
-  <figcaption>Popup Confirmar recepción de devolución, con el interruptor Crear Factura de Devolución.</figcaption>
+  <figcaption>Popup Confirmar recepción de devolución, con el interruptor Crear Factura Rectificativa.</figcaption>
 </figure>
 
-Al hacer clic en **Confirmar** sobre el albarán de devolución en Borrador, se abre el popup **Confirmar recepción de devolución**, con un interruptor **Crear Factura de Devolución** (activado por defecto): "Se crea en borrador, prellenada con los productos devueltos y los precios de la factura origen." Puedes dejarlo activado para generar ambos documentos a la vez, o desactivarlo y confirmar solo la recepción.
+Al hacer clic en **Confirmar** sobre el albarán de devolución en Borrador, se abre el popup **Confirmar recepción de devolución**, con un interruptor **Crear Factura Rectificativa** (activado por defecto): "Se crea en borrador, prellenada con los productos devueltos y los precios de la factura origen." Puedes dejarlo activado para generar ambos documentos a la vez, o desactivarlo y confirmar solo la recepción.
 
-!!! info "Requiere una factura de venta de origen"
-    La factura de devolución toma sus precios de la factura de venta ya emitida sobre la mercadería devuelta. Si el albarán de venta origen todavía no tiene una factura asociada, la creación de la factura de devolución falla; en ese caso, primero factura el albarán de venta y luego genera la factura de devolución desde el botón que se describe a continuación.
+Si no generaste la factura rectificativa al confirmar, el albarán de devolución ya Completado muestra un botón **Crear Factura Rectificativa** en la barra superior. Al hacer clic se abre el popup **Gestionar documentos**, con la opción **Crear factura** para generarla en ese momento.
 
-Si no generaste la factura de devolución al confirmar, el albarán de devolución ya Completado muestra un botón **Crear Factura de Devolución** en la barra superior. Al hacer clic se abre el popup **Gestionar documentos**, con la opción **Crear factura** para generarla en ese momento.
+## Factura rectificativa
 
-## Factura de devolución y nota de crédito
+El ajuste financiero de una devolución se gestiona siempre con la **Factura rectificativa** — el único tipo de documento para este caso dentro de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, seleccionable en el campo **Tipo de documento** de ese formulario (junto a **Factura**). Se muestra con importe en negativo en el listado de facturas, y al confirmarse reduce el saldo pendiente de cobro de la factura de venta de origen.
 
-El ajuste financiero de una devolución se gestiona con dos tipos de documento dentro de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, seleccionables mediante el campo **Tipo de documento** de ese formulario (junto a **Factura**):
+La forma habitual de generarla es con el botón **Crear Factura Rectificativa** del albarán de devolución ya Completado (ver [Confirmar el albarán de devolución](#confirmar-el-albaran-de-devolucion) más arriba), con sus líneas prellenadas desde ese albarán.
 
-| Tipo | Vinculado a devolución física | Cuándo usarlo |
-| :--- | :---: | :--- |
-| **Factura de devolución** | Sí | El cliente devolvió mercadería; queda vinculada al albarán de devolución correspondiente. |
-| **Nota de crédito** | No | Ajuste financiero sin retorno físico de mercadería: error de precio, descuento o bonificación. Sus líneas se cargan manualmente. |
+!!! info "Crear una factura rectificativa sin devolución física"
+    Para ajustes sin mercadería de por medio — como un error de precio, descuento o bonificación — ve a **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, haz clic en **+ Nueva factura** y selecciona **Tipo de documento: Factura rectificativa**. Sus líneas se cargan a mano.
 
-Ambos tipos se muestran con importe en negativo en el listado de facturas, y al confirmarse reducen el saldo pendiente de cobro de la factura de venta de origen.
+    Además, en la pestaña **Rectificaciones** del formulario tienes que indicar cuál es la factura original que estás rectificando: haz clic en **+ Añadir rectificación** y selecciona esa factura en el campo **Factura original** (obligatorio). Sin esta asociación no se puede guardar la rectificación.
 
-!!! info "Cómo crear una nota de crédito"
-    Ve a **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, haz clic en **+ Nueva factura** y selecciona **Tipo de documento: Nota de crédito**.
+<figure markdown="span">
+  ![Popup Seleccionar factura a rectificar](assets/crear-y-gestionar-devoluciones-5.png)
+  <figcaption>Pestaña Rectificaciones: al hacer clic en + Añadir rectificación, se abre el buscador para seleccionar la factura original.</figcaption>
+</figure>
 
 ## Artículos Relacionados
 

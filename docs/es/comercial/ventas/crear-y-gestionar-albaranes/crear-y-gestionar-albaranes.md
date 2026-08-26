@@ -59,7 +59,7 @@ El botón **+ Añadir línea** agrega una línea vacía para cargar manualmente;
 
 Las líneas muestran, por producto, la **Cant. movida** (cantidad incluida en este albarán) y la **Cant. pedido** (cantidad total del pedido de origen), a modo de referencia. Si el albarán no se generó a partir de un pedido de venta, estos campos quedan vacíos.
 
-La sección **DOCUMENTOS** muestra el pedido de origen como enlace navegable (esta misma información aparece también en la vista detalle; ver [Abre el albarán](#2-abre-el-albarán)), y el campo **NOTAS** permite añadir observaciones internas que no se incluyen en el PDF.
+La sección **DOCUMENTOS** muestra el pedido de origen como enlace navegable (esta misma información aparece también en la vista detalle; ver [Abre el albarán](#2-abre-el-albaran)), y el campo **NOTAS** permite añadir observaciones internas que no se incluyen en el PDF.
 
 El formulario incluye también una pestaña **Adjuntos**, para vincular archivos al albarán.
 
@@ -151,7 +151,7 @@ La barra superior del formulario muestra el estado actual del albarán junto al 
 | :--- | :--- | :--- |
 | **Cancelar** | Descarta los cambios no guardados y vuelve a la lista. | Solo en Borrador |
 | **Guardar** | Guarda el documento sin cambiar su estado. | Solo en Borrador |
-| **Confirmar** | Confirma el albarán y lo pasa a estado Completado (ver [Crear un albarán](#crear-un-albarán)). | Solo en Borrador |
+| **Confirmar** | Confirma el albarán y lo pasa a estado Completado (ver [Crear un albarán](#crear-un-albaran)). | Solo en Borrador |
 | **Clonar** | Crea un nuevo borrador con los mismos datos. | Borrador y Completado |
 | **Enviar** | Abre el panel de envío por correo electrónico. | Solo en Completado |
 | **Imprimir** | Genera el PDF del albarán. | Solo en Completado |
