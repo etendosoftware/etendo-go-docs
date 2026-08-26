@@ -41,11 +41,18 @@ La declaración se crea en estado **Borrador** y aparece junto al resto de tus d
 
 ## El Detalle de una Declaración
 
-La cabecera de una declaración Modelo 349 ofrece tres acciones: **Calcular**, **Generar fichero 349** y **Marcar presentada**.
+La cabecera de una declaración Modelo 349 en **Borrador** ofrece tres acciones: **Calcular**, **Generar fichero 349** y **Marcar presentada**. Igual que en el Modelo 303, una vez que la marcas como presentada pasa a **Presentado · Sin acuse** y estos botones dejan de estar disponibles: solo quedas con Cancelar y Generar fichero 349, hasta que subas el comprobante en la pestaña Justificante.
 
 <figure markdown="span">
   ![Cabecera del Modelo 349 con sus indicadores principales](assets/modelo-349-2.jpg)
   <figcaption>Cabecera del Modelo 349: operadores activos, total de operaciones, rectificaciones de períodos previos y pendientes de validación VIES.</figcaption>
+</figure>
+
+Si tienes operadores con el NIF-IVA pendiente de validar, un aviso aparece sobre los indicadores con acceso directo a la validación:
+
+<figure markdown="span">
+  ![Aviso de NIF-IVA con validación VIES pendiente y enlace Validar VIES](assets/modelo-349-4.jpg)
+  <figcaption>El aviso "NIF-IVA con validación VIES pendiente" es informativo y no bloquea la declaración; pulsa <strong>Validar VIES</strong> para lanzar la validación asíncrona contra el sistema de la Unión Europea.</figcaption>
 </figure>
 
 Los cuatro indicadores de la cabecera son:
@@ -57,7 +64,7 @@ Los cuatro indicadores de la cabecera son:
 
 ### Pestaña Operadores
 
-Lista cada tercero con operaciones intracomunitarias en el período, con su NIF-IVA, la **Clave** de la operación, la base imponible, el estado de validación **VIES** y el documento de **Origen**.
+Lista cada tercero con operaciones intracomunitarias en el período, con su NIF-IVA, el nombre del Operador, la **Clave** de la operación, la Base imponible, el estado de validación **VIES** (*Pendiente* o *Inválido*) y una columna de **Origen** con un resumen de cuántas facturas componen ese total, por ejemplo *"10 facturas compra"* o *"1 factura venta"*.
 
 <figure markdown="span">
   ![Pestaña Operadores con el filtro Todas las claves desplegado](assets/modelo-349-3.jpg)
@@ -74,9 +81,17 @@ Las cuatro claves de operación son:
 ### Otras Pestañas
 
 - **Rectificaciones** — operaciones que corrigen la base imponible ya declarada en un período anterior; muestra *"Sin rectificaciones correctivas en este periodo"* cuando no hay ninguna.
-- **Facturas origen** — las facturas que Etendo Go usó (o usará, tras pulsar Calcular) para completar la declaración.
-- **Incidencias** — detalle de los datos que generaron alguna advertencia durante el cálculo, por ejemplo un NIF-IVA pendiente de validar en VIES.
+- **Facturas origen** — las facturas que Etendo Go usó (o usará, tras pulsar Calcular) para completar la declaración, con las mismas columnas que la pestaña Facturas del Modelo 303 (Fecha, Nº, Tipo, Tercero, Régimen, Base, Cuota, Total y Casillas). En el Modelo 349, las columnas Cuota, Total y Casillas suelen mostrarse vacías (*—*), porque estas operaciones intracomunitarias no generan cuota de IVA ni ocupan casillas del 303.
+- **Incidencias** — detalle de los datos que generaron alguna advertencia durante el cálculo, por ejemplo un NIF-IVA pendiente de validar en VIES; si no hay ninguna, muestra un estado vacío "Sin incidencias".
 - **Justificante** — sube aquí el comprobante de presentación de tu declaración.
+
+<figure markdown="span">
+  ![Pestaña Facturas origen con varias compras de una misma factura de origen](assets/modelo-349-5.jpg)
+  <figcaption>Facturas origen: mismo formato de tabla que el Modelo 303, aunque aquí las columnas Cuota, Total y Casillas quedan vacías al tratarse de operaciones intracomunitarias.</figcaption>
+</figure>
+
+!!! note "El título de la declaración puede mostrarse en inglés"
+    Al igual que en el Modelo 303, el título de una declaración mensual no siempre coincide con la vista previa del diálogo de creación. Además, en el Modelo 349 el mes puede aparecer en inglés en el título, por ejemplo **"Modelo 349 - 2026 / August"** en lugar de "Modelo 349 - 2026 / Agosto". Es una particularidad conocida de la pantalla, no una traducción pendiente de tu configuración.
 
 !!! tip "Justificante es un área de carga manual"
     Etendo Go no genera el comprobante de presentación de forma automática. Arrastra el archivo o selecciónalo desde tu equipo una vez que ya presentaste la declaración ante Hacienda (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes).

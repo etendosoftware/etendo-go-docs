@@ -27,8 +27,8 @@ Con el modelo activo, el botón **+ Nueva declaración** queda disponible.
 
 1. Pulsa **+ Nueva declaración**.
 2. Elige el **Modelo 303** en el selector.
-3. Selecciona el **Año** y la **Frecuencia**: **Trimestral** (períodos T1 a T4) o **Mensual**.
-4. Elige el **Período** correspondiente. El diálogo muestra una vista previa, por ejemplo *"Se creará como Modelo 303 · T2 2026"*.
+3. Selecciona el **Año** y la **Frecuencia**: **Trimestral** (períodos T1 a T4) o **Mensual** (cuadrícula de los 12 meses).
+4. Elige el **Período** correspondiente. El diálogo muestra una vista previa, por ejemplo *"Se creará como Modelo 303 · T2 2026"* para una declaración trimestral, o *"Se creará como Modelo 303 · 01 2026"* para una mensual.
 5. Pulsa **Crear declaración**.
 
 La declaración se crea en estado **Borrador** y aparece en el listado de **Declaraciones**, junto al resto de tus modelos activos, con columnas de Modelo, Período, Tipo, Estado, Resultado (*Sin resultado* hasta que pulses Calcular), Incidencias y Última actualización.
@@ -40,11 +40,19 @@ La declaración se crea en estado **Borrador** y aparece en el listado de **Decl
 
 ## El Detalle de una Declaración
 
-Dentro de una declaración, la cabecera resume el período y ofrece tres acciones: **Calcular**, **Generar fichero 303** y **Marcar presentado**.
+Dentro de una declaración en **Borrador**, la cabecera resume el período y ofrece tres acciones: **Calcular**, **Generar fichero 303** y **Marcar presentado**.
 
 - **Calcular** — recalcula las casillas a partir de las facturas confirmadas del período.
 - **Generar fichero 303** — genera el fichero listo para subir a la Sede electrónica de la AEAT.
 - **Marcar presentado** — cambia el estado de la declaración una vez que la presentaste ante Hacienda.
+
+<figure markdown="span">
+  ![Declaración en estado Presentado · Sin acuse, sin los botones Calcular ni Marcar presentado](assets/modelo-303-6.jpg)
+  <figcaption>Una vez marcada como presentada, la declaración queda en estado <strong>Presentado · Sin acuse</strong>: los botones Calcular y Marcar presentado desaparecen, y solo quedan disponibles Cancelar y Generar fichero 303.</figcaption>
+</figure>
+
+!!! info "Estado Presentado · Sin acuse"
+    Tras pulsar **Marcar presentado**, la declaración pasa a **Presentado · Sin acuse** hasta que subas el comprobante en la pestaña **Justificante**. En este estado ya no puedes recalcular las casillas ni volver a marcarla como presentada; solo puedes cancelarla o volver a generar el fichero.
 
 Los cuatro indicadores de la cabecera son:
 
@@ -87,12 +95,22 @@ El bloque **Resultado** traduce todo lo anterior en una única cifra. La casilla
 
 ### Pestaña Facturas
 
-Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará, tras pulsar Calcular) para completar las casillas. Es la forma de auditar de dónde sale cada importe de la declaración.
+Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará, tras pulsar Calcular) para completar las casillas, con columnas de Fecha, Nº, Tipo (Venta o Compra), Tercero, Régimen, Base, Cuota, Total y las Casillas donde impacta cada factura. Es la forma de auditar de dónde sale cada importe de la declaración.
+
+<figure markdown="span">
+  ![Pestaña Facturas con una factura de venta y sus casillas asociadas](assets/modelo-303-7.jpg)
+  <figcaption>Cada fila indica en qué casillas del modelo impacta la factura; en este ejemplo, una venta afecta las casillas 07 y 09.</figcaption>
+</figure>
 
 ### Otras Pestañas
 
-- **Incidencias** — detalle de las facturas o datos que generaron alguna advertencia durante el cálculo.
+- **Incidencias** — detalle de las facturas o datos que generaron alguna advertencia durante el cálculo, en una tabla de Severidad, Origen y Mensaje.
 - **Justificante** — sube aquí el comprobante de presentación de tu declaración.
+
+<figure markdown="span">
+  ![Pestaña Incidencias con una advertencia sobre la Información adicional](assets/modelo-303-8.jpg)
+  <figcaption>Cada incidencia indica su Severidad (por ejemplo, Advertencia), el Origen (el número de la factura o registro implicado) y un Mensaje explicando qué revisar antes de generar el fichero.</figcaption>
+</figure>
 
 !!! tip "Justificante es un área de carga manual"
     Etendo Go no genera el comprobante de presentación de forma automática. Arrastra el archivo o selecciónalo desde tu equipo una vez que ya presentaste la declaración ante Hacienda (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes).
