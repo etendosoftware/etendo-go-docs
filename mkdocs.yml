@@ -90,6 +90,7 @@ plugins:
                     - Gestión de compras:
                         - Crear un pedido de compra: operaciones/compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md
                         - Gestionar tus pedidos de compra: operaciones/compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md
+                        - Crear y gestionar albaranes de compra: operaciones/compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md
                         - Crear una factura de compra: operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md
                         - Añadir pagos a tu factura de compra: operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md
                         - Gestionar tus facturas de compra: operaciones/compras/gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md
