@@ -36,12 +36,4 @@ Todo lo que necesitas para dar tus primeros pasos en Etendo Go: qué es la plata
 
     [:octicons-arrow-right-24: Leer más](navegar-en-etendo-go/navegar-en-etendo-go.md)
 
--   :material-account-cog-outline:{ .lg .middle } **Cómo gestionar tu cuenta**
-
-    ---
-
-    Revisa y ajusta la identidad, los datos fiscales y de contacto de tu organización desde Configuración.
-
-    [:octicons-arrow-right-24: Leer más](como-gestionar-tu-cuenta/como-gestionar-tu-cuenta.md)
-
 </div>

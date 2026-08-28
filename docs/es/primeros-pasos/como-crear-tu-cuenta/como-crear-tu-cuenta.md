@@ -40,9 +40,9 @@ Tras crear la cuenta, Etendo Go te redirige al paso de perfil.
 
 2. Selecciona tu **País**. Para empresas españolas, el selector aparece por defecto en *España*.
 3. Elige el **Tipo de negocio** que corresponda:
-    - **Empresa** — sociedades (S.L., S.A., etc.) con NIF de empresa.
-    - **Autónomo** — trabajador por cuenta propia con DNI/NIE.
-    - **Asesoría** — despachos y firmas de asesoramiento.
+    - **Empresa** — sociedades como S.L. o S.A., o cooperativas.
+    - **Autónomo** — trabajador por cuenta propia.
+    - **Asesoría** — despachos y firmas de asesoramiento que gestionan varios clientes.
 4. Haz clic en **Continuar** para avanzar al siguiente paso.
 
 ## Datos de la empresa
@@ -91,9 +91,8 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 ## Artículos Relacionados
 
 - [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
-- [Cómo gestionar tu cuenta](../como-gestionar-tu-cuenta/como-gestionar-tu-cuenta.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
+- [Cómo gestionar tu organización](../../sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
-- [Configuración](../../configuracion/index.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
