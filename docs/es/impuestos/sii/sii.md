@@ -56,13 +56,14 @@ Tras confirmar, la pantalla se llama **Configuración Fiscal** (con el sufijo de
 
 - **Régimen especial** — interruptor de **REDEME** (Registro de Devolución Mensual del IVA).
 - **Autorizaciones especiales AEAT** — número de registro de la autorización, si tu organización cuenta con alguna.
-- **Certificado digital** — el certificado necesario para autenticar los envíos con Hacienda; muestra su fecha de vigencia y un botón **Reemplazar** para actualizarlo.
+- **Certificado digital** — el certificado necesario para autenticar los envíos con Hacienda; muestra su fecha de vigencia y un botón **Reemplazar** para actualizarlo. Es el mismo certificado que usa la opción **Presentación telemática AEAT** al presentar el [Modelo 303](../modelo-303/modelo-303.md), fuera de su modo de prueba.
 
 ## Artículos Relacionados
 
 - [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [TicketBAI](../ticketbai/ticketbai.md)
 - [VERI\*FACTU](../verifactu/verifactu.md)
+- [Modelo 303](../modelo-303/modelo-303.md)
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 
 ---

@@ -11,7 +11,25 @@ tags:
 
 # Modelo 303
 
-El **Modelo 303** es la autoliquidación trimestral (o mensual) del IVA. En Etendo Go se gestiona desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**, donde el sistema calcula automáticamente sus casillas a partir de los impuestos aplicados en tus facturas de venta y de compra del período.
+El **Modelo 303** es la autoliquidación trimestral (o mensual) del IVA. El IVA es un impuesto que tu empresa repercute a sus clientes en cada venta y, a la vez, soporta en sus propias compras: el Modelo 303 es el mecanismo por el que, cada período, declaras a la Agencia Tributaria la diferencia entre ambos importes. Si el IVA repercutido supera al soportado, ingresas la diferencia; si es al revés, la compensas en períodos siguientes o pides su devolución. En Etendo Go se gestiona desde **[Finanzas > Modelos Fiscales](https://go.etendo.cloud/fiscal-models){target="_blank"}**, donde el sistema calcula automáticamente sus casillas a partir de los impuestos aplicados en tus facturas de venta y de compra del período.
+
+!!! info "Marco normativo del Modelo 303"
+    Esta autoliquidación está regulada por la Orden EHA/3786/2008, de 29 de diciembre, con dos modificaciones relevantes recientes:
+
+    - **Autoliquidación rectificativa** — la Orden HAC/819/2024, de 30 de julio, introdujo este sistema para corregir declaraciones ya presentadas (casillas 108 y 111), aplicable desde las declaraciones de septiembre 2024 (mensuales) o del tercer trimestre 2024 (trimestrales).
+    - **Pago a cuenta de carburantes** — la Orden HAC/27/2026, de 22 de enero, añadió la deducción del pago a cuenta de entregas de gasolinas, gasóleos y biocarburantes del régimen de depósito distinto del aduanero, aplicable desde las declaraciones de febrero 2026 (mensuales) o del segundo trimestre 2026 (trimestrales).
+    - **Periodicidad trimestral** — plazo del 1 al 20 del mes siguiente al trimestre, salvo el cuarto trimestre, que se presenta del 1 al 30 de enero del año siguiente.
+    - **Periodicidad mensual** — obligatoria para Grandes Empresas (facturación superior a 6.010.121,04 € el año anterior), grupos de IVA y organizaciones inscritas en el REDEME; el plazo llega hasta el día 30 del mes siguiente (o el último día de febrero para el período de enero).
+
+El proceso completo, de punta a punta, sigue esta secuencia:
+
+1. Activas el Modelo 303 en el Catálogo de modelos (una única vez).
+2. Creas una declaración para el año y el período que corresponda.
+3. Pulsas **Calcular** para que tome las facturas confirmadas del período.
+4. Revisas las pestañas (Casillas, Facturas, Incidencias) y completas los datos pendientes de Identificación, como el **Tipo de declaración**.
+5. Pulsas **Generar fichero 303** si vas a presentarlo manualmente en la Sede electrónica de la AEAT.
+6. Pulsas **Marcar presentado**: con acuse de recibo, sin acuse, o mediante presentación telemática directa a la AEAT.
+7. Si no subiste el justificante al presentar, lo subes después desde la pestaña **Justificante**.
 
 ## Antes de Empezar: Activar el Modelo
 
@@ -43,8 +61,11 @@ La declaración se crea en estado **Borrador** y aparece en el listado de **Decl
 Dentro de una declaración en **Borrador**, la cabecera resume el período y ofrece tres acciones: **Calcular**, **Generar fichero 303** y **Marcar presentado**.
 
 - **Calcular** — recalcula las casillas a partir de las facturas confirmadas del período.
-- **Generar fichero 303** — genera el fichero listo para subir a la Sede electrónica de la AEAT.
-- **Marcar presentado** — cambia el estado de la declaración una vez que la presentaste ante Hacienda.
+- **Generar fichero 303** — antes de descargar el fichero para la AEAT, pide confirmar el nombre del fichero (por ejemplo, "303_T3_2026.txt").
+- **Marcar presentado** — abre un diálogo para elegir cómo se presentó la declaración:
+    - **Con acuse de recibo**: subes en el momento el justificante del portal de la AEAT.
+    - **Sin acuse de recibo**: confirmas la presentación sin adjuntar nada todavía; la declaración pasa a **Presentado · Sin acuse**, y puedes subir el justificante más adelante desde la pestaña **Justificante**.
+    - **Presentación telemática AEAT**: envía la declaración directamente a la Agencia Tributaria, en producción o en modo de prueba. Pide el NIF y nombre del presentador (el titular del certificado), un NRC opcional y la casilla **Modo de prueba (no requiere certificado)** para probar el envío sin presentar una declaración real. Fuera del modo de prueba, necesitas tener cargado el certificado digital en **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}** (ver [SII](../sii/sii.md)).
 
 <figure markdown="span">
   ![Declaración en estado Presentado · Sin acuse, sin los botones Calcular ni Marcar presentado](assets/modelo-303-6.jpg)
@@ -53,6 +74,8 @@ Dentro de una declaración en **Borrador**, la cabecera resume el período y ofr
 
 !!! info "Estado Presentado · Sin acuse"
     Tras pulsar **Marcar presentado**, la declaración pasa a **Presentado · Sin acuse** hasta que subas el comprobante en la pestaña **Justificante**. En este estado ya no puedes recalcular las casillas ni volver a marcarla como presentada; solo puedes cancelarla o volver a generar el fichero.
+
+**Cancelar** se comporta distinto según el estado: en una declaración en Borrador simplemente vuelve al listado de Declaraciones sin cambiar nada; en una declaración ya presentada, la devuelve a **Borrador** conservando los totales calculados, para que puedas corregir algo y volver a presentarla.
 
 Los cuatro indicadores de la cabecera son:
 
@@ -91,7 +114,7 @@ El bloque **Información adicional** recoge operaciones que no forman parte del 
   <figcaption>Resultado: suma de todos los regímenes, ajustes de periodos anteriores y la casilla 71 con el resultado final de la declaración.</figcaption>
 </figure>
 
-El bloque **Resultado** traduce todo lo anterior en una única cifra. La casilla 64 suma los resultados de régimen general, simplificado y regularizaciones; a partir de ahí se restan o suman ajustes como el IVA a la importación liquidado por la Aduana pendiente de ingreso (77) o el saldo a compensar de períodos anteriores que apliques en este período (78, tomado del acumulado de la casilla 110). El resultado final de la declaración llega a la **casilla 71**: positivo es lo que ingresas, negativo lo compensas en el siguiente período o lo pides devuelto si es la última declaración del año. Al final del bloque también están los checkboxes **Sin actividad** (si no tuviste operaciones en el período) y **Autoliquidación rectificativa** (para corregir una declaración ya presentada).
+El bloque **Resultado** traduce todo lo anterior en una única cifra. La casilla 64 suma los resultados de régimen general, simplificado y regularizaciones; la casilla 65/66 indica el porcentaje (100% por defecto) atribuible a la Administración del Estado, relevante solo si también tributas a las Diputaciones Forales. A partir de ahí se restan o suman ajustes como el IVA a la importación liquidado por la Aduana pendiente de ingreso (77) o el saldo a compensar de períodos anteriores que apliques en este período (78, tomado del acumulado de la casilla 110), llegando a la casilla 69 con el **Resultado de la autoliquidación**. Si la declaración es una rectificativa, las casillas 70, 109 y 112 ajustan ese resultado hasta llegar a la **casilla 71**, la cifra final de la declaración: positivo es lo que ingresas, negativo lo compensas en el siguiente período o lo pides devuelto si es la última declaración del año. Al final del bloque también están los checkboxes **Sin actividad** (si no tuviste operaciones en el período) y **Autoliquidación rectificativa** (para corregir una declaración ya presentada).
 
 ### Pestaña Facturas
 
@@ -105,7 +128,7 @@ Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará
 ### Otras Pestañas
 
 - **Incidencias** — detalle de las facturas o datos que generaron alguna advertencia durante el cálculo, en una tabla de Severidad, Origen y Mensaje.
-- **Justificante** — sube aquí el comprobante de presentación de tu declaración.
+- **Justificante** — aquí aparece el comprobante que subiste al elegir "Con acuse de recibo" al presentar la declaración, o donde puedes subirlo más adelante si la marcaste como "Sin acuse de recibo".
 
 <figure markdown="span">
   ![Pestaña Incidencias con una advertencia sobre la Información adicional](assets/modelo-303-8.jpg)
@@ -113,7 +136,7 @@ Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará
 </figure>
 
 !!! tip "Justificante es un área de carga manual"
-    Etendo Go no genera el comprobante de presentación de forma automática. Arrastra el archivo o selecciónalo desde tu equipo una vez que ya presentaste la declaración ante Hacienda (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes).
+    Etendo Go no genera el comprobante de presentación de forma automática: lo subes tú, ya sea en el momento de marcar la declaración como presentada (opción "Con acuse de recibo") o después, arrastrando el archivo aquí o seleccionándolo desde tu equipo (formatos compatibles: PDF, Word, Excel, PowerPoint e imágenes).
 
 ## Artículos Relacionados
 
