@@ -3,6 +3,8 @@ docs_dir: docs
 site_url: https://etendosoftware.github.io/etendo-go-docs/
 repo_url: https://github.com/etendosoftware/etendo-go-docs
 repo_name: etendosoftware/etendo-go-docs
+watch:
+  - overrides
 theme:
   name: material
   custom_dir: overrides
@@ -27,6 +29,7 @@ theme:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
+    - navigation.tabs
     - navigation.instant
     - navigation.indexes
     - navigation.path
@@ -57,42 +60,70 @@ plugins:
           nav:
             - Inicio: index.md
             - Primeros pasos:
-                - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go.md
-                - Crear una cuenta: primeros-pasos/crear-cuenta/crear-cuenta.md
+                - primeros-pasos/index.md
+                - ¿Qué es Etendo Go?: primeros-pasos/que-es-etendo-go/que-es-etendo-go.md
+                - Cómo crear tu cuenta: primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md
+                - Navegar en Etendo Go: primeros-pasos/navegar-en-etendo-go/navegar-en-etendo-go.md
             - Comercial:
-                - Contactos: comercial/contactos/contactos.md
+                - comercial/index.md
+                - Contactos:
+                    - ¿Qué es la sección Contactos?: comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md
+                    - Cómo crear un contacto: comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md
+                    - Gestionar tus contactos: comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md
                 - Ventas:
-                    - comercial/ventas/index.md
-                    - Presupuesto de venta: comercial/ventas/presupuesto-de-venta/presupuesto-de-venta.md
-                    - Pedido de venta: comercial/ventas/pedido-de-venta/pedido-de-venta.md
-                    - Factura de venta: comercial/ventas/factura-de-venta/factura-de-venta.md
+                    - Introducción:
+                        - ¿Qué es la sección Ventas?: comercial/ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md
+                    - Gestión de ventas:
+                        - Crear y gestionar presupuestos: comercial/ventas/crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md
+                        - Crear y gestionar pedidos: comercial/ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md
+                        - Crear y gestionar albaranes: comercial/ventas/crear-y-gestionar-albaranes/crear-y-gestionar-albaranes.md
+                        - Crear una factura de venta: comercial/ventas/crear-una-factura-de-venta/crear-una-factura-de-venta.md
+                        - Gestionar tus facturas de venta: comercial/ventas/gestionar-tus-facturas-de-venta/gestionar-tus-facturas-de-venta.md
+                        - Enviar tus facturas por email: comercial/ventas/enviar-tus-facturas-por-email/enviar-tus-facturas-por-email.md
+                        - Añadir pagos a tu factura de venta: comercial/ventas/anadir-pagos-a-tu-factura-de-venta/anadir-pagos-a-tu-factura-de-venta.md
+                        - Crear y gestionar devoluciones: comercial/ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md
+                    - Ventas - Preguntas frecuentes: comercial/ventas/documentos-de-venta-preguntas-frecuentes/documentos-de-venta-preguntas-frecuentes.md
             - Operaciones:
+                - operaciones/index.md
                 - Compras:
-                    - operaciones/compras/index.md
-                    - Pedido de compra: operaciones/compras/pedido-de-compra/pedido-de-compra.md
-                    - Factura de compra: operaciones/compras/factura-de-compra/factura-de-compra.md
+                    - ¿Qué es la sección Compras?: operaciones/compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md
+                    - Gestión de compras:
+                        - Crear un pedido de compra: operaciones/compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md
+                        - Gestionar tus pedidos de compra: operaciones/compras/gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md
+                        - Crear y gestionar albaranes de compra: operaciones/compras/crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md
+                        - Crear una factura de compra: operaciones/compras/crear-una-factura-de-compra/crear-una-factura-de-compra.md
+                        - Añadir pagos a tu factura de compra: operaciones/compras/anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md
+                        - Gestionar tus facturas de compra: operaciones/compras/gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md
+                        - Crear una devolución de compra: operaciones/compras/crear-una-devolucion-de-compra/crear-una-devolucion-de-compra.md
+                - Inventario:
+                    - ¿Qué es la sección Inventario?: operaciones/inventario/que-es-inventario/que-es-inventario.md
+                    - Productos:
+                        - operaciones/inventario/productos/index.md
+                        - Crear un producto: operaciones/inventario/productos/crear-un-producto/crear-un-producto.md
+                        - Crear y configurar una categoría de producto: operaciones/inventario/productos/crear-una-categoria-de-producto/crear-una-categoria-de-producto.md
+                        - Editar o eliminar un producto: operaciones/inventario/productos/editar-o-eliminar-un-producto/editar-o-eliminar-un-producto.md
+                        - Gestionar tarifas de producto: operaciones/inventario/productos/gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md
+                    - Almacén:
+                        - operaciones/inventario/almacenes/index.md
+                        - Crear un almacén: operaciones/inventario/almacenes/crear-un-almacen/crear-un-almacen.md
             - Finanzas:
-                - Activos: finanzas/activos/activos.md
-                - Apuntar un Activo: finanzas/activos/apuntar-un-activo.md
-                - Amortización: finanzas/amortizacion/amortizacion.md
-            - Inventario:
-                - Productos: inventario/productos.md
-                - Almacenes: inventario/almacenes.md
-            - Configuración:
-                - configuracion/index.md
-        - locale: en
-          name: English
-          build: true
-          nav:
-            - Home: index.md
+                - finanzas/index.md
+                - Glosario de Contabilidad: finanzas/glosario-de-contabilidad/glosario-de-contabilidad.md
+                - Apuntar un Activo: finanzas/apuntar-un-activo/apuntar-un-activo.md
+                - Crear y Ejecutar un Plan de Amortización: finanzas/crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md
+            - Sistema:
+                - sistema/index.md
+                - Configuración:
+                    - Cómo gestionar tu organización: sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md
+
   - glightbox
   - tags
   - git-committers:
       repository: etendosoftware/etendo-go-docs
-      branch: main
+      branch: develop
   - git-revision-date-localized:
       enable_creation_date: true
-      enable_git_follow: false
+      enable_git_follow: true
       type: date
   - social
 

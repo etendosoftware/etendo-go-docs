@@ -79,8 +79,8 @@
     <div class="etendo-home__grid">
 
       <!-- Primeros pasos -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}">
+      <a class="etendo-home__card" href="{{ 'primeros-pasos/' | url }}">
+        <div class="etendo-home__card-top">
           <div class="etendo-home__card-icon">
             {% include ".icons/material/rocket-launch-outline.svg" %}
           </div>
@@ -88,16 +88,13 @@
             <h3>Primeros pasos</h3>
             <p>Introducción y guía de inicio a Etendo Go</p>
           </div>
-        </a>
-        <ul class="etendo-home__card-links">
-          <li><a href="{{ 'primeros-pasos/que-es-etendo-go/' | url }}">¿Qué es Etendo Go?</a></li>
-          <li><a href="{{ 'primeros-pasos/crear-cuenta/crear-cuenta/' | url }}">Crear una cuenta</a></li>
-        </ul>
-      </div>
+        </div>
+        <span class="etendo-home__card-count">3 artículos</span>
+      </a>
 
       <!-- Comercial -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'comercial/ventas/' | url }}">
+      <a class="etendo-home__card" href="{{ 'comercial/' | url }}">
+        <div class="etendo-home__card-top">
           <div class="etendo-home__card-icon">
             {% include ".icons/material/storefront-outline.svg" %}
           </div>
@@ -105,37 +102,27 @@
             <h3>Comercial</h3>
             <p>Contactos, ventas y documentos comerciales</p>
           </div>
-        </a>
-        <ul class="etendo-home__card-links">
-          <li><a href="{{ 'comercial/contactos/contactos/' | url }}">Contactos</a></li>
-          <li class="etendo-home__card-links--group-label">Ventas</li>
-          <li><a href="{{ 'comercial/ventas/presupuesto-de-venta/presupuesto-de-venta/' | url }}">Presupuesto de venta</a></li>
-          <li><a href="{{ 'comercial/ventas/pedido-de-venta/pedido-de-venta/' | url }}">Pedido de venta</a></li>
-          <li><a href="{{ 'comercial/ventas/factura-de-venta/factura-de-venta/' | url }}">Factura de venta</a></li>
-        </ul>
-      </div>
+        </div>
+        <span class="etendo-home__card-count">13 artículos</span>
+      </a>
 
       <!-- Operaciones -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'operaciones/compras/' | url }}">
+      <a class="etendo-home__card" href="{{ 'operaciones/' | url }}">
+        <div class="etendo-home__card-top">
           <div class="etendo-home__card-icon">
             {% include ".icons/material/swap-horizontal.svg" %}
           </div>
           <div class="etendo-home__card-meta">
             <h3>Operaciones</h3>
-            <p>Compras y gestión de proveedores</p>
+            <p>Compras, productos y almacenes</p>
           </div>
-        </a>
-        <ul class="etendo-home__card-links">
-          <li class="etendo-home__card-links--group-label">Compras</li>
-          <li><a href="{{ 'operaciones/compras/pedido-de-compra/pedido-de-compra/' | url }}">Pedido de compra</a></li>
-          <li><a href="{{ 'operaciones/compras/factura-de-compra/factura-de-compra/' | url }}">Factura de compra</a></li>
-        </ul>
-      </div>
+        </div>
+        <span class="etendo-home__card-count">13 artículos</span>
+      </a>
 
       <!-- Finanzas -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'finanzas/' | url }}">
+      <a class="etendo-home__card" href="{{ 'finanzas/' | url }}">
+        <div class="etendo-home__card-top">
           <div class="etendo-home__card-icon">
             {% include ".icons/material/bank-outline.svg" %}
           </div>
@@ -143,43 +130,23 @@
             <h3>Finanzas</h3>
             <p>Activos fijos y amortización</p>
           </div>
-        </a>
-        <ul class="etendo-home__card-links">
-          <li><a href="{{ 'finanzas/activos/activos/' | url }}">Activos</a></li>
-          <li><a href="{{ 'finanzas/activos/apuntar-un-activo/' | url }}">Apuntar un activo</a></li>
-          <li><a href="{{ 'finanzas/amortizacion/amortizacion/' | url }}">Amortización</a></li>
-        </ul>
-      </div>
+        </div>
+        <span class="etendo-home__card-count">3 artículos</span>
+      </a>
 
-      <!-- Inventario -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'inventario/' | url }}">
-          <div class="etendo-home__card-icon">
-            {% include ".icons/material/warehouse.svg" %}
-          </div>
-          <div class="etendo-home__card-meta">
-            <h3>Inventario</h3>
-            <p>Productos, almacenes y stock</p>
-          </div>
-        </a>
-        <ul class="etendo-home__card-links">
-          <li><a href="{{ 'inventario/productos/' | url }}">Productos</a></li>
-          <li><a href="{{ 'inventario/almacenes/' | url }}">Almacenes</a></li>
-        </ul>
-      </div>
-
-      <!-- Configuración -->
-      <div class="etendo-home__card">
-        <a class="etendo-home__card-top" href="{{ 'configuracion/' | url }}">
+      <!-- Sistema -->
+      <a class="etendo-home__card" href="{{ 'sistema/' | url }}">
+        <div class="etendo-home__card-top">
           <div class="etendo-home__card-icon">
             {% include ".icons/material/cog-outline.svg" %}
           </div>
           <div class="etendo-home__card-meta">
-            <h3>Configuración</h3>
+            <h3>Sistema</h3>
             <p>Parámetros y ajustes del sistema</p>
           </div>
-        </a>
-      </div>
+        </div>
+        <span class="etendo-home__card-count">1 artículo</span>
+      </a>
 
     </div>
   </section>
