@@ -14,7 +14,7 @@ tags:
 La organización general del sitio sigue una jerarquía de cuatro niveles (actualizado 2026-08-06 para reflejar la estructura real de carpetas del repositorio, que agrupa los módulos bajo categorías temáticas de nivel superior):
 
 - **Página de inicio**: grilla de grupos temáticos (3 columnas) con tarjetas que muestran: icono + nombre del grupo + descripción en una línea + cantidad de artículos + avatares de autores.
-- **Grupos temáticos**: carpetas de nivel 1 dentro de `docs/es/`, cada una reúne uno o más módulos funcionales relacionados. Grupos actuales: **Primeros pasos**, **Comercial** (Contactos, Ventas), **Operaciones** (Compras, Inventario), **Finanzas** (Activos, Amortización), y las categorías aún no desarrolladas Configuración y Dashboard. RRHH, CRM, Proyectos, Analítica y TPV todavía no tienen grupo asignado en el repo — al incorporarlos, decidir si son grupo propio o módulo dentro de uno existente antes de crear la carpeta.
+- **Grupos temáticos**: carpetas de nivel 1 dentro de `docs/es/`, cada una reúne uno o más módulos funcionales relacionados. Grupos actuales: **Primeros pasos**, **Comercial** (Contactos, Ventas), **Operaciones** (Compras, Inventario), **Finanzas** (Activos, Amortización), **Sistema** (Configuración), y la categoría aún no desarrollada Dashboard. RRHH, CRM, Proyectos, Analítica y TPV todavía no tienen grupo asignado en el repo — al incorporarlos, decidir si son grupo propio o módulo dentro de uno existente antes de crear la carpeta.
 - **Módulos**: carpetas de nivel 2, una por área funcional del producto (ej. Ventas y Contactos dentro de Comercial; Compras e Inventario dentro de Operaciones). Cada módulo tiene su propia página de descripción general ("¿Qué es la sección X?").
 - **Colecciones**: subcategorías dentro de un módulo que agrupan artículos por tema. Por ejemplo, dentro de Ventas → "Configuración de facturación", "Documentos de ventas", "Preguntas frecuentes". En módulos chicos, la colección puede quedar implícita (los artículos viven directamente bajo el módulo).
 - **Artículos**: hojas del sitio. Nunca mezclar tipos de artículo dentro de una misma subcolección.
@@ -204,7 +204,7 @@ H2: [Siguiente pregunta]
 | Concepto importante | Negrita en la primera mención |
 | Artículos enlazados | Hipervínculo en línea, no al pie de página |
 | Valores del sistema | Usar backticks |
-| Advertencias / notas importantes | Blockquotes |
+| Advertencias / notas importantes | Admonitions de MkDocs (`!!! warning`, `!!! tip`, `!!! info`) con un título breve entre comillas — actualizado 2026-08-24 para reflejar la convención ya en uso en todos los artículos publicados; no usar blockquotes (`>`) para este caso |
 
 ### Listas
 
@@ -269,7 +269,7 @@ Cada artículo debe tener los siguientes metadatos completos:
 | Referencia / Glosario | Variable (definición por término) |
 | Preguntas frecuentes | 200-500 palabras (suma de Q&A) |
 
-Más corto es mejor. Si un artículo supera estos rangos, dividirlo en dos artículos enlazados.
+Más corto es mejor. Si un artículo supera estos rangos, evaluar dividirlo en dos artículos enlazados — pero no es una regla absoluta: cuando el contenido cubre variantes estrechamente relacionadas de un mismo flujo (por ejemplo, distintas formas de completar el mismo popup o pantalla), mantenerlo en un solo artículo puede ser preferible a fragmentar la navegación, aunque supere el rango objetivo (actualizado 2026-08-24, caso de referencia: `anadir-pagos-a-tu-factura-de-venta.md`).
 
 ## 10. Qué Evitar
 
@@ -442,7 +442,7 @@ Señalar con una nota destacada cuando una funcionalidad es exclusiva de cierto 
 - Longitud: 140-155 caracteres.
 - Incluir el nombre de la funcionalidad principal y un verbo de acción.
 - Ejemplo: "Aprende a crear, personalizar y enviar facturas de venta desde el módulo de Facturación."
-- **Pendiente (2026-08-06):** mkdocs no procesa todavía el campo `description:` en el sitio actual. No agregarlo en el frontmatter de los artículos hasta que se habilite este soporte; se incorporará más adelante.
+- Agregar siempre el campo `description:` en el frontmatter con este texto (actualizado 2026-08-24: el soporte en mkdocs ya está habilitado y es la convención en uso en todos los artículos publicados).
 
 ### Optimización del contenido para búsqueda
 

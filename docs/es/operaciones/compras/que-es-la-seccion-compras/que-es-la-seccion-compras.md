@@ -24,7 +24,7 @@ flowchart LR
 ## Los documentos de Compras
 
 - **Pedido** — formaliza la solicitud de productos o servicios a un proveedor. Es el punto de entrada del ciclo de compras y dispara el movimiento de stock esperado. Ver [Gestionar tus pedidos de compra](../gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md).
-- **Albarán** — registra la recepción física de la mercancía pedida a un proveedor.
+- **Albarán** — registra la recepción física de la mercancía pedida a un proveedor. Ver [Crear y gestionar albaranes de compra](../crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md).
 - **Factura** — registra la obligación de pago al proveedor. Puede crearse directamente o generarse desde un pedido o un albarán confirmado.
 - **Albarán de devolución** — registra la devolución física de mercancía ya recibida a un proveedor, y genera automáticamente la Factura Rectificativa correspondiente.
 - **Factura Rectificativa** — corrige el importe de una factura de compra a partir de una devolución de mercancía ya recibida.
@@ -42,6 +42,7 @@ Para crear cualquiera de estos documentos necesitas tener cargado el [contacto](
 ## Recursos y próximos pasos
 
 - [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md)
+- [Crear y gestionar albaranes de compra](../crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md)
 - [Crear una factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md)
 - [Añadir pagos a tu factura de compra](../anadir-pagos-a-tu-factura-de-compra/anadir-pagos-a-tu-factura-de-compra.md)
 - [Gestionar tus facturas de compra](../gestionar-tus-facturas-de-compra/gestionar-tus-facturas-de-compra.md)

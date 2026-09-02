@@ -82,7 +82,7 @@ En estado Completado, el botón **Gestionar recepción y factura** abre el popup
 
 La sección **Generar documentos (opcional)** permite seleccionar qué documentos crear:
 
-- **Crear albarán de proveedor** — genera un albarán de compra en estado Borrador con las unidades pendientes de recibir. El popup indica la cantidad pendiente (ej: *1 uds. pendientes de recibir*).
+- **Crear albarán de proveedor** — genera un [albarán de compra](../crear-y-gestionar-albaranes-de-compra/crear-y-gestionar-albaranes-de-compra.md) en estado Borrador con las unidades pendientes de recibir. El popup indica la cantidad pendiente (ej: *1 uds. pendientes de recibir*).
 - **Crear factura** — genera una [factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md) en estado Borrador con el importe pendiente de facturar (ej: *5.00 EUR pendientes de facturar*).
 
 Puedes marcar uno, ambos o ninguno antes de pulsar **Crear →**. Si no marcas ninguno, el pedido permanece Completado y puedes generar los documentos más adelante.

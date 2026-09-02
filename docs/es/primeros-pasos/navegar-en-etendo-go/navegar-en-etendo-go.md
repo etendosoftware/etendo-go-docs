@@ -112,7 +112,7 @@ El ícono de **tres puntos** ubicado junto al título de la página (al lado del
 - [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md) — una introducción general a la plataforma antes de explorar su navegación.
 - [Cómo crear tu cuenta](../como-crear-tu-cuenta/como-crear-tu-cuenta.md) — regístrate y configura tu cuenta en tres pasos: registro, perfil y datos de la empresa.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md) — carga tus primeros clientes y proveedores para empezar a generar documentos de venta o compra.
-- [Pedido de venta](../../comercial/ventas/pedido-de-venta/pedido-de-venta.md) — pon en práctica los filtros y la barra de acciones masivas en un listado real.
+- [Crear y gestionar pedidos](../../comercial/ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) — pon en práctica los filtros y la barra de acciones masivas en un listado real.
 
 Con los menús y los componentes recurrentes, ya tienes lo necesario para moverte con confianza por cualquier pantalla de Etendo Go.
 
