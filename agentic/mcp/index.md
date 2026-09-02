@@ -130,7 +130,7 @@ The MCP server exposes a small set of generic tools that operate on any `(spec, 
 |------|---------|--------------------|--------------------|
 | `neo_discover` | List every spec and entity the current user can access | — | — |
 | `neo_schema` | Return the field metadata for one entity: names, types, required flags, read-only flags, default expressions, and the buttons available for `neo_action` | `spec`, `entity` | `view` (`"create"` \| `"actions"`), `fields[]` |
-| `neo_defaults` | Return computed default values for a new record (useful before `neo_create`) | `spec`, `entity` | `parentId`, `assetId`, `view` (`"full"` \| `"grouped"` \| `"minimal"`) |
+| `neo_defaults` | Return computed default values for a new record (useful before `neo_create`). **For a child/line entity, `parentId` is required in practice, not optional** — see [Creating a child/line entity](#creating-a-childline-entity-the-parentid-step) below | `spec`, `entity` | `parentId`, `assetId`, `view` (`"full"` \| `"grouped"` \| `"minimal"`) |
 | `neo_selectors` | Resolve valid values for a foreign-key field (returns IDs the agent can pass into `neo_create` / `neo_update`) | `spec`, `entity`, `column` (`field` is an accepted alias) | `query`, `recordContext`, `parentContext` |
 | `neo_list` | List records of one entity with filters, pagination, and sort | `spec`, `entity` | `filters`, `limit`, `offset`, `orderBy`, `fields[]`, `view` (`"summary"`) |
 | `neo_get` | Retrieve a single record by ID | `spec`, `entity`, `id` | `fields[]`, `view` (`"summary"`) |
@@ -164,6 +164,59 @@ Two rules worth internalizing:
   `neo_schema`'s full dump, `userRequired` is a static approximation (it reads the column's own
   default only, so it over-reports). `view: "create"` cross-checks against the real defaults and is
   the authoritative answer to "what must I send?".
+
+### Creating a child/line entity (the `parentId` step)
+
+Every spec with more than one entity has a parent/child shape — `header`/`lines`, `inventory`/`inventoryLine`, `product`/`price` — and creating a record in the child entity has one extra step that creating a header does not: **resolving the parent-dependent defaults before you call `neo_create`.**
+
+`neo_schema(spec, entity, view: "create")` on a child entity does **not** list the parent foreign key among the fields it describes, yet `neo_create` will reject the write with a 422 demanding exactly that field. This is expected — the parent FK is always required on a child entity even though the create-view schema does not enumerate it — so always send it, keyed by the field name shown in the full (non-`view`) `neo_schema` dump or in an existing sibling record (e.g. `physInventory` on `inventory-line`, `salesOrder` on `sales-order/lines`, `product` on `product/price`).
+
+More importantly, several fields on a child entity have a default expression that reads from the **parent** record (its warehouse, its price-list version, its running line number) — the server cannot compute them from the child entity alone. `neo_defaults(spec, entity)` called **without `parentId`** will silently omit those fields rather than error, because it does not have the parent record to evaluate the expression against. Passing `parentId` is what makes the difference between a resolved value and an absent one.
+
+**Worked example — `physical-inventory` / `inventoryLine`:**
+
+1. Create (or already have) the parent `inventory` header, and keep its `id`.
+2. Call `neo_defaults` with `parentId` set to that header's `id`:
+
+   ```json
+   {
+     "tool": "neo_defaults",
+     "arguments": {
+       "spec": "physical-inventory",
+       "entity": "inventoryLine",
+       "parentId": "<inventory-header-id>"
+     }
+   }
+   ```
+
+   With `parentId`, the response resolves `storageBin` (the AD default expression is
+   `@SQL=... WHERE M_WAREHOUSE_ID=@M_WAREHOUSE_ID@`, i.e. it needs the parent's warehouse).
+   The same call **without** `parentId` returns the entity's defaults with `storageBin` missing
+   from `confirm` entirely — not flagged as unresolved, just absent.
+3. Resolve any remaining foreign keys with `neo_selectors`, passing `parentContext` when a
+   selector depends on parent-level values (see [Resolve dependent selectors](#step-4--resolve-dependent-selectors) above for the header/line pattern).
+4. Call `neo_create` with the entity's own fields **plus** the parent FK and the values you got
+   from `neo_defaults`:
+
+   ```json
+   {
+     "tool": "neo_create",
+     "arguments": {
+       "spec": "physical-inventory",
+       "entity": "inventoryLine",
+       "fields": {
+         "physInventory": "<inventory-header-id>",
+         "product": "<product-id>",
+         "storageBin": "<storage-bin-id-from-neo_defaults>"
+       }
+     }
+   }
+   ```
+
+The same shape applies to `product/price` (parent `product`, pass its `id` as `parentId` to
+resolve price-list-version-dependent defaults) and to any other `header`/line pair in the table
+above. **Rule of thumb: whenever the entity you are about to create is not the top-level entity of
+its spec, call `neo_defaults` with `parentId` before `neo_create` — never without it.**
 
 ### Report tools
 
