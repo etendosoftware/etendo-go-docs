@@ -60,7 +60,7 @@ La declaración se crea en estado **Borrador** y aparece en el listado de **Decl
 
 Dentro de una declaración en **Borrador**, la cabecera resume el período y ofrece tres acciones: **Calcular**, **Generar fichero 303** y **Marcar presentado**.
 
-- **Calcular** — recalcula las casillas a partir de las facturas confirmadas del período.
+- **Calcular** — recalcula las casillas a partir de las facturas confirmadas del período **cuyo envío a SII y TicketBAI ya fue aceptado**. Una factura en estado Completado pero con el envío fiscal todavía en *Pendiente* no se incluye hasta que ese envío sea aceptado (ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md)).
 - **Generar fichero 303** — antes de descargar el fichero para la AEAT, pide confirmar el nombre del fichero (por ejemplo, "303_T3_2026.txt").
 - **Marcar presentado** — abre un diálogo para elegir cómo se presentó la declaración:
     - **Con acuse de recibo**: subes en el momento el justificante del portal de la AEAT.
@@ -73,9 +73,10 @@ Dentro de una declaración en **Borrador**, la cabecera resume el período y ofr
 </figure>
 
 !!! info "Estado Presentado · Sin acuse"
-    Tras pulsar **Marcar presentado**, la declaración pasa a **Presentado · Sin acuse** hasta que subas el comprobante en la pestaña **Justificante**. En este estado ya no puedes recalcular las casillas ni volver a marcarla como presentada; solo puedes cancelarla o volver a generar el fichero.
+    Tras pulsar **Marcar presentado**, la declaración pasa a **Presentado · Sin acuse** hasta que subas el comprobante en la pestaña **Justificante**. En este estado ya no puedes recalcular las casillas ni volver a marcarla como presentada; solo puedes volver a generar el fichero.
 
-**Cancelar** se comporta distinto según el estado: en una declaración en Borrador simplemente vuelve al listado de Declaraciones sin cambiar nada; en una declaración ya presentada, la devuelve a **Borrador** conservando los totales calculados, para que puedas corregir algo y volver a presentarla.
+!!! warning "Cancelar no reabre una declaración ya presentada"
+    A diferencia de otros modelos fiscales de Etendo Go, en el Modelo 303 el botón **Cancelar** siempre te devuelve al listado de Declaraciones sin modificar el estado de la declaración, esté en Borrador o ya Presentada. Si una declaración de Modelo 303 ya fue marcada como presentada, no hay forma de reabrirla a Borrador desde la interfaz para recalcularla con facturas nuevas; para corregirla hay que evaluar con tu asesor fiscal el mecanismo de autoliquidación rectificativa.
 
 Los cuatro indicadores de la cabecera son:
 
@@ -118,7 +119,10 @@ El bloque **Resultado** traduce todo lo anterior en una única cifra. La casilla
 
 ### Pestaña Facturas
 
-Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará, tras pulsar Calcular) para completar las casillas, con columnas de Fecha, Nº, Tipo (Venta o Compra), Tercero, Régimen, Base, Cuota, Total y las Casillas donde impacta cada factura. Es la forma de auditar de dónde sale cada importe de la declaración.
+Muestra todas las facturas del período que Etendo Go usó (o usará, tras pulsar Calcular) para completar las casillas, con columnas de Fecha, Nº, Tipo (Venta o Compra), Tercero, Régimen, Base, Cuota, Total y las Casillas donde impacta cada factura. Es la forma de auditar de dónde sale cada importe de la declaración.
+
+!!! tip "Una factura confirmada no siempre entra en el cálculo"
+    Que una factura esté Completada y Contabilizada no basta: **Calcular** solo toma las facturas cuyo envío a SII y TicketBAI ya está en estado **Aceptado**. Puedes revisar y forzar ese envío abriendo la factura, en **Ventas > Factura de Venta** (o Compras), con el botón **Enviar a SIF**; si el envío falla o queda en Pendiente, la factura no aparecerá en esta declaración hasta que se acepte.
 
 <figure markdown="span">
   ![Pestaña Facturas con una factura de venta y sus casillas asociadas](assets/modelo-303-7.jpg)
@@ -143,6 +147,9 @@ Muestra todas las facturas confirmadas del período que Etendo Go usó (o usará
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 - [Modelo 349](../modelo-349/modelo-349.md)
 - [Tipos de Impuestos y sus Porcentajes](../tipos-de-impuestos-y-sus-porcentajes/tipos-de-impuestos-y-sus-porcentajes.md)
+- [SII](../sii/sii.md)
+- [TicketBAI](../ticketbai/ticketbai.md)
+- [Monitor Fiscal](../monitor-fiscal/monitor-fiscal.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

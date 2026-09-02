@@ -52,13 +52,14 @@ Tras confirmar, la pantalla **[Configuración > Monitor de facturas > Configurac
 </figure>
 
 - **Territorio** — el territorio histórico confirmado en el asistente de activación (Álava, Bizkaia o Gipuzkoa).
-- **Facturación** — interruptor de **envío automático al completar factura**: si está desactivado, tienes que enviar cada factura a Hacienda manualmente desde el Monitor Fiscal.
+- **Facturación** — interruptor de **envío automático al completar factura**: si está desactivado, tienes que enviar cada factura a Hacienda manualmente con el botón **Enviar a SIF** de su detalle; el [Monitor Fiscal](../monitor-fiscal/monitor-fiscal.md) es el punto de partida para encontrarla y comprobar si quedó Pendiente.
 
 ## Artículos Relacionados
 
 - [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [SII](../sii/sii.md)
 - [VERI\*FACTU](../verifactu/verifactu.md)
+- [Monitor Fiscal](../monitor-fiscal/monitor-fiscal.md)
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 
 ---

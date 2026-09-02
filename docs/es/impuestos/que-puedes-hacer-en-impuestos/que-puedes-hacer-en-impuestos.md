@@ -29,6 +29,10 @@ tags:
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 - [Cómo activar un modelo tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [Tipos de impuestos y sus porcentajes](../tipos-de-impuestos-y-sus-porcentajes/tipos-de-impuestos-y-sus-porcentajes.md)
+- [SII](../sii/sii.md)
+- [TicketBAI](../ticketbai/ticketbai.md)
+- [VERI\*FACTU](../verifactu/verifactu.md)
+- [Monitor Fiscal](../monitor-fiscal/monitor-fiscal.md)
 - [Modelo 303](../modelo-303/modelo-303.md)
 - [Modelo 349](../modelo-349/modelo-349.md)
 

@@ -33,7 +33,13 @@ Una vez que tu organización tiene un sistema fiscal configurado, el Monitor Fis
 
 ### Pestaña SII
 
-Se divide en **Facturas emitidas** y **Facturas recibidas**, y un filtro de período (**Período actual** o **Período anterior**). Cada fila muestra la Fecha, el Nº de Factura (enlaza a la factura original), el Cliente o Proveedor, el Tipo, el Total, el **Estado** del envío (por ejemplo *Pendiente*) y el **CSV AEAT** (el código de verificación que devuelve Hacienda una vez aceptado el envío). Puedes seleccionar facturas con la casilla de la izquierda y exportar el listado con el botón **Exportar**.
+Se divide en **Facturas emitidas** y **Facturas recibidas**, y un filtro de período (**Período actual** o **Período anterior**). Cada fila muestra la Fecha, el Nº de Factura (enlaza a la factura original), el Cliente o Proveedor, el Tipo, el Total, el **Estado** del envío, una columna **Motivo error** y el **CSV AEAT** (el código de verificación que devuelve Hacienda una vez aceptado el envío). Puedes seleccionar facturas con la casilla de la izquierda y exportar el listado con el botón **Exportar**.
+
+El **Estado** puede ser:
+
+- **Pendiente** — la factura todavía no fue enviada, o el envío no obtuvo respuesta.
+- **Aceptado** — Hacienda validó el envío; la fila muestra su CSV AEAT.
+- **Error** — el envío se intentó y falló; la columna **Motivo error** detalla la causa (por ejemplo, un problema de conexión con el servicio o un adjunto que no se generó correctamente).
 
 ### Pestaña TicketBAI
 
@@ -52,6 +58,8 @@ El estado de envío también aparece directamente en el detalle de cada factura,
   ![Detalle de una factura con Estado SII y Estado TicketBAI](assets/monitor-fiscal-4.jpg)
   <figcaption>El detalle de la factura resume su Estado SII y su Estado TicketBAI de forma independiente.</figcaption>
 </figure>
+
+Desde ahí también puedes forzar el envío: el botón **Enviar a SIF** del detalle de la factura reenvía sus registros a SII y a TicketBAI a la vez. Es la forma de reintentar una factura en estado Pendiente o Error, por ejemplo tras corregir el problema indicado en Motivo error.
 
 !!! tip "Cada sistema fiscal tiene su propia configuración"
     Los campos operativos de cada sistema (régimen REDEME, autorizaciones especiales AEAT, certificado digital para SII; territorio y envío automático para TicketBAI) se gestionan desde Configuración Fiscal. Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
