@@ -860,6 +860,23 @@ body { background-color: var(--etendo-bg-page); }
 }
 
 /* ════════════════════════════════════════
+   DIAGRAMAS MERMAID — texto más grande
+════════════════════════════════════════ */
+
+:root,
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-mermaid-font-size: 1rem;
+}
+
+/* Respaldo por si el tema no toma la variable en algún diagrama */
+.md-typeset .mermaid svg .nodeLabel,
+.md-typeset .mermaid svg .edgeLabel,
+.md-typeset .mermaid svg text {
+  font-size: 1rem !important;
+}
+
+/* ════════════════════════════════════════
    FOOTER
 ════════════════════════════════════════ */
 
