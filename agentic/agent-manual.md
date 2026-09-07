@@ -225,8 +225,10 @@ Capture the response `id` — this is the header's `C_Order_ID`.
 ```
 
 Name the header with `parentId`, not with the line's own `salesOrder` field. Only `parentId` makes
-the server read the header, and every value the line derives from it depends on that — notably the
-tax rate and the price.
+the server read the header record, and everything the line derives from it depends on that: the
+business partner, the partner address, the order date, the tax rate and the price. Naming the header
+with the line's own FK field instead does not merely lose those values — the create is rejected with
+`422 validation_error`, because the order date has no source once the header is not read.
 
 `unitPrice`, `listPrice` and `tax` are therefore **not** needed — the price comes from the header's
 price list at the order date, and the tax from the product and the partner's shipping address. Pass
