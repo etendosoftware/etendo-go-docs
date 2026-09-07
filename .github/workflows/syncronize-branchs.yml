@@ -1,0 +1,73 @@
+name: Syncronize Branchs
+
+on:
+    push:
+        branches:
+            - main
+            - develop
+    workflow_run:
+          workflows:
+              - Deploy docs
+          types:
+              - completed
+permissions:
+    contents: write
+
+jobs:
+    syncronize-branchs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+              with:
+                fetch-depth: 0
+                token: ${{ secrets.ETENDOBOT_TOKEN }}
+
+            - name: Check commit message
+              id: commit-check
+              run: |
+                COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+                IS_MERGE_COMMIT=$(git rev-list --parents -n 1 HEAD | awk '{print NF-1}')
+                if [[ "${{ github.ref }}" == "refs/heads/develop" ]]; then
+                    if [[ $IS_MERGE_COMMIT -gt 1 && $COMMIT_MESSAGE =~ Merge\ remote-tracking\ branch\ \'origin\/(develop|main)\' || $COMMIT_MESSAGE =~ Merged\ in\ hotfix || $COMMIT_MESSAGE =~ Merge\ branch\ \'main\'\ into\ \'develop\' ]]; then
+                    echo "Skipping pipeline for merge commit";
+                    echo "::set-output name=skip_steps::true"
+                    exit 0;
+                    fi
+                elif [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+                    if [[ $IS_MERGE_COMMIT -gt 1 && $COMMIT_MESSAGE =~ Merge\ remote-tracking\ branch\ \'origin\/(develop|main)\' ||
+                    $COMMIT_MESSAGE =~ Merged\ in\ feature || $COMMIT_MESSAGE =~ Merge\ branch\ \'develop\'\ into\ \'main\' ]]; then
+                    echo "Skipping pipeline for merge commit";
+                    echo "::set-output name=skip_steps::true"
+                    exit 0;
+                    fi
+                fi
+
+              shell: bash
+
+            - name: Setup Git config
+              if: steps.commit-check.outputs.skip_steps != 'true'
+              run: |
+                git config --global user.email "${{ secrets.ETENDOBOT_EMAIL }}"
+                git config --global user.name "${{ secrets.ETENDOBOT_NAME }}"
+
+            - name: Merge main to develop
+              if: steps.commit-check.outputs.skip_steps != 'true' && endsWith(github.ref, 'main')
+              env:
+                GITHUB_TOKEN: ${{ secrets.ETENDOBOT_TOKEN }}
+              run: |
+                git checkout develop
+                git pull origin develop
+                git merge origin/main -m "Merge branch 'main' into 'develop'"
+                git push origin develop
+
+            - name: Merge develop to main
+              if: steps.commit-check.outputs.skip_steps != 'true' && endsWith(github.ref, 'develop')
+              env:
+                GITHUB_TOKEN: ${{ secrets.ETENDOBOT_TOKEN }}
+              id: merge-develop-to-main
+              run: |
+                git checkout main
+                git pull origin main
+                git merge origin/develop -m "Merge branch 'develop' into 'main'"
+                git push origin main

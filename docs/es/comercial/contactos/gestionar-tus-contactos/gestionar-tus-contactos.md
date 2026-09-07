@@ -102,7 +102,7 @@ Mientras trabajas en el formulario de un contacto, una barra superior muestra en
 
 - [Cómo crear un contacto](../como-crear-un-contacto/como-crear-un-contacto.md)
 - [¿Qué es la sección Contactos?](../que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
-- [Ventas](../../ventas/index.md)
+- [¿Qué es la sección Ventas?](../../ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

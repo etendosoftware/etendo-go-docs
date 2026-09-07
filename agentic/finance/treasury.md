@@ -11,21 +11,21 @@ This guide documents the MCP operations that cover the day-to-day treasury work 
 - Maintain **payment terms** (`payment-term/header` + `payment-term/lines`).
 - Maintain **currency conversion rates** (`conversion-rates/conversionRate`).
 
-All field names, column names and action button names below were verified through `etendo_neo_schema`. Enum codes for `list`-typed fields and concrete FK IDs are **not** invented — they must be resolved at runtime via `etendo_neo_schema`, `etendo_neo_selectors` or `etendo_neo_list`.
+All field names, column names and action button names below were verified through `neo_schema`. Enum codes for `list`-typed fields and concrete FK IDs are **not** invented — they must be resolved at runtime via `neo_schema`, `neo_selectors` or `neo_list`.
 
 ## Prerequisites
 
 - The Etendo Go MCP server is reachable and authenticated.
-- The current API user can access the `financial-account`, `payment-in`, `payment-out`, `payment-term` and `conversion-rates` specs (verify with `etendo_neo_discover`).
+- The current API user can access the `financial-account`, `payment-in`, `payment-out`, `payment-term` and `conversion-rates` specs (verify with `neo_discover`).
 - A target organisation exists with at least one configured currency and one document type for payments (`DocBaseType` in `APP` / `ARR`).
 
 ## Discover first, write later
 
 Every write operation in this guide must be preceded by:
 
-1. `etendo_neo_schema(spec, entity)` — to know the real field set, which fields are `required`, which are `readOnly` and which fields have FK selectors.
-2. `etendo_neo_selectors(spec, entity, column, …)` — to resolve every FK value (currency, business partner, document type, payment method, account, etc.).
-3. Optionally `etendo_neo_defaults(spec, entity, parentId?)` — to preview server-computed defaults.
+1. `neo_schema(spec, entity)` — to know the real field set, which fields are `required`, which are `readOnly` and which fields have FK selectors.
+2. `neo_selectors(spec, entity, column, …)` — to resolve every FK value (currency, business partner, document type, payment method, account, etc.).
+3. Optionally `neo_defaults(spec, entity, parentId?)` — to preview server-computed defaults.
 
 Do not skip discovery. Field labels and the set of `EM_*` extension columns vary across instances (modules installed, customisation).
 
@@ -52,7 +52,7 @@ Optional but commonly set: `description`, `businessPartner`, `locationAddress`, 
 
 ```json
 {
-  "tool": "etendo_neo_list",
+  "tool": "neo_list",
   "arguments": {
     "spec": "financial-account",
     "entity": "account",
@@ -65,7 +65,7 @@ Optional but commonly set: `description`, `businessPartner`, `locationAddress`, 
 
 ```json
 {
-  "tool": "etendo_neo_get",
+  "tool": "neo_get",
   "arguments": {
     "spec": "financial-account",
     "entity": "account",
@@ -78,7 +78,7 @@ Optional but commonly set: `description`, `businessPartner`, `locationAddress`, 
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "financial-account",
     "entity": "account",
@@ -90,7 +90,7 @@ Optional but commonly set: `description`, `businessPartner`, `locationAddress`, 
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "financial-account",
     "entity": "account",
@@ -105,11 +105,11 @@ Optional but commonly set: `description`, `businessPartner`, `locationAddress`, 
 }
 ```
 
-Resolve `type` from the `list` reference returned by `etendo_neo_schema` — do not hard-code `"B"` without confirming it is the active code in your instance.
+Resolve `type` from the `list` reference returned by `neo_schema` — do not hard-code `"B"` without confirming it is the active code in your instance.
 
 ### Available process buttons
 
-Trigger via `etendo_neo_action(spec="financial-account", entity="account", id=<account-id>, action=<column>)`:
+Trigger via `neo_action(spec="financial-account", entity="account", id=<account-id>, action=<column>)`:
 
 | Column | Process |
 |--------|---------|
@@ -121,7 +121,7 @@ Trigger via `etendo_neo_action(spec="financial-account", entity="account", id=<a
 | `EM_APRM_MatchTransactions` | Match Statement (see [Bank reconciliation](./bank-reconciliation.md)) |
 | `EM_APRM_Reconcile` | Reconcile (see [Bank reconciliation](./bank-reconciliation.md)) |
 
-For each button, the input shape of `parameters` is process-specific. If you do not know it, call `etendo_neo_action` with `parameters: {}` first and let the server report the required keys.
+For each button, the input shape of `parameters` is process-specific. If you do not know it, call `neo_action` with `parameters: {}` first and let the server report the required keys.
 
 ## Manual transactions
 
@@ -148,7 +148,7 @@ Optional FKs commonly used: `finPayment`, `gLItem`, `project`, `salesCampaign`, 
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "financial-account",
     "entity": "transaction",
@@ -169,7 +169,7 @@ Process the transaction (`EM_Aprm_Processed` button → process `Transaction Pro
 
 ```json
 {
-  "tool": "etendo_neo_action",
+  "tool": "neo_action",
   "arguments": {
     "spec": "financial-account",
     "entity": "transaction",
@@ -184,7 +184,7 @@ Post to the general ledger (`Posted` button → process `Post`):
 
 ```json
 {
-  "tool": "etendo_neo_action",
+  "tool": "neo_action",
   "arguments": {
     "spec": "financial-account",
     "entity": "transaction",
@@ -228,7 +228,7 @@ Resolve FKs first:
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -240,7 +240,7 @@ Resolve FKs first:
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -252,7 +252,7 @@ Resolve FKs first:
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -264,7 +264,7 @@ Resolve FKs first:
 
 ```json
 {
-  "tool": "etendo_neo_selectors",
+  "tool": "neo_selectors",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -278,7 +278,7 @@ Then create:
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -298,13 +298,13 @@ Then create:
 
 ### Link the receipt to an invoice or order
 
-The schedule details — that is, the lines that link this payment to one or more invoice / order payment schedules — are written into the entity `payment-in/finPaymentScheduleDetail`. Inspect its schema with `etendo_neo_schema("payment-in", "finPaymentScheduleDetail")` and resolve the FKs to the payment-in header and the target schedule before creating each line.
+The schedule details — that is, the lines that link this payment to one or more invoice / order payment schedules — are written into the entity `payment-in/finPaymentScheduleDetail`. Inspect its schema with `neo_schema("payment-in", "finPaymentScheduleDetail")` and resolve the FKs to the payment-in header and the target schedule before creating each line.
 
 Alternatively, fire the `EM_Aprm_Add_Scheduledpayments` button (process `Add Payment`) on the header to let Etendo auto-create the schedule details:
 
 ```json
 {
-  "tool": "etendo_neo_action",
+  "tool": "neo_action",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -331,7 +331,7 @@ Example — process:
 
 ```json
 {
-  "tool": "etendo_neo_action",
+  "tool": "neo_action",
   "arguments": {
     "spec": "payment-in",
     "entity": "finPayment",
@@ -367,11 +367,11 @@ Optional FKs: `orderPaymentSchedule` (`FIN_Payment_Schedule_Order`), `invoicePay
 
 ### Atomic header + lines creation
 
-Use `etendo_neo_batch` to create a payment-out header and its lines in a single transaction. Use `parentRef` on the line ops to point to the header op:
+Use `neo_batch` to create a payment-out header and its lines in a single transaction. Use `parentRef` on the line ops to point to the header op:
 
 ```json
 {
-  "tool": "etendo_neo_batch",
+  "tool": "neo_batch",
   "arguments": {
     "operations": [
       {
@@ -393,7 +393,7 @@ Use `etendo_neo_batch` to create a payment-out header and its lines in a single 
 }
 ```
 
-Inspect `payment-out/lines` schema and resolve the `paymentDetails` FK before adding line ops. The exact relationship between a payment header and its `FIN_Payment_Detail_ID` records is discoverable via `etendo_neo_schema("payment-out", "lines")`.
+Inspect `payment-out/lines` schema and resolve the `paymentDetails` FK before adding line ops. The exact relationship between a payment header and its `FIN_Payment_Detail_ID` records is discoverable via `neo_schema("payment-out", "lines")`.
 
 ### Process and post
 
@@ -438,7 +438,7 @@ Optional: `formOfPayment` (`PaymentRule`), `lastDayCutoff`, `maturityDate1` / `2
 
 ```json
 {
-  "tool": "etendo_neo_batch",
+  "tool": "neo_batch",
   "arguments": {
     "operations": [
       {
@@ -493,7 +493,7 @@ Optional: `validToDate` (`ValidTo`).
 
 ```json
 {
-  "tool": "etendo_neo_create",
+  "tool": "neo_create",
   "arguments": {
     "spec": "conversion-rates",
     "entity": "conversionRate",
@@ -518,15 +518,15 @@ Treasury workflows surface three pre-built reports through MCP. Call each with `
 
 | Tool | Use case |
 |------|----------|
-| `etendo_generate_financial_accounts_page` | Overview of every financial account (balances, currency, type) |
-| `etendo_generate_financial_account_transactions` | Transactions of a single account for a period |
-| `etendo_generate_aging_receivable` | Aging buckets of customer receivables |
+| `generate_financial_accounts_page` | Overview of every financial account (balances, currency, type) |
+| `generate_financial_account_transactions` | Transactions of a single account for a period |
+| `generate_aging_receivable` | Aging buckets of customer receivables |
 
 Example:
 
 ```json
 {
-  "tool": "etendo_generate_financial_account_transactions",
+  "tool": "generate_financial_account_transactions",
   "arguments": {
     "format": "pdf",
     "parameters": {}
@@ -540,11 +540,11 @@ The first call returns a validation message listing the required keys (typically
 
 | Symptom | Likely cause | Resolution |
 |---------|--------------|------------|
-| `etendo_neo_create` rejects `type`, `transactionType`, `status`, `conversionRateType` | A list code that does not exist in the instance was passed | Re-read the field metadata from `etendo_neo_schema`; never hard-code list codes |
-| `etendo_neo_create` on payment rejects `documentType` | The submitted document type does not match `DocBaseType IN ('APP','ARR')` and `IsSOTrx='@Isreceipt@'` | Resolve via `etendo_neo_selectors` with the correct `receipt` context |
-| `etendo_neo_action("EM_APRM_Process_Payment")` returns `processResult: "error"` | Payment is missing amount allocation, has an inconsistent currency / conversion rate, or the document type does not allow auto-processing | Read `processMessage`; surface it verbatim; do not retry the same payload |
-| `etendo_neo_action("EM_Aprm_Executepayment")` returns an error about the payment method | The `paymentMethod` configured on the account does not have an execution process | Switch to a payment method that supports execution, or run `EM_Aprm_Add_Scheduledpayments` first |
-| `etendo_neo_action("Posted")` returns a warning | The transaction or payment was posted but Etendo flagged an accounting note | Treat as posted and surface the message to the user |
-| `etendo_generate_aging_receivable` returns a validation error with empty parameters | Expected — required parameter keys are listed in the message | Fill the keys and retry |
+| `neo_create` rejects `type`, `transactionType`, `status`, `conversionRateType` | A list code that does not exist in the instance was passed | Re-read the field metadata from `neo_schema`; never hard-code list codes |
+| `neo_create` on payment rejects `documentType` | The submitted document type does not match `DocBaseType IN ('APP','ARR')` and `IsSOTrx='@Isreceipt@'` | Resolve via `neo_selectors` with the correct `receipt` context |
+| `neo_action("EM_APRM_Process_Payment")` returns `processResult: "error"` | Payment is missing amount allocation, has an inconsistent currency / conversion rate, or the document type does not allow auto-processing | Read `processMessage`; surface it verbatim; do not retry the same payload |
+| `neo_action("EM_Aprm_Executepayment")` returns an error about the payment method | The `paymentMethod` configured on the account does not have an execution process | Switch to a payment method that supports execution, or run `EM_Aprm_Add_Scheduledpayments` first |
+| `neo_action("Posted")` returns a warning | The transaction or payment was posted but Etendo flagged an accounting note | Treat as posted and surface the message to the user |
+| `generate_aging_receivable` returns a validation error with empty parameters | Expected — required parameter keys are listed in the message | Fill the keys and retry |
 
-For any list-typed field encountered above (`type`, `transactionType`, `status`, `documentStatus`, `conversionRateType`, `formOfPayment`, `overduePaymentDayRule`, `matchingtype`), the concrete code values are **to-be-resolved at runtime** via `etendo_neo_schema` — they are intentionally not enumerated here because they are role / module dependent.
+For any list-typed field encountered above (`type`, `transactionType`, `status`, `documentStatus`, `conversionRateType`, `formOfPayment`, `overduePaymentDayRule`, `matchingtype`), the concrete code values are **to-be-resolved at runtime** via `neo_schema` — they are intentionally not enumerated here because they are role / module dependent.

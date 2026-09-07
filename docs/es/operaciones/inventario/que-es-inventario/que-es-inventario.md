@@ -1,9 +1,10 @@
 ---
+title: ¿Qué es la sección Inventario?
 tags:
-    - Inventario
-    - Almacén
-    - Productos
-    - Etendo Go
+  - Inventario
+  - Almacén
+  - Productos
+  - Etendo Go
 ---
 
 # ¿Qué es la sección Inventario?
@@ -42,7 +43,7 @@ Por el momento, todas las ventanas y pestañas de Inventario están disponibles 
 
 ## Recursos y próximos pasos
 
-Para empezar a operar, define primero tus [categorías de producto](../productos/como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md), después da de alta tus [productos](../productos/como-crear-un-producto/como-crear-un-producto.md) y por último tus [almacenes](../almacenes/como-crear-un-almacen/como-crear-un-almacen.md). Con esos tres elementos configurados, ya puedes empezar a registrar stock desde [Compras](../../compras/index.md) o desde un ajuste de inventario.
+Para empezar a operar, define primero tus [categorías de producto](../productos/crear-una-categoria-de-producto/crear-una-categoria-de-producto.md), después da de alta tus [productos](../productos/crear-un-producto/crear-un-producto.md) y por último tus [almacenes](../almacenes/crear-un-almacen/crear-un-almacen.md). Con esos tres elementos configurados, ya puedes empezar a registrar stock desde un [pedido de compra](../../compras/crear-un-pedido-de-compra/crear-un-pedido-de-compra.md), desde [Compras](../../compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md) o desde un ajuste de inventario.
 
 ---
 
@@ -50,6 +51,7 @@ Para empezar a operar, define primero tus [categorías de producto](../productos
 
 - [¿Qué es la sección de Productos?](../productos/index.md)
 - [¿Qué es la sección Almacén?](../almacenes/index.md)
+- [¿Qué es la sección Compras?](../../compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

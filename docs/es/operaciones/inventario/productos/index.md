@@ -47,14 +47,14 @@ Cada producto indica si está disponible para documentos de **venta**, de **comp
 
 ## Recursos y próximos pasos
 
-Antes de crear tu primer producto, conviene tener definida al menos una [categoría de producto](como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md).
+Antes de crear tu primer producto, conviene tener definida al menos una [categoría de producto](crear-una-categoria-de-producto/crear-una-categoria-de-producto.md).
 
 ---
 
 ## Artículos Relacionados
 
-- [Cómo crear un producto](como-crear-un-producto/como-crear-un-producto.md)
-- [Cómo crear y configurar una categoría de producto](como-crear-una-categoria-de-producto/como-crear-una-categoria-de-producto.md)
+- [Crear un producto](crear-un-producto/crear-un-producto.md)
+- [Crear y configurar una categoría de producto](crear-una-categoria-de-producto/crear-una-categoria-de-producto.md)
 - [¿Qué es la sección Almacén?](../almacenes/index.md)
 
 ---
