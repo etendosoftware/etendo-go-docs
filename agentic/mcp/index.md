@@ -169,7 +169,7 @@ Two rules worth internalizing:
 
 Every spec with more than one entity has a parent/child shape — `header`/`lines`, `inventory`/`inventoryLine`, `product`/`price` — and creating a record in the child entity has one extra step that creating a header does not: **resolving the parent-dependent defaults before you call `neo_create`.**
 
-`neo_schema(spec, entity, view: "create")` on a child entity does **not** list the parent foreign key among the fields it describes, yet `neo_create` will reject the write with a 422 demanding exactly that field. This is expected — the parent FK is always required on a child entity even though the create-view schema does not enumerate it — so always send it, keyed by the field name shown in the full (non-`view`) `neo_schema` dump or in an existing sibling record (e.g. `physInventory` on `inventory-line`, `salesOrder` on `sales-order/lines`, `product` on `product/price`).
+`neo_schema(spec, entity, view: "create")` on a child entity does **not** list the parent foreign key among the fields it describes, yet `neo_create` will reject the write with a 422 demanding a parent reference. Name the parent with `parentId`, not with the child entity's own foreign key to it (e.g. not `physInventory` on `inventory-line`, not `salesOrder` on `sales-order/lines`, not `product` on `product/price`) — the server loads the parent record only from `parentId`, so the FK form silently persists a record with every parent-derived field left null, and can still 422 on a mandatory parent-context field it could not resolve (e.g. `orderDate`).
 
 More importantly, several fields on a child entity have a default expression that reads from the **parent** record (its warehouse, its price-list version, its running line number) — the server cannot compute them from the child entity alone. `neo_defaults(spec, entity)` called **without `parentId`** will silently omit those fields rather than error, because it does not have the parent record to evaluate the expression against. Passing `parentId` is what makes the difference between a resolved value and an absent one.
 
@@ -195,7 +195,7 @@ More importantly, several fields on a child entity have a default expression tha
    from `confirm` entirely — not flagged as unresolved, just absent.
 3. Resolve any remaining foreign keys with `neo_selectors`, passing `parentContext` when a
    selector depends on parent-level values (see [Resolve dependent selectors](#step-4--resolve-dependent-selectors) above for the header/line pattern).
-4. Call `neo_create` with the entity's own fields **plus** the parent FK and the values you got
+4. Call `neo_create` with the entity's own fields **plus** `parentId` and the values you got
    from `neo_defaults`:
 
    ```json
@@ -205,7 +205,7 @@ More importantly, several fields on a child entity have a default expression tha
        "spec": "physical-inventory",
        "entity": "inventoryLine",
        "fields": {
-         "physInventory": "<inventory-header-id>",
+         "parentId": "<inventory-header-id>",
          "product": "<product-id>",
          "storageBin": "<storage-bin-id-from-neo_defaults>"
        }
