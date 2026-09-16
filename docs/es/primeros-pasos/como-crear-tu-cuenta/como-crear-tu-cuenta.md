@@ -17,6 +17,9 @@ Etendo permite crear una cuenta gratuita en menos de un minuto, sin necesidad de
 
     ![Formulario de registro de Etendo](assets/registro.png)
 
+    !!! tip "Registrarte con Google"
+        También puedes crear la cuenta con un clic usando la opción **Sign in as...** con tu cuenta de Google, en lugar de completar el formulario manualmente.
+
 2. Completa los siguientes campos obligatorios:
     - **Nombre** — tu nombre completo como administrador de la cuenta.
     - **Correo electrónico** — dirección de email que usarás para iniciar sesión.
@@ -66,7 +69,7 @@ Este paso recoge los datos fiscales que Etendo usará en tus facturas y document
 
     ![Formulario de datos de empresa](assets/empresa.png)
 
-    - **Nombre de la empresa** — razón social completa (ej: *SMF Consulting S.L.*). Campo obligatorio.
+    - **Nombre de la empresa** — razón social completa (ej: *MG Services*). Campo obligatorio.
     - **Identificación fiscal (NIF)** — NIF de empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo opcional: puedes completarlo más adelante desde **Configuración**.
     - **Dirección** — dirección fiscal. Puedes añadirla más adelante desde **Configuración**. Campo opcional.
     - **Sector** — actividad principal de la empresa. Por defecto: *Tecnología*. Campo opcional.
@@ -91,7 +94,7 @@ Al finalizar, Etendo te lleva directo a la sección **Primeros pasos**, con un m
 Cada tarea muestra una breve descripción y el tiempo estimado para completarla. Todas tienen un botón propio (**Importar** o **Configurar**) que te lleva directo a la pantalla correspondiente, y una casilla **Marcar como completado** para confirmarla manualmente:
 
 - **Crear cuenta** — se marca como completada automáticamente apenas terminas el registro.
-- **Datos de tu empresa** — queda pendiente aunque ya hayas completado ese paso: se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a **Configuración > Organización**, donde podés revisar esos datos y subir el logo de tu empresa.
+- **Datos de tu empresa** — queda pendiente aunque ya hayas completado ese paso: se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a **Configuración > Organización**, donde puedes revisar esos datos y subir el logo de tu empresa.
 - **Carga masiva de productos** — el botón **Importar** (3 min) abre una ventana para arrastrar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar.
 
     ![Ventana de importación de productos o contactos](assets/primeros-pasos-importar.png)
