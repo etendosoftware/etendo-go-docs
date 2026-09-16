@@ -30,6 +30,8 @@ Con tus contactos cargados, ya puedes avanzar a crear tu primer pedido de venta 
 
 ## Artículos Relacionados
 
+- [Cómo crear un contacto](../como-crear-un-contacto/como-crear-un-contacto.md)
+- [Importar contactos](../importar-contactos/importar-contactos.md)
 - [¿Qué es la sección Ventas?](../../ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
 - [Crear y gestionar pedidos](../../ventas/crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md)
 - [Compras](../../../operaciones/compras/que-es-la-seccion-compras/que-es-la-seccion-compras.md)

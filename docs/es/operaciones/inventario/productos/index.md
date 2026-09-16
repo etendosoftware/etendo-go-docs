@@ -54,6 +54,7 @@ Antes de crear tu primer producto, conviene tener definida al menos una [categor
 ## Artículos Relacionados
 
 - [Crear un producto](crear-un-producto/crear-un-producto.md)
+- [Importar productos](importar-productos/importar-productos.md)
 - [Crear y configurar una categoría de producto](crear-una-categoria-de-producto/crear-una-categoria-de-producto.md)
 - [¿Qué es la sección Almacén?](../almacenes/index.md)
 

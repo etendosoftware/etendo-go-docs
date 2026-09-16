@@ -85,6 +85,7 @@ También puedes crear un contacto sin salir de un pedido, una factura o un albar
 ## Artículos Relacionados
 
 - [¿Qué es la sección Contactos?](../que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
+- [Importar contactos](../importar-contactos/importar-contactos.md)
 - [Gestionar tus contactos](../gestionar-tus-contactos/gestionar-tus-contactos.md)
 
 ---
