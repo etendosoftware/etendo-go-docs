@@ -93,6 +93,8 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 - [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
 - [Cómo gestionar tu organización](../../sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
+- [Importar contactos](../../comercial/contactos/importar-contactos/importar-contactos.md) — si ya tienes tus clientes y proveedores en una planilla, cárgalos todos de una vez en vez de crearlos uno por uno.
+- [Importar productos](../../operaciones/inventario/productos/importar-productos/importar-productos.md) — lo mismo para tu catálogo de productos.
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

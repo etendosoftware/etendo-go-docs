@@ -38,6 +38,7 @@ En ambos casos aparece el modal **Eliminar registro**, con la advertencia de que
 ## Artículos Relacionados
 
 - [Crear un producto](../crear-un-producto/crear-un-producto.md)
+- [Importar productos](../importar-productos/importar-productos.md)
 - [¿Qué es la sección de Productos?](../index.md)
 - [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md)
 

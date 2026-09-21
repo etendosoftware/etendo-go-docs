@@ -37,6 +37,7 @@ Para editar, modifica el **Precio unitario** o el **Precio de lista** de una fil
 ## Artículos Relacionados
 
 - [Crear un producto](../crear-un-producto/crear-un-producto.md)
+- [Importar productos](../importar-productos/importar-productos.md)
 - [Editar o eliminar un producto](../editar-o-eliminar-un-producto/editar-o-eliminar-un-producto.md)
 - [¿Qué es la sección de Productos?](../index.md)
 
