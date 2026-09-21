@@ -270,4 +270,28 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion/"/>
     </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/como-invitar-a-un-usuario/como-invitar-a-un-usuario/</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/como-invitar-a-un-usuario/como-invitar-a-un-usuario/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/gestionar-tus-usuarios/gestionar-tus-usuarios/</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/gestionar-tus-usuarios/gestionar-tus-usuarios/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios/</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios/"/>
+    </url>
+    <url>
+        <loc>https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/que-es-roles-y-usuarios/que-es-roles-y-usuarios/</loc>
+        <lastmod>2026-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://etendosoftware.github.io/etendo-go-docs/sistema/configuracion/que-es-roles-y-usuarios/que-es-roles-y-usuarios/"/>
+    </url>
 </urlset>
