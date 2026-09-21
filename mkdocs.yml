@@ -115,6 +115,10 @@ plugins:
                 - sistema/index.md
                 - Configuración:
                     - Cómo gestionar tu organización: sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md
+                    - ¿Qué es la sección Roles y usuarios?: sistema/configuracion/que-es-roles-y-usuarios/que-es-roles-y-usuarios.md
+                    - Cómo invitar a un usuario: sistema/configuracion/como-invitar-a-un-usuario/como-invitar-a-un-usuario.md
+                    - Gestionar tus usuarios: sistema/configuracion/gestionar-tus-usuarios/gestionar-tus-usuarios.md
+                    - Glosario de Roles y usuarios: sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md
 
   - glightbox
   - tags
