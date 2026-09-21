@@ -28,7 +28,7 @@ Conjunto fijo de permisos que determina qué ventanas puede ver un usuario y con
 
 **Administrador** es excluyente: un usuario con este rol no puede tener ningún otro a la vez. Los cuatro roles restantes — **Ventas**, **Compras**, **Finanzas** e **Inventario** — sí se pueden combinar entre sí en un mismo usuario (por ejemplo, un usuario con Ventas y Finanzas a la vez).
 
-Solo el rol **Administrador** tiene acceso a Configuración, incluida la ventana Usuarios — ningún otro rol la ve, ni siquiera en modo solo lectura.
+Solo el rol **Administrador** puede ver **[Organización](https://app.etendo.software/organization){target="_blank"}**, **[Usuarios](https://app.etendo.software/user){target="_blank"}**, **[Secuencias de documentos](https://app.etendo.software/document-sequence){target="_blank"}** y **[Configuración Fiscal](https://app.etendo.software/fiscal-config){target="_blank"}** — ningún otro rol accede a esas ventanas, ni siquiera en modo solo lectura. Otros catálogos que también viven dentro de Configuración, como [Tarifa](https://app.etendo.software/price-list){target="_blank"} o [Condiciones de pago](https://app.etendo.software/payment-term){target="_blank"}, sí son accesibles para algunos de los demás roles: consulta el detalle completo en [Acceso por rol](#acceso-por-rol).
 
 !!! info "No lo confundas con el rol de Cliente o Proveedor"
     En la sección [Contactos](../../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md), "rol" también se usa para indicar si un contacto es Cliente o Proveedor de tu empresa. Es un concepto distinto: no tiene relación con los roles de usuario que se explican aquí.
@@ -47,67 +47,9 @@ Cada rol tiene, para cada ventana del sistema, uno de estos tres niveles:
 
 Estado de un usuario recién creado, mientras no acepta el correo de invitación que Etendo le envía automáticamente al guardarlo. Por defecto, un usuario recién invitado no tiene ningún rol asignado (columna Roles vacía en la lista), pero un Administrador puede asignarle uno en cualquier momento —incluso antes de que acepte la invitación— y ese rol ya queda reflejado en la lista. Pasa a **Aceptada** cuando el usuario acepta.
 
-## Roles predefinidos y su acceso
+## Acceso por rol
 
-Administrador tiene acceso completo a todas las ventanas, así que no se repite en cada fila. La tabla muestra el acceso de los otros cuatro roles. Puedes consultar esta misma información en vivo desde la ficha de cualquier usuario, en el campo **Roles asignados**.
-
-| Ventana | Ventas | Compras | Finanzas | Inventario |
-|:--------|:---:|:---:|:---:|:---:|
-| **General** | | | | |
-| Inicio (Dashboard) | ✓ | ✓ | ✓ | ✓ |
-| Favoritos | ✓ | ✓ | ✓ | ✓ |
-| Copilot (Asistente IA) | ✓ | ✓ | ✓ | ✓ |
-| **Configuración General** | | | | |
-| Rangos de conversión | — | — | ✓ | — |
-| Organización | — | — | — | — |
-| Usuarios | — | — | — | — |
-| **Gestión de Datos Maestros** | | | | |
-| Terceros | ✓ | ✓ | ✓ | Solo lectura |
-| Producto | ✓ | ✓ | ✓ | ✓ |
-| Categoría de Contacto | Solo lectura | Solo lectura | ✓ | — |
-| Condiciones de pago | Solo lectura | Solo lectura | ✓ | — |
-| Categoría del producto | Solo lectura | Solo lectura | ✓ | ✓ |
-| Tarifa | ✓ | ✓ | ✓ | — |
-| **Gestión de Compras** | | | | |
-| Pedido de Compra | — | ✓ | Solo lectura | Solo lectura |
-| Albarán de Compra | — | ✓ | — | ✓ |
-| Factura de Compra | — | ✓ | ✓ | — |
-| Relación albarán-factura | — | ✓ | ✓ | — |
-| Albarán de Devolución (compra) | — | ✓ | — | ✓ |
-| **Gestión de Almacén** | | | | |
-| Inventario físico | ✓ | — | ✓ | ✓ |
-| Movimiento entre almacenes | — | — | — | ✓ |
-| Almacén y huecos | — | — | ✓ | ✓ |
-| **Gestión de Producción** | | | | |
-| Consumo interno | — | — | — | ✓ |
-| **Gestión de Ventas** | | | | |
-| Presupuesto de Venta | ✓ | — | Solo lectura | — |
-| Pedido de Venta | ✓ | — | Solo lectura | Solo lectura |
-| Albarán de Venta | ✓ | — | — | ✓ |
-| Albarán de devolución (venta) | ✓ | — | — | ✓ |
-| Factura de Venta | ✓ | — | ✓ | — |
-| **Gestión Financiera** | | | | |
-| Pago | — | ✓ | ✓ | — |
-| Cobro | ✓ | — | ✓ | — |
-| Cuenta financiera | — | — | ✓ | — |
-| Configuración SII | — | — | ✓ | — |
-| Monitor SII | — | — | ✓ | — |
-| Asientos manuales simplificados | — | — | ✓ | — |
-| Abrir/Cerrar periodos | — | — | — | — |
-| Árbol de cuentas | — | — | ✓ | — |
-| Esquema contable | — | — | ✓ | — |
-| Calendario | — | — | ✓ | — |
-| Secuencias de documentos | — | — | — | — |
-| Categoría de Impuesto | — | — | ✓ | — |
-| Impuesto | — | — | ✓ | — |
-| Centro de costos | — | — | — | — |
-| Activos | — | — | ✓ | — |
-| Categoría de activo | — | — | ✓ | — |
-| Amortización | — | — | ✓ | — |
-| **Reglas de matcheo** | | | | |
-| Reglas de matcheo | — | — | — | — |
-
-Esta tabla refleja el acceso general a cada ventana. Dentro de una misma ventana, alguna pestaña puntual con datos sensibles —por ejemplo, la contabilidad de un contacto en Terceros— puede tener una restricción adicional más estricta que la del resto de la ventana.
+Cada rol combina los tres niveles de acceso anteriores de forma distinta según la ventana. Puedes consultar el detalle completo y siempre actualizado en **[Configuración > Roles](https://app.etendo.software/roles){target="_blank"}**, donde se muestra, para cada rol, qué ventanas ve y con qué nivel de acceso — la misma información que consultas en vivo desde la ficha de cualquier usuario, en el campo **Roles asignados**.
 
 ## Artículos relacionados
 

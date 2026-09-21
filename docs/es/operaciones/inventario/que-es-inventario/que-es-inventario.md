@@ -39,7 +39,7 @@ El stock se gestiona **por almacén**: cada almacén mantiene su propio stock de
 
 ## Acceso y roles
 
-El acceso a las ventanas de Inventario depende del rol de cada usuario: por ejemplo, **Categoría del producto** — incluida la pestaña **Contabilidad**, donde se definen las cuentas contables que hereda cada producto — es de solo lectura para los roles Ventas y Compras, y de acceso completo para Finanzas e Inventario. Consulta el detalle completo, ventana por ventana, en el [Glosario de Roles y usuarios](../../../sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#roles-predefinidos-y-su-acceso).
+El acceso a las ventanas de Inventario depende del rol de cada usuario: por ejemplo, **Categoría del producto** — incluida la pestaña **Contabilidad**, donde se definen las cuentas contables que hereda cada producto — es de solo lectura para los roles Ventas y Compras, y de acceso completo para Finanzas e Inventario. Consulta el detalle completo, ventana por ventana, en el [Glosario de Roles y usuarios](../../../sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#acceso-por-rol).
 
 ## Recursos y próximos pasos
 
