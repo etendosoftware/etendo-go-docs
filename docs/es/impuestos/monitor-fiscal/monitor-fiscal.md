@@ -4,12 +4,12 @@ tags:
     - Impuestos
     - Fiscalidad
     - Monitor Fiscal
-    - Etendo Go
+    - Etendo
 ---
 
 # Monitor Fiscal
 
-El **Monitor Fiscal**, en **[Finanzas > Monitor Fiscal](https://go.etendo.cloud/fiscal-monitor){target="_blank"}**, es el panel donde revisas el estado del envío de tus facturas al sistema fiscal activo de tu organización (SII, TicketBAI o VERI\*FACTU) y sus incidencias.
+El **Monitor Fiscal**, en **[Finanzas > Monitor Fiscal](https://app.etendo.software/fiscal-monitor){target="_blank"}**, es el panel donde revisas el estado del envío de tus facturas al sistema fiscal activo de tu organización (SII, TicketBAI o VERI\*FACTU) y sus incidencias.
 
 ## Antes de Activar un Sistema Fiscal
 
@@ -30,6 +30,9 @@ Una vez que tu organización tiene un sistema fiscal configurado, el Monitor Fis
   ![Monitor Fiscal con las pestañas SII y TicketBAI](assets/monitor-fiscal-2.jpg)
   <figcaption>Pestaña SII: Facturas emitidas y recibidas del período, con su Estado y el CSV de la AEAT una vez enviadas.</figcaption>
 </figure>
+
+!!! info "Pestaña VERI\*FACTU pendiente de documentar"
+    Este artículo cubre las pestañas **SII** y **TicketBAI**. Se actualizará con la pestaña **VERI\*FACTU** una vez validada contra una organización con ese sistema activo.
 
 ### Pestaña SII
 
@@ -52,24 +55,28 @@ Se divide en **Enviadas** y **Rechazadas**. Cada fila muestra la Fecha, el Nº d
 
 ### Estado de envío en el detalle de la factura
 
-El estado de envío también aparece directamente en el detalle de cada factura, junto al resto de su información general. Si tu organización tiene varios sistemas activos (como SII y TicketBAI), la factura muestra un indicador de estado por cada uno:
+El estado de envío también aparece directamente en el detalle de cada factura. La vista rápida (el panel que se abre al pulsar una factura desde el listado) resume su **Estado SII** junto al resto de su información general; si tu organización tiene varios sistemas activos (como SII y TicketBAI), muestra un indicador de estado por cada uno.
+
+Para el detalle completo, la factura tiene su propia pestaña **[SIF](../glosario-de-impuestos/glosario-de-impuestos.md#sif)**, con un panel por cada sistema fiscal activo (por ejemplo **SII**) que incluye su estado (Pendiente, Aceptado o Error) y los campos operativos del envío: **Fecha operación**, **Tipo factura** (por ejemplo *F1 — Factura*), **Descripción SII**, **Causa exención** y **Autorización**.
 
 <figure markdown="span">
   ![Detalle de una factura con Estado SII y Estado TicketBAI](assets/monitor-fiscal-4.jpg)
   <figcaption>El detalle de la factura resume su Estado SII y su Estado TicketBAI de forma independiente.</figcaption>
 </figure>
 
-Desde ahí también puedes forzar el envío: el botón **Enviar a SIF** del detalle de la factura reenvía sus registros a SII y a TicketBAI a la vez. Es la forma de reintentar una factura en estado Pendiente o Error, por ejemplo tras corregir el problema indicado en Motivo error.
+Desde ahí también puedes forzar el envío: el botón **Enviar a SIF** del detalle de la factura reenvía sus registros a todos los sistemas fiscales activos a la vez (por ejemplo, a SII y a TicketBAI si ambos están activos; solo a SII si es el único activo). Es la forma de reintentar una factura en estado Pendiente o Error, por ejemplo tras corregir el problema indicado en Motivo error.
+
+!!! warning "Sin certificado digital, el envío falla"
+    Si tu organización todavía no cargó un certificado digital válido en **Configuración Fiscal** (ver [SII](../sii/sii.md)), **Enviar a SIF** muestra el error *"No se ha encontrado ningún certificado válido. Añada el certificado a la organización legal configurada mediante el proceso 'Añadir Certificado Digital'."* y no llega a enviar nada.
 
 !!! tip "Cada sistema fiscal tiene su propia configuración"
-    Los campos operativos de cada sistema (régimen REDEME, autorizaciones especiales AEAT, certificado digital para SII; territorio y envío automático para TicketBAI) se gestionan desde Configuración Fiscal. Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
+    Los campos operativos de cada sistema (autorizaciones especiales AEAT y certificado digital para SII; territorio y envío automático para TicketBAI) se gestionan desde Configuración Fiscal. Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
 
 ## Artículos Relacionados
 
 - [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [SII](../sii/sii.md)
 - [TicketBAI](../ticketbai/ticketbai.md)
-- [VERI\*FACTU](../verifactu/verifactu.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

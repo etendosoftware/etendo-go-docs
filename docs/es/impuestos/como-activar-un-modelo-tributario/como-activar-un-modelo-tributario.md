@@ -4,25 +4,25 @@ tags:
     - Impuestos
     - Fiscalidad
     - Configuración
-    - Etendo Go
+    - Etendo
     - Cómo hacer
 ---
 
 # Cómo Activar un Modelo Tributario
 
-Antes de poder facturar, cada organización debe activar su **modelo tributario**: el **sistema fiscal** que le corresponde según el territorio en el que opera, ya sea **SII**, **TicketBAI** o **VERI\*FACTU**. Etendo Go incluye un asistente guiado que determina automáticamente qué sistema aplica a partir de tu territorio fiscal y tu volumen de facturación, con una alternativa manual para configurarlo tú mismo.
+Antes de poder facturar, cada organización debe activar su **modelo tributario**: el **sistema fiscal** que le corresponde según el territorio en el que opera, ya sea **SII**, **TicketBAI** o **VERI\*FACTU**. Etendo incluye un asistente guiado que determina automáticamente qué sistema aplica a partir de tu territorio fiscal y tu volumen de facturación, con una alternativa manual para configurarlo tú mismo.
 
 ## Cómo Activar el Sistema Fiscal (Asistente Guiado)
 
-1. Ve a **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}**.
+1. Ve a **[Configuración > Configuración Fiscal](https://app.etendo.software/fiscal-config){target="_blank"}**.
 2. **Paso 1 — Territorio:** selecciona el territorio fiscal en el que opera tu organización.
 
     <figure markdown="span">
       ![Paso 1 del asistente de Configuración Fiscal, con las opciones de territorio](assets/como-activar-un-modelo-tributario-1.jpg)
-      <figcaption>Paso 1: selección del territorio fiscal (Navarra, Álava, Bizkaia, Gipuzkoa, España/Baleares, Canarias o Ceuta/Melilla).</figcaption>
+      <figcaption>Paso 1: selección del territorio fiscal (Navarra, Álava, Bizkaia, Guipúzcoa, España/Baleares, Canarias o Ceuta/Melilla).</figcaption>
     </figure>
 
-3. **Paso 2 — Detalles:** el asistente hace preguntas adicionales según el territorio elegido. Para **España/Baleares, Canarias y Ceuta/Melilla**, primero pregunta si estás obligado al SII:
+3. **Paso 2 — Detalles:** el asistente hace preguntas adicionales según el territorio elegido. Para **España/Baleares y Canarias**, primero pregunta si estás obligado al SII:
 
     <figure markdown="span">
       ![Pregunta sobre la obligatoriedad del SII](assets/como-activar-un-modelo-tributario-2.jpg)
@@ -39,6 +39,8 @@ Antes de poder facturar, cada organización debe activar su **modelo tributario*
     !!! warning "Son excluyentes"
         Si te acoges al SII, ya sea de forma obligatoria o voluntaria, quedas fuera del ámbito de VERI\*FACTU.
 
+    Para **Ceuta/Melilla**, el asistente no hace esta pregunta: pasa directo del territorio a confirmar **VERI\*FACTU**, la única opción disponible. El SII es un mecanismo de declaración del IVA, y Ceuta y Melilla no tributan por IVA sino por IPSI, así que el SII no aplica ahí ni de forma obligatoria ni voluntaria.
+
 4. **Paso 3 — Confirmar:** revisa el territorio, la Hacienda y el sistema fiscal resultante antes de continuar.
 
     <figure markdown="span">
@@ -46,10 +48,10 @@ Antes de poder facturar, cada organización debe activar su **modelo tributario*
       <figcaption>Resumen final: territorio, Hacienda y sistema fiscal activado.</figcaption>
     </figure>
 
-5. Pulsa **Confirmar**. A continuación podrás completar los detalles operativos de tu sistema fiscal (por ejemplo, régimen especial, autorizaciones AEAT y certificado digital para SII, o territorio y envío automático para TicketBAI). Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
+5. Pulsa **Confirmar**. A continuación podrás completar los detalles operativos de tu sistema fiscal (por ejemplo, autorizaciones AEAT y certificado digital para SII, o territorio y envío automático para TicketBAI). Ver [SII](../sii/sii.md) y [TicketBAI](../ticketbai/ticketbai.md).
 
 !!! tip "Territorios forales"
-    Para **Navarra**, el sistema fiscal es siempre **SII** y el asistente salta directo del paso 1 al paso 3 (confirmar), sin preguntas adicionales. Para **Álava, Bizkaia y Gipuzkoa**, el paso 2 pregunta si además debes declarar por SII foral, y el resultado es **TicketBAI**, combinado o no con SII.
+    Para **Navarra**, el sistema fiscal es siempre **SII** y el asistente salta directo del paso 1 al paso 3 (confirmar), sin preguntas adicionales. Para **Álava, Bizkaia y Guipúzcoa**, el paso 2 pregunta "¿También debes declarar por SII?", con las opciones **Solo TicketBAI** o **TicketBAI + SII**, y el resultado es **TicketBAI**, combinado o no con SII.
 
 ## Cómo Configurarlo Manualmente
 
@@ -61,12 +63,10 @@ Si prefieres elegir el sistema fiscal tú mismo, sin responder a las preguntas d
 4. Pulsa **Continuar** y confirma.
 
 !!! info "Puedes cambiarlo más adelante"
-    Tanto si usas el asistente guiado como la configuración manual, podrás editar cualquier campo después desde la misma pantalla, que una vez configurada pasa a llamarse **Configuración Fiscal** con el sufijo de tu sistema activo (por ejemplo, *"Configuración Fiscal SII + TBAI"*) y se ubica en **Configuración > Monitor de facturas > Configuración Fiscal**.
+    Tanto si usas el asistente guiado como la configuración manual, podrás editar cualquier campo después desde la misma pantalla, que una vez configurada pasa a llamarse **Configuración Fiscal** con el sufijo de tu sistema activo (por ejemplo, *"Configuración Fiscal SII + TBAI"*) y se ubica en **[Configuración > Configuración Fiscal](https://app.etendo.software/fiscal-config){target="_blank"}**.
 
 ## Artículos Relacionados
 
-- [¿Qué puedes hacer en Impuestos?](../que-puedes-hacer-en-impuestos/que-puedes-hacer-en-impuestos.md)
-- [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 - [SII](../sii/sii.md)
 - [TicketBAI](../ticketbai/ticketbai.md)
 - [VERI\*FACTU](../verifactu/verifactu.md)

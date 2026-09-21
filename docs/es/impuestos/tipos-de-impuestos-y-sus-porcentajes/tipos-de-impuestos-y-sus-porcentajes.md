@@ -4,12 +4,12 @@ tags:
     - Impuestos
     - Fiscalidad
     - Referencia
-    - Etendo Go
+    - Etendo
 ---
 
 # Tipos de Impuestos y sus Porcentajes
 
-Etendo Go incluye un catálogo predefinido de impuestos en **[Configuración > Impuesto](https://go.etendo.cloud/tax){target="_blank"}**, clasificados por **Categoría de Impuesto** en **[Configuración > Categoría de Impuesto](https://go.etendo.cloud/tax-category){target="_blank"}**. Este artículo explica cómo se organiza ese catálogo y qué porcentajes aplica cada tipo.
+Etendo incluye un catálogo predefinido de impuestos en **[Finanzas > Impuesto](https://app.etendo.software/tax){target="_blank"}**, clasificados por **Categoría de Impuesto** en **[Finanzas > Categoría de Impuesto](https://app.etendo.software/tax-category){target="_blank"}**. Este artículo explica cómo se organiza ese catálogo y qué porcentajes aplica cada tipo.
 
 ## Tipo de Impuesto (Régimen)
 
@@ -37,11 +37,11 @@ Dentro de cada régimen, los impuestos se agrupan por tipo de tarifa:
 
 ## Ejemplos del Catálogo
 
-El catálogo de Impuesto de Etendo Go incluye más de 70 registros que cubren tanto operaciones de venta como de compra, con nombres que identifican el tipo de operación y su porcentaje (**Índice**). Algunos ejemplos representativos:
+El catálogo de Impuesto de Etendo incluye 75 registros de fábrica que cubren tanto operaciones de venta como de compra, con nombres que identifican el tipo de operación y su porcentaje (**Índice**). Algunos ejemplos representativos:
 
 | Nombre | Índice | Tipo venta/compra |
 | --- | --- | --- |
-| Adquisiciones IVA 21% | +21 % | Compras |
+| Adquisiciones IVA 10% | +10 % | Compras |
 | Entregas IVA 5% | +5 % | Ventas |
 | Entregas IVA 2% | +2 % | Ventas |
 | Entregas IVA 4% Revendedores | +4 % | Ventas |
@@ -65,7 +65,7 @@ Cada Impuesto define:
 - **Válido desde** — fecha a partir de la cual el impuesto está vigente.
 - **Cálculo del importe de impuestos del documento** — método usado para calcular el importe total de impuestos de un documento (por ejemplo, suma de las bases imponibles de línea).
 - **Base Imponible** — importe sobre el que se calcula el impuesto (por ejemplo, importe neto de línea).
-- **TBAI - Clave de Régimen Especial de IVA** — el código oficial de régimen especial o trascendencia de la AEAT (por ejemplo, *01 — Operación de régimen general* o *07 — Régimen especial del criterio de caja*) que se incluye en los envíos a TicketBAI.
+- **TBAI - Clave de Régimen Especial de IVA** — el código oficial de régimen especial o trascendencia de la AEAT (por ejemplo, *01 — Operación de régimen general* o *07 — Régimen especial del criterio de caja*) que se incluye en los envíos a [TicketBAI](../ticketbai/ticketbai.md).
 - **Contabilidad** — cuentas de **Impuesto repercutido** e **Impuesto reclamado** que genera al contabilizar.
 
 ## Campos del Registro Categoría de Impuesto
@@ -75,17 +75,14 @@ Cada Categoría de Impuesto define:
 - **Nombre** y **Descripción**.
 - **Valor por defecto** — si se aplica automáticamente cuando no se especifica otra categoría.
 - **Tipo de impuesto** — IVA, IGIC o IPSI.
-- **Tipo de operación** — tipo de operación a la que aplica (por ejemplo, entrega o adquisición de bienes).
-- **Tipo de tarifa** — Cero, Exento, General, Incrementado 1, Incrementado 2, No sujeto, Normal, Reducido o Super reducido.
-- **SII declarable** — si las operaciones con esta categoría deben declararse al SII.
-
-!!! info "Campos en inglés en la interfaz"
-    Estos tres campos aparecen actualmente en inglés en el formulario de Etendo Go: **Tax type**, **Transaction type** y **Rate type**, respectivamente.
+- **Tipo de transacción** — tipo de operación a la que aplica (por ejemplo, entrega o adquisición de bienes).
+- **Tipo de tasa** — Cero, Exento, General, Incrementado 1, Incrementado 2, No sujeto, Normal, Reducido o Super reducido.
+- **Declarable SII** — si las operaciones con esta categoría deben declararse al [SII](../sii/sii.md).
 
 ## Artículos Relacionados
 
-- [¿Qué puedes hacer en Impuestos?](../que-puedes-hacer-en-impuestos/que-puedes-hacer-en-impuestos.md)
-- [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
+- [SII](../sii/sii.md)
+- [TicketBAI](../ticketbai/ticketbai.md)
 - [Modelo 303](../modelo-303/modelo-303.md)
 
 ---

@@ -8,7 +8,7 @@ hide:
 
 # Impuestos
 
-Todo lo que necesitas para gestionar la fiscalidad de tu organización en Etendo Go: desde los tipos de impuesto que aplicas hasta el sistema de facturación electrónica que te corresponde y tus declaraciones periódicas.
+Todo lo que necesitas para gestionar la fiscalidad de tu organización en Etendo: desde los tipos de impuesto que aplicas hasta el sistema de facturación electrónica que te corresponde y tus declaraciones periódicas.
 
 ## Introducción
 
@@ -70,7 +70,7 @@ Todo lo que necesitas para gestionar la fiscalidad de tu organización en Etendo
 
     ---
 
-    Sistema de facturación electrónica obligatorio en Álava, Bizkaia y Gipuzkoa.
+    Sistema de facturación electrónica obligatorio en Álava, Bizkaia y Guipúzcoa.
 
     [:octicons-arrow-right-24: Leer más](ticketbai/ticketbai.md)
 

@@ -4,13 +4,13 @@ tags:
     - Impuestos
     - Fiscalidad
     - VERI*FACTU
-    - Etendo Go
+    - Etendo
     - Cómo hacer
 ---
 
 # VERI\*FACTU
 
-**VERI\*FACTU** es el sistema de verificación de facturas: el propio software de facturación genera los registros de alta y anulación de cada factura, su huella (*hash*) y un código QR, y los remite a la AEAT de forma automática, segura y continuada. Es la alternativa al SII para organizaciones con domicilio fiscal en régimen común (España peninsular y Baleares), Canarias o Ceuta y Melilla que no están obligadas al SII.
+**VERI\*FACTU** es el sistema de verificación de facturas: el propio software de facturación genera los registros de alta y anulación de cada factura, su huella (*hash*) y un código QR, y los remite a la AEAT de forma automática, segura y continuada. Es la alternativa al SII para organizaciones con domicilio fiscal en régimen común (España peninsular y Baleares) o Canarias que no están obligadas al SII. En Ceuta y Melilla es la única opción (ver [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md) para la razón).
 
 !!! tip "¿No sabes qué sistema te corresponde?"
     Este artículo asume que ya sabes que VERI\*FACTU es tu sistema fiscal. Si todavía no lo activaste, empieza por [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md), que te guía según tu territorio.
@@ -28,15 +28,14 @@ Si tu organización **no está obligada al SII** (no es Gran Empresa, no pertene
 - **SII voluntario**, en cambio, exige enviar electrónicamente los registros a la AEAT en un plazo general de 4 días, se solicita mediante el modelo 036 y te exonera de presentar los modelos 347 y 390.
 
 !!! warning "Son excluyentes"
-    Si te acoges al SII, ya sea de forma obligatoria o voluntaria, quedas fuera del ámbito de VERI\*FACTU.
+    Si te acoges al SII, ya sea de forma obligatoria o voluntaria, quedas fuera del ámbito de VERI\*FACTU: son [excluyentes](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md).
 
 ## Cómo Activarlo
 
-1. Ve a **[Configuración > Configuración Fiscal](https://go.etendo.cloud/fiscal-config){target="_blank"}**.
+1. Ve a **[Configuración > Configuración Fiscal](https://app.etendo.software/fiscal-config){target="_blank"}**.
 2. Selecciona tu territorio: **España/Baleares**, **Canarias** o **Ceuta/Melilla**.
-3. Cuando el asistente pregunte si estás obligada al SII, responde que **no**.
-4. Elige **VERI\*FACTU** entre las dos opciones ofrecidas.
-5. Revisa el resumen y pulsa **Confirmar**.
+3. Para España/Baleares o Canarias, cuando el asistente pregunte si estás obligada al SII, responde que **no** y elige **VERI\*FACTU** entre las dos opciones ofrecidas. Para Ceuta/Melilla, el asistente no pregunta nada: pasa directo a confirmar VERI\*FACTU.
+4. Revisa el resumen y pulsa **Confirmar**.
 
     <figure markdown="span">
       ![Confirmación con sistema fiscal VERI*FACTU](assets/verifactu-2.jpg)
@@ -44,13 +43,12 @@ Si tu organización **no está obligada al SII** (no es Gran Empresa, no pertene
     </figure>
 
 !!! info "Detalles operativos pendientes de documentar"
-    Tras confirmar, Etendo Go permite completar detalles operativos adicionales (fechas, entorno de pruebas o producción). Este artículo se actualizará con esa configuración una vez validada contra una organización con VERI\*FACTU activo.
+    Tras confirmar, Etendo permite completar detalles operativos adicionales (fechas, entorno de pruebas o producción). Este artículo se actualizará con esa configuración una vez validada contra una organización con VERI\*FACTU activo.
 
 ## Artículos Relacionados
 
 - [Cómo Activar un Modelo Tributario](../como-activar-un-modelo-tributario/como-activar-un-modelo-tributario.md)
 - [SII](../sii/sii.md)
-- [TicketBAI](../ticketbai/ticketbai.md)
 - [Glosario de Impuestos](../glosario-de-impuestos/glosario-de-impuestos.md)
 
 ---
