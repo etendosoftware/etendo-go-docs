@@ -9,7 +9,7 @@ tags:
 
 # Cómo crear tu cuenta
 
-Etendo permite crear una cuenta gratuita en menos de un minuto, sin necesidad de tarjeta de crédito. Vas a completar cuatro pasos: registro de usuario, confirmación de correo, perfil y datos de empresa. Una vez finalizados, Etendo prepara tu espacio de trabajo automáticamente y te lleva a **Primeros pasos**, una checklist con las tareas recomendadas para terminar de configurar tu cuenta.
+Etendo permite crear una cuenta gratuita en menos de un minuto, sin necesidad de tarjeta de crédito. Vas a completar cuatro pasos: registro de usuario, confirmación de correo, perfil y datos de empresa. Una vez finalizados, Etendo prepara tu espacio de trabajo automáticamente y te lleva a **Primeros pasos**, una lista de tareas recomendadas para terminar de configurar tu cuenta.
 
 ## Registro de usuario
 
@@ -37,9 +37,10 @@ Etendo permite crear una cuenta gratuita en menos de un minuto, sin necesidad de
 
 Antes de continuar, Etendo te pide que confirmes tu dirección de email.
 
-![Pantalla de confirmación de correo](assets/confirma-correo.png)
-
 1. Abre la casilla de entrada del correo con el que te registraste.
+
+    ![Pantalla de confirmación de correo](assets/confirma-correo.png)
+
 2. Haz clic en el enlace que te enviamos para confirmar tu cuenta.
 
 !!! tip "¿No llegó el correo?"
@@ -70,12 +71,12 @@ Este paso recoge los datos fiscales que Etendo usará en tus facturas y document
     ![Formulario de datos de empresa](assets/empresa.png)
 
     - **Nombre de la empresa** — razón social completa (ej: *MG Services*). Campo obligatorio.
-    - **Identificación fiscal (NIF)** — NIF de empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo opcional: puedes completarlo más adelante desde **Configuración**.
-    - **Dirección** — dirección fiscal. Puedes añadirla más adelante desde **Configuración**. Campo opcional.
+    - **Identificación fiscal (NIF)** — El NIF de una empresa empieza por letra (ej: *B12345678*). Para autónomos, introduce el DNI o NIE. Campo opcional.
+    - **Dirección** — dirección fiscal. Campo opcional.
     - **Sector** — actividad principal de la empresa. Por defecto: *Tecnología*. Campo opcional.
 
     !!! info "Edición posterior"
-        Todos estos datos se pueden modificar después desde **Configuración**.
+        Todos estos datos se pueden modificar después desde [**Configuración**](https://app.etendo.software/organization){target="_blank"}.
 
 2. Haz clic en **Empezar**.
 
@@ -94,28 +95,30 @@ Al finalizar, Etendo te lleva directo a la sección **Primeros pasos**, con un m
 Cada tarea muestra una breve descripción y el tiempo estimado para completarla. Todas tienen un botón propio (**Importar** o **Configurar**) que te lleva directo a la pantalla correspondiente, y una casilla **Marcar como completado** para confirmarla manualmente:
 
 - **Crear cuenta** — se marca como completada automáticamente apenas terminas el registro.
-- **Datos de tu empresa** — queda pendiente aunque ya hayas completado ese paso: se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a **Configuración > Organización**, donde puedes revisar esos datos y subir el logo de tu empresa.
+- **Datos de tu empresa** — esta tarea requiere que confirmes manualmente la casilla **Marcar como completado**, por eso sigue apareciendo como pendiente aunque ya hayas cargado esos datos en el paso anterior. Se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a [**Configuración > Organización**](https://app.etendo.software/organization){target="_blank"}, donde puedes revisar esos datos y subir el logo de tu empresa.
 - **Carga masiva de productos** — el botón **Importar** (3 min) abre una ventana para arrastrar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar.
 
     ![Ventana de importación de productos o contactos](assets/primeros-pasos-importar.png)
 
 - **Carga masiva de contactos** — el botón **Importar** (3 min) abre la misma ventana de importación, para cargar tus clientes y proveedores.
-- **Invita a tu equipo** — el botón **Configurar** (2 min) te lleva primero a **Configuración > Roles**, donde ves los permisos de cada rol (Administrador, Ventas, Compras, Finanzas, Inventario). Desde ahí, hacer clic en un rol abre su lista de usuarios, donde **Nuevo usuario** abre el formulario de invitación:
+- **Invita a tu equipo** — el botón **Configurar** (2 min) te lleva a [**Configuración > Roles**](https://app.etendo.software/roles){target="_blank"}, desde donde puedes invitar usuarios:
+    1. Elige uno de los roles disponibles (Administrador, Ventas, Compras, Finanzas o Inventario) para ver sus permisos y la lista de usuarios de ese rol.
+    2. Haz clic en [**Nuevo usuario**](https://app.etendo.software/user/new){target="_blank"} para abrir el formulario de invitación:
 
-    ![Formulario para invitar un nuevo usuario](assets/primeros-pasos-invitar.png)
+        ![Formulario para invitar un nuevo usuario](assets/primeros-pasos-invitar.png)
 
-    - **Nombre** y **Correo electrónico** — campos obligatorios para enviar la invitación.
-    - **Roles asignados** — se configuran después de guardar el usuario.
+        - **Nombre** y **Correo electrónico** — campos obligatorios para enviar la invitación.
+        - **Roles asignados** — se configuran después de guardar el usuario.
 
-El panel queda disponible en cualquier momento desde el menú **General > Primeros pasos**. Cuando completas las cinco tareas, el mensaje cambia a *"Ya lo tienes todo listo"* y Etendo te invita a crear tu primera factura.
+El panel queda disponible en cualquier momento desde el menú [**General > Primeros pasos**](https://app.etendo.software/first-steps){target="_blank"}. Cuando completas las cinco tareas, el mensaje cambia a *"Ya lo tienes todo listo"* y Etendo te invita a crear tu primera factura.
 
 ## Inicio
 
-Desde el menú **General**, también accedes a **Inicio**, el panel principal de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
+Desde el menú **General**, también accedes a [**Inicio**](https://app.etendo.software/dashboard){target="_blank"}, el panel principal de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
 
 ![Inicio de Etendo — vista inicial](assets/dashboard.png)
 
-Desde aquí puedes consultar, entre otros, los siguientes widgets:
+Desde aquí puedes consultar, entre otros, los siguientes paneles de información:
 
 - **Tareas pendientes**
 - **Accesos rápidos**
@@ -130,11 +133,9 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 
 ## Artículos Relacionados
 
-- [¿Qué es Etendo Go?](../que-es-etendo-go/que-es-etendo-go.md)
+- [¿Qué es Etendo?](../que-es-etendo/que-es-etendo.md)
 - [Cómo gestionar tu organización](../../sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
-
-
