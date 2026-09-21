@@ -13,7 +13,7 @@ Si necesitas dar de alta varios productos a la vez, en vez de crearlos uno por u
 
 ## Abre la ventana de importación
 
-1. Ve a **[Inventario > Producto](https://go.etendo.cloud/product){target="_blank"}**.
+1. Ve a **[Inventario > Producto](https://app.etendo.software/product){target="_blank"}**.
 2. En la vista lista, haz clic en el ícono **Importar** de la barra de herramientas superior.
 
     <figure markdown="span">
@@ -35,16 +35,16 @@ La plantilla trae las siguientes columnas:
 - **Código** *(obligatorio)* — Identificador interno (SKU) del producto. Equivale al campo **Identificador** del formulario de alta manual.
 - **Nombre** *(obligatorio)* — Nombre comercial del producto.
 - **Descripción** *(opcional)*.
-- **Tipo** *(opcional)* — Determina si el producto gestiona stock (Artículo) o no (Servicio, Recurso, Gasto).
+- **Tipo** *(opcional)* — Determina si el producto gestiona stock o no.
 - **Unidad** *(opcional)* — Unidad de medida (ej. Unidad, Kg, Litro).
 - **Precio de venta** y **Precio de compra** *(opcionales)*.
-- **Categoría** *(opcional)* — Categoría de producto ya existente en el sistema.
+- **Categoría** *(opcional)* — Categoría de producto.
 
-!!! warning "Pendiente de validar con QA"
-    Falta confirmar con QA qué valores exactos acepta la columna **Tipo** (por ejemplo si debe escribirse "Artículo" o el identificador interno "Item") y qué pasa si la **Categoría** indicada no existe todavía en el sistema.
+!!! warning "El campo Tipo usa el identificador interno, no el texto del formulario"
+    La columna **Tipo** se completa con el identificador interno del tipo (por ejemplo, **Item** para Artículo, o **Servicio**), no con el texto que ves en el formulario de alta manual.
 
-!!! info "Hallazgo de pruebas: la importación tarda en procesarse y no muestra avance"
-    Etendo procesa cada fila de forma individual contra el servidor (y crea cada categoría nueva por separado antes de los productos que la usan), por lo que un lote de 10 filas puede tardar varios segundos en terminar de importarse después de hacer clic en **Confirmar importación**. Durante ese tiempo no hay ningún indicador de progreso. En nuestras pruebas, revisar el resultado antes de tiempo (o navegar a otra pantalla) dio la impresión de una importación incompleta; esperando a que el proceso termine, lotes de hasta 10 filas —incluso con categorías nuevas— se importaron siempre al 100%. QA debería confirmar el comportamiento con lotes más grandes y evaluar si conviene pedir que Etendo agregue un indicador de progreso.
+!!! info "Las categorías nuevas se crean automáticamente"
+    Si la categoría que indicás en la columna **Categoría** no existe todavía, Etendo la crea automáticamente al importar. Si preferís configurarla vos mismo antes (por ejemplo, para definir sus cuentas contables), creála primero desde [Crear y configurar una categoría de producto](../crear-una-categoria-de-producto/crear-una-categoria-de-producto.md).
 
 ## Completa y carga tu archivo
 
@@ -87,7 +87,7 @@ Haz clic en **Importar [cantidad]**, y confirma en el diálogo que se abre a con
 </figure>
 
 !!! tip "Espera a que termine antes de revisar el resultado"
-    Para lotes de varias filas, espera unos segundos después de confirmar antes de salir de la ventana o revisar la vista lista (ver nota sobre el tiempo de procesamiento más arriba).
+    Etendo procesa cada producto de forma individual, así que para lotes de varias filas la importación puede tardar unos segundos en completarse. Espera a que termine antes de salir de la ventana o revisar la vista lista de Producto.
 
 ---
 
@@ -96,6 +96,7 @@ Haz clic en **Importar [cantidad]**, y confirma en el diálogo que se abre a con
 - [¿Qué es la sección de Productos?](../index.md)
 - [Crear un producto](../crear-un-producto/crear-un-producto.md)
 - [Crear y configurar una categoría de producto](../crear-una-categoria-de-producto/crear-una-categoria-de-producto.md)
+- [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
