@@ -133,7 +133,7 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 
 ## Artículos Relacionados
 
-- [¿Qué es Etendo?](../que-es-etendo-go/que-es-etendo-go.md)
+- [¿Qué es Etendo?](../que-es-etendo/que-es-etendo.md)
 - [Cómo gestionar tu organización](../../sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 - [Importar contactos](../../comercial/contactos/importar-contactos/importar-contactos.md)
