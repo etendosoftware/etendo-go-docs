@@ -84,7 +84,7 @@ Apenas modificas un campo, aparece al pie de la pantalla una barra con el aviso 
 ## Artículos Relacionados
 
 - [Cómo crear tu cuenta](../../../primeros-pasos/como-crear-tu-cuenta/como-crear-tu-cuenta.md) — el registro inicial en el que completas por primera vez estos mismos datos.
-- [Navegar en Etendo Go](../../../primeros-pasos/navegar-en-etendo-go/navegar-en-etendo-go.md) — reconoce los menús y componentes que vas a usar para llegar a cualquier pantalla de Configuración.
+- [Navegar en Etendo](../../../primeros-pasos/navegar-en-etendo/navegar-en-etendo.md) — reconoce los menús y componentes que vas a usar para llegar a cualquier pantalla de Configuración.
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.
