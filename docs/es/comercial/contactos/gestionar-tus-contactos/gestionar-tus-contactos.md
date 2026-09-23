@@ -101,6 +101,7 @@ Mientras trabajas en el formulario de un contacto, una barra superior muestra en
 ## Artículos Relacionados
 
 - [Cómo crear un contacto](../como-crear-un-contacto/como-crear-un-contacto.md)
+- [Importar contactos](../importar-contactos/importar-contactos.md)
 - [¿Qué es la sección Contactos?](../que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 - [¿Qué es la sección Ventas?](../../ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
 

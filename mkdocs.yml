@@ -69,6 +69,7 @@ plugins:
                 - Contactos:
                     - ¿Qué es la sección Contactos?: comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md
                     - Cómo crear un contacto: comercial/contactos/como-crear-un-contacto/como-crear-un-contacto.md
+                    - Importar contactos: comercial/contactos/importar-contactos/importar-contactos.md
                     - Gestionar tus contactos: comercial/contactos/gestionar-tus-contactos/gestionar-tus-contactos.md
                 - Ventas:
                     - Introducción:
@@ -100,6 +101,7 @@ plugins:
                     - Productos:
                         - operaciones/inventario/productos/index.md
                         - Crear un producto: operaciones/inventario/productos/crear-un-producto/crear-un-producto.md
+                        - Importar productos: operaciones/inventario/productos/importar-productos/importar-productos.md
                         - Crear y configurar una categoría de producto: operaciones/inventario/productos/crear-una-categoria-de-producto/crear-una-categoria-de-producto.md
                         - Editar o eliminar un producto: operaciones/inventario/productos/editar-o-eliminar-un-producto/editar-o-eliminar-un-producto.md
                         - Gestionar tarifas de producto: operaciones/inventario/productos/gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md

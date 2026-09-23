@@ -30,6 +30,14 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     [:octicons-arrow-right-24: Leer más](contactos/como-crear-un-contacto/como-crear-un-contacto.md)
 
+-   :material-file-import-outline:{ .lg .middle } **Importar contactos**
+
+    ---
+
+    Carga varios contactos a la vez desde un archivo CSV, TXT o Excel, en vez de crearlos uno por uno.
+
+    [:octicons-arrow-right-24: Leer más](contactos/importar-contactos/importar-contactos.md)
+
 -   :material-account-group-outline:{ .lg .middle } **Gestionar tus contactos**
 
     ---

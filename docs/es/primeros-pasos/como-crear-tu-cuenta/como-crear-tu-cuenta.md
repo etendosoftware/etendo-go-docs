@@ -96,11 +96,11 @@ Cada tarea muestra una breve descripción y el tiempo estimado para completarla.
 
 - **Crear cuenta** — se marca como completada automáticamente apenas terminas el registro.
 - **Datos de tu empresa** — esta tarea requiere que confirmes manualmente la casilla **Marcar como completado**, por eso sigue apareciendo como pendiente aunque ya hayas cargado esos datos en el paso anterior. Se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a [**Configuración > Organización**](https://app.etendo.ai/organization){target="_blank"}, donde puedes revisar esos datos y subir el logo de tu empresa.
-- **Carga masiva de productos** — el botón **Importar** (3 min) abre una ventana para arrastrar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar.
+- **Carga masiva de productos** — el botón **Importar** (3 min) abre una ventana para arrastrar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar. Ver [Importar productos](../../operaciones/inventario/productos/importar-productos/importar-productos.md) para el detalle completo del proceso.
 
     ![Ventana de importación de productos o contactos](assets/primeros-pasos-importar.png)
 
-- **Carga masiva de contactos** — el botón **Importar** (3 min) abre la misma ventana de importación, para cargar tus clientes y proveedores.
+- **Carga masiva de contactos** — el botón **Importar** (3 min) abre la misma ventana de importación, para cargar tus clientes y proveedores. Ver [Importar contactos](../../comercial/contactos/importar-contactos/importar-contactos.md) para el detalle completo del proceso.
 - **Invita a tu equipo** — el botón **Configurar** (2 min) te lleva a [**Configuración > Roles**](https://app.etendo.ai/roles){target="_blank"}, desde donde puedes invitar usuarios:
     1. Elige uno de los roles disponibles (Administrador, Ventas, Compras, Finanzas o Inventario) para ver sus permisos y la lista de usuarios de ese rol.
     2. Haz clic en [**Nuevo usuario**](https://app.etendo.ai/user/new){target="_blank"} para abrir el formulario de invitación:
@@ -136,6 +136,8 @@ Tu cuenta ya está lista para usarse. A partir de ahora, cada operación que reg
 - [¿Qué es Etendo?](../que-es-etendo/que-es-etendo.md)
 - [Cómo gestionar tu organización](../../sistema/configuracion/como-gestionar-tu-organizacion/como-gestionar-tu-organizacion.md) — revisa y ajusta estos mismos datos cuando quieras, desde Configuración.
 - [Contactos](../../comercial/contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
+- [Importar contactos](../../comercial/contactos/importar-contactos/importar-contactos.md)
+- [Importar productos](../../operaciones/inventario/productos/importar-productos/importar-productos.md)
 
 ---
 Esta obra está bajo la licencia :material-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-sa: [CC BY-SA 2.5 ES](https://creativecommons.org/licenses/by-sa/2.5/es/){target="_blank"} de [Futit Services S.L](https://etendo.software){target="_blank"}.

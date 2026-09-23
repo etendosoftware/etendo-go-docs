@@ -50,6 +50,7 @@ También puedes usar la pestaña **Adjuntos** para asociar archivos a la categor
 ## Artículos Relacionados
 
 - [Crear un producto](../crear-un-producto/crear-un-producto.md)
+- [Importar productos](../importar-productos/importar-productos.md)
 - [¿Qué es la sección de Productos?](../index.md)
 
 ---

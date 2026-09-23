@@ -58,6 +58,7 @@ Al guardar, el producto queda disponible para usarse en presupuestos, pedidos, a
 ## Artículos Relacionados
 
 - [¿Qué es la sección de Productos?](../index.md)
+- [Importar productos](../importar-productos/importar-productos.md)
 - [Crear y configurar una categoría de producto](../crear-una-categoria-de-producto/crear-una-categoria-de-producto.md)
 - [Gestionar tarifas de producto](../gestionar-tarifas-de-producto/gestionar-tarifas-de-producto.md)
 

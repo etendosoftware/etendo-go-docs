@@ -114,6 +114,14 @@ Todo lo que necesitas para gestionar tus compras a proveedores y el control de s
 
     [:octicons-arrow-right-24: Leer más](inventario/productos/crear-un-producto/crear-un-producto.md)
 
+-   :material-file-import-outline:{ .lg .middle } **Importar productos**
+
+    ---
+
+    Carga varios productos a la vez desde un archivo CSV, TXT o Excel, en vez de crearlos uno por uno.
+
+    [:octicons-arrow-right-24: Leer más](inventario/productos/importar-productos/importar-productos.md)
+
 -   :material-shape-outline:{ .lg .middle } **Crear y configurar una categoría de producto**
 
     ---
