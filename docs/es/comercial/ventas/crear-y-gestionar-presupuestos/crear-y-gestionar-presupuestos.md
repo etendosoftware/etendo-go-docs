@@ -1,14 +1,14 @@
 ---
 title: Crear y gestionar presupuestos
 description: >-
-  Aprende a crear, enviar y confirmar presupuestos de venta en Etendo Go, y a
+  Aprende a crear, enviar y confirmar presupuestos de venta en Etendo, y a
   convertirlos en pedidos o facturas sin volver a cargar los mismos datos.
 tags:
     - Presupuesto de Venta
     - Ventas
     - Comercial
     - Gestión Documental
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear y gestionar presupuestos
@@ -35,7 +35,7 @@ Este artículo se organiza en dos flujos: primero cómo **crear un presupuesto**
 
 ### 1. Empieza un presupuesto nuevo
 
-Para crear un presupuesto nuevo, accede a **[Ventas > Presupuesto](https://go.etendo.cloud/sales-quotation){target="_blank"}** y utiliza el botón **+ Nuevo presupuesto** en la esquina superior derecha. Esto abre el formulario en blanco, listo para completar.
+Para crear un presupuesto nuevo, accede a **[Ventas > Presupuesto](https://app.etendo.ai/sales-quotation){target="_blank"}** y utiliza el botón **+ Nuevo presupuesto** en la esquina superior derecha. Esto abre el formulario en blanco, listo para completar.
 
 ### 2. Completa el formulario
 

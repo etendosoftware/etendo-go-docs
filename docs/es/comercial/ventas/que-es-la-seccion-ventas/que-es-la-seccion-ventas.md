@@ -1,13 +1,13 @@
 ---
 title: ¿Qué es la sección Ventas?
 description: >-
-  Descubre qué documentos componen el ciclo de ventas en Etendo Go, desde el
+  Descubre qué documentos componen el ciclo de ventas en Etendo, desde el
   presupuesto hasta el cobro, y cómo se encadenan entre sí sin reingresar datos.
 tags:
   - Ventas
   - Comercial
   - Gestión Documental
-  - Etendo Go
+  - Etendo
 ---
 
 # ¿Qué es la sección Ventas?
@@ -16,7 +16,7 @@ La sección **Ventas** reúne todos los documentos con los que registras el cicl
 
 ## El ciclo de venta
 
-El ciclo de ventas de Etendo Go sigue un modelo lineal de documentos encadenados. Cada documento puede generar el siguiente mediante una acción explícita tuya — nunca de forma automática.
+El ciclo de ventas de Etendo sigue un modelo lineal de documentos encadenados. Cada documento puede generar el siguiente mediante una acción explícita tuya — nunca de forma automática.
 
 ```mermaid
 flowchart LR
@@ -36,7 +36,7 @@ flowchart LR
 
 ## El ciclo de devolución
 
-Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del financiero: el reingreso de la mercadería se registra en un albarán de devolución, y el ajuste del saldo de cobro se resuelve con una factura rectificativa. Para el detalle completo de este flujo, consulta [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+Cuando un cliente devuelve mercadería, Etendo separa el evento físico del financiero: el reingreso de la mercadería se registra en un albarán de devolución, y el ajuste del saldo de cobro se resuelve con una factura rectificativa. Para el detalle completo de este flujo, consulta [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
 
 ## Qué vas a encontrar en esta sección
 

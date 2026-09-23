@@ -2,16 +2,16 @@
 tags:
     - Almacén
     - Inventario
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear un almacén
 
-Este artículo cubre cómo dar de alta un almacén nuevo en Etendo Go.
+Este artículo cubre cómo dar de alta un almacén nuevo en Etendo.
 
 ## Ve a la ventana Almacén
 
-Ve a **[Inventario > Almacén](https://go.etendo.cloud/warehouse){target="_blank"}** y haz clic en **+ Nuevo almacén**.
+Ve a **[Inventario > Almacén](https://app.etendo.ai/warehouse){target="_blank"}** y haz clic en **+ Nuevo almacén**.
 
 ## Completa el formulario
 

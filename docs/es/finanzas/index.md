@@ -8,7 +8,7 @@ hide:
 
 # Finanzas
 
-Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo Go: desde los términos clave hasta el alta de un activo y la ejecución de su amortización.
+Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo: desde los términos clave hasta el alta de un activo y la ejecución de su amortización.
 
 ## Introducción
 
@@ -32,7 +32,7 @@ Todo lo que necesitas para gestionar la contabilidad de tus activos en Etendo Go
 
     ---
 
-    Descubre qué es un activo en Etendo Go y aprende a registrarlo, configurar su amortización y hacer seguimiento de su plan de amortización.
+    Descubre qué es un activo en Etendo y aprende a registrarlo, configurar su amortización y hacer seguimiento de su plan de amortización.
 
     [:octicons-arrow-right-24: Leer más](apuntar-un-activo/apuntar-un-activo.md)
 

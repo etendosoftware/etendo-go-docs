@@ -4,7 +4,7 @@ tags:
   - Compras
   - Operaciones
   - Proveedores
-  - Etendo Go
+  - Etendo
 ---
 
 # ¿Qué es la sección Compras?

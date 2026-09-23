@@ -4,13 +4,13 @@ tags:
     - Amortización
     - Finanzas
     - Gestión Contable
-    - Etendo Go
+    - Etendo
     - Cómo hacer
 ---
 
 # Apuntar un Activo
 
-Un **activo** es un bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se amortiza a lo largo de su vida útil. **Apuntar** un activo es el proceso de registrarlo en Etendo Go para que el sistema pueda calcular y gestionar su amortización: se hace cada vez que la empresa adquiere un bien fijo o cuando se migran activos existentes desde otro sistema. Este artículo cubre cómo crear un activo y completar su formulario; para generar y ejecutar el plan de amortización una vez creado, consulta [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md).
+Un **activo** es un bien fijo de la empresa (vehículo, equipo informático, maquinaria) que se amortiza a lo largo de su vida útil. **Apuntar** un activo es el proceso de registrarlo en Etendo para que el sistema pueda calcular y gestionar su amortización: se hace cada vez que la empresa adquiere un bien fijo o cuando se migran activos existentes desde otro sistema. Este artículo cubre cómo crear un activo y completar su formulario; para generar y ejecutar el plan de amortización una vez creado, consulta [Crear y Ejecutar un Plan de Amortización](../crear-un-plan-de-amortizacion/crear-un-plan-de-amortizacion.md).
 
 ```mermaid
 flowchart LR
@@ -22,7 +22,7 @@ flowchart LR
 
 ## Cómo Apuntar un Activo
 
-1. Ve a **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** y pulsa **+ Nuevo activo**.
+1. Ve a **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}** y pulsa **+ Nuevo activo**.
 2. Completa el formulario:
     1. **Datos del Activo** — identificación del bien y su valor de adquisición (usa el número de inventario interno como **Identificador**). Detalle de cada campo más abajo.
     2. **Configuración de Amortización** e **Información Financiera** — activa el interruptor **Amortizar** y define el método de cálculo. Detalle de cada campo más abajo.
@@ -75,7 +75,7 @@ Esta sección controla si el activo se amortiza y qué método se usa.
 - **Moneda** — Valor fijo, no editable: *EUR*.
 - **Valor residual** — Valor estimado al final de la vida útil. Debe ser menor o igual al valor del activo.
 - **Valor a amortizar** — Se autocompleta restando el valor residual al valor del activo, pero es un campo editable: puedes sobrescribirlo si lo necesitas. Requerido.
-- **Amortizado anterior** — Importe ya amortizado antes de registrar el activo en Etendo Go. Útil al migrar activos con amortización acumulada en otro sistema. Por defecto: *0*.
+- **Amortizado anterior** — Importe ya amortizado antes de registrar el activo en Etendo. Útil al migrar activos con amortización acumulada en otro sistema. Por defecto: *0*.
 - **Tipo de amortización** — Método de cálculo. Opción disponible: *Lineal*. Requerido.
 - **Tipo de cálculo** — Define cómo se expresa la vida útil del activo. Opciones: *Porcentaje* o *Tiempo*. Requerido.
 
@@ -151,7 +151,7 @@ Al pulsar **Crear amortización** (paso 4), el formulario se completa con inform
   <figcaption>Vista lista de Activos filtrada por Grupo activo "Equipos Informáticos", con columnas de identificador, grupo, fechas, valores y estado de amortización.</figcaption>
 </figure>
 
-Desde **[Finanzas > Activos](https://go.etendo.cloud/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas, valores y **Estado de amortización** (barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
+Desde **[Finanzas > Activos](https://app.etendo.ai/assets){target="_blank"}** encuentras todos los activos ya registrados, con columnas de identificador, grupo, fechas, valores y **Estado de amortización** (barra de progreso). Usa **Filtros** para acotar la lista (por ejemplo, por **Grupo activo**, como en la captura) o **+ Nuevo activo** para crear uno.
 
 *[EUR]: Euro — moneda oficial de la zona euro
 

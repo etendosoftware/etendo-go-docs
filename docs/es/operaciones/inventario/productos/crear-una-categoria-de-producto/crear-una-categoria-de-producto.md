@@ -3,7 +3,7 @@ tags:
     - Categoría de producto
     - Producto
     - Inventario
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear y configurar una categoría de producto
@@ -12,7 +12,7 @@ Este artículo cubre cómo crear una categoría de producto y configurar la info
 
 ## Ve a la ventana Categoría del producto
 
-Ve a **[Inventario > Categoría del producto](https://go.etendo.cloud/product-category){target="_blank"}** y haz clic en **+ Nueva categoría**.
+Ve a **[Inventario > Categoría del producto](https://app.etendo.ai/product-category){target="_blank"}** y haz clic en **+ Nueva categoría**.
 
 <figure markdown="span">
   ![Vista lista de Categoría del producto](assets/como-crear-una-categoria-de-producto-1.png)

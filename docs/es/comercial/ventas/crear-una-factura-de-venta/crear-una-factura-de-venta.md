@@ -1,14 +1,14 @@
 ---
 title: Crear una factura de venta
 description: >-
-  Aprende a crear una factura de venta en Etendo Go paso a paso: completa la
+  Aprende a crear una factura de venta en Etendo paso a paso: completa la
   cabecera, las líneas de producto y los totales antes de confirmarla.
 tags:
   - Factura de Venta
   - Ventas
   - Comercial
   - Gestión Documental
-  - Etendo Go
+  - Etendo
 ---
 
 # Crear una factura de venta
@@ -26,7 +26,7 @@ flowchart LR
 
 ## Pasos
 
-1. Accede a la ventana **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
+1. Accede a la ventana **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
 
 2. Completa la **Cabecera** del formulario:
 

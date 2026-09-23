@@ -5,12 +5,12 @@ tags:
   - Factura de Compra
   - Compras
   - Operaciones
-  - Etendo Go
+  - Etendo
 ---
 
 # Crear una devolución de compra
 
-Sigue esta guía cuando necesites devolver mercancía a un proveedor o corregir el importe de una factura de compra ya emitida. Etendo Go distingue dos situaciones distintas, según si hay mercancía física de por medio o solo un ajuste económico:
+Sigue esta guía cuando necesites devolver mercancía a un proveedor o corregir el importe de una factura de compra ya emitida. Etendo distingue dos situaciones distintas, según si hay mercancía física de por medio o solo un ajuste económico:
 
 - **Devolución física** — se registra un **Albarán de devolución**, vinculado a un albarán de compra (recepción) ya confirmado. Genera automáticamente la **Factura Rectificativa** correspondiente.
 - **Ajuste financiero** — se crea directamente una **Factura Rectificativa** desde la ventana de Factura de Compra, sin devolver mercancía (por ejemplo, para corregir un precio o aplicar un descuento o bonificación del proveedor).
@@ -30,7 +30,7 @@ flowchart LR
 
 ## Registrar una devolución física
 
-1. Accede a **[Compras > Albarán de devolución](https://go.etendo.cloud/return-to-vendor-shipment){target="_blank"}** y haz clic en **+ Nuevo albarán de devolución**.
+1. Accede a **[Compras > Albarán de devolución](https://app.etendo.ai/return-to-vendor-shipment){target="_blank"}** y haz clic en **+ Nuevo albarán de devolución**.
 2. Completa la cabecera: **Contacto** (proveedor), **Fecha del movimiento**, **Almacén** y **Dirección**.
 3. En **Albarán origen**, selecciona el albarán de compra (recepción) del que se devuelve la mercancía — las líneas se importan desde ahí.
 4. Ajusta las cantidades a devolver por línea si no se devuelve la totalidad de lo recibido.
@@ -43,7 +43,7 @@ flowchart LR
 
 ## Crear un ajuste financiero (Factura Rectificativa manual)
 
-1. Accede a **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
+1. Accede a **[Compras > Factura](https://app.etendo.ai/purchase-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
 2. En **Tipo de documento**, selecciona **Factura Rectificativa**. A diferencia de una Factura, aquí no puedes importar líneas desde un pedido ni desde un recibo — en cambio, puedes añadirlas manualmente, importarlas desde una devolución de compra ya confirmada, o importarlas desde la factura de origen (útil para corregir un precio o aplicar un descuento o bonificación sobre líneas ya facturadas).
 
     <figure markdown="span">

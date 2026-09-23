@@ -1,23 +1,23 @@
 ---
 title: Crear y gestionar devoluciones
 description: >-
-  Aprende cómo Etendo Go separa el evento físico y financiero de una devolución
+  Aprende cómo Etendo separa el evento físico y financiero de una devolución
   de venta, y cómo generar la factura rectificativa correspondiente.
 tags:
     - Devolución de Venta
     - Ventas
     - Comercial
     - Gestión Documental
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear y gestionar devoluciones
 
 ## Descripción general
 
-Cuando un cliente devuelve mercadería, Etendo Go separa el evento físico del financiero:
+Cuando un cliente devuelve mercadería, Etendo separa el evento físico del financiero:
 
-1. **El evento físico** — la mercadería vuelve al stock del vendedor. Se registra en el **albarán de devolución**, disponible en **[Ventas > Albarán de devolución](https://go.etendo.cloud/return-material-receipt){target="_blank"}**.
+1. **El evento físico** — la mercadería vuelve al stock del vendedor. Se registra en el **albarán de devolución**, disponible en **[Ventas > Albarán de devolución](https://app.etendo.ai/return-material-receipt){target="_blank"}**.
 2. **El evento financiero** — el cliente recibe un crédito. Se registra con una **[factura rectificativa](#factura-rectificativa)**, que se genera habitualmente desde el albarán de devolución ya Completado.
 
 ```mermaid
@@ -31,7 +31,7 @@ flowchart LR
 
 ## Crear un albarán de devolución
 
-Etendo Go ofrece dos caminos para crear un albarán de devolución.
+Etendo ofrece dos caminos para crear un albarán de devolución.
 
 ### Desde un albarán de venta ya completado
 
@@ -57,7 +57,7 @@ La forma habitual de crear una devolución es desde el [albarán de venta](../cr
 
 ### Desde Ventas > Albarán de devolución
 
-También es posible crear un albarán de devolución directamente desde **[Ventas > Albarán de devolución](https://go.etendo.cloud/return-material-receipt){target="_blank"}** con el botón **+ Nuevo albarán de devolución**.
+También es posible crear un albarán de devolución directamente desde **[Ventas > Albarán de devolución](https://app.etendo.ai/return-material-receipt){target="_blank"}** con el botón **+ Nuevo albarán de devolución**.
 
 !!! info "Este paso solo mueve stock"
     Sea cual sea el camino que uses para crear el albarán de devolución, la factura rectificativa se genera en un paso posterior, al confirmar este albarán — ver [Confirmar el albarán de devolución](#confirmar-el-albaran-de-devolucion) más abajo.
@@ -106,12 +106,12 @@ Si no generaste la factura rectificativa al confirmar, el albarán de devolució
 
 ## Factura rectificativa
 
-El ajuste financiero de una devolución se gestiona siempre con la **Factura rectificativa** — el único tipo de documento para este caso dentro de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, seleccionable en el campo **Tipo de documento** de ese formulario (junto a **Factura**). Se muestra con importe en negativo en el listado de facturas, y al confirmarse reduce el saldo pendiente de cobro de la factura de venta de origen.
+El ajuste financiero de una devolución se gestiona siempre con la **Factura rectificativa** — el único tipo de documento para este caso dentro de **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}**, seleccionable en el campo **Tipo de documento** de ese formulario (junto a **Factura**). Se muestra con importe en negativo en el listado de facturas, y al confirmarse reduce el saldo pendiente de cobro de la factura de venta de origen.
 
 La forma habitual de generarla es con el botón **Crear Factura Rectificativa** del albarán de devolución ya Completado (ver [Confirmar el albarán de devolución](#confirmar-el-albaran-de-devolucion) más arriba), con sus líneas prellenadas desde ese albarán.
 
 !!! info "Crear una factura rectificativa sin devolución física"
-    Para ajustes sin mercadería de por medio — como un error de precio, descuento o bonificación — ve a **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**, haz clic en **+ Nueva factura** y selecciona **Tipo de documento: Factura rectificativa**. Sus líneas se cargan a mano.
+    Para ajustes sin mercadería de por medio — como un error de precio, descuento o bonificación — ve a **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}**, haz clic en **+ Nueva factura** y selecciona **Tipo de documento: Factura rectificativa**. Sus líneas se cargan a mano.
 
     Además, en la pestaña **Rectificaciones** del formulario tienes que indicar cuál es la factura original que estás rectificando: haz clic en **+ Añadir rectificación** y selecciona esa factura en el campo **Factura original** (obligatorio). Sin esta asociación no se puede guardar la rectificación.
 

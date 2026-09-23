@@ -4,7 +4,7 @@ tags:
   - Factura de Compra
   - Compras
   - Operaciones
-  - Etendo Go
+  - Etendo
 ---
 
 # Crear una factura de compra
@@ -32,7 +32,7 @@ flowchart LR
   <figcaption>Cabecera de la factura con las pestañas Líneas, Rangos de Conversión, Adjuntos y Rectificaciones.</figcaption>
 </figure>
 
-1. Accede a **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
+1. Accede a **[Compras > Factura](https://app.etendo.ai/purchase-invoice){target="_blank"}** y haz clic en **+ Nueva factura**.
 2. Si tienes el comprobante del proveedor, súbelo en el panel **Archivo** (PDF, JPG, PNG, WebP o GIF) para evitar la carga manual.
 
     !!! info "Lectura automática con Copilot"
