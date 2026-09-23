@@ -76,7 +76,7 @@ Este paso recoge los datos fiscales que Etendo usará en tus facturas y document
     - **Sector** — actividad principal de la empresa. Por defecto: *Tecnología*. Campo opcional.
 
     !!! info "Edición posterior"
-        Todos estos datos se pueden modificar después desde [**Configuración**](https://app.etendo.software/organization){target="_blank"}.
+        Todos estos datos se pueden modificar después desde [**Configuración**](https://app.etendo.ai/organization){target="_blank"}.
 
 2. Haz clic en **Empezar**.
 
@@ -95,26 +95,26 @@ Al finalizar, Etendo te lleva directo a la sección **Primeros pasos**, con un m
 Cada tarea muestra una breve descripción y el tiempo estimado para completarla. Todas tienen un botón propio (**Importar** o **Configurar**) que te lleva directo a la pantalla correspondiente, y una casilla **Marcar como completado** para confirmarla manualmente:
 
 - **Crear cuenta** — se marca como completada automáticamente apenas terminas el registro.
-- **Datos de tu empresa** — esta tarea requiere que confirmes manualmente la casilla **Marcar como completado**, por eso sigue apareciendo como pendiente aunque ya hayas cargado esos datos en el paso anterior. Se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a [**Configuración > Organización**](https://app.etendo.software/organization){target="_blank"}, donde puedes revisar esos datos y subir el logo de tu empresa.
+- **Datos de tu empresa** — esta tarea requiere que confirmes manualmente la casilla **Marcar como completado**, por eso sigue apareciendo como pendiente aunque ya hayas cargado esos datos en el paso anterior. Se muestra un resumen de lo que cargaste (nombre de la empresa, nombre comercial, NIF y dirección). El botón **Configurar** (2 min) te lleva a [**Configuración > Organización**](https://app.etendo.ai/organization){target="_blank"}, donde puedes revisar esos datos y subir el logo de tu empresa.
 - **Carga masiva de productos** — el botón **Importar** (3 min) abre una ventana para arrastrar un archivo CSV, TXT o XLSX, con plantillas descargables listas para completar.
 
     ![Ventana de importación de productos o contactos](assets/primeros-pasos-importar.png)
 
 - **Carga masiva de contactos** — el botón **Importar** (3 min) abre la misma ventana de importación, para cargar tus clientes y proveedores.
-- **Invita a tu equipo** — el botón **Configurar** (2 min) te lleva a [**Configuración > Roles**](https://app.etendo.software/roles){target="_blank"}, desde donde puedes invitar usuarios:
+- **Invita a tu equipo** — el botón **Configurar** (2 min) te lleva a [**Configuración > Roles**](https://app.etendo.ai/roles){target="_blank"}, desde donde puedes invitar usuarios:
     1. Elige uno de los roles disponibles (Administrador, Ventas, Compras, Finanzas o Inventario) para ver sus permisos y la lista de usuarios de ese rol.
-    2. Haz clic en [**Nuevo usuario**](https://app.etendo.software/user/new){target="_blank"} para abrir el formulario de invitación:
+    2. Haz clic en [**Nuevo usuario**](https://app.etendo.ai/user/new){target="_blank"} para abrir el formulario de invitación:
 
         ![Formulario para invitar un nuevo usuario](assets/primeros-pasos-invitar.png)
 
         - **Nombre** y **Correo electrónico** — campos obligatorios para enviar la invitación.
         - **Roles asignados** — se configuran después de guardar el usuario.
 
-El panel queda disponible en cualquier momento desde el menú [**General > Primeros pasos**](https://app.etendo.software/first-steps){target="_blank"}. Cuando completas las cinco tareas, el mensaje cambia a *"Ya lo tienes todo listo"* y Etendo te invita a crear tu primera factura.
+El panel queda disponible en cualquier momento desde el menú [**General > Primeros pasos**](https://app.etendo.ai/first-steps){target="_blank"}. Cuando completas las cinco tareas, el mensaje cambia a *"Ya lo tienes todo listo"* y Etendo te invita a crear tu primera factura.
 
 ## Inicio
 
-Desde el menú **General**, también accedes a [**Inicio**](https://app.etendo.software/dashboard){target="_blank"}, el panel principal de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
+Desde el menú **General**, también accedes a [**Inicio**](https://app.etendo.ai/dashboard){target="_blank"}, el panel principal de tu empresa. La primera vez aparece vacío, listo para registrar tu actividad.
 
 ![Inicio de Etendo — vista inicial](assets/dashboard.png)
 

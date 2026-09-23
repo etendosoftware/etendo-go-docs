@@ -19,17 +19,17 @@ Estos son los elementos de navegación de alto nivel que vas a encontrar en la p
 
 La barra vertical ubicada a la izquierda de la pantalla agrupa el acceso a todos los módulos de Etendo, organizados en secciones con etiquetas: **General**, **Comercial**, **Operaciones**, **Finanzas** y **Sistema**. Haz clic en cualquier ícono para desplegar sus secciones.
 
-![Menú lateral de Etendo](assets/navegar-en-etendo-go-1.png)
+![Menú lateral de Etendo](assets/navegar-en-etendo-1.png)
 
 Dentro del menú lateral, la sección **Favoritos** (identificada con un ícono de estrella) agrupa accesos directos a las ventanas que marcaste como favoritas, por ejemplo "Producto" o "Factura de Venta". Para añadir o quitar una ventana de esta lista, haz clic en los tres puntos ubicados junto a su nombre, tal como se describe en [Menú de opciones adicionales](#menu-de-opciones-adicionales).
 
-![Sección Favoritos en el menú lateral](assets/navegar-en-etendo-go-12.png)
+![Sección Favoritos en el menú lateral](assets/navegar-en-etendo-12.png)
 
 ### Selector de empresa
 
 Junto al logo, en la esquina superior izquierda, hay un menú desplegable con el nombre de la organización activa (por ejemplo, "GOOrg") y una flecha. Al hacer clic se abre un menú titulado **Cambiar empresa** que lista las organizaciones disponibles para tu cuenta.
 
-![Menú para cambiar de empresa](assets/navegar-en-etendo-go-4.png)
+![Menú para cambiar de empresa](assets/navegar-en-etendo-4.png)
 
 
 ### Acciones rápidas
@@ -40,7 +40,7 @@ En la parte superior de la pantalla encuentras una barra de búsqueda grande y p
 - **Crear** — genera un nuevo registro sin salir de la pantalla en la que estás.
 - **Notificaciones** — avisos sobre tareas pendientes y novedades de tu cuenta.
 
-![Acciones rápidas: Copilot, crear y notificaciones](assets/navegar-en-etendo-go-2.png)
+![Acciones rápidas: Copilot, crear y notificaciones](assets/navegar-en-etendo-2.png)
 
 !!! tip "Búsqueda global"
     Desde la barra de búsqueda central puedes encontrar contactos, documentos y pantallas de configuración sin necesidad de navegar manualmente por el menú lateral.
@@ -56,7 +56,7 @@ Ubicado en la parte inferior del menú lateral, al hacer clic en tu nombre de us
 - **Cambiar contraseña** — abre el formulario para actualizar tu contraseña de acceso.
 - **Cerrar sesión** — finaliza tu sesión actual.
 
-![Menú de perfil de usuario](assets/navegar-en-etendo-go-3.png)
+![Menú de perfil de usuario](assets/navegar-en-etendo-3.png)
 
 ## Componentes recurrentes
 
@@ -70,13 +70,13 @@ Además del panel de condicionales, la barra del listado ofrece accesos directos
 - **Todos los estados** — un desplegable con buscador que lista los estados disponibles (por ejemplo, Completado, Borrador) para filtrar por uno a la vez, o volver a "Todos los estados".
 - **Cualquier fecha** — un desplegable con rangos predefinidos (Hoy, Ayer, Últimos 7 días, Últimos 30 días, Últimos 12 meses, Todo el tiempo) y un calendario de dos meses para elegir un día puntual o un rango a medida.
 
-![Filtros rápidos de tipo de documento, estado y fecha en la ventana Factura de Venta](assets/navegar-en-etendo-go-11.png)
+![Filtros rápidos de tipo de documento, estado y fecha en la ventana Factura de Venta](assets/navegar-en-etendo-11.png)
 
 ### Filtros
 
 Al hacer clic en **Filtros** se abre un armador de condiciones personalizadas: eliges un campo (según la pantalla, por ejemplo "Contacto", "Estado doc." o "Fecha de la factura"), una condición y puedes sumar más opciones para acotar el listado. Desde el enlace **Mis filtros**, dentro del mismo panel, puedes guardar la combinación armada para reutilizarla más adelante sin reconstruirla.
 
-![Armador de filtros por condicionales](assets/navegar-en-etendo-go-8.png)
+![Armador de filtros por condicionales](assets/navegar-en-etendo-8.png)
 
 ### Ordenamiento y actualización
 
@@ -87,25 +87,25 @@ Junto a los filtros rápidos, en el extremo derecho de la barra de herramientas 
 
 Junto a estos dos íconos encontrarás también **Imprimir**, que abre el panel para exportar el listado completo — lo explicamos en detalle en [Exportar un listado](#exportar-un-listado).
 
-![Íconos de ordenamiento, recargar e imprimir en la barra de herramientas del listado](assets/navegar-en-etendo-go-5.png)
+![Íconos de ordenamiento, recargar e imprimir en la barra de herramientas del listado](assets/navegar-en-etendo-5.png)
 
 ### Exportar un listado
 
 En un listado con registros, haz clic en el botón **Imprimir** de la barra de herramientas superior, junto a **Filtros**. Este botón es distinto del **Imprimir** de la [barra de acciones masivas](#barra-de-acciones-masivas): mientras aquel imprime directamente los registros seleccionados, este abre un panel con una vista previa del listado de documentos y botones para exportar la lista a **PDF**, **Excel** o **CSV**, además de imprimirla directamente.
 
-![Exportar o descargar un listado](assets/navegar-en-etendo-go-10.png)
+![Exportar o descargar un listado](assets/navegar-en-etendo-10.png)
 
 ### Barra de acciones masivas
 
 Al seleccionar uno o más registros de un listado, aparece una barra con las acciones disponibles para aplicarlas a todos los elementos seleccionados a la vez: **Vista Previa**, **Imprimir**, **Clonar** y **Confirmar**. Los botones **Imprimir**, **Clonar** y **Confirmar** muestran la cantidad de registros seleccionados entre paréntesis (por ejemplo, "Imprimir (3)"); **Vista Previa** no lleva ese contador.
 
-![Barra de acciones masivas](assets/navegar-en-etendo-go-7.png)
+![Barra de acciones masivas](assets/navegar-en-etendo-7.png)
 
 ### Menú de opciones adicionales
 
 El ícono de **tres puntos** ubicado junto al título de la página (al lado del nombre de la pantalla, por ejemplo "Factura de Venta") agrupa acciones secundarias: **Añadir a favoritos** y **Ayuda de esta página**.
 
-![Menú de opciones adicionales](assets/navegar-en-etendo-go-9.png)
+![Menú de opciones adicionales](assets/navegar-en-etendo-9.png)
 
 ## Artículos Relacionados
 

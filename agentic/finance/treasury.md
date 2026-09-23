@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide documents the MCP operations that cover the day-to-day treasury work in Etendo Go:
+This guide documents the MCP operations that cover the day-to-day treasury work in Etendo:
 
 - Maintain **financial accounts** (`financial-account/account`) — bank and cash accounts.
 - Record **incoming customer payments** (`payment-in/finPayment`).
@@ -15,7 +15,7 @@ All field names, column names and action button names below were verified throug
 
 ## Prerequisites
 
-- The Etendo Go MCP server is reachable and authenticated.
+- The Etendo MCP server is reachable and authenticated.
 - The current API user can access the `financial-account`, `payment-in`, `payment-out`, `payment-term` and `conversion-rates` specs (verify with `neo_discover`).
 - A target organisation exists with at least one configured currency and one document type for payments (`DocBaseType` in `APP` / `ARR`).
 

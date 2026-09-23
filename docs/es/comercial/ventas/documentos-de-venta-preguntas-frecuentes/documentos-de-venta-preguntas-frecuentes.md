@@ -2,11 +2,11 @@
 title: "Documentos de venta: preguntas frecuentes"
 description: >-
   Respuestas a las preguntas más frecuentes sobre presupuestos, pedidos,
-  facturas y devoluciones de venta en Etendo Go, y cómo se relacionan entre sí.
+  facturas y devoluciones de venta en Etendo, y cómo se relacionan entre sí.
 tags:
     - Ventas
     - Comercial
-    - Etendo Go
+    - Etendo
 ---
 
 # Documentos de venta: preguntas frecuentes
@@ -34,7 +34,7 @@ Las acciones de creación de documentos derivados —**Crear albarán**, **Crear
 
 ## ¿Necesito un tipo de factura distinto si no hay devolución física de mercadería?
 
-No. Etendo Go usa un único tipo de documento, la **factura rectificativa**, tanto si hay devolución física como si no — no hay un tipo separado para cada caso. Lo que cambia es cómo se generan sus líneas: vinculada a un albarán de devolución cuando el cliente devolvió mercadería, o cargada manualmente cuando es un ajuste financiero sin retorno de mercadería (error de precio, descuento o bonificación). Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
+No. Etendo usa un único tipo de documento, la **factura rectificativa**, tanto si hay devolución física como si no — no hay un tipo separado para cada caso. Lo que cambia es cómo se generan sus líneas: vinculada a un albarán de devolución cuando el cliente devolvió mercadería, o cargada manualmente cuando es un ajuste financiero sin retorno de mercadería (error de precio, descuento o bonificación). Consulta el detalle en [Crear y gestionar devoluciones](../crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md).
 
 ## ¿Puedo registrar pagos parciales en una factura?
 

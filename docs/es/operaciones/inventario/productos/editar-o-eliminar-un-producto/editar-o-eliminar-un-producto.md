@@ -3,7 +3,7 @@ tags:
     - Producto
     - Inventario
     - Productos
-    - Etendo Go
+    - Etendo
 ---
 
 # Editar o eliminar un producto
@@ -12,7 +12,7 @@ Este artículo cubre cómo modificar los datos de un producto existente y cómo 
 
 ## Edita un producto
 
-Ve a **[Inventario > Producto](https://go.etendo.cloud/product){target="_blank"}** y abre el producto desde la lista. El formulario se abre directamente en modo edición: modifica el campo que necesites y haz clic en **Guardar**.
+Ve a **[Inventario > Producto](https://app.etendo.ai/product){target="_blank"}** y abre el producto desde la lista. El formulario se abre directamente en modo edición: modifica el campo que necesites y haz clic en **Guardar**.
 
 ## Elimina un producto
 
@@ -31,7 +31,7 @@ En ambos casos aparece el modal **Eliminar registro**, con la advertencia de que
 </figure>
 
 !!! warning "No puedes eliminar un producto con movimientos"
-    Si el producto tiene transacciones de stock o documentos asociados (pedidos, facturas, albaranes), Etendo Go bloquea la eliminación con un error: borrarlo rompería esos registros ya generados. En ese caso, el producto no se puede eliminar; solo puedes dejar de usarlo en documentos nuevos.
+    Si el producto tiene transacciones de stock o documentos asociados (pedidos, facturas, albaranes), Etendo bloquea la eliminación con un error: borrarlo rompería esos registros ya generados. En ese caso, el producto no se puede eliminar; solo puedes dejar de usarlo en documentos nuevos.
 
 ---
 

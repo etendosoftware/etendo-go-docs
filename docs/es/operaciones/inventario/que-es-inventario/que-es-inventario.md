@@ -4,12 +4,12 @@ tags:
   - Inventario
   - Almacén
   - Productos
-  - Etendo Go
+  - Etendo
 ---
 
 # ¿Qué es la sección Inventario?
 
-La sección **Inventario** es donde Etendo Go gestiona tu stock, tus almacenes y los productos que vendes o compras. Desde acá controlas qué tienes, dónde lo tienes y bajo qué condiciones contables se registra cada producto.
+La sección **Inventario** es donde Etendo gestiona tu stock, tus almacenes y los productos que vendes o compras. Desde acá controlas qué tienes, dónde lo tienes y bajo qué condiciones contables se registra cada producto.
 
 Inventario cubre el ciclo completo de entradas y salidas de mercancía:
 
@@ -29,7 +29,7 @@ El stock se gestiona **por almacén**: cada almacén mantiene su propio stock de
 ## Qué incluye esta sección
 
 <figure markdown="span">
-  ![Menú de Inventario en Etendo Go](assets/que-es-inventario-1.png)
+  ![Menú de Inventario en Etendo](assets/que-es-inventario-1.png)
   <figcaption>Menú de Inventario expandido en la barra lateral, con acceso a Producto y Categoría del producto.</figcaption>
 </figure>
 

@@ -13,7 +13,7 @@ tags:
 
 # Gestionar tus usuarios
 
-La ventana **[Usuarios](https://app.etendo.software/user){target="_blank"}** (Sistema > Configuración > Usuarios) reúne a todas las personas con acceso a tu cuenta. Para invitar a alguien nuevo, consulta [Cómo invitar a un usuario](../como-invitar-a-un-usuario/como-invitar-a-un-usuario.md).
+La ventana **[Usuarios](https://app.etendo.ai/user){target="_blank"}** (Sistema > Configuración > Usuarios) reúne a todas las personas con acceso a tu cuenta. Para invitar a alguien nuevo, consulta [Cómo invitar a un usuario](../como-invitar-a-un-usuario/como-invitar-a-un-usuario.md).
 
 !!! info "Necesitas el rol Administrador"
     Es el único rol con acceso a esta ventana — ningún otro rol la ve, ni siquiera en modo solo lectura.

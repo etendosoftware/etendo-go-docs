@@ -4,7 +4,7 @@ This file provides instructions for AI agents working on the `etendo-go-docs` re
 
 ## Purpose
 
-The `/agentic/` directory contains machine-readable documentation intended to be consumed by AI agents. These guides provide precise, structured information about Etendo Go features and integrations for agent-driven workflows. They are **not** part of the MkDocs site and are not rendered as HTML.
+The `/agentic/` directory contains machine-readable documentation intended to be consumed by AI agents. These guides provide precise, structured information about Etendo features and integrations for agent-driven workflows. They are **not** part of the MkDocs site and are not rendered as HTML.
 
 ## Structure conventions
 

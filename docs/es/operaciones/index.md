@@ -8,7 +8,7 @@ hide:
 
 # Operaciones
 
-Todo lo que necesitas para gestionar tus compras a proveedores y el control de stock en Etendo Go: desde solicitar pedidos y registrar facturas de compra, hasta administrar tus productos y almacenes.
+Todo lo que necesitas para gestionar tus compras a proveedores y el control de stock en Etendo: desde solicitar pedidos y registrar facturas de compra, hasta administrar tus productos y almacenes.
 
 ## Compras
 

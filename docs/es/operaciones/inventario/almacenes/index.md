@@ -3,7 +3,7 @@ tags:
     - Almacén
     - Inventario
     - Productos
-    - Etendo Go
+    - Etendo
 ---
 
 # ¿Qué es la sección Almacén?

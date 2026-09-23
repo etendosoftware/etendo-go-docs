@@ -2,7 +2,7 @@
 
 ## Overview
 
-This topic covers the Etendo Go finance domain as exposed through the MCP server. It maps the finance specs and report tools available to an MCP-only agent, and links to focused sub-guides for the two operational scenarios:
+This topic covers the Etendo finance domain as exposed through the MCP server. It maps the finance specs and report tools available to an MCP-only agent, and links to focused sub-guides for the two operational scenarios:
 
 - **[Treasury](./treasury.md)** — financial accounts, payments in / payments out, manual transactions, payment terms and currency conversion rates.
 - **[Bank reconciliation](./bank-reconciliation.md)** — import bank statements, process them, match transactions and reconcile a financial account.
@@ -11,7 +11,7 @@ All tool, spec, entity and column names below were verified at the time of writi
 
 ## Prerequisites
 
-- The Etendo Go MCP server is configured in your client. See [MCP setup](../mcp/index.md).
+- The Etendo MCP server is configured in your client. See [MCP setup](../mcp/index.md).
 - The API user has a role that grants access to the finance windows (Financial Account, Payment In, Payment Out, Payment Term, Conversion Rates, Reconciliations).
 - `etendo://status` is readable and `neo_discover` returns a non-empty `specs` array.
 

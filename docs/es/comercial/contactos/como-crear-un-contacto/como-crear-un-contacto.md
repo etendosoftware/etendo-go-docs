@@ -5,7 +5,7 @@ tags:
   - Comercial
   - Clientes
   - Proveedores
-  - Etendo Go
+  - Etendo
 ---
 
 # Cómo crear un contacto
@@ -14,7 +14,7 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 
 ## Datos generales
 
-1. Accede a la ventana [Contactos](https://go.etendo.cloud/contacts){target="_blank"}, desde la vista lista, haz clic en **+ Nuevo contacto**.
+1. Accede a la ventana [Contactos](https://app.etendo.ai/contacts){target="_blank"}, desde la vista lista, haz clic en **+ Nuevo contacto**.
 
     ![Vista lista de Contactos — botón Nuevo contacto](assets/como-crear-un-contacto-1.png)
 
@@ -73,7 +73,7 @@ Para poder emitir un documento de venta o de compra, primero necesitas tener el 
 
 ## Crear un contacto desde un documento de venta o compra
 
-También puedes crear un contacto sin salir de un pedido, una factura o un albarán. Si buscas un contacto que todavía no existe desde el selector de contacto de ese documento, Etendo Go te ofrece un popup de creación rápida en vez de llevarte a la vista lista de Contactos.
+También puedes crear un contacto sin salir de un pedido, una factura o un albarán. Si buscas un contacto que todavía no existe desde el selector de contacto de ese documento, Etendo te ofrece un popup de creación rápida en vez de llevarte a la vista lista de Contactos.
 
 1. En el selector de contacto del documento, escribe el nombre del contacto que quieres crear y elige la opción para crearlo desde ahí.
 2. Completa el popup con los campos mínimos que pide: **Razón Social** (o Nombre y Apellidos, según el tipo) y el tipo de contacto — ambos son obligatorios para guardar desde este popup.

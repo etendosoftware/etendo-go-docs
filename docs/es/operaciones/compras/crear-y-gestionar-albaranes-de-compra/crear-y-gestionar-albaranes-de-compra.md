@@ -1,21 +1,21 @@
 ---
 title: Crear y gestionar albaranes de compra
 description: >-
-  Aprende a crear y gestionar albaranes de compra en Etendo Go para registrar
+  Aprende a crear y gestionar albaranes de compra en Etendo para registrar
   la recepción física de mercancía y habilitar la factura correspondiente.
 tags:
   - Albarán de Compra
   - Compras
   - Operaciones
   - Gestión Documental
-  - Etendo Go
+  - Etendo
 ---
 
 # Crear y gestionar albaranes de compra
 
 ## Descripción general
 
-El **albarán de compra** registra la recepción física de mercancía de un proveedor. Puede generarse desde un [pedido de compra](../gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md#gestionar-recepcion-y-factura) confirmado — marcando la opción **Crear albarán de proveedor** en el popup de confirmación, o más adelante con el botón **Gestionar recepción y factura** del pedido — o crearse directamente desde la ventana **[Compras > Albarán](https://go.etendo.cloud/goods-receipt){target="_blank"}** con **+ Nuevo albarán**. Una vez completado, habilita la generación de la [factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md) o de una devolución.
+El **albarán de compra** registra la recepción física de mercancía de un proveedor. Puede generarse desde un [pedido de compra](../gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md#gestionar-recepcion-y-factura) confirmado — marcando la opción **Crear albarán de proveedor** en el popup de confirmación, o más adelante con el botón **Gestionar recepción y factura** del pedido — o crearse directamente desde la ventana **[Compras > Albarán](https://app.etendo.ai/goods-receipt){target="_blank"}** con **+ Nuevo albarán**. Una vez completado, habilita la generación de la [factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md) o de una devolución.
 
 ```mermaid
 flowchart LR
@@ -34,7 +34,7 @@ Este artículo se organiza en dos flujos: primero cómo **crear un albarán** y 
 
 ### 1. Empieza un albarán nuevo
 
-Puedes generar el albarán desde un [pedido de compra](../gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md#gestionar-recepcion-y-factura) confirmado — marcando **Crear albarán de proveedor** en el popup de confirmación del pedido, o más adelante con el botón **Gestionar recepción y factura** — en cuyo caso el albarán hereda el contacto y las líneas pendientes del pedido de origen. Alternativamente, puedes crearlo directamente accediendo a **[Compras > Albarán](https://go.etendo.cloud/goods-receipt){target="_blank"}** y usando el botón **+ Nuevo albarán** en la esquina superior derecha.
+Puedes generar el albarán desde un [pedido de compra](../gestionar-tus-pedidos-de-compra/gestionar-tus-pedidos-de-compra.md#gestionar-recepcion-y-factura) confirmado — marcando **Crear albarán de proveedor** en el popup de confirmación del pedido, o más adelante con el botón **Gestionar recepción y factura** — en cuyo caso el albarán hereda el contacto y las líneas pendientes del pedido de origen. Alternativamente, puedes crearlo directamente accediendo a **[Compras > Albarán](https://app.etendo.ai/goods-receipt){target="_blank"}** y usando el botón **+ Nuevo albarán** en la esquina superior derecha.
 
 ### 2. Completa el formulario
 
@@ -89,7 +89,7 @@ Al hacer clic en **Confirmar**, el sistema muestra el popup **¿Registrar factur
   <figcaption>Vista lista de Albarán de compra con columnas de estado y progreso de facturación.</figcaption>
 </figure>
 
-La vista lista de **[Compras > Albarán](https://go.etendo.cloud/goods-receipt){target="_blank"}** muestra las columnas **Fecha del movimiento**, **Nº documento**, **Contacto**, **Estado doc.**, **Contabilizado**, **Almacén** y **Estado de facturación** — esta última con una barra de progreso: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado. Al pasar el cursor sobre una fila aparecen accesos rápidos para abrir el documento y clonarlo. Los selectores de **estado del documento** y **fecha** permiten filtrar la lista, y **Filtros** habilita condiciones adicionales.
+La vista lista de **[Compras > Albarán](https://app.etendo.ai/goods-receipt){target="_blank"}** muestra las columnas **Fecha del movimiento**, **Nº documento**, **Contacto**, **Estado doc.**, **Contabilizado**, **Almacén** y **Estado de facturación** — esta última con una barra de progreso: verde cuando está al 100 %, naranja cuando es parcial y gris cuando no ha comenzado. Al pasar el cursor sobre una fila aparecen accesos rápidos para abrir el documento y clonarlo. Los selectores de **estado del documento** y **fecha** permiten filtrar la lista, y **Filtros** habilita condiciones adicionales.
 
 ### 2. Abre el albarán
 

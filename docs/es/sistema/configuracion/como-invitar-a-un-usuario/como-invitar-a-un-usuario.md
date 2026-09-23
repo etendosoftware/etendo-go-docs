@@ -13,7 +13,7 @@ tags:
 
 # Cómo invitar a un usuario
 
-Desde **[Sistema > Configuración > Usuarios](https://app.etendo.software/user){target="_blank"}** invitas a las personas de tu equipo a tu cuenta de Etendo.
+Desde **[Sistema > Configuración > Usuarios](https://app.etendo.ai/user){target="_blank"}** invitas a las personas de tu equipo a tu cuenta de Etendo.
 
 - Necesitas el rol **Administrador**: es el único que puede gestionar usuarios.
 
@@ -22,7 +22,7 @@ Desde **[Sistema > Configuración > Usuarios](https://app.etendo.software/user){
   <figcaption>Formulario de un nuevo usuario, con Nombre y Correo electrónico completados antes de guardar.</figcaption>
 </figure>
 
-1. En el menú lateral, dentro de **Sistema > Configuración**, haz clic en **[Usuarios](https://app.etendo.software/user){target="_blank"}**.
+1. En el menú lateral, dentro de **Sistema > Configuración**, haz clic en **[Usuarios](https://app.etendo.ai/user){target="_blank"}**.
 2. Haz clic en **+ Nuevo usuario**.
 3. Completa **Nombre** y **Correo electrónico** (ambos obligatorios).
 4. Haz clic en **Guardar**.

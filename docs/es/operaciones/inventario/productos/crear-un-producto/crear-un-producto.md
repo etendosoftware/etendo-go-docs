@@ -3,16 +3,16 @@ tags:
     - Producto
     - Inventario
     - Productos
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear un producto
 
-Este artículo cubre cómo dar de alta un producto nuevo en Etendo Go, ya sea un artículo con stock o un servicio.
+Este artículo cubre cómo dar de alta un producto nuevo en Etendo, ya sea un artículo con stock o un servicio.
 
 ## Ve a la ventana Producto
 
-Ve a **[Inventario > Producto](https://go.etendo.cloud/product/new){target="_blank"}** y haz clic en **+ Nuevo producto**.
+Ve a **[Inventario > Producto](https://app.etendo.ai/product/new){target="_blank"}** y haz clic en **+ Nuevo producto**.
 
 ## Completa los datos generales
 

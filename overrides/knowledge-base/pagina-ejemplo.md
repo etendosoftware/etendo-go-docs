@@ -1,17 +1,17 @@
 ---
-title: ¿Qué es Etendo Go?
+title: ¿Qué es Etendo?
 tags:
   - ERP
   - SaaS
 ---
 
-# ¿Qué es Etendo Go?
+# ¿Qué es Etendo?
 
-**Etendo Go** es la versión SaaS de Etendo ERP, diseñada para empresas que necesitan una solución de gestión empresarial ágil, accesible desde cualquier lugar y sin infraestructura propia.
+**Etendo** es la versión SaaS de Etendo ERP, diseñada para empresas que necesitan una solución de gestión empresarial ágil, accesible desde cualquier lugar y sin infraestructura propia.
 
 <figure markdown>
-  ![Dashboard de Etendo Go](../../es/primeros-pasos/que-es-etendo-go-1.png)
-  <figcaption>Vista principal del dashboard de Etendo Go — resumen de tareas pendientes, movimientos financieros y accesos rápidos.</figcaption>
+  ![Dashboard de Etendo](../../es/primeros-pasos/que-es-etendo-1.png)
+  <figcaption>Vista principal del dashboard de Etendo — resumen de tareas pendientes, movimientos financieros y accesos rápidos.</figcaption>
 </figure>
 
 ---
@@ -40,7 +40,7 @@ tags:
 
 Antes de comenzar, asegúrate de tener lo siguiente:
 
-- [x] Una cuenta activa en Etendo Go
+- [x] Una cuenta activa en Etendo
 - [x] Acceso a internet desde un navegador moderno
 - [ ] Datos de empresa configurados *(ver [Configuración](../../docs/assets/configuracion/index.md))*
 - [ ] Usuarios y roles asignados
@@ -70,7 +70,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 ## Admonitions
 
 !!! note "Nota"
-    Etendo Go se actualiza automáticamente. No necesitas instalar ni descargar nada para tener siempre la última versión.
+    Etendo se actualiza automáticamente. No necesitas instalar ni descargar nada para tener siempre la última versión.
 
 !!! tip "Consejo"
     Usa la búsqueda (`/` o clic en la lupa) para encontrar cualquier sección de la documentación sin necesidad de navegar manualmente.
@@ -82,7 +82,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
     No compartas tus credenciales de acceso. Cada usuario debe tener su propia cuenta con los permisos correspondientes.
 
 !!! info "Información"
-    Esta documentación está actualizada para la versión **2.0** de Etendo Go.
+    Esta documentación está actualizada para la versión **2.0** de Etendo.
 
 !!! success "Listo"
     Si ves esta pantalla, tu instancia está activa y funcionando correctamente.
@@ -97,10 +97,10 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 ## Código de ejemplo
 
-Puedes conectarte a la API de Etendo Go usando cualquier cliente HTTP:
+Puedes conectarte a la API de Etendo usando cualquier cliente HTTP:
 
 ```bash
-curl -X POST https://go.etendo.cloud/api/auth/token \
+curl -X POST https://app.etendo.ai/api/auth/token \
   -H "Content-Type: application/json" \
   -d '{"username": "admin", "password": "••••••••"}'
 ```
@@ -108,7 +108,7 @@ curl -X POST https://go.etendo.cloud/api/auth/token \
 ```python title="etendo_client.py" linenums="1"
 import requests
 
-BASE_URL = "https://go.etendo.cloud/api"
+BASE_URL = "https://app.etendo.ai/api"
 
 def get_token(username: str, password: str) -> str:
     response = requests.post(
@@ -145,13 +145,13 @@ def get_token(username: str, password: str) -> str:
 
 ## Texto con formato
 
-Etendo Go soporta texto en **negrita**, *cursiva*, ~~tachado~~ y `código inline`.
+Etendo soporta texto en **negrita**, *cursiva*, ~~tachado~~ y `código inline`.
 
 También puedes usar teclas de teclado como ++ctrl+s++ para guardar, o ++cmd+k++ para buscar.
 
 Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
-> **Etendo Go** es la evolución natural de Etendo ERP hacia la nube.
+> **Etendo** es la evolución natural de Etendo ERP hacia la nube.
 > Diseñado para que cualquier empresa pueda operar con agilidad desde el primer día.
 
 ---
@@ -199,7 +199,7 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 ## Botones
 
 [Comenzar ahora](../../docs/assets/configuracion/index.md){ .md-button .md-button--primary }
-[Ver primeros pasos](que-es-etendo-go.md){ .md-button }
+[Ver primeros pasos](que-es-etendo.md){ .md-button }
 
 ---
 
@@ -218,13 +218,13 @@ Texto con ^superíndice^ y ~subíndice~ para referencias técnicas.
 
 ## Texto resaltado
 
-Etendo Go incluye ==resaltado de texto== para marcar información clave. También podés combinar ==resaltado== con **negrita** o *cursiva* para mayor énfasis.
+Etendo incluye ==resaltado de texto== para marcar información clave. También podés combinar ==resaltado== con **negrita** o *cursiva* para mayor énfasis.
 
 ---
 
 ## Tooltips
 
-Etendo Go cumple con el RGPD y usa cifrado TLS en todas las comunicaciones. Las abreviaciones también se pueden definir globalmente: al escribir SaaS o ERP en cualquier parte del documento, el tooltip aparece automáticamente.
+Etendo cumple con el RGPD y usa cifrado TLS en todas las comunicaciones. Las abreviaciones también se pueden definir globalmente: al escribir SaaS o ERP en cualquier parte del documento, el tooltip aparece automáticamente.
 
 *[RGPD]: Reglamento General de Protección de Datos
 *[TLS]: Transport Layer Security
@@ -246,7 +246,7 @@ flowchart LR
 
 ## Footnotes
 
-Etendo Go utiliza tecnología de código abierto[^1] y cumple con los requisitos del RGPD[^2].
+Etendo utiliza tecnología de código abierto[^1] y cumple con los requisitos del RGPD[^2].
 
 [^1]: El código fuente base está disponible en [GitHub](https://github.com/etendosoftware).
 [^2]: Reglamento General de Protección de Datos — Unión Europea.

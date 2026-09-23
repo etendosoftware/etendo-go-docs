@@ -1,14 +1,14 @@
 ---
 title: Crear y gestionar pedidos
 description: >-
-  Aprende a crear pedidos de venta en Etendo Go, hacer seguimiento de su ciclo
+  Aprende a crear pedidos de venta en Etendo, hacer seguimiento de su ciclo
   de vida y generar los albaranes y facturas derivados de cada pedido.
 tags:
     - Pedido de Venta
     - Ventas
     - Comercial
     - Gestión Documental
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear y gestionar pedidos
@@ -37,7 +37,7 @@ Este artículo se organiza en dos flujos: primero cómo **crear un pedido** y co
 
 ### 1. Empieza un pedido nuevo
 
-Para crear un pedido nuevo, accede a **[Ventas > Pedido](https://go.etendo.cloud/sales-order){target="_blank"}** y usa el botón **+ Nuevo pedido** en la esquina superior derecha. Alternativamente, puedes generar el pedido a partir de un [presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md) ya confirmado, en cuyo caso el pedido se crea con los datos del presupuesto ya cargados.
+Para crear un pedido nuevo, accede a **[Ventas > Pedido](https://app.etendo.ai/sales-order){target="_blank"}** y usa el botón **+ Nuevo pedido** en la esquina superior derecha. Alternativamente, puedes generar el pedido a partir de un [presupuesto de venta](../crear-y-gestionar-presupuestos/crear-y-gestionar-presupuestos.md) ya confirmado, en cuyo caso el pedido se crea con los datos del presupuesto ya cargados.
 
 ### 2. Completa el formulario
 

@@ -1,6 +1,6 @@
-# Etendo Go Docs
+# Etendo Docs
 
-Documentation for **Etendo Go**, split into two parts:
+Documentation for **Etendo**, split into two parts:
 
 - **`docs/`** — the human-facing [MkDocs](https://www.mkdocs.org/) site, published at
   [etendosoftware.github.io/etendo-go-docs](https://etendosoftware.github.io/etendo-go-docs/).
@@ -12,7 +12,7 @@ Documentation for **Etendo Go**, split into two parts:
 [Context7](https://context7.com) is an MCP server that delivers up-to-date,
 version-specific documentation straight into your LLM / coding assistant. This
 repository is published as a Context7 library so any MCP-capable agent can pull
-the Etendo Go agentic docs on demand.
+the Etendo agentic docs on demand.
 
 - **Library ID:** `/etendosoftware/etendo-go-docs`
 - **Indexed content:** the `agentic/` folder only (configured in
@@ -49,21 +49,21 @@ Restart the client after the setup completes. An API key is optional but
 recommended for higher rate limits — get one at
 [context7.com/dashboard](https://context7.com/dashboard).
 
-### Query the Etendo Go docs
+### Query the Etendo docs
 
 Once the MCP server is connected, reference this library in any prompt. Two ways:
 
 1. **Pin the library explicitly** — fastest and most reliable:
 
    ```text
-   How do I configure the MCP treasury tools in Etendo Go?
+   How do I configure the MCP treasury tools in Etendo?
    use library /etendosoftware/etendo-go-docs
    ```
 
-2. **Let Context7 resolve it** — mention "Etendo Go" and add `use context7`:
+2. **Let Context7 resolve it** — mention "Etendo" and add `use context7`:
 
    ```text
-   Explain bank reconciliation in Etendo Go. use context7
+   Explain bank reconciliation in Etendo. use context7
    ```
 
 The agent will call the Context7 tools (`resolve-library-id` and

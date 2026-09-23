@@ -1,5 +1,5 @@
 ---
-title: Etendo Go
+title: Etendo
 template: home.html
 hide:
     - navigation

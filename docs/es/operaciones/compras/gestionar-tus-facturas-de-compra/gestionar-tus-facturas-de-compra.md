@@ -5,12 +5,12 @@ tags:
   - Compras
   - Operaciones
   - Gestión Documental
-  - Etendo Go
+  - Etendo
 ---
 
 # Gestionar tus facturas de compra
 
-Una vez que tienes facturas de compra cargadas, vas a necesitar consultarlas, editarlas o revisar su estado de pago. Este artículo repasa la ventana de **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}** — la vista lista, la vista detalle y la vista formulario. Si todavía no has creado ninguna, empieza por [Crear una factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md).
+Una vez que tienes facturas de compra cargadas, vas a necesitar consultarlas, editarlas o revisar su estado de pago. Este artículo repasa la ventana de **[Compras > Factura](https://app.etendo.ai/purchase-invoice){target="_blank"}** — la vista lista, la vista detalle y la vista formulario. Si todavía no has creado ninguna, empieza por [Crear una factura de compra](../crear-una-factura-de-compra/crear-una-factura-de-compra.md).
 
 ## Vista Lista
 
@@ -93,7 +93,7 @@ En estado Completado, la barra superior del formulario muestra además un indica
   <figcaption>Vista lista filtrada por el tab Factura rectificativa: la columna Pendiente de pago muestra Saldo a favor en vez de un importe pendiente.</figcaption>
 </figure>
 
-Una Factura Rectificativa se gestiona desde la misma ventana y vista lista de **[Compras > Factura](https://go.etendo.cloud/purchase-invoice){target="_blank"}**, filtrando por el tab **Factura rectificativa**. Al confirmarla, la columna **Pendiente de pago** muestra **Saldo a favor** por el importe de la factura, en vez de un importe pendiente: es un saldo a favor general del proveedor, no un descuento aplicado automáticamente a una factura puntual — se concilia por **Contacto**, no seleccionando una factura origen específica. En la práctica, esto significa que ese saldo queda disponible para aplicarse a cualquier factura futura de ese mismo proveedor, y no a una factura puntual.
+Una Factura Rectificativa se gestiona desde la misma ventana y vista lista de **[Compras > Factura](https://app.etendo.ai/purchase-invoice){target="_blank"}**, filtrando por el tab **Factura rectificativa**. Al confirmarla, la columna **Pendiente de pago** muestra **Saldo a favor** por el importe de la factura, en vez de un importe pendiente: es un saldo a favor general del proveedor, no un descuento aplicado automáticamente a una factura puntual — se concilia por **Contacto**, no seleccionando una factura origen específica. En la práctica, esto significa que ese saldo queda disponible para aplicarse a cualquier factura futura de ese mismo proveedor, y no a una factura puntual.
 
 ## Artículos Relacionados
 
