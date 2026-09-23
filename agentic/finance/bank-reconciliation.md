@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide walks an MCP-only agent through the full bank-reconciliation flow on a single financial account in Etendo Go:
+This guide walks an MCP-only agent through the full bank-reconciliation flow on a single financial account in Etendo:
 
 1. **Import** a bank file (e.g. a Spanish C43 statement) — creates an `importedBankStatements` record and its `bankStatementLines`.
 2. **Process** the imported statement — generates the underlying `transaction` rows and marks the statement as processed.
@@ -13,7 +13,7 @@ All spec, entity, column and action names below were verified through `neo_schem
 
 ## Prerequisites
 
-- The Etendo Go MCP server is reachable and authenticated.
+- The Etendo MCP server is reachable and authenticated.
 - The current API user can access the `financial-account` spec and its entities `account`, `importedBankStatements`, `bankStatementLines`, `reconciliations`, `clearedItems`.
 - There is at least one configured financial account with a matching algorithm assigned (`FIN_Matching_Algorithm_ID`) — otherwise `EM_APRM_MatchTransactions` cannot run.
 - Optionally a bank-statement document type is configured (`C_Doctype_ID` on `FIN_BankStatement`).

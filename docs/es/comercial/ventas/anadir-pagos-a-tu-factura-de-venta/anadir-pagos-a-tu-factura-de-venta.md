@@ -2,12 +2,12 @@
 title: Añadir pagos a tu factura de venta
 description: >-
   Aprende a registrar cobros totales o parciales sobre tus facturas de venta
-  en Etendo Go, y a aplicar saldo a favor o crédito disponible del cliente.
+  en Etendo, y a aplicar saldo a favor o crédito disponible del cliente.
 tags:
   - Factura de Venta
   - Ventas
   - Comercial
-  - Etendo Go
+  - Etendo
 ---
 
 # Añadir pagos a tu factura de venta
@@ -16,7 +16,7 @@ Una vez que una factura de venta está en estado **Completado**, puedes registra
 
 ## Pasos
 
-1. Abre la factura desde la vista lista o desde la vista detalle de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**. El botón **Añadir pago** está disponible tanto en el panel lateral de la vista detalle como en la barra del formulario.
+1. Abre la factura desde la vista lista o desde la vista detalle de **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}**. El botón **Añadir pago** está disponible tanto en el panel lateral de la vista detalle como en la barra del formulario.
 
 2. Haz clic en **Añadir pago**. Se abre el popup **Nuevo cobro**:
 

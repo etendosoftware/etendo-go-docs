@@ -1,12 +1,12 @@
-# MCP — Model Context Protocol for Etendo Go
+# MCP — Model Context Protocol for Etendo
 
 ## Overview
 
-The Etendo Go MCP server exposes the Etendo Go NEO Headless API through the [Model Context Protocol](https://modelcontextprotocol.io/), enabling AI agents to query and mutate ERP data, fire process actions, and generate reports directly from a conversation.
+The Etendo MCP server exposes the Etendo NEO Headless API through the [Model Context Protocol](https://modelcontextprotocol.io/), enabling AI agents to query and mutate ERP data, fire process actions, and generate reports directly from a conversation.
 
 This guide covers:
 
-- What the MCP server is and how it fits into Etendo Go.
+- What the MCP server is and how it fits into Etendo.
 - Prerequisites and step-by-step configuration.
 - The `spec + entity` model used by every CRUD tool.
 - The list of generic tools the server exposes.
@@ -16,23 +16,23 @@ This guide covers:
 
 ## Prerequisites
 
-- An active Etendo Go account with API access enabled.
-- Your Etendo Go instance URL (e.g., `https://go.etendo.cloud`).
+- An active Etendo account with API access enabled.
+- Your Etendo instance URL (e.g., `https://app.etendo.ai`).
 - A dedicated API user with the roles required for your agent's tasks.
 - An MCP-compatible client: Claude Desktop, Claude Code, or any client implementing MCP spec `2024-11-05` or later.
 - `Node.js >= 18` if running the MCP server locally via `npx`.
 
-## What is MCP in the Etendo Go context
+## What is MCP in the Etendo context
 
-MCP (Model Context Protocol) is an open standard that lets AI models call structured tools and read resources from external systems. The Etendo Go MCP server is a connector that wraps the Etendo Go NEO Headless API and exposes it as a small set of **generic** tools that operate over any business entity, plus a set of **report** tools.
+MCP (Model Context Protocol) is an open standard that lets AI models call structured tools and read resources from external systems. The Etendo MCP server is a connector that wraps the Etendo NEO Headless API and exposes it as a small set of **generic** tools that operate over any business entity, plus a set of **report** tools.
 
 ```
-AI Agent  ──MCP protocol──>  Etendo Go MCP Server  ──REST──>  Etendo Go NEO Headless API
+AI Agent  ──MCP protocol──>  Etendo MCP Server  ──REST──>  Etendo NEO Headless API
 ```
 
 The MCP server handles:
 
-- **Authentication**: acquires a JWT token from the Etendo Go API and renews it before expiry.
+- **Authentication**: acquires a JWT token from the Etendo API and renews it before expiry.
 - **Spec/entity routing**: maps each tool call to the correct REST endpoint based on the `spec` and `entity` arguments.
 - **Schema introspection**: returns field metadata so the agent can build valid payloads without guessing.
 - **Process invocation**: fires `type:button` actions (document confirmation, posting, copy-from, etc.) through a single tool.
@@ -41,7 +41,7 @@ The MCP server handles:
 
 ### Step 1 — Obtain API credentials
 
-1. Log in to your Etendo Go instance as an administrator.
+1. Log in to your Etendo instance as an administrator.
 2. Navigate to **Configuration → Users and permissions**.
 3. Create a dedicated API user (do not reuse a human user account).
 4. Assign the roles that match the operations your agent will perform (for example, a role with access to the Sales Order, Purchase Order, or Product windows).
@@ -60,7 +60,7 @@ Add the following entry to your MCP client configuration file.
       "command": "npx",
       "args": ["-y", "@etendosoftware/mcp-etendo-go"],
       "env": {
-        "ETENDO_BASE_URL": "https://go.etendo.cloud",
+        "ETENDO_BASE_URL": "https://app.etendo.ai",
         "ETENDO_USERNAME": "<your-api-username>",
         "ETENDO_PASSWORD": "<your-api-password>"
       }
@@ -78,7 +78,7 @@ Add the following entry to your MCP client configuration file.
       "command": "npx",
       "args": ["-y", "@etendosoftware/mcp-etendo-go"],
       "env": {
-        "ETENDO_BASE_URL": "https://go.etendo.cloud",
+        "ETENDO_BASE_URL": "https://app.etendo.ai",
         "ETENDO_USERNAME": "<your-api-username>",
         "ETENDO_PASSWORD": "<your-api-password>"
       }
@@ -91,7 +91,7 @@ Add the following entry to your MCP client configuration file.
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `ETENDO_BASE_URL` | Yes | — | Base URL of your Etendo Go instance |
+| `ETENDO_BASE_URL` | Yes | — | Base URL of your Etendo instance |
 | `ETENDO_USERNAME` | Yes | — | API user login |
 | `ETENDO_PASSWORD` | Yes | — | API user password |
 
@@ -111,7 +111,7 @@ As a second sanity check, invoke `neo_discover` (it requires no arguments) and c
 
 Every CRUD tool exposed by the MCP server takes two routing arguments:
 
-- **`spec`** — the API namespace, typically aligned with an Etendo Go window or business area (for example `sales-order`, `purchase-invoice`, `product`, `contacts`).
+- **`spec`** — the API namespace, typically aligned with an Etendo window or business area (for example `sales-order`, `purchase-invoice`, `product`, `contacts`).
 - **`entity`** — the tab or sub-resource inside that spec (for example `header`, `lines`, `lineTax`, `paymentPlan`).
 
 A spec is composed of one or more entities. For example, the `sales-order` spec has the entities `header`, `lines`, `lineTax`, `intrastat`, `reservedStock`, `relatedProducts`, `relatedServices`, `basicDiscounts`, `tax`, `paymentPlan`, `paymentDetails`, and `replacementOrders`. To list sales-order headers you call `neo_list` with `spec="sales-order"` and `entity="header"`; to list the lines of one sales order you call `neo_list` with `spec="sales-order"`, `entity="lines"`, and a filter on the parent header ID.
@@ -169,7 +169,7 @@ Two rules worth internalizing:
 
 Every spec with more than one entity has a parent/child shape — `header`/`lines`, `inventory`/`inventoryLine`, `product`/`price` — and creating a record in the child entity has one extra step that creating a header does not: **resolving the parent-dependent defaults before you call `neo_create`.**
 
-`neo_schema(spec, entity, view: "create")` on a child entity does **not** list the parent foreign key among the fields it describes, yet `neo_create` will reject the write with a 422 demanding exactly that field. This is expected — the parent FK is always required on a child entity even though the create-view schema does not enumerate it — so always send it, keyed by the field name shown in the full (non-`view`) `neo_schema` dump or in an existing sibling record (e.g. `physInventory` on `inventory-line`, `salesOrder` on `sales-order/lines`, `product` on `product/price`).
+`neo_schema(spec, entity, view: "create")` on a child entity does **not** list the parent foreign key among the fields it describes, yet `neo_create` will reject the write with a 422 demanding a parent reference. Name the parent with `parentId`, not with the child entity's own foreign key to it (e.g. not `physInventory` on `inventory-line`, not `salesOrder` on `sales-order/lines`, not `product` on `product/price`) — the server loads the parent record only from `parentId`, so the FK form silently persists a record with every parent-derived field left null, and can still 422 on a mandatory parent-context field it could not resolve (e.g. `orderDate`).
 
 More importantly, several fields on a child entity have a default expression that reads from the **parent** record (its warehouse, its price-list version, its running line number) — the server cannot compute them from the child entity alone. `neo_defaults(spec, entity)` called **without `parentId`** will silently omit those fields rather than error, because it does not have the parent record to evaluate the expression against. Passing `parentId` is what makes the difference between a resolved value and an absent one.
 
@@ -195,7 +195,7 @@ More importantly, several fields on a child entity have a default expression tha
    from `confirm` entirely — not flagged as unresolved, just absent.
 3. Resolve any remaining foreign keys with `neo_selectors`, passing `parentContext` when a
    selector depends on parent-level values (see [Resolve dependent selectors](#step-4--resolve-dependent-selectors) above for the header/line pattern).
-4. Call `neo_create` with the entity's own fields **plus** the parent FK and the values you got
+4. Call `neo_create` with the entity's own fields **plus** `parentId` and the values you got
    from `neo_defaults`:
 
    ```json
@@ -205,7 +205,7 @@ More importantly, several fields on a child entity have a default expression tha
        "spec": "physical-inventory",
        "entity": "inventoryLine",
        "fields": {
-         "physInventory": "<inventory-header-id>",
+         "parentId": "<inventory-header-id>",
          "product": "<product-id>",
          "storageBin": "<storage-bin-id-from-neo_defaults>"
        }
@@ -220,7 +220,7 @@ its spec, call `neo_defaults` with `parentId` before `neo_create` — never with
 
 ### Report tools
 
-Report tools render a pre-built Etendo Go report and return it in the requested format. Each report owns the parameter shape it expects under the `parameters` argument; call the report with an empty `parameters` object first to discover the required keys via the server's validation message.
+Report tools render a pre-built Etendo report and return it in the requested format. Each report owns the parameter shape it expects under the `parameters` argument; call the report with an empty `parameters` object first to discover the required keys via the server's validation message.
 
 | Tool | Report |
 |------|--------|
@@ -235,7 +235,7 @@ All report tools accept an optional `format` argument (`pdf`, `xlsx`, `csv`; def
 
 ## Available resources
 
-Resources in the Etendo Go MCP server are intentionally minimal. The server exposes a single resource:
+Resources in the Etendo MCP server are intentionally minimal. The server exposes a single resource:
 
 | Resource URI | Description |
 |--------------|-------------|
@@ -245,7 +245,7 @@ There are **no** `etendo://schema/<entity>` resources. To obtain the JSON-Schema
 
 ## Specs available
 
-The list below was obtained from `neo_discover` against a current Etendo Go instance. The set of specs the **current user** can see depends on the user's role and the modules installed; rerun `neo_discover` in your own environment to obtain the authoritative list.
+The list below was obtained from `neo_discover` against a current Etendo instance. The set of specs the **current user** can see depends on the user's role and the modules installed; rerun `neo_discover` in your own environment to obtain the authoritative list.
 
 Specs of type `W` (write/CRUD windows) expose one or more entities through `neo_*`. Specs of type `R` (reports) are rendered through their corresponding `generate_*` tool.
 
@@ -457,15 +457,23 @@ Create the line:
     "spec": "sales-order",
     "entity": "lines",
     "fields": {
-      "salesOrder": "<order-header-id>",
+      "parentId": "<order-header-id>",
       "product": "<product-id>",
-      "orderedQuantity": 5,
-      "unitPrice": 12.50,
-      "tax": "<tax-id>"
+      "orderedQuantity": 5
     }
   }
 }
 ```
+
+Name the header with `parentId`, not with the line's own `salesOrder` field. Only `parentId` makes
+the server read the header record, and everything the line derives from it depends on that: the
+business partner, the partner address, the order date, the tax rate and the price. Naming the header
+with the line's own FK field instead does not merely lose those values — the create is rejected with
+`422 validation_error`, because the order date has no source once the header is not read.
+
+`unitPrice`, `listPrice` and `tax` are therefore **not** needed — the price comes from the header's
+price list at the order date, and the tax from the product and the partner's shipping address. Pass
+a price only to override the price list; a tax-included price list still needs an explicit price.
 
 ### Step 8 — Process (confirm) the order
 

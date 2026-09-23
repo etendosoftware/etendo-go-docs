@@ -3,12 +3,12 @@ tags:
     - Productos
     - Inventario
     - Categoría de producto
-    - Etendo Go
+    - Etendo
 ---
 
 # ¿Qué es la sección de Productos?
 
-La sección **Productos** concentra toda la información comercial, logística y de stock de lo que vendes o compras en Etendo Go. Es el maestro central del módulo Inventario: cada línea de un presupuesto, pedido, albarán o factura hace referencia a un producto definido acá.
+La sección **Productos** concentra toda la información comercial, logística y de stock de lo que vendes o compras en Etendo. Es el maestro central del módulo Inventario: cada línea de un presupuesto, pedido, albarán o factura hace referencia a un producto definido acá.
 
 <figure markdown="span">
   ![Vista lista de Producto](assets/que-es-productos-1.png)

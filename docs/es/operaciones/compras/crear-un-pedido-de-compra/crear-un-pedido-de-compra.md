@@ -5,7 +5,7 @@ tags:
   - Compras
   - Operaciones
   - Inventario
-  - Etendo Go
+  - Etendo
 ---
 
 # Crear un pedido de compra
@@ -33,7 +33,7 @@ flowchart LR
   <figcaption>Formulario de creación y edición del Pedido de compra.</figcaption>
 </figure>
 
-1. Accede a **[Compras > Pedido de Compra](https://go.etendo.cloud/purchase-order){target="_blank"}** y haz clic en **+ Nuevo pedido**.
+1. Accede a **[Compras > Pedido de Compra](https://app.etendo.ai/purchase-order){target="_blank"}** y haz clic en **+ Nuevo pedido**.
 2. Completa la cabecera:
     - **Contacto** *(obligatorio)* — proveedor al que se dirige el pedido. Al seleccionarlo, autocompleta **Dirección**, **Método de pago**, **Condiciones de pago**, **Moneda** y **Tarifa**.
     - **Nº documento** — se asigna automáticamente al guardar; no editable.

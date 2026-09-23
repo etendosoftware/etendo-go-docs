@@ -1,24 +1,24 @@
 ---
 title: Enviar tus facturas por email
 description: >-
-  Aprende a enviar tus facturas de venta por email desde Etendo Go, sumar
+  Aprende a enviar tus facturas de venta por email desde Etendo, sumar
   destinatarios en copia, editar el mensaje y descargar el PDF antes de enviar.
 tags:
   - Factura de Venta
   - Ventas
   - Comercial
-  - Etendo Go
+  - Etendo
 ---
 
 # Enviar tus facturas por email
 
-Una vez que tu factura de venta está en estado Completado, puedes enviarla por correo electrónico a tu cliente sin salir de Etendo Go.
+Una vez que tu factura de venta está en estado Completado, puedes enviarla por correo electrónico a tu cliente sin salir de Etendo.
 
 - **Prerrequisito**: la factura debe estar en estado Completado. El botón **Enviar** no está disponible mientras la factura sigue en Borrador, ni desde la vista lista, ni desde la vista detalle, ni desde el formulario completo.
 
 ## Pasos
 
-1. Abre la factura desde la vista lista o desde la vista detalle de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}**.
+1. Abre la factura desde la vista lista o desde la vista detalle de **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}**.
 
 2. Haz clic en **Enviar**. Se abre el panel **Enviar Factura de Venta**:
 
@@ -41,7 +41,7 @@ Cada envío queda registrado en la sección **EMAILS** del panel lateral de la f
     Puedes reenviar la misma factura las veces que necesites — por ejemplo, si el cliente solicita una copia. Cada envío se suma al historial sin afectar el estado del documento.
 
 !!! tip "Compartir por otro canal"
-    Si prefieres compartir la factura por WhatsApp, otro correo distinto al del contacto, o cualquier otro medio, usa **Descargar PDF** y envía el archivo descargado por el canal que prefieras. Este tipo de envío no queda registrado en la sección **EMAILS** — ese historial solo guarda los envíos hechos con el botón **Enviar** de Etendo Go.
+    Si prefieres compartir la factura por WhatsApp, otro correo distinto al del contacto, o cualquier otro medio, usa **Descargar PDF** y envía el archivo descargado por el canal que prefieras. Este tipo de envío no queda registrado en la sección **EMAILS** — ese historial solo guarda los envíos hechos con el botón **Enviar** de Etendo.
 
 ## Artículos Relacionados
 

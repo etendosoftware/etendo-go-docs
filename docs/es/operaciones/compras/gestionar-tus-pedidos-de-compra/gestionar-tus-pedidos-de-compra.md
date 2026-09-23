@@ -5,12 +5,12 @@ tags:
   - Compras
   - Operaciones
   - Inventario
-  - Etendo Go
+  - Etendo
 ---
 
 # Gestionar tus pedidos de compra
 
-Una vez que tienes pedidos de compra cargados, vas a necesitar consultarlos, editarlos o generar los documentos que originan. Este artículo repasa la ventana de **[Compras > Pedido de Compra](https://go.etendo.cloud/purchase-order){target="_blank"}** — la vista lista, la vista detalle y las acciones disponibles. Si todavía no has creado ninguno, empieza por [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md).
+Una vez que tienes pedidos de compra cargados, vas a necesitar consultarlos, editarlos o generar los documentos que originan. Este artículo repasa la ventana de **[Compras > Pedido de Compra](https://app.etendo.ai/purchase-order){target="_blank"}** — la vista lista, la vista detalle y las acciones disponibles. Si todavía no has creado ninguno, empieza por [Crear un pedido de compra](../crear-un-pedido-de-compra/crear-un-pedido-de-compra.md).
 
 ## Vista Lista
 

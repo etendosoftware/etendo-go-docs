@@ -4,7 +4,7 @@ tags:
     - Primeros pasos
     - Organización
     - Configuración
-    - Etendo Go
+    - Etendo
 ---
 
 # Cómo gestionar tu organización
@@ -14,7 +14,7 @@ Los datos de tu cuenta que completaste al registrarte (identidad, datos fiscales
 ## Acceder a la ventana Organización
 
 1. En el menú lateral, dentro de la sección **Sistema**, haz clic en **Configuración**.
-2. Selecciona **[Organización](https://go.etendo.cloud/organization){target="_blank"}**, la primera opción del submenú.
+2. Selecciona **[Organización](https://app.etendo.ai/organization){target="_blank"}**, la primera opción del submenú.
 
 ![Ventana Organización, con las secciones Identidad y Datos fiscales](assets/como-gestionar-tu-organizacion-1.png)
 
@@ -24,12 +24,12 @@ A partir de aquí, la ventana Organización se organiza en tres bloques de datos
 
 ## Identidad
 
-Define cómo se llama y se ve tu organización dentro de Etendo Go y en los documentos que emites.
+Define cómo se llama y se ve tu organización dentro de Etendo y en los documentos que emites.
 
 ![Sección Identidad de la ventana Organización](assets/como-gestionar-tu-organizacion-6.png)
 
 - **Logo** — imagen que representa a tu organización en facturas y demás documentos. Formatos admitidos: PNG, JPG o SVG (máx. 2 MB). Haz clic en **Subir logo** para cargarla, o en **Quitar** para eliminarla.
-- **Nombre de la organización** — nombre con el que identificas tu cuenta dentro de Etendo Go. Campo obligatorio.
+- **Nombre de la organización** — nombre con el que identificas tu cuenta dentro de Etendo. Campo obligatorio.
 - **Tipo de negocio** — elige entre **Empresa** (sociedades como S.L. o S.A., o cooperativas), **Autónomo** (trabajador por cuenta propia) o **Asesoría** (despachos y firmas de asesoramiento que gestionan varios clientes).
 
 ## Datos fiscales
@@ -47,7 +47,7 @@ Es la identificación tributaria de tu organización: se imprime en cada factura
 - **País** y **Moneda** — solo informativos: no se editan desde esta pantalla, quedan fijados según lo que elegiste al crear la cuenta.
 
 !!! info "País y moneda fijos"
-    Si necesitas cambiar el país o la moneda de tu organización, contacta con soporte de Etendo Go; no es un ajuste que puedas hacer tú mismo desde Configuración.
+    Si necesitas cambiar el país o la moneda de tu organización, contacta con soporte de Etendo; no es un ajuste que puedas hacer tú mismo desde Configuración.
 
 ### Editar la dirección fiscal
 

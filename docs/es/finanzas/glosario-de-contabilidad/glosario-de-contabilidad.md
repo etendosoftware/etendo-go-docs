@@ -3,7 +3,7 @@ tags:
     - Contabilidad
     - Finanzas
     - Glosario
-    - Etendo Go
+    - Etendo
 ---
 
 # Glosario de Contabilidad

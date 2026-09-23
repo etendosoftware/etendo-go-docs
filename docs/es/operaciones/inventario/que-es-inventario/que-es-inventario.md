@@ -4,12 +4,12 @@ tags:
   - Inventario
   - Almacén
   - Productos
-  - Etendo Go
+  - Etendo
 ---
 
 # ¿Qué es la sección Inventario?
 
-La sección **Inventario** es donde Etendo Go gestiona tu stock, tus almacenes y los productos que vendes o compras. Desde acá controlas qué tienes, dónde lo tienes y bajo qué condiciones contables se registra cada producto.
+La sección **Inventario** es donde Etendo gestiona tu stock, tus almacenes y los productos que vendes o compras. Desde acá controlas qué tienes, dónde lo tienes y bajo qué condiciones contables se registra cada producto.
 
 Inventario cubre el ciclo completo de entradas y salidas de mercancía:
 
@@ -29,7 +29,7 @@ El stock se gestiona **por almacén**: cada almacén mantiene su propio stock de
 ## Qué incluye esta sección
 
 <figure markdown="span">
-  ![Menú de Inventario en Etendo Go](assets/que-es-inventario-1.png)
+  ![Menú de Inventario en Etendo](assets/que-es-inventario-1.png)
   <figcaption>Menú de Inventario expandido en la barra lateral, con acceso a Producto y Categoría del producto.</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ El stock se gestiona **por almacén**: cada almacén mantiene su propio stock de
 
 ## Acceso y roles
 
-Por el momento, todas las ventanas y pestañas de Inventario están disponibles para cualquier rol, sin restricciones — incluida la pestaña **Contabilidad** de Categoría del producto, donde se definen las cuentas contables que hereda cada producto.
+El acceso a las ventanas de Inventario depende del rol de cada usuario: por ejemplo, **Categoría del producto** — incluida la pestaña **Contabilidad**, donde se definen las cuentas contables que hereda cada producto — es de solo lectura para los roles Ventas y Compras, y de acceso completo para Finanzas e Inventario. Consulta el detalle completo, ventana por ventana, en el [Glosario de Roles y usuarios](../../../sistema/configuracion/glosario-de-roles-y-usuarios/glosario-de-roles-y-usuarios.md#acceso-por-rol).
 
 ## Recursos y próximos pasos
 

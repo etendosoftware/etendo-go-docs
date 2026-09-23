@@ -36,7 +36,7 @@ Etendo organiza la operación de tu empresa en módulos conectados entre sí, pa
 ## Tu punto de partida: el Inicio
 
 <figure markdown>
-  ![Inicio de Etendo](assets/que-es-etendo-go.png)
+  ![Inicio de Etendo](assets/que-es-etendo.png)
   <figcaption>Panel de Inicio de Etendo — resumen de tareas pendientes, ventas recientes y evolución financiera.</figcaption>
 </figure>
 

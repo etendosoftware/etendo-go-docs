@@ -5,7 +5,7 @@ tags:
   - Pagos
   - Compras
   - Operaciones
-  - Etendo Go
+  - Etendo
 ---
 
 # Añadir pagos a tu factura de compra
@@ -72,10 +72,10 @@ Esto te permite combinar el crédito de una factura rectificativa con un pago en
 
 ### Pago por transferencia bancaria
 
-Al elegir **Transferencia bancaria**, el popup se comporta de una forma u otra según si la cuenta bancaria que eliges tiene o no una **conexión bancaria** activa en Etendo Go:
+Al elegir **Transferencia bancaria**, el popup se comporta de una forma u otra según si la cuenta bancaria que eliges tiene o no una **conexión bancaria** activa en Etendo:
 
-- **Cuenta sin conexión bancaria** — el pago ya lo hiciste por tu cuenta (por ejemplo, hiciste la transferencia desde la web o la app de tu banco) y en Etendo Go solo dejas constancia de que se realizó. El popup no añade ningún campo adicional: completa Importe, Fecha, Método de pago y Cuenta, revisa el panel de conciliación y confirma con el botón **Confirmar**, igual que en un pago en efectivo.
-- **Cuenta con conexión bancaria** — Etendo Go puede iniciar la transferencia por ti, sin que la hagas primero por tu cuenta. En este caso el popup añade la sección **Transferencia bancaria** con estos campos:
+- **Cuenta sin conexión bancaria** — el pago ya lo hiciste por tu cuenta (por ejemplo, hiciste la transferencia desde la web o la app de tu banco) y en Etendo solo dejas constancia de que se realizó. El popup no añade ningún campo adicional: completa Importe, Fecha, Método de pago y Cuenta, revisa el panel de conciliación y confirma con el botón **Confirmar**, igual que en un pago en efectivo.
+- **Cuenta con conexión bancaria** — Etendo puede iniciar la transferencia por ti, sin que la hagas primero por tu cuenta. En este caso el popup añade la sección **Transferencia bancaria** con estos campos:
 
     - **Plantilla de pago** — el estándar de transferencia a usar, por ejemplo *Single Euro Payments Area (SEPA)*, el formato europeo común para transferencias en euros.
     - **IBAN Destino** — la cuenta bancaria del proveedor a la que se transfiere el dinero.

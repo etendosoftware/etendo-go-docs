@@ -2,18 +2,18 @@
 title: Gestionar tus facturas de venta
 description: >-
   Aprende a consultar, filtrar y hacer seguimiento del cobro de tus facturas
-  de venta en Etendo Go desde la vista lista y la vista detalle del documento.
+  de venta en Etendo desde la vista lista y la vista detalle del documento.
 tags:
   - Factura de Venta
   - Ventas
   - Comercial
   - Gestión Documental
-  - Etendo Go
+  - Etendo
 ---
 
 # Gestionar tus facturas de venta
 
-Una vez que tienes facturas de venta creadas, vas a necesitar consultarlas, hacer seguimiento de su cobro o revisar su estado. Este artículo repasa la ventana de **[Ventas > Factura](https://go.etendo.cloud/sales-invoice){target="_blank"}** — la vista lista, la vista detalle y los estados del documento. Si todavía no has creado ninguna factura, empieza por [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
+Una vez que tienes facturas de venta creadas, vas a necesitar consultarlas, hacer seguimiento de su cobro o revisar su estado. Este artículo repasa la ventana de **[Ventas > Factura](https://app.etendo.ai/sales-invoice){target="_blank"}** — la vista lista, la vista detalle y los estados del documento. Si todavía no has creado ninguna factura, empieza por [Crear una factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md).
 
 ## Vista Lista
 

@@ -8,7 +8,7 @@ hide:
 
 # Comercial
 
-Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etendo Go: desde cargar tus clientes y proveedores hasta emitir presupuestos, pedidos y facturas.
+Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etendo: desde cargar tus clientes y proveedores hasta emitir presupuestos, pedidos y facturas.
 
 ## Contactos
 
@@ -18,7 +18,7 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     ---
 
-    Descubre qué son los contactos en Etendo Go, cómo un mismo registro puede ser cliente y proveedor a la vez, y cuándo vas a necesitarlos.
+    Descubre qué son los contactos en Etendo, cómo un mismo registro puede ser cliente y proveedor a la vez, y cuándo vas a necesitarlos.
 
     [:octicons-arrow-right-24: Leer más](contactos/que-es-la-seccion-contactos/que-es-la-seccion-contactos.md)
 
@@ -56,7 +56,7 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     ---
 
-    Descubre el ciclo de venta completo de Etendo Go: de presupuesto a pedido, albarán, factura y devolución.
+    Descubre el ciclo de venta completo de Etendo: de presupuesto a pedido, albarán, factura y devolución.
 
     [:octicons-arrow-right-24: Leer más](ventas/que-es-la-seccion-ventas/que-es-la-seccion-ventas.md)
 
@@ -120,7 +120,7 @@ Todo lo que necesitas para gestionar tus contactos y el ciclo de ventas en Etend
 
     ---
 
-    Aprende cómo Etendo Go separa el ingreso físico de mercadería devuelta del ajuste financiero al cliente.
+    Aprende cómo Etendo separa el ingreso físico de mercadería devuelta del ajuste financiero al cliente.
 
     [:octicons-arrow-right-24: Leer más](ventas/crear-y-gestionar-devoluciones/crear-y-gestionar-devoluciones.md)
 

@@ -1,14 +1,14 @@
-# Etendo Go — Agentic Documentation
+# Etendo — Agentic Documentation
 
 This directory contains documentation written for AI agents. It is **not** part of the MkDocs site and is **not** rendered as HTML. All content is plain Markdown intended to be read and executed by automated agents.
 
 ## Purpose
 
-These guides provide structured, unambiguous information about Etendo Go integrations and operational capabilities. Use them when:
+These guides provide structured, unambiguous information about Etendo integrations and operational capabilities. Use them when:
 
-- Configuring an AI agent to interact with Etendo Go.
-- Automating workflows that read from or write to an Etendo Go instance.
-- Integrating third-party tools with the Etendo Go API.
+- Configuring an AI agent to interact with Etendo.
+- Automating workflows that read from or write to an Etendo instance.
+- Integrating third-party tools with the Etendo API.
 - Building agent pipelines that consume ERP data.
 
 ## Topic sections
@@ -16,7 +16,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 | Section | Description |
 |---------|-------------|
 | [Agent operating manual](./agent-manual.md) | Normative manual that teaches an MCP-only agent how to plan, discover specs, read schemas, resolve selectors, chain tool calls, and react to failures end-to-end |
-| [MCP](./mcp/index.md) | Configure and use the Etendo Go MCP server: prerequisites, the `spec + entity` model, the generic `neo_*` tools, the `generate_*` report tools, and the single `etendo://status` resource |
+| [MCP](./mcp/index.md) | Configure and use the Etendo MCP server: prerequisites, the `spec + entity` model, the generic `neo_*` tools, the `generate_*` report tools, and the single `etendo://status` resource |
 | [Finance](./finance/index.md) | Finance domain mapped to MCP specs: financial accounts, payments in / out, payment terms, conversion rates, and the full bank-reconciliation flow (`import → process → match → reconcile`) |
 
 ## How to read these guides
@@ -32,7 +32,7 @@ These guides provide structured, unambiguous information about Etendo Go integra
 | Convention | Meaning |
 |------------|---------|
 | `<placeholder>` | Replace with your actual value before use |
-| `https://go.etendo.cloud` | Default Etendo Go cloud endpoint; replace with your instance URL if self-hosted |
+| `https://app.etendo.ai` | Default Etendo cloud endpoint; replace with your instance URL if self-hosted |
 | `(optional)` | Configuration value that has a working default; can be omitted |
 | Required | Configuration value that has no default; must be provided |
 

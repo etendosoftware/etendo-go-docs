@@ -1,8 +1,8 @@
-# Etendo Go — Agent Operating Manual
+# Etendo — Agent Operating Manual
 
 ## Overview
 
-This manual instructs an AI agent on how to operate against an Etendo Go instance end-to-end. It is written as a normative operating guide: every directive applies to the agent at runtime, not to the developer reading the document. Treat each rule as binding unless the user explicitly overrides it for a single session.
+This manual instructs an AI agent on how to operate against an Etendo instance end-to-end. It is written as a normative operating guide: every directive applies to the agent at runtime, not to the developer reading the document. Treat each rule as binding unless the user explicitly overrides it for a single session.
 
 The companion document [./mcp/index.md](./mcp/index.md) lists the protocol's surface (configuration, tools, the single resource, and the `spec + entity` model). This manual explains **how** to use that surface — how to discover what is available, how to read schemas before mutating data, how to chain tool calls, how to interpret each response, and how to react when a process action fails.
 
@@ -10,7 +10,7 @@ The companion document [./mcp/index.md](./mcp/index.md) lists the protocol's sur
 
 The agent operates under these constraints at all times:
 
-- The MCP server documented in [./mcp/index.md](./mcp/index.md) is the **only** channel to Etendo Go. The agent must not call the NEO Headless REST API directly, must not browse the Etendo Go web UI, and must not assume access to the filesystem of the Etendo instance or of the MCP server host.
+- The MCP server documented in [./mcp/index.md](./mcp/index.md) is the **only** channel to Etendo. The agent must not call the NEO Headless REST API directly, must not browse the Etendo web UI, and must not assume access to the filesystem of the Etendo instance or of the MCP server host.
 - The agent's capabilities are bounded by the tools listed in `agentic/mcp/index.md`. If a task cannot be expressed as a sequence of those tool calls, abort and escalate to a human operator.
 - The MCP server exposes **one** resource, `etendo://status`. There are no per-entity schema resources. To obtain entity field metadata, call `neo_schema(spec, entity)`.
 - Every CRUD tool call is routed by two arguments — `spec` (the API namespace, e.g. `sales-order`) and `entity` (the tab inside that namespace, e.g. `header` or `lines`). Never invent a spec or entity name from memory; obtain them through `neo_discover` at the start of the session.
@@ -28,7 +28,7 @@ Execute the following loop for every task the user delegates. Do not skip steps 
 5. **Discover real values.** Before sending FK fields, resolve them through `neo_selectors`. For child entities and FK fields whose selector depends on other values, pass `parentContext` / `recordContext`. The agent must never invent IDs, names, prices, or quantities.
 6. **Invoke the tool.** Build the `fields` (or `body`, in `neo_batch`) object using only the field names declared by the schema and the values resolved from selectors.
 7. **Interpret the response.** A CRUD tool returns the created/updated record on success. `neo_action` returns `{ processResult, processMessage }`. `neo_batch` returns `{ committed, operations | failedAt, error }`. Branch on the result using the [Error handling](#error-handling) table.
-8. **Stop or iterate.** Continue the loop until the goal is met or an error mandates abort or escalation. Report every created or modified record ID back to the user so the change is auditable inside Etendo Go.
+8. **Stop or iterate.** Continue the loop until the goal is met or an error mandates abort or escalation. Report every created or modified record ID back to the user so the change is auditable inside Etendo.
 
 ## Reading metadata before acting
 
@@ -216,15 +216,23 @@ Capture the response `id` — this is the header's `C_Order_ID`.
     "spec": "sales-order",
     "entity": "lines",
     "fields": {
-      "salesOrder": "<order-header-id>",
+      "parentId": "<order-header-id>",
       "product": "<product-id>",
-      "orderedQuantity": 5,
-      "unitPrice": 12.50,
-      "tax": "<tax-id>"
+      "orderedQuantity": 5
     }
   }
 }
 ```
+
+Name the header with `parentId`, not with the line's own `salesOrder` field. Only `parentId` makes
+the server read the header record, and everything the line derives from it depends on that: the
+business partner, the partner address, the order date, the tax rate and the price. Naming the header
+with the line's own FK field instead does not merely lose those values — the create is rejected with
+`422 validation_error`, because the order date has no source once the header is not read.
+
+`unitPrice`, `listPrice` and `tax` are therefore **not** needed — the price comes from the header's
+price list at the order date, and the tax from the product and the partner's shipping address. Pass
+a price only to override the price list; a tax-included price list still needs an explicit price.
 
 ### Step 6 — Confirm the order — only when authorised
 
@@ -276,5 +284,5 @@ The following rules apply to every task without exception:
 
 - The agent must never auto-confirm (`neo_action` with `DocAction`) a sales or purchase order, post (`Posted`) a financial document, or trigger a payment process unless the user has explicitly authorised that action in the current session.
 - The agent must never invent identifiers, prices, quantities, dates, document statuses, or vendor / customer names. Every value sent in `fields` must originate from `neo_selectors`, `neo_list`, `neo_get`, or the user.
-- The agent must report every created or modified record ID back to the user so the change is auditable inside Etendo Go.
+- The agent must report every created or modified record ID back to the user so the change is auditable inside Etendo.
 - When in doubt, prefer read tools (`neo_discover`, `neo_schema`, `neo_defaults`, `neo_selectors`, `neo_list`, `neo_get`) over write tools (`neo_create`, `neo_update`, `neo_delete`, `neo_action`, `neo_batch`). A redundant read is always safer than an unwanted write.

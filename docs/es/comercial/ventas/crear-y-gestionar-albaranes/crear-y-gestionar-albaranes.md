@@ -1,21 +1,21 @@
 ---
 title: Crear y gestionar albaranes
 description: >-
-  Aprende a crear y gestionar albaranes de venta en Etendo Go para documentar
+  Aprende a crear y gestionar albaranes de venta en Etendo para documentar
   la entrega física de mercadería y habilitar la factura correspondiente.
 tags:
     - Albarán de Venta
     - Ventas
     - Comercial
     - Gestión Documental
-    - Etendo Go
+    - Etendo
 ---
 
 # Crear y gestionar albaranes
 
 ## Descripción general
 
-El **albarán de venta** documenta la entrega física de mercadería al cliente. Puede generarse desde un [pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) confirmado — marcando la opción **Crear albarán** en el popup de confirmación, o más adelante con el botón **Gestionar envío y factura** del pedido — o crearse directamente desde la ventana **[Ventas > Albarán](https://go.etendo.cloud/goods-shipment){target="_blank"}** con **+ Nuevo albarán**. Una vez completado, habilita la generación de la [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md) o de una devolución.
+El **albarán de venta** documenta la entrega física de mercadería al cliente. Puede generarse desde un [pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) confirmado — marcando la opción **Crear albarán** en el popup de confirmación, o más adelante con el botón **Gestionar envío y factura** del pedido — o crearse directamente desde la ventana **[Ventas > Albarán](https://app.etendo.ai/goods-shipment){target="_blank"}** con **+ Nuevo albarán**. Una vez completado, habilita la generación de la [factura de venta](../crear-una-factura-de-venta/crear-una-factura-de-venta.md) o de una devolución.
 
 ```mermaid
 flowchart LR
@@ -34,7 +34,7 @@ Este artículo se organiza en dos flujos: primero cómo **crear un albarán** y 
 
 ### 1. Empieza un albarán nuevo
 
-Puedes generar el albarán desde un [pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) confirmado — marcando **Crear albarán** en el popup de confirmación del pedido, o más adelante con el botón **Gestionar envío y factura** — en cuyo caso el albarán hereda el contacto, la dirección y las líneas del pedido de origen. Alternativamente, puedes crearlo directamente accediendo a **[Ventas > Albarán](https://go.etendo.cloud/goods-shipment){target="_blank"}** y usando el botón **+ Nuevo albarán** en la esquina superior derecha.
+Puedes generar el albarán desde un [pedido de venta](../crear-y-gestionar-pedidos/crear-y-gestionar-pedidos.md) confirmado — marcando **Crear albarán** en el popup de confirmación del pedido, o más adelante con el botón **Gestionar envío y factura** — en cuyo caso el albarán hereda el contacto, la dirección y las líneas del pedido de origen. Alternativamente, puedes crearlo directamente accediendo a **[Ventas > Albarán](https://app.etendo.ai/goods-shipment){target="_blank"}** y usando el botón **+ Nuevo albarán** en la esquina superior derecha.
 
 ### 2. Completa el formulario
 
@@ -88,7 +88,7 @@ Si confirmas sin activar la opción, el albarán pasa a Completado y se procesa 
   <figcaption>Vista lista del Albarán de venta con columnas de estado y facturación.</figcaption>
 </figure>
 
-La vista lista de **[Ventas > Albarán](https://go.etendo.cloud/goods-shipment){target="_blank"}** muestra las columnas **Fecha del movimiento**, **Nº documento**, **Contacto**, **Estado doc.**, **Almacén** y **Estado de facturación**. Al pasar el cursor sobre una fila aparecen accesos rápidos para editar, clonar y enviar. Para filtrar la lista utiliza los selectores de **estado del documento** en la barra superior.
+La vista lista de **[Ventas > Albarán](https://app.etendo.ai/goods-shipment){target="_blank"}** muestra las columnas **Fecha del movimiento**, **Nº documento**, **Contacto**, **Estado doc.**, **Almacén** y **Estado de facturación**. Al pasar el cursor sobre una fila aparecen accesos rápidos para editar, clonar y enviar. Para filtrar la lista utiliza los selectores de **estado del documento** en la barra superior.
 
 ### 2. Abre el albarán
 

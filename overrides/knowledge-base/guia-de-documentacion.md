@@ -1,11 +1,11 @@
 ---
-title: Guía de Documentación — Etendo Go
+title: Guía de Documentación — Etendo
 tags:
   - guia-de-estilo
   - documentacion
 ---
 
-# Guía de Documentación para Etendo Go
+# Guía de Documentación para Etendo
 
 ## 1. Arquitectura de la Información
 
